@@ -1,0 +1,53 @@
+{
+  "order": 24,
+  "title": "Triangular forms and invariant flags",
+  "lecture_numbers": [
+    43
+  ],
+  "file": "chapter-24-triangular-forms-and-invariant-flags.html",
+  "manuscript": "chapters/ch24.html",
+  "status": "complete; independently reviewed",
+  "chapter": 24,
+  "body_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+  "words_excluding_code": 1754,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 5,
+  "sections": [
+    {
+      "heading": "24.1 Triangularity is a statement about a nested family Lesson 43 · 02:32",
+      "anchor": "flags",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=6hsgh3IRFAA&t=152s"
+      ]
+    },
+    {
+      "heading": "24.2 Each factor lowers one stage of the flag Lesson 43 · 11:47",
+      "anchor": "annihilator",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=6hsgh3IRFAA&t=707s"
+      ]
+    },
+    {
+      "heading": "24.3 Every diagonal entry really is an eigenvalue Lesson 43 · 20:15",
+      "anchor": "spectrum",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=6hsgh3IRFAA&t=1215s"
+      ]
+    },
+    {
+      "heading": "24.4 Triangularization means the minimal polynomial splits Lesson 43 · 25:55",
+      "anchor": "criterion",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=6hsgh3IRFAA&t=1555s"
+      ]
+    },
+    {
+      "heading": "24.5 A permutation becomes diagonal, with a field boundary Lesson 43 · 48:29",
+      "anchor": "example",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=6hsgh3IRFAA&t=2909s"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1630 @@
+{
+  "scope": "Syntax and selected advisory prose/proof patterns; independent editorial review is separate.",
+  "results": [
+    {
+      "file": "chapters/_index.html",
+      "checker": "checktex",
+      "input_sha256": "a43fbbd7f7b928fc298b85a15e603513399e368e06c5337ff3f214704d9e62ac",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\_index.html: 0 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_index.html",
+      "checker": "checklt",
+      "input_sha256": "a43fbbd7f7b928fc298b85a15e603513399e368e06c5337ff3f214704d9e62ac",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\_index.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_index.html",
+      "checker": "check_links",
+      "input_sha256": "a43fbbd7f7b928fc298b85a15e603513399e368e06c5337ff3f214704d9e62ac",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\_index.html: 0 internal link(s), 0 broken; 0 unlinked section ref(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_index.html",
+      "checker": "check_code",
+      "input_sha256": "a43fbbd7f7b928fc298b85a15e603513399e368e06c5337ff3f214704d9e62ac",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\_index.html: 0 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_index.html",
+      "checker": "check_proofs",
+      "input_sha256": "a43fbbd7f7b928fc298b85a15e603513399e368e06c5337ff3f214704d9e62ac",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\_index.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_index.html",
+      "checker": "check_prose",
+      "input_sha256": "a43fbbd7f7b928fc298b85a15e603513399e368e06c5337ff3f214704d9e62ac",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\_index.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_index.html",
+      "checker": "check_svg",
+      "input_sha256": "a43fbbd7f7b928fc298b85a15e603513399e368e06c5337ff3f214704d9e62ac",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\_index.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_lab.html",
+      "checker": "checktex",
+      "input_sha256": "0028fd7832b7a69cc0a4ae4dc5b9033c88ea64f9d7c1cd40c118d4118e0a0e50",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\_lab.html: 5 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_lab.html",
+      "checker": "checklt",
+      "input_sha256": "0028fd7832b7a69cc0a4ae4dc5b9033c88ea64f9d7c1cd40c118d4118e0a0e50",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\_lab.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_lab.html",
+      "checker": "check_links",
+      "input_sha256": "0028fd7832b7a69cc0a4ae4dc5b9033c88ea64f9d7c1cd40c118d4118e0a0e50",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\_lab.html: 0 internal link(s), 0 broken; 0 unlinked section ref(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_lab.html",
+      "checker": "check_code",
+      "input_sha256": "0028fd7832b7a69cc0a4ae4dc5b9033c88ea64f9d7c1cd40c118d4118e0a0e50",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\_lab.html: 0 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_lab.html",
+      "checker": "check_proofs",
+      "input_sha256": "0028fd7832b7a69cc0a4ae4dc5b9033c88ea64f9d7c1cd40c118d4118e0a0e50",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\_lab.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_lab.html",
+      "checker": "check_prose",
+      "input_sha256": "0028fd7832b7a69cc0a4ae4dc5b9033c88ea64f9d7c1cd40c118d4118e0a0e50",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\_lab.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_lab.html",
+      "checker": "check_svg",
+      "input_sha256": "0028fd7832b7a69cc0a4ae4dc5b9033c88ea64f9d7c1cd40c118d4118e0a0e50",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\_lab.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_overview.html",
+      "checker": "checktex",
+      "input_sha256": "cd01346732be948efc08df8c59ea08e60f0a5b7e8dbd8b168eb2b1754b1f61bb",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\_overview.html: 2 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_overview.html",
+      "checker": "checklt",
+      "input_sha256": "cd01346732be948efc08df8c59ea08e60f0a5b7e8dbd8b168eb2b1754b1f61bb",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\_overview.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_overview.html",
+      "checker": "check_links",
+      "input_sha256": "cd01346732be948efc08df8c59ea08e60f0a5b7e8dbd8b168eb2b1754b1f61bb",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\_overview.html: 0 internal link(s), 0 broken; 0 unlinked section ref(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_overview.html",
+      "checker": "check_code",
+      "input_sha256": "cd01346732be948efc08df8c59ea08e60f0a5b7e8dbd8b168eb2b1754b1f61bb",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\_overview.html: 0 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_overview.html",
+      "checker": "check_proofs",
+      "input_sha256": "cd01346732be948efc08df8c59ea08e60f0a5b7e8dbd8b168eb2b1754b1f61bb",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\_overview.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_overview.html",
+      "checker": "check_prose",
+      "input_sha256": "cd01346732be948efc08df8c59ea08e60f0a5b7e8dbd8b168eb2b1754b1f61bb",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\_overview.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_overview.html",
+      "checker": "check_svg",
+      "input_sha256": "cd01346732be948efc08df8c59ea08e60f0a5b7e8dbd8b168eb2b1754b1f61bb",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\_overview.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_references.html",
+      "checker": "checktex",
+      "input_sha256": "3987f2c6d0039ef22ed537cb1e6d807ab234f7074ec04be686c0017b5853970d",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\_references.html: 0 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_references.html",
+      "checker": "checklt",
+      "input_sha256": "3987f2c6d0039ef22ed537cb1e6d807ab234f7074ec04be686c0017b5853970d",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\_references.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_references.html",
+      "checker": "check_links",
+      "input_sha256": "3987f2c6d0039ef22ed537cb1e6d807ab234f7074ec04be686c0017b5853970d",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\_references.html: 0 internal link(s), 0 broken; 0 unlinked section ref(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_references.html",
+      "checker": "check_code",
+      "input_sha256": "3987f2c6d0039ef22ed537cb1e6d807ab234f7074ec04be686c0017b5853970d",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\_references.html: 0 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_references.html",
+      "checker": "check_proofs",
+      "input_sha256": "3987f2c6d0039ef22ed537cb1e6d807ab234f7074ec04be686c0017b5853970d",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\_references.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_references.html",
+      "checker": "check_prose",
+      "input_sha256": "3987f2c6d0039ef22ed537cb1e6d807ab234f7074ec04be686c0017b5853970d",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\_references.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/_references.html",
+      "checker": "check_svg",
+      "input_sha256": "3987f2c6d0039ef22ed537cb1e6d807ab234f7074ec04be686c0017b5853970d",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\_references.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch01.html",
+      "checker": "checktex",
+      "input_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch01.html: 213 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch01.html",
+      "checker": "checklt",
+      "input_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch01.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch01.html",
+      "checker": "check_links",
+      "input_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch01.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§§1.1, 1.3, 2.3, 2.7']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch01.html",
+      "checker": "check_code",
+      "input_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch01.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch01.html",
+      "checker": "check_proofs",
+      "input_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch01.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch01.html",
+      "checker": "check_prose",
+      "input_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch01.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch01.html",
+      "checker": "check_svg",
+      "input_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch01.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch02.html",
+      "checker": "checktex",
+      "input_sha256": "9d622ac42050c99e4837d5c02e82aa02d963e14341269749c8de54e7efec6bee",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch02.html: 268 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch02.html",
+      "checker": "checklt",
+      "input_sha256": "9d622ac42050c99e4837d5c02e82aa02d963e14341269749c8de54e7efec6bee",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch02.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch02.html",
+      "checker": "check_links",
+      "input_sha256": "9d622ac42050c99e4837d5c02e82aa02d963e14341269749c8de54e7efec6bee",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch02.html: 0 internal link(s), 0 broken; 2 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§2.3', '§§4.3, 5.1, 6.1']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch02.html",
+      "checker": "check_code",
+      "input_sha256": "9d622ac42050c99e4837d5c02e82aa02d963e14341269749c8de54e7efec6bee",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch02.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch02.html",
+      "checker": "check_proofs",
+      "input_sha256": "9d622ac42050c99e4837d5c02e82aa02d963e14341269749c8de54e7efec6bee",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch02.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch02.html",
+      "checker": "check_prose",
+      "input_sha256": "9d622ac42050c99e4837d5c02e82aa02d963e14341269749c8de54e7efec6bee",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch02.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch02.html",
+      "checker": "check_svg",
+      "input_sha256": "9d622ac42050c99e4837d5c02e82aa02d963e14341269749c8de54e7efec6bee",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch02.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch03.html",
+      "checker": "checktex",
+      "input_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch03.html: 252 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch03.html",
+      "checker": "checklt",
+      "input_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch03.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch03.html",
+      "checker": "check_links",
+      "input_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch03.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§§12.1–12.2']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch03.html",
+      "checker": "check_code",
+      "input_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch03.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch03.html",
+      "checker": "check_proofs",
+      "input_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch03.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch03.html",
+      "checker": "check_prose",
+      "input_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch03.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch03.html",
+      "checker": "check_svg",
+      "input_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch03.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch04.html",
+      "checker": "checktex",
+      "input_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch04.html: 325 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch04.html",
+      "checker": "checklt",
+      "input_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch04.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch04.html",
+      "checker": "check_links",
+      "input_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch04.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§§11.3–11.4']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch04.html",
+      "checker": "check_code",
+      "input_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch04.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch04.html",
+      "checker": "check_proofs",
+      "input_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch04.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch04.html",
+      "checker": "check_prose",
+      "input_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch04.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch04.html",
+      "checker": "check_svg",
+      "input_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch04.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch05.html",
+      "checker": "checktex",
+      "input_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch05.html: 302 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch05.html",
+      "checker": "checklt",
+      "input_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch05.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch05.html",
+      "checker": "check_links",
+      "input_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch05.html: 0 internal link(s), 0 broken; 3 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§5.2', '§5.3', '§§3.2–3.3, 9.1']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch05.html",
+      "checker": "check_code",
+      "input_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch05.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch05.html",
+      "checker": "check_proofs",
+      "input_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch05.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch05.html",
+      "checker": "check_prose",
+      "input_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch05.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch05.html",
+      "checker": "check_svg",
+      "input_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch05.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch06.html",
+      "checker": "checktex",
+      "input_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch06.html: 302 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch06.html",
+      "checker": "checklt",
+      "input_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch06.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch06.html",
+      "checker": "check_links",
+      "input_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch06.html: 0 internal link(s), 0 broken; 2 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§§16.1–16.2', '§1.10']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch06.html",
+      "checker": "check_code",
+      "input_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch06.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch06.html",
+      "checker": "check_proofs",
+      "input_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch06.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch06.html",
+      "checker": "check_prose",
+      "input_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch06.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch06.html",
+      "checker": "check_svg",
+      "input_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch06.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch07.html",
+      "checker": "checktex",
+      "input_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch07.html: 252 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch07.html",
+      "checker": "checklt",
+      "input_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch07.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch07.html",
+      "checker": "check_links",
+      "input_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch07.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§§10.1–10.3']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch07.html",
+      "checker": "check_code",
+      "input_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch07.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch07.html",
+      "checker": "check_proofs",
+      "input_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch07.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch07.html",
+      "checker": "check_prose",
+      "input_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch07.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch07.html",
+      "checker": "check_svg",
+      "input_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch07.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch08.html",
+      "checker": "checktex",
+      "input_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch08.html: 291 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch08.html",
+      "checker": "checklt",
+      "input_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch08.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch08.html",
+      "checker": "check_links",
+      "input_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch08.html: 0 internal link(s), 0 broken; 0 unlinked section ref(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch08.html",
+      "checker": "check_code",
+      "input_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch08.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch08.html",
+      "checker": "check_proofs",
+      "input_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch08.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch08.html",
+      "checker": "check_prose",
+      "input_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch08.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch08.html",
+      "checker": "check_svg",
+      "input_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch08.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch09.html",
+      "checker": "checktex",
+      "input_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch09.html: 262 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch09.html",
+      "checker": "checklt",
+      "input_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch09.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch09.html",
+      "checker": "check_links",
+      "input_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch09.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§14.2']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch09.html",
+      "checker": "check_code",
+      "input_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch09.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch09.html",
+      "checker": "check_proofs",
+      "input_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch09.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch09.html",
+      "checker": "check_prose",
+      "input_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch09.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch09.html",
+      "checker": "check_svg",
+      "input_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch09.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch10.html",
+      "checker": "checktex",
+      "input_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch10.html: 299 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch10.html",
+      "checker": "checklt",
+      "input_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch10.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch10.html",
+      "checker": "check_links",
+      "input_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch10.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§2.2']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch10.html",
+      "checker": "check_code",
+      "input_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch10.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch10.html",
+      "checker": "check_proofs",
+      "input_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch10.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch10.html",
+      "checker": "check_prose",
+      "input_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch10.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch10.html",
+      "checker": "check_svg",
+      "input_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch10.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch11.html",
+      "checker": "checktex",
+      "input_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch11.html: 328 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch11.html",
+      "checker": "checklt",
+      "input_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch11.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch11.html",
+      "checker": "check_links",
+      "input_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch11.html: 0 internal link(s), 0 broken; 2 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§3.1', '§6.3']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch11.html",
+      "checker": "check_code",
+      "input_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch11.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch11.html",
+      "checker": "check_proofs",
+      "input_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch11.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch11.html",
+      "checker": "check_prose",
+      "input_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch11.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch11.html",
+      "checker": "check_svg",
+      "input_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch11.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch12.html",
+      "checker": "checktex",
+      "input_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch12.html: 257 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch12.html",
+      "checker": "checklt",
+      "input_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch12.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch12.html",
+      "checker": "check_links",
+      "input_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch12.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§18.1']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch12.html",
+      "checker": "check_code",
+      "input_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch12.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch12.html",
+      "checker": "check_proofs",
+      "input_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch12.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch12.html",
+      "checker": "check_prose",
+      "input_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch12.html: 1 advisory prose flag(s)\n  L19: tautological copula 'X is X'\n        …lexivity is $ab=ba$, and symmetry is symmetry of equality after commut…\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch12.html",
+      "checker": "check_svg",
+      "input_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch12.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch13.html",
+      "checker": "checktex",
+      "input_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch13.html: 303 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch13.html",
+      "checker": "checklt",
+      "input_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch13.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch13.html",
+      "checker": "check_links",
+      "input_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch13.html: 0 internal link(s), 0 broken; 0 unlinked section ref(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch13.html",
+      "checker": "check_code",
+      "input_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch13.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch13.html",
+      "checker": "check_proofs",
+      "input_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch13.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch13.html",
+      "checker": "check_prose",
+      "input_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch13.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch13.html",
+      "checker": "check_svg",
+      "input_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch13.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch14.html",
+      "checker": "checktex",
+      "input_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch14.html: 320 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch14.html",
+      "checker": "checklt",
+      "input_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch14.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch14.html",
+      "checker": "check_links",
+      "input_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch14.html: 0 internal link(s), 0 broken; 0 unlinked section ref(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch14.html",
+      "checker": "check_code",
+      "input_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch14.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch14.html",
+      "checker": "check_proofs",
+      "input_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch14.html: 1 asserted proposition(s) (no adjacent .proof)\n  - line 78: \"theorem block\" has no .proof — prove it, or demote to .def/.keyresult\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch14.html",
+      "checker": "check_prose",
+      "input_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch14.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch14.html",
+      "checker": "check_svg",
+      "input_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch14.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch15.html",
+      "checker": "checktex",
+      "input_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch15.html: 155 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch15.html",
+      "checker": "checklt",
+      "input_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch15.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch15.html",
+      "checker": "check_links",
+      "input_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch15.html: 0 internal link(s), 0 broken; 0 unlinked section ref(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch15.html",
+      "checker": "check_code",
+      "input_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch15.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch15.html",
+      "checker": "check_proofs",
+      "input_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch15.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch15.html",
+      "checker": "check_prose",
+      "input_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch15.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch15.html",
+      "checker": "check_svg",
+      "input_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch15.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch16.html",
+      "checker": "checktex",
+      "input_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch16.html: 271 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch16.html",
+      "checker": "checklt",
+      "input_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch16.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch16.html",
+      "checker": "check_links",
+      "input_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch16.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§16.2']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch16.html",
+      "checker": "check_code",
+      "input_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch16.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch16.html",
+      "checker": "check_proofs",
+      "input_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch16.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch16.html",
+      "checker": "check_prose",
+      "input_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch16.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch16.html",
+      "checker": "check_svg",
+      "input_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch16.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch17.html",
+      "checker": "checktex",
+      "input_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch17.html: 181 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch17.html",
+      "checker": "checklt",
+      "input_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch17.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch17.html",
+      "checker": "check_links",
+      "input_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch17.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§3']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch17.html",
+      "checker": "check_code",
+      "input_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch17.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch17.html",
+      "checker": "check_proofs",
+      "input_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch17.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch17.html",
+      "checker": "check_prose",
+      "input_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch17.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch17.html",
+      "checker": "check_svg",
+      "input_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch17.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch18.html",
+      "checker": "checktex",
+      "input_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch18.html: 211 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch18.html",
+      "checker": "checklt",
+      "input_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch18.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch18.html",
+      "checker": "check_links",
+      "input_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch18.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§§1']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch18.html",
+      "checker": "check_code",
+      "input_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch18.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch18.html",
+      "checker": "check_proofs",
+      "input_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch18.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch18.html",
+      "checker": "check_prose",
+      "input_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch18.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch18.html",
+      "checker": "check_svg",
+      "input_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch18.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch19.html",
+      "checker": "checktex",
+      "input_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch19.html: 200 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch19.html",
+      "checker": "checklt",
+      "input_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch19.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch19.html",
+      "checker": "check_links",
+      "input_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch19.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§§2']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch19.html",
+      "checker": "check_code",
+      "input_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch19.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch19.html",
+      "checker": "check_proofs",
+      "input_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch19.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch19.html",
+      "checker": "check_prose",
+      "input_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch19.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch19.html",
+      "checker": "check_svg",
+      "input_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch19.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch20.html",
+      "checker": "checktex",
+      "input_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch20.html: 214 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch20.html",
+      "checker": "checklt",
+      "input_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch20.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch20.html",
+      "checker": "check_links",
+      "input_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch20.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§§3']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch20.html",
+      "checker": "check_code",
+      "input_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch20.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch20.html",
+      "checker": "check_proofs",
+      "input_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch20.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch20.html",
+      "checker": "check_prose",
+      "input_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch20.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch20.html",
+      "checker": "check_svg",
+      "input_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch20.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch21.html",
+      "checker": "checktex",
+      "input_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch21.html: 181 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch21.html",
+      "checker": "checklt",
+      "input_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch21.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch21.html",
+      "checker": "check_links",
+      "input_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch21.html: 0 internal link(s), 0 broken; 2 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§3', '§3']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch21.html",
+      "checker": "check_code",
+      "input_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch21.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch21.html",
+      "checker": "check_proofs",
+      "input_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch21.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch21.html",
+      "checker": "check_prose",
+      "input_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch21.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch21.html",
+      "checker": "check_svg",
+      "input_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch21.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch22.html",
+      "checker": "checktex",
+      "input_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch22.html: 191 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch22.html",
+      "checker": "checklt",
+      "input_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch22.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch22.html",
+      "checker": "check_links",
+      "input_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch22.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§5']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch22.html",
+      "checker": "check_code",
+      "input_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch22.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch22.html",
+      "checker": "check_proofs",
+      "input_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch22.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch22.html",
+      "checker": "check_prose",
+      "input_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch22.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch22.html",
+      "checker": "check_svg",
+      "input_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch22.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch23.html",
+      "checker": "checktex",
+      "input_sha256": "8d9501de86f6a1909bb3a091885b4c3e35e122553abe7201db1cc659798e126e",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch23.html: 301 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch23.html",
+      "checker": "checklt",
+      "input_sha256": "8d9501de86f6a1909bb3a091885b4c3e35e122553abe7201db1cc659798e126e",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch23.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch23.html",
+      "checker": "check_links",
+      "input_sha256": "8d9501de86f6a1909bb3a091885b4c3e35e122553abe7201db1cc659798e126e",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch23.html: 0 internal link(s), 0 broken; 2 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§5', '§3']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch23.html",
+      "checker": "check_code",
+      "input_sha256": "8d9501de86f6a1909bb3a091885b4c3e35e122553abe7201db1cc659798e126e",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch23.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch23.html",
+      "checker": "check_proofs",
+      "input_sha256": "8d9501de86f6a1909bb3a091885b4c3e35e122553abe7201db1cc659798e126e",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch23.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch23.html",
+      "checker": "check_prose",
+      "input_sha256": "8d9501de86f6a1909bb3a091885b4c3e35e122553abe7201db1cc659798e126e",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch23.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch23.html",
+      "checker": "check_svg",
+      "input_sha256": "8d9501de86f6a1909bb3a091885b4c3e35e122553abe7201db1cc659798e126e",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch23.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch24.html",
+      "checker": "checktex",
+      "input_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch24.html: 170 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch24.html",
+      "checker": "checklt",
+      "input_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch24.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch24.html",
+      "checker": "check_links",
+      "input_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch24.html: 0 internal link(s), 0 broken; 1 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§5']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch24.html",
+      "checker": "check_code",
+      "input_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch24.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch24.html",
+      "checker": "check_proofs",
+      "input_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch24.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch24.html",
+      "checker": "check_prose",
+      "input_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch24.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch24.html",
+      "checker": "check_svg",
+      "input_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch24.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch25.html",
+      "checker": "checktex",
+      "input_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+      "exit_code": 0,
+      "stdout": "[checktex] .\\chapters\\ch25.html: 264 math segment(s), 0 issue(s)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch25.html",
+      "checker": "checklt",
+      "input_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+      "exit_code": 0,
+      "stdout": "[checklt] .\\chapters\\ch25.html: 0 math segment(s) with raw < or >\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch25.html",
+      "checker": "check_links",
+      "input_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+      "exit_code": 0,
+      "stdout": "[check_links] .\\chapters\\ch25.html: 0 internal link(s), 0 broken; 3 unlinked section ref(s)\n  unlinked § refs (run autolink_sections.py): ['§25.3', '§8', '§8']\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch25.html",
+      "checker": "check_code",
+      "input_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+      "exit_code": 0,
+      "stdout": "[check_code] .\\chapters\\ch25.html: 1 Python code block(s) checked (pycodestyle); 0 issue(s).\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch25.html",
+      "checker": "check_proofs",
+      "input_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+      "exit_code": 0,
+      "stdout": "[check_proofs] .\\chapters\\ch25.html: 0 asserted proposition(s) (no adjacent .proof)\n  every proposition/theorem/lemma is proved. (Still eyeball boxed .keyresult siblings — an unproved sibling law is a judgement call this can't see.)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch25.html",
+      "checker": "check_prose",
+      "input_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+      "exit_code": 0,
+      "stdout": "[check_prose] .\\chapters\\ch25.html: 0 advisory prose flag(s)\n  (advisory — verify each; then read every paragraph aloud, generator-script prose included)\n",
+      "stderr": ""
+    },
+    {
+      "file": "chapters/ch25.html",
+      "checker": "check_svg",
+      "input_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+      "exit_code": 0,
+      "stdout": "[check_svg] .\\chapters\\ch25.html: 0 hard issue(s), 0 advisory\n",
+      "stderr": ""
+    }
+  ],
+  "passed": true
+}

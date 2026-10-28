@@ -1,0 +1,78 @@
+{
+  "chapter": 15,
+  "complete_source_text_reading": [
+    27,
+    28
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "systems",
+      "lesson": 27,
+      "start": 16,
+      "end": 2039
+    },
+    {
+      "section": "row-operations",
+      "lesson": 27,
+      "start": 2039,
+      "end": 2240
+    },
+    {
+      "section": "matrices",
+      "lesson": 28,
+      "start": 57,
+      "end": 789
+    },
+    {
+      "section": "row-operations",
+      "lesson": 28,
+      "start": 789,
+      "end": 1922
+    },
+    {
+      "section": "echelon",
+      "lesson": 28,
+      "start": 1922,
+      "end": 2085
+    },
+    {
+      "section": "existence",
+      "lesson": 28,
+      "start": 2085,
+      "end": 2604
+    },
+    {
+      "section": "solutions",
+      "lesson": 28,
+      "start": 2604,
+      "end": 3697
+    },
+    {
+      "section": "certificates",
+      "lesson": 28,
+      "start": 3697,
+      "end": 3978
+    }
+  ],
+  "teaching_constructions": [
+    "Full RREF uniqueness proof using rowcombination sets",
+    "Explicit rational versusF2sameequations comparison",
+    "Complete solutionparameterization bijection andfinitefieldcounts",
+    "Inconsistencycertificate proof",
+    "ExactFraction GaussJordan implementation",
+    "Six solvedproblems"
+  ],
+  "scope_decisions": [
+    "Matrixmultiplication developed nextchapter; coefficientnotation sufficient here",
+    "Example requiringdivideby5 explicitlyoverQ",
+    "Freevariables implyinfinitelymanysolutions onlyoverinfinitefield andconsistent system",
+    "Echelon distinctfromreducedechelon",
+    "Numericalstability notinferredfromexactarithmetic"
+  ],
+  "reference_sections_inspected": [],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

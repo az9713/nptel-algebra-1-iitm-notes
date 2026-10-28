@@ -1,0 +1,61 @@
+{
+  "order": 16,
+  "title": "Matrix algebra and square systems",
+  "lecture_numbers": [
+    29,
+    30
+  ],
+  "file": "chapter-16-matrix-algebra-and-square-systems.html",
+  "manuscript": "chapters/ch16.html",
+  "status": "complete; independently reviewed",
+  "chapter": 16,
+  "body_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+  "words_excluding_code": 2270,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 6,
+  "sections": [
+    {
+      "heading": "16.1 The dimensions specify what can be multiplied Lesson 29 · 00:48",
+      "anchor": "product",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=JGp1ej82CJI&t=48s"
+      ]
+    },
+    {
+      "heading": "16.2 Products encode successive coordinate functions Lesson 29 · 11:23",
+      "anchor": "composition",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=JGp1ej82CJI&t=683s"
+      ]
+    },
+    {
+      "heading": "16.4 Row operations are left multiplication Lesson 29 · 42:57",
+      "anchor": "elementary",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=JGp1ej82CJI&t=2577s"
+      ]
+    },
+    {
+      "heading": "16.5 The general linear group Lesson 29 · 56:16",
+      "anchor": "inverses",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=JGp1ej82CJI&t=3376s"
+      ]
+    },
+    {
+      "heading": "16.6 Six tests for a square matrix Lesson 30 · 13:50",
+      "anchor": "equivalences",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=qhhtmOt76Pk&t=830s"
+      ]
+    },
+    {
+      "heading": "16.7 A one-sided inverse suffices only with the right setting Lesson 30 · 22:59",
+      "anchor": "one-sided",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=qhhtmOt76Pk&t=1379s"
+      ]
+    }
+  ]
+}

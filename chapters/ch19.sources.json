@@ -1,0 +1,85 @@
+{
+  "chapter": 19,
+  "complete_source_text_reading": [
+    34,
+    35
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "span",
+      "lesson": 34,
+      "start": 162,
+      "end": 1037
+    },
+    {
+      "section": "deletion",
+      "lesson": 34,
+      "start": 1037,
+      "end": 1999
+    },
+    {
+      "section": "exchange",
+      "lesson": 35,
+      "start": 57,
+      "end": 1312
+    },
+    {
+      "section": "bases",
+      "lesson": 35,
+      "start": 1312,
+      "end": 2501
+    },
+    {
+      "section": "dimension",
+      "lesson": 35,
+      "start": 2501,
+      "end": 2676
+    },
+    {
+      "section": "complements",
+      "lesson": 35,
+      "start": 2676,
+      "end": 3318
+    },
+    {
+      "section": "sum",
+      "lesson": 35,
+      "start": 3318,
+      "end": 4214
+    }
+  ],
+  "teaching_constructions": [
+    "All field and empty-list cases",
+    "Finite direct-sum dimension criterion proof",
+    "Formal polynomial and infinite-sequence distinctions",
+    "Exhaustive ordered independent lists in F2^3",
+    "Six solved problems"
+  ],
+  "scope_decisions": [
+    "Finite-dimensional bases proved without choice",
+    "No claim that coordinate sequences span all sequences",
+    "Correct closing source slip: concatenation spans sum, not necessarily ambient space"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Axler, Linear Algebra Done Right, fourth edition",
+      "url": "https://linear.axler.net/LADR4e.pdf",
+      "sections": [
+        "2A",
+        "2B",
+        "2C"
+      ],
+      "printed_pages": [
+        "28–29",
+        "31–36",
+        "39–42",
+        "44–48"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

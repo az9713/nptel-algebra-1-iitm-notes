@@ -1,0 +1,113 @@
+<h1>16. Matrix algebra and square systems</h1>
+<p class="lead">For a square coefficient matrix, one right-hand side with exactly one solution guarantees exactly one solution for every right-hand side. This surprising jump from one system to all systems is the invertible-matrix theorem. Elementary matrices explain it by turning a row-reduction procedure into an equation $PA=I$ with an invertible multiplier.</p>
+<p class="source-note">Lessons 29–30 develop matrix products, elementary matrices, inverses, and six equivalent tests for square systems. We keep dimensions visible, prove the equivalences in a cycle, and show why one-sided inverses behave differently for rectangular matrices and arbitrary functions.</p>
+
+<h2 id="product">16.1 The dimensions specify what can be multiplied <a class="timestamp" href="https://www.youtube.com/watch?v=JGp1ej82CJI&amp;t=48s">Lesson 29 · 00:48</a></h2>
+<p>For matrices $A,B$ of the same size, define $(A+B)_{ij}=a_{ij}+b_{ij}$ and $(cA)_{ij}=ca_{ij}$ for $c\in F$. The zero matrix has every entry zero, and negatives negate entries. The additive laws hold entry by entry in the field.</p>
+<p>If $A$ has size $m\times n$ and $B$ has size $n\times p$, define their <dfn>matrix product</dfn> $AB$ of size $m\times p$ by</p>
+$$(AB)_{ij}=\sum_{k=1}^n a_{ik}b_{kj}.$$
+<p>The inner dimensions must agree. The product $BA$ may be undefined, or have a different size, even when $AB$ is defined. This operation differs from multiplying corresponding entries of same-size arrays.</p>
+<p>Write $A_{i,:}$ for row $i$ and $A_{:,j}$ for column $j$. The definition gives three equivalent pictures:</p>
+$$\begin{aligned}
+(AB)_{ij}&amp;=\sum_k a_{ik}b_{kj},\\
+(AB)_{i,:}&amp;=\sum_k a_{ik}B_{k,:},\\
+(AB)_{:,j}&amp;=\sum_k b_{kj}A_{:,k}.
+\end{aligned}$$
+<p>The row formula follows by comparing each column entry in the row; the column formula follows by comparing each row entry in the column. Thus rows of $AB$ are combinations of rows of $B$, and columns of $AB$ are combinations of columns of $A$. In particular for a column $x\in F^n$, $Ax=\sum_j x_jA_{:,j}$. The notation $Ax=b$ now exactly represents the system of Chapter 15.</p>
+<p>Over $\mathbb C$, the entry formula contains no complex conjugation. Its row-times-column sum is bilinear multiplication, not a positive Hermitian inner product. For example $[1\ i](1,i)^{\mathsf T}=1+i^2=0$ even though the column is nonzero. Here $\mathsf T$ simply turns the written row into a column; a general transpose notation is defined below.</p>
+
+<h2 id="composition">16.2 Products encode successive coordinate functions <a class="timestamp" href="https://www.youtube.com/watch?v=JGp1ej82CJI&amp;t=683s">Lesson 29 · 11:23</a></h2>
+<p>Associate to $A$ the function $T_A:F^n\to F^m$, $T_A(x)=Ax$. If $B$ has size $n\times p$, then for $x\in F^p$ finite distribution gives</p>
+$$\begin{aligned}
+(A(Bx))_i&amp;=\sum_{k=1}^n a_{ik}\sum_{j=1}^p b_{kj}x_j\\
+&amp;=\sum_{j=1}^p\left(\sum_{k=1}^n a_{ik}b_{kj}\right)x_j
+=((AB)x)_i.
+\end{aligned}$$
+<p>Hence $T_{AB}=T_A\circ T_B$. Equality of these coordinate functions determines the matrix: the column $e_j$ with a $1$ at position $j$ and zeros elsewhere satisfies $Ae_j=A_{:,j}$. Equal functions therefore have equal corresponding columns and equal matrices.</p>
+<div class="theorem"><p><strong>Proposition 16.1, proved here.</strong> Compatible matrix multiplication is associative and distributes over addition. For an $m\times n$ matrix, $I_mA=A=AI_n$, where $I_r$ has diagonal entries one and other entries zero.</p></div>
+<div class="proof"><p>For compatible $A,B,C$, the preceding composition identity and associativity of function composition give $T_{(AB)C}=T_A\circ T_B\circ T_C=T_{A(BC)}$. The matrices have the same dimensions, and equality of their functions implies equality of matrices. For distribution, the $ij$ entry of $A(B+C)$ is $\sum_k a_{ik}(b_{kj}+c_{kj})=\sum_k a_{ik}b_{kj}+\sum_k a_{ik}c_{kj}$, the $ij$ entry of $AB+AC$. Expanding $(A+B)C$ gives the other distributive law. Multiplying by the identity matrix selects exactly one summand at each entry, giving the two identity laws. <span class="qed">∎</span></p></div>
+<p>Similarly $(cA)B=c(AB)=A(cB)$ follows by moving a field scalar through the finite sums. Thus the square matrices $M_n(F)$ form a unital ring under addition and multiplication. For $n\ge2$ it is generally noncommutative and has zero divisors. Already at size two,</p>
+$$D=\begin{pmatrix}1&amp;0\\0&amp;0\end{pmatrix},\qquad
+N=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}$$
+<p>give $DN=N$ but $ND=0$, and $N^2=0$ although $N\ne0$. These exact matrices are a counterexample to both unrestricted commutation and nonzero-factor cancellation.</p>
+
+<h2 id="transpose">16.3 Transpose reverses the product order</h2>
+<p>For an $m\times n$ matrix define its <dfn>transpose</dfn> $A^{\mathsf T}$ by $(A^{\mathsf T})_{ji}=a_{ij}$, a matrix of size $n\times m$. Then $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$: its $ij$ entry is $\sum_k a_{jk}b_{ki}=\sum_k b_{ki}a_{jk}$, which is precisely the right-hand product entry. Transpose is not complex conjugation; for a complex matrix it changes positions without changing entries.</p>
+<p>This added notation will let us state row certificates compactly. A coefficient vector $c$ satisfies $c^{\mathsf T}A=0$ when its coefficients combine the rows of $A$ to zero. The same combination of right-hand sides is $c^{\mathsf T}b$.</p>
+
+<h2 id="elementary">16.4 Row operations are left multiplication <a class="timestamp" href="https://www.youtube.com/watch?v=JGp1ej82CJI&amp;t=2577s">Lesson 29 · 42:57</a></h2>
+<p>For an $m$-row matrix $A$, perform one elementary row operation on $I_m$ and call the result $E$. Then $EA$ is exactly the result of that operation on $A$. The row picture proves this: the row of $E$ lists the coefficients with which to combine rows of $A$.</p>
+<p>A swap matrix interchanges rows $i,j$ of $I_m$, so its corresponding output rows select $A_{j,:}$ and $A_{i,:}$. A scaling matrix replaces diagonal entry $i$ by $c\ne0$, selecting $cA_{i,:}$ there. A replacement matrix $I_m+ce_i e_j^{\mathsf T}$, with $i\ne j$, adds the coefficient $c$ at position $(i,j)$, selecting $A_{i,:}+cA_{j,:}$ in row $i$ and leaving the others unchanged.</p>
+<p>These <dfn>elementary matrices</dfn> are invertible. A swap reverses itself; scaling by $c$ reverses by scaling by $c^{-1}$; adding $c$ times row $j$ reverses by adding $-c$ times that same unchanged row. Applying the forward and reverse row operations to an arbitrary matrix, in particular to $I_m$, shows both matrix products equal $I_m$.</p>
+<p>If row operations $E_1,\ldots,E_k$ reduce $A$ to $R$, then</p>
+$$R=E_k\cdots E_2E_1A=PA.$$
+<p>The first operation is the factor nearest $A$. The product $P$ is invertible: multiply the elementary inverses in reverse order to undo all operations. Applied to an augmented system it gives $[PA\mid Pb]$, explaining why the same operations must reach the right-hand side. It also records certificates: if row $i$ of $PA$ vanishes, row $i$ of $P$ gives coefficients annihilating the original rows of $A$. That row of $P$ is nonzero, since a zero row would remain zero in $PP^{-1}$, contradicting $PP^{-1}=I_m$.</p>
+
+<h2 id="inverses">16.5 The general linear group <a class="timestamp" href="https://www.youtube.com/watch?v=JGp1ej82CJI&amp;t=3376s">Lesson 29 · 56:16</a></h2>
+<p>A square $n\times n$ matrix is <dfn>invertible</dfn> if some matrix $B$ satisfies both $AB=I_n$ and $BA=I_n$. Write its unique inverse $A^{-1}$; uniqueness follows from $B=B(AC)=(BA)C=C$ for any two proposed inverses. The set of invertible matrices is the <dfn>general linear group</dfn>, denoted $GL_n(F)$.</p>
+<p>Its multiplication is associative, its identity is $I_n$, and its inverses are included by definition. Closure follows from</p>
+$$(AB)^{-1}=B^{-1}A^{-1},$$
+<p>because $AB(B^{-1}A^{-1})=AIA^{-1}=I$ and $(B^{-1}A^{-1})AB=B^{-1}IB=I$. Thus the monoid-of-units argument previewed in Chapter 5 now applies to actual matrices. The order reversal is essential. Finite products have inverses in the reversed order as well, by induction.</p>
+<p>If $A$ has a zero row, $AB$ has that zero row for every $B$ and cannot equal $I$. If $A$ has a zero column, $BA$ has that zero column for every $B$. Thus either condition rules out invertibility. A matrix can also be singular without any zero row or column, as the equivalent tests below reveal.</p>
+
+<h2 id="equivalences">16.6 Six tests for a square matrix <a class="timestamp" href="https://www.youtube.com/watch?v=qhhtmOt76Pk&amp;t=830s">Lesson 30 · 13:50</a></h2>
+<div class="theorem"><p><strong>Theorem 16.2, proved here.</strong> Let $A\in M_n(F)$ with $n\ge1$. The following are equivalent:</p>
+<ol><li>For every $b\in F^n$, $Ax=b$ has exactly one solution.</li><li>For some $b\in F^n$, $Ax=b$ has exactly one solution.</li><li>$Ax=0$ has only the zero solution.</li><li>$\operatorname{rref}(A)=I_n$.</li><li>$A$ is a finite product of elementary matrices.</li><li>$A$ is invertible.</li></ol></div>
+<div class="proof"><p><strong>1 implies 2:</strong> take $b=0$. <strong>2 implies 3:</strong> let $x_0$ be the unique solution for that $b$. If $Av=0$, distribution gives $A(x_0+v)=Ax_0+Av=b$. Uniqueness forces $x_0+v=x_0$, hence $v=0$.</p>
+<p><strong>3 implies 4:</strong> the homogeneous system is consistent and has only one solution, so Chapter 15 gives no free variables. All $n$ coefficient columns have pivots. With $n$ rows, the reduced matrix therefore has one pivot in each row and column. Each pivot is $1$ and all other pivot-column entries vanish, making the matrix exactly $I_n$.</p>
+<p><strong>4 implies 5:</strong> row reduction gives $E_k\cdots E_1A=I_n$. All elementary matrices are invertible, so multiplying by the inverse product yields $A=E_1^{-1}\cdots E_k^{-1}$. Each inverse is elementary, proving the stated product form. For no operations, the empty product is $I_n$.</p>
+<p><strong>5 implies 6:</strong> a product of invertible matrices is invertible. <strong>6 implies 1:</strong> for every $b$, set $x=A^{-1}b$; then $Ax=AA^{-1}b=b$, proving existence. Any other solution obeys $x=A^{-1}Ax=A^{-1}b$, proving uniqueness. The cycle proves all six statements equivalent. <span class="qed">∎</span></p></div>
+<p>The quantifier in statement2 includes existence, not merely “at most one.” A rectangular matrix may give unique solutions to some consistent systems while missing other right-hand sides. The square shape turns having a pivot in every column into having one in every row as well.</p>
+<p>For a square matrix the RREF is consequently either $I_n$ or has a zero bottom row: fewer than $n$ pivots means fewer than $n$ nonzero rows. This dichotomy is what lets a row-reduction observation decide invertibility without determinants.</p>
+
+<h2 id="one-sided">16.7 A one-sided inverse suffices only with the right setting <a class="timestamp" href="https://www.youtube.com/watch?v=qhhtmOt76Pk&amp;t=1379s">Lesson 30 · 22:59</a></h2>
+<div class="theorem"><p><strong>Corollary 16.3, proved here.</strong> For square matrices $A,B$ of the same finite size, either $AB=I$ or $BA=I$ forces $A,B$ invertible and $B=A^{-1}$.</p></div>
+<div class="proof"><p>If $BA=I$ and $Ax=0$, then $x=BAx=0$. Theorem 16.2 gives invertibility of $A$, and $B=BAA^{-1}=A^{-1}$. If $AB=I$ and $Bx=0$, then $x=ABx=0$, so instead the same theorem gives invertibility of $B$. Then $A=ABB^{-1}=B^{-1}$, which also gives $B=A^{-1}$. <span class="qed">∎</span></p></div>
+<p>As another consequence, if every $b$ admits some solution of $Ax=b$, choose a solution $u_j$ for each standard column $e_j$ and put $B=[u_1\ \cdots\ u_n]$. The column picture gives $AB=I$. The corollary then makes $A$ invertible, proving that existence for every right-hand side already forces uniqueness in a finite square system.</p>
+<p>For rectangular matrices, take $A=[1\ 0]$ and $B=(1,0)^{\mathsf T}$. Then $AB=I_1$, but $BA=\operatorname{diag}(1,0)\ne I_2$. The missing coordinate is exactly the obstruction to reversing the other composition.</p>
+<p>Even among functions of one set, one-sided inverses do not suffice. On $\mathbb N_0$, let $S(n)=n+1$ and $P(0)=0$, $P(n)=n-1$ for $n&gt;0$. Then $P\circ S$ is the identity, but $(S\circ P)(0)=1\ne0$. Thus $P$ has a right inverse $S$ without being invertible. The matrix corollary used finite-size linear algebra, not associativity alone.</p>
+
+<h2 id="compute">16.8 Compute an inverse while reducing the matrix</h2>
+<p>Apply the same row operations to both blocks of $[A\mid I_n]$. If they reduce the left block to $I_n$, their product $P$ gives $[PA\mid P]=[I_n\mid P]$. The theorem then gives $P=A^{-1}$. If the left block cannot acquire $n$ pivots, $A$ is singular; later pivots in the appended identity block do not repair that failure.</p>
+<p>For example with $A=\begin{pmatrix}2&amp;1\\1&amp;1\end{pmatrix}$, swap its two rows in the augmented array, subtract twice the first row from the second, negate the second row, then subtract the second from the first. These operations give</p>
+$$\left[\begin{array}{rr|rr}2&amp;1&amp;1&amp;0\\1&amp;1&amp;0&amp;1\end{array}\right]
+\longrightarrow
+\left[\begin{array}{rr|rr}1&amp;0&amp;1&amp;-1\\0&amp;1&amp;-1&amp;2\end{array}\right].$$
+<p>Hence $A^{-1}=\begin{pmatrix}1&amp;-1\\-1&amp;2\end{pmatrix}$. Multiplication in both orders gives $I_2$, a direct certificate. Solving $Ax=(1,0)^{\mathsf T}$ gives $x=(1,-1)^{\mathsf T}$.</p>
+
+<h2 id="laboratory">16.9 Check shapes, products, and an inverse exactly</h2>
+<pre><code class="language-python">import sympy as sp
+
+A = sp.Matrix([[2, 1], [1, 1]])
+augmented = A.row_join(sp.eye(2))
+reduced, pivots = augmented.rref()
+inverse = reduced[:, 2:]
+assert reduced[:, :2] == sp.eye(2)
+assert A * inverse == inverse * A == sp.eye(2)
+print(inverse)
+print(inverse * sp.Matrix([1, 0]))
+
+L = sp.Matrix([[1, 2, 0], [0, 1, 1]])
+M = sp.Matrix([[1, 0], [2, 1], [0, 3]])
+v = sp.Matrix([2, -1])
+assert (L * M) * v == L * (M * v)
+print((L * M) * v)
+short = sp.Matrix([[1, 0]])
+tall = sp.Matrix([1, 0])
+assert short * tall == sp.eye(1)
+assert tall * short != sp.eye(2)</code></pre>
+<pre class="output">Matrix([[1, -1], [-1, 2]])
+Matrix([[1], [-1]])
+Matrix([[8], [0]])</pre>
+<p>All coefficients are exact integers or rationals. The rectangular products test the dimension-compatible association law, while the final assertions exhibit a one-sided rectangular inverse. Neither assertion relies on a floating-point tolerance.</p>
+
+<h2 id="problems">16.10 Problems with complete solutions</h2>
+<details class="exercise"><summary>Problem 1. Noncommutative arithmetic</summary><p>For the matrices $D,N$ of §16.2, compute $(D+N)^2$ and compare it with $D^2+2DN+N^2$.</p><div class="solution"><p>Distribution gives $(D+N)^2=D^2+DN+ND+N^2=D+N$, because $D^2=D$, $DN=N$, $ND=0$, and $N^2=0$. The proposed commutative-binomial expression is $D+2N$, which differs by $N\ne0$ over every field. The correct general matrix expansion retains $DN+ND$ as separate terms. Chapter 13's binomial theorem assumed commuting factors.</p></div></details>
+<details class="exercise"><summary>Problem 2. Solve a matrix equation with the correct order</summary><p>Let $A,B$ be invertible square matrices and $C$ a same-size matrix. Solve $AYB=C$ uniquely for $Y$.</p><div class="solution"><p>Multiply on the left by $A^{-1}$ and on the right by $B^{-1}$ to obtain $Y=A^{-1}CB^{-1}$. Conversely substituting gives $A(A^{-1}CB^{-1})B=C$, so it exists. Every solution was forced to this value by reversible multiplication, so it is unique. Moving both inverses to the same side or reversing their prescribed sides would generally fail because products do not commute.</p></div></details>
+<details class="exercise"><summary>Problem 3. One consistent system is not enough for rectangular matrices</summary><p>Take $A=(1,0)^{\mathsf T}$ of size $2\times1$. Which right-hand sides give solutions, and when are they unique?</p><div class="solution"><p>For $b=(b_1,b_2)^{\mathsf T}$, the system is $x=b_1$ and $0=b_2$. It is consistent exactly when $b_2=0$, and then the unique solution is $x=b_1$. Thus many right-hand sides have unique solutions, including zero, but $(0,1)^{\mathsf T}$ has none. The square theorem's transition from one uniquely solved right-hand side to all of them fails because the matrix is rectangular.</p></div></details>
+<details class="exercise"><summary>Problem 4. A singular matrix without zero rows or columns</summary><p>Show $A=\begin{pmatrix}1&amp;2\\2&amp;4\end{pmatrix}$ over $\mathbb Q$ is singular and find a nonzero null vector.</p><div class="solution"><p>The second row is twice the first, and subtracting twice the first from it produces a zero row. The resulting RREF has one pivot rather than two, so Theorem 16.2 says $A$ is not invertible. Directly $A(-2,1)^{\mathsf T}=(0,0)^{\mathsf T}$; an inverse would force this nonzero vector to be zero. Every original row and column contains nonzero entries, so absence of a literal zero row or column is insufficient.</p></div></details>
+<details class="exercise"><summary>Problem 5. A matrix whose order depends on the field</summary><p>Let $N=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}$ and $U=I+N$. Prove $U^k=I+kN$ for $k\ge0$, and compare its powers over $\mathbb Q$ and $\mathbb F_2$.</p><div class="solution"><p>The base $k=0$ is $I$. If $U^k=I+kN$, multiplying by $I+N$ gives $I+(k+1)N+kN^2=I+(k+1)N$ because $N^2=0$. Induction proves the formula. Also $(I+N)(I-N)=I$, so $U$ is invertible. Over $\mathbb Q$, different nonnegative $k$ give different upper-right entries and hence distinct powers. Over $\mathbb F_2$, $U^2=I$ because $2N=0$, while $U\ne I$, so its multiplicative group order is two. Integer coefficients act in the chosen field.</p></div></details>
+<details class="exercise"><summary>Problem 6. Transpose an inverse</summary><p>Prove $(A^{\mathsf T})^{-1}=(A^{-1})^{\mathsf T}$ whenever $A$ is invertible.</p><div class="solution"><p>Transpose $AA^{-1}=I$ and use product-order reversal to obtain $(A^{-1})^{\mathsf T}A^{\mathsf T}=I$. Transpose $A^{-1}A=I$ to get $A^{\mathsf T}(A^{-1})^{\mathsf T}=I$. Thus $(A^{-1})^{\mathsf T}$ is a two-sided inverse of $A^{\mathsf T}$ and equals its unique inverse. Both directions were checked explicitly, so no one-sided inverse theorem is needed for this argument.</p></div></details>
+
+<h2 id="references">16.11 Sources and boundaries</h2>
+<p>Lessons 29–30 are the primary sources. Matrix multiplication is justified through both its entry formula and its coordinate-function composition, and every implication in the square-system theorem is proved. Transpose identities and the rectangular and function counterexamples are added teaching developments. No claim about an optimal matrix-multiplication algorithm or a particular hardware implementation follows from these algebraic results.</p>

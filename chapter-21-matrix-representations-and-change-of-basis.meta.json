@@ -1,0 +1,68 @@
+{
+  "order": 21,
+  "title": "Matrix representations and change of basis",
+  "lecture_numbers": [
+    38,
+    39
+  ],
+  "file": "chapter-21-matrix-representations-and-change-of-basis.html",
+  "manuscript": "chapters/ch21.html",
+  "status": "complete; independently reviewed",
+  "chapter": 21,
+  "body_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+  "words_excluding_code": 2111,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 7,
+  "sections": [
+    {
+      "heading": "21.1 Coordinates are a chosen isomorphism Lesson 38 · 01:11",
+      "anchor": "coordinates",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=ZPbv320dTbs&t=71s"
+      ]
+    },
+    {
+      "heading": "21.2 Columns are images of basis vectors Lesson 38 · 27:08",
+      "anchor": "representation",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=ZPbv320dTbs&t=1628s"
+      ]
+    },
+    {
+      "heading": "21.3 Composition forces the multiplication order Lesson 38 · 36:53",
+      "anchor": "composition",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=ZPbv320dTbs&t=2213s"
+      ]
+    },
+    {
+      "heading": "21.4 The identity map changes coordinates Lesson 39 · 02:40",
+      "anchor": "change",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=DYwgO80HY0A&t=160s"
+      ]
+    },
+    {
+      "heading": "21.5 Change the input and output languages separately Lesson 39 · 09:04",
+      "anchor": "two-sided",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=DYwgO80HY0A&t=544s"
+      ]
+    },
+    {
+      "heading": "21.6 Similarity is one operator in two bases Lesson 39 · 22:59",
+      "anchor": "similarity",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=DYwgO80HY0A&t=1379s"
+      ]
+    },
+    {
+      "heading": "21.7 Two proofs that row rank equals column rank Lesson 39 · 37:52",
+      "anchor": "rank",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=DYwgO80HY0A&t=2272s"
+      ]
+    }
+  ]
+}

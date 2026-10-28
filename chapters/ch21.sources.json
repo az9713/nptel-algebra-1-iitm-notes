@@ -1,0 +1,89 @@
+{
+  "chapter": 21,
+  "complete_source_text_reading": [
+    38,
+    39
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "coordinates",
+      "lesson": 38,
+      "start": 71,
+      "end": 1007
+    },
+    {
+      "section": "representation",
+      "lesson": 38,
+      "start": 1007,
+      "end": 2213
+    },
+    {
+      "section": "composition",
+      "lesson": 38,
+      "start": 2213,
+      "end": 2673
+    },
+    {
+      "section": "representation",
+      "lesson": 38,
+      "start": 2673,
+      "end": 3003
+    },
+    {
+      "section": "change",
+      "lesson": 39,
+      "start": 70,
+      "end": 544
+    },
+    {
+      "section": "two-sided",
+      "lesson": 39,
+      "start": 544,
+      "end": 1379
+    },
+    {
+      "section": "similarity",
+      "lesson": 39,
+      "start": 1379,
+      "end": 2149
+    },
+    {
+      "section": "rank",
+      "lesson": 39,
+      "start": 2149,
+      "end": 3496
+    }
+  ],
+  "teaching_constructions": [
+    "Explicit coordinate conversion directions",
+    "Complete map-space isomorphism",
+    "Both rank proofs with omitted basis checks and zero case",
+    "Characteristic-two example boundary",
+    "Six solved problems and exact coordinate lab"
+  ],
+  "scope_decisions": [
+    "Repair source changing indices and direction slips",
+    "Distinguish independent input/output changes from operator similarity",
+    "Same basis on both sides needed for identity operator matrix to be I"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Axler, Linear Algebra Done Right, fourth edition",
+      "url": "https://linear.axler.net/LADR4e.pdf",
+      "sections": [
+        "3C",
+        "3D"
+      ],
+      "printed_pages": [
+        "69–73",
+        "77–80",
+        "82–85"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

@@ -1,0 +1,118 @@
+<h1>15. Linear systems and Gaussian elimination</h1>
+<p class="lead">A system can contain many written equations but few independent constraints. Elimination reveals the difference by replacing equations reversibly until each remaining constraint has a distinct leading variable. The outcome is more informative than a single numerical answer: it identifies inconsistency, forced coordinates, and the parameters that can be chosen freely.</p>
+<p class="source-note">Lessons 27–28 introduce systems over a field and give the row-reduction algorithm. We prove preservation of the full solution set, construct reduced echelon form, and give its uniqueness proof. Examples over the rationals and a two-element field keep the role of the coefficient field explicit.</p>
+
+<h2 id="systems">15.1 Fix the field before solving <a class="timestamp" href="https://www.youtube.com/watch?v=4Bmx287z49E&amp;t=1397s">Lesson 27 · 23:17</a></h2>
+<p>Let $F$ be a field, with $m$ equations and $n$ unknowns. A <dfn>linear system</dfn> is a list</p>
+$$\sum_{j=1}^n a_{ij}x_j=b_i,\qquad i=1,\ldots,m,$$
+<p>where all coefficients $a_{ij}$ and right-hand sides $b_i$ belong to $F$. A solution is a tuple $(x_1,\ldots,x_n)\in F^n$ satisfying every equation simultaneously. The <dfn>solution set</dfn> contains all such tuples. It may be empty; a system with at least one solution is <dfn>consistent</dfn>, otherwise <dfn>inconsistent</dfn>.</p>
+<p>The system is <dfn>homogeneous</dfn> when every $b_i=0$. Then the zero tuple is always a solution. A <dfn>nontrivial solution</dfn> of a homogeneous system means any solution other than that tuple; it does not mean a solution with every coordinate nonzero.</p>
+<p>The base field affects legal divisions and sometimes the number of independent constraints. Over $\mathbb Q$, the equations $x+y+z=0$, $x-y-z=0$ add to $2x=0$, so $x=0$ and the solutions are $(0,t,-t)$. Over $\mathbb F_2$, $2=0$ and $-1=1$; the two equations are the same. Their solutions are $(s+t,s,t)$ with two independent choices. A rational computation dividing by $2$ cannot be reused in a field where that scalar is zero.</p>
+<p>Geometric language provides intuition over real coordinates, but the algebra is broader. A linear equation is one constraint of the displayed form; it need not reduce the number of free choices by one if it repeats information already present or has all coefficients zero. Formal dimension will be defined after vector spaces and bases.</p>
+
+<h2 id="matrices">15.2 Separate coefficients from the right-hand side <a class="timestamp" href="https://www.youtube.com/watch?v=iArOEPpp7mQ&amp;t=57s">Lesson 28 · 00:57</a></h2>
+<p>An <dfn>$m\times n$ matrix</dfn> over $F$ is a rectangular array $A=(a_{ij})$, formally a function $[m]\times[n]\to F$. Its first index specifies a row, its second a column. The coefficient matrix $A$ omits the right-hand side. The <dfn>augmented matrix</dfn> $[A\mid b]$ appends the column $(b_1,\ldots,b_m)$ to it; the vertical line records a semantic boundary, not an extra entry.</p>
+<p>For example over $\mathbb Q$ consider</p>
+$$\begin{aligned}
+x+y+2z+w&amp;=5,\\
+x+y+2z+6w&amp;=10,\\
+x+2y+5z+2w&amp;=7.
+\end{aligned}$$
+<p>Its augmented array is</p>
+$$\left[\begin{array}{rrrr|r}1&amp;1&amp;2&amp;1&amp;5\\1&amp;1&amp;2&amp;6&amp;10\\1&amp;2&amp;5&amp;2&amp;7\end{array}\right].$$
+<p>The columns before the line retain the variable order $x,y,z,w$. Exchanging columns would change which coefficient multiplies which named variable, unless we also track a permutation of the unknowns. Exchanging rows merely reorders the same equations. We use row operations with the unknown order fixed.</p>
+
+<h2 id="row-operations">15.3 Three reversible operations <a class="timestamp" href="https://www.youtube.com/watch?v=iArOEPpp7mQ&amp;t=789s">Lesson 28 · 13:09</a></h2>
+<p>The <dfn>elementary row operations</dfn> are: interchange two rows; multiply one row by $c\ne0$; or replace row $i$ by row $i+c\,\text{row }j$ with $i\ne j$ and any $c\in F$. The last operation leaves row $j$ unchanged. Every entry of an augmented row, including the right-hand side, participates.</p>
+<div class="theorem"><p><strong>Proposition 15.1, proved here.</strong> Each elementary row operation preserves the solution set exactly.</p></div>
+<div class="proof"><p>Interchange only reorders the equations and is its own inverse. Scaling by nonzero $c$ preserves equality, and its inverse scales by $c^{-1}$. For row replacement, any tuple satisfying equations $i$ and $j$ satisfies their indicated sum. Conversely a tuple satisfying the new equation $i$ and unchanged equation $j$ satisfies the old equation $i$ by subtracting $c$ times equation $j$. Thus replacing $i$ by $i-c\,j$ reverses the operation. Every other equation remains unchanged. Both inclusions of the solution sets follow. <span class="qed">∎</span></p></div>
+<p>Scaling by zero is excluded because it destroys information. The condition $i\ne j$ prevents the replacement rule from concealing the same forbidden scaling when $c=-1$. Replacing several rows at once is safe only if the stated sequence and its inverse are justified; individually plausible sums can jointly discard an equation.</p>
+<p>In the example, perform $R_2\leftarrow R_2-R_1$ and $R_3\leftarrow R_3-R_1$, then interchange the last two rows. The result is</p>
+$$\left[\begin{array}{rrrr|r}1&amp;1&amp;2&amp;1&amp;5\\0&amp;1&amp;3&amp;1&amp;2\\0&amp;0&amp;0&amp;5&amp;5\end{array}\right].$$
+<p>Scale the last row by $1/5$, replace the first by its difference with the second, and then subtract the last row from the second. This yields</p>
+$$\left[\begin{array}{rrrr|r}1&amp;0&amp;-1&amp;0&amp;3\\0&amp;1&amp;3&amp;0&amp;1\\0&amp;0&amp;0&amp;1&amp;1\end{array}\right].$$
+<p>Consequently $z=t$ is arbitrary, while $x=3+t$, $y=1-3t$, and $w=1$. Substituting gives the original right-hand sides $5,10,7$ for every $t\in\mathbb Q$. Conversely the reduced equations force exactly these values, so the parameterization is complete.</p>
+
+<h2 id="echelon">15.4 Echelon and reduced echelon forms <a class="timestamp" href="https://www.youtube.com/watch?v=iArOEPpp7mQ&amp;t=1922s">Lesson 28 · 32:02</a></h2>
+<p>The <dfn>leading entry</dfn> of a nonzero row is its first nonzero entry. A matrix is in <dfn>row echelon form</dfn> when zero rows are below all nonzero rows, each succeeding nonzero row's leading entry is strictly farther right, and entries below each leading entry are zero. The leading entries are its <dfn>pivots</dfn>.</p>
+<p>A matrix is in <dfn>reduced row echelon form</dfn>, abbreviated RREF, when in addition every pivot is $1$ and every other entry in a pivot column is zero. We use this standard distinction: ordinary forward Gaussian elimination reaches echelon form; normalization and elimination above pivots complete Gauss–Jordan reduction.</p>
+<p>When the matrix is augmented, a pivot before the final column corresponds to a <dfn>pivot variable</dfn>. Variables whose coefficient columns contain no pivot are <dfn>free variables</dfn>. A pivot in the final augmented column is a contradiction pivot, not a variable. Zero columns in the coefficient block are free-variable columns, even if they occur before the first pivot.</p>
+
+<h2 id="existence">15.5 Every matrix can be reduced <a class="timestamp" href="https://www.youtube.com/watch?v=iArOEPpp7mQ&amp;t=2085s">Lesson 28 · 34:45</a></h2>
+<div class="theorem"><p><strong>Theorem 15.2, proved here.</strong> A finite sequence of elementary row operations transforms any matrix over a field into RREF.</p></div>
+<div class="proof"><p>Process columns from left to right and retain an index $r$ of the next available pivot row, initially the first row. If a column has no nonzero entry in rows $r$ and below, skip it. Otherwise swap one such nonzero entry into row $r$, divide that row by its nonzero pivot, and subtract suitable multiples of it from every other row to clear the entire pivot column.</p>
+<p>Earlier pivot columns remain unchanged. The new pivot row has zeros in them, because it came from the unprocessed rows in which earlier pivot columns were cleared. Subtracting this row therefore changes none of those columns. Earlier skipped columns are zero in all unprocessed rows and remain so after operations among them. Thus the new pivot is the first nonzero entry of its row, and pivot positions advance strictly rightward as $r$ advances downwards.</p>
+<p>After finitely many columns are processed, or all rows have pivots, the remaining unprocessed rows are zero: any nonzero entry would have been found when its column was processed. They lie below the pivot rows. Each pivot is normalized and isolated in its column, proving RREF. At most $\min(m,n)$ pivot steps occur for an $m\times n$ matrix, with finitely many row operations per step. <span class="qed">∎</span></p></div>
+<p>The argument works on an augmented matrix as on any rectangular array. It does not promise that a pivot exists in every column or every row. A completely zero matrix is already reduced, with no pivots.</p>
+
+<h2 id="uniqueness">15.6 Why the reduced result is unique</h2>
+<p>A <dfn>linear combination of rows</dfn> is a sum $c_1R_1+\cdots+c_mR_m$ with coefficients in $F$. The set of all such sums is unchanged by elementary row operations: each new row is a combination of old rows, and the inverse operation expresses each old row as a combination of new rows. Substitution then gives both inclusions of the two combination sets.</p>
+<div class="theorem"><p><strong>Theorem 15.3, proved here.</strong> Two RREF matrices of the same size obtained from one matrix by row operations are identical.</p></div>
+<div class="proof"><p>In an RREF matrix, the first nonzero position of a nonzero row combination is a pivot column. Indeed choose the first row whose coefficient in the combination is nonzero. Its pivot entry survives, all preceding entries in that row and later rows are zero, and all earlier row coefficients are zero. Conversely each pivot position occurs as the first nonzero position of its own row. Therefore the combination set determines the complete ordered list of pivot columns.</p>
+<p>Let $R,S$ be the two reduced matrices. They have the same combination set and consequently the same pivot columns and number of nonzero rows. For a nonzero row index $i$, the difference between row $i$ of $R$ and row $i$ of $S$ belongs to this common set. At every pivot column its entry is zero, because both rows have a $1$ at the $i$th pivot and zero at the others. If this difference were nonzero, the preceding paragraph would force its leading position to be a pivot column with nonzero entry, a contradiction. Thus the corresponding rows are equal; remaining rows in both matrices are zero. <span class="qed">∎</span></p></div>
+<p>RREF is unique even though the sequence of row operations need not be. A mere echelon form is generally not unique because its pivots need not be normalized or cleared above. We may therefore write $\operatorname{rref}(A)$ unambiguously.</p>
+
+<h2 id="solutions">15.7 Read every solution, including finite-field counts <a class="timestamp" href="https://www.youtube.com/watch?v=iArOEPpp7mQ&amp;t=2604s">Lesson 28 · 43:24</a></h2>
+<div class="theorem"><p><strong>Theorem 15.4, proved here.</strong> A system is inconsistent exactly when its reduced augmented matrix has a row $[0\ \cdots\ 0\mid1]$. Otherwise, if there are $r$ coefficient pivots among $n$ variables, its solutions are in bijection with $F^{n-r}$.</p></div>
+<div class="proof"><p>The displayed row asserts $0=1$, impossible in a field. Since row operations preserve solutions, it prevents an original solution too. Conversely, if no such row occurs, every nonzero row has a coefficient pivot. Choose arbitrary values for all $n-r$ free variables. In each nonzero row the pivot variable has coefficient $1$, all other pivot variables have coefficient zero, and the remaining terms involve only free variables. Moving those terms to the right determines that pivot variable uniquely. Zero rows assert $0=0$. Thus every free assignment gives exactly one solution. Every solution has a free assignment and must have these forced pivot values, proving both onto and one-to-one parameterization. <span class="qed">∎</span></p></div>
+<p>A consistent system has a unique solution exactly when $r=n$. Otherwise it has infinitely many solutions if $F$ is infinite. If $F$ has $q$ elements, it has exactly $q^{n-r}$ solutions, because each free coordinate has $q$ independent choices. When there are no free variables, $F^0$ consists of the one empty assignment, correctly giving one solution.</p>
+<p>A homogeneous system is always consistent, so if $n&gt;m$, at least one variable is free: there are at most $m$ pivots. Set one free variable to $1$ and all other free variables to zero; the resulting solution is nontrivial over every field. Over a finite field this produces multiple solutions, not infinitely many.</p>
+
+<h2 id="certificates">15.8 Inconsistency comes with a row-combination certificate <a class="timestamp" href="https://www.youtube.com/watch?v=iArOEPpp7mQ&amp;t=3697s">Lesson 28 · 61:37</a></h2>
+<p>Each reduced augmented row is a linear combination of the original augmented rows. An inconsistency row therefore provides coefficients $c_i$ with $\sum_i c_i a_{ij}=0$ for every variable column $j$, but $\sum_i c_i b_i=1$. A hypothetical solution multiplied into the first equations would then imply $0=1$. This is an independently checkable certificate that no solution exists.</p>
+<p>The coefficients are not all zero, because their right-hand combination is $1$. Thus inconsistency requires a nontrivial combination of coefficient rows equal to zero. Such a row relation does not by itself prove inconsistency: the same combination of right-hand sides might also be zero, as it always is for a homogeneous system. The distinction anticipates linear dependence, but uses only finite combinations and reversible equations here.</p>
+<p>For example $x+2y=3$, $2x+4y=7$ give twice the first coefficient row minus the second equal to zero, while twice its right-hand side minus the second is $6-7=-1\ne0$. The equally dependent system with second right-hand side $6$ is consistent. A zero coefficient row alone is a warning to inspect the augmented entry, not a conclusion.</p>
+
+<h2 id="laboratory">15.9 Implement the algorithm with exact fractions</h2>
+<pre><code class="language-python">from fractions import Fraction
+
+
+def rref(rows):
+    A = [[Fraction(x) for x in row] for row in rows]
+    if not A:
+        return A, []
+    row_count, columns = len(A), len(A[0])
+    assert all(len(row) == columns for row in A)
+    r, pivots = 0, []
+    for col in range(columns):
+        pivot = next((i for i in range(r, row_count) if A[i][col]), None)
+        if pivot is None:
+            continue
+        A[r], A[pivot] = A[pivot], A[r]
+        scale = A[r][col]
+        A[r] = [x / scale for x in A[r]]
+        for i in range(row_count):
+            if i != r:
+                scale = A[i][col]
+                A[i] = [x - scale * y for x, y in zip(A[i], A[r])]
+        pivots.append(col)
+        r += 1
+        if r == row_count:
+            break
+    return A, pivots
+
+
+original = [[1, 1, 2, 1, 5], [1, 1, 2, 6, 10], [1, 2, 5, 2, 7]]
+reduced, pivots = rref(original)
+assert reduced == [[1, 0, -1, 0, 3], [0, 1, 3, 0, 1],
+                   [0, 0, 0, 1, 1]]
+assert rref(reduced)[0] == reduced
+print(pivots)
+for row in reduced:
+    print([str(x) for x in row])</code></pre>
+<pre class="output">[0, 1, 3]
+['1', '0', '-1', '0', '3']
+['0', '1', '3', '0', '1']
+['0', '0', '0', '1', '1']</pre>
+<p>The implementation includes the augmented column in the reduction. A final-column pivot can therefore signal inconsistency; it must not be reported as a variable. Exact fractions verify the algebraic algorithm. Large floating-point systems require numerical considerations, such as pivot selection and error control, beyond this exact-arithmetic proof.</p>
+
+<h2 id="problems">15.10 Problems with complete solutions</h2>
+<details class="exercise"><summary>Problem 1. Adding equations can lose information</summary><p>Starting from $x=1,y=2$, replace both equations by $x+y=3$. Is this a valid row reduction?</p><div class="solution"><p>No. The original system has the unique solution $(1,2)$; the new repeated equation also permits $(0,3)$ and every $(t,3-t)$. Each new equation is a combination of original equations, so every original solution survives, but the converse fails. The simultaneous operation has discarded the independent difference information. Valid elementary replacement retains the other row unchanged, making subtraction recover the replaced equation.</p></div></details>
+<details class="exercise"><summary>Problem 2. The coefficient field changes a conclusion</summary><p>Solve $x+y+z=0$, $x-y-z=0$ over $\mathbb Q$ and over $\mathbb F_2$, and count the latter solutions.</p><div class="solution"><p>Over $\mathbb Q$, adding gives $2x=0$, so $x=0$, and then $y=-z$. The solution set is $(0,t,-t)$. Over $\mathbb F_2$, minus equals plus and both equations coincide. Choose $y=s,z=t$ freely; then $x=s+t$, giving four solutions, since $s,t$ each have two choices. They are $(0,0,0),(1,1,0),(1,0,1),(0,1,1)$. Dividing by $2$ in the second field would be dividing by zero.</p></div></details>
+<details class="exercise"><summary>Problem 3. Read a larger parameterization</summary><p>A reduced system in variables $x,y,z,w,v$ has equations $x+2z-v=3$, $y-z+2v=0$, $w+4v=5$. Give all rational solutions.</p><div class="solution"><p>The pivot variables are $x,y,w$, while $z,v$ are free. Put $z=s,v=t$. The rows force $x=3-2s+t$, $y=s-2t$, and $w=5-4t$. Thus every solution is $(3-2s+t,s-2t,s,5-4t,t)$ for $s,t\in\mathbb Q$. Substitution verifies each equation; conversely the free coordinates recover $s,t$ uniquely from every solution. Therefore the parameterization is a bijection with $\mathbb Q^2$.</p></div></details>
+<details class="exercise"><summary>Problem 4. Count finite-field solutions</summary><p>A consistent system over a field with three elements has seven variables and four coefficient pivots. How many solutions does it have? What if it is inconsistent?</p><div class="solution"><p>There are $7-4=3$ free coordinates. Each has three choices and every assignment determines one solution, so there are $3^3=27$ solutions. If the augmented matrix has a contradiction row, there are zero solutions regardless of its number of free columns. Counting parameters presupposes consistency.</p></div></details>
+<details class="exercise"><summary>Problem 5. More variables than equations</summary><p>Prove every homogeneous system of two equations in three variables over an arbitrary field has a nontrivial solution.</p><div class="solution"><p>At most two rows can carry coefficient pivots, so among three variable columns at least one is free. The homogeneous system is consistent because zero solves it. Set one free coordinate to $1$ and any other free coordinates to zero, then solve the pivot coordinates from RREF. The resulting tuple has that free coordinate equal to $1\ne0$, so it is nontrivial. No infinitude of the field is required.</p></div></details>
+<details class="exercise"><summary>Problem 6. Verify an inconsistency certificate</summary><p>For $x+y=1$, $2x-y=0$, $3x=2$ over $\mathbb Q$, find a row combination proving inconsistency.</p><div class="solution"><p>Add the first two equations and subtract the third. Their left sides give $(x+y)+(2x-y)-3x=0$, while the right sides give $1+0-2=-1$. Thus the coefficients $(1,1,-1)$ annihilate all variable coefficients but not the right-hand side. A solution would imply $0=-1$, impossible. Scaling this combination by $-1$ would give the normalized contradiction row $0=1$.</p></div></details>
+
+<h2 id="references">15.11 Sources and boundaries</h2>
+<p>Lessons 27–28 supply the systems, row operations, echelon construction, and solution classification. The uniqueness and certificate arguments are completed here. The examples and executable implementation use exact rational arithmetic unless another field is stated. Numerical stability, sparse solvers, and conditioning are not inferred from the exact row-operation proof.</p>

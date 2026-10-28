@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; object-src 'none'">
+<meta name="description" content="Independent transcript-grounded Algebra 1 textbook: proofs, worked examples, exercises, and offline mathematics.">
+<title>Division, greatest common divisors, and Euclid · Algebra 1: Foundations</title><link rel="stylesheet" href="assets/book.css">
+<script src="assets/math-config.js"></script><script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script><script defer src="assets/lab.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Algebra 1: Foundations · NPTEL</a><nav class="course-nav" aria-label="Book"><a href="index.html">Chapters</a><a href="book-overview.html">Study guide</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Algebra laboratory</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>10. Division, greatest common divisors, and Euclid</h1>
+<p class="lead">The integer equation $252x+105y=21$ has the solution $x=-2,y=5$. The same computation that finds these coefficients proves that $21$ is the greatest common divisor. This is the useful feature of Euclid's algorithm: it returns a value together with an equation that certifies it, and that equation turns divisibility arguments into algebra.</p>
+<p class="source-note">Lesson 20 covers a large arc, from divisibility through prime factorization. We retain that arc, prove the boundary cases explicitly, and carry the factorization theorem forward into Chapter 11's congruences. Throughout this chapter divisors are nonzero, matching the course convention; the greatest common divisor is defined only when the inputs are not both zero.</p>
+
+<h2 id="divisibility">10.1 Divisibility is an equation <a class="timestamp" href="https://www.youtube.com/watch?v=jqHwnnFXZ1k&amp;t=74s">Lesson 20 · 01:14</a></h2>
+<p>For integers $m\ne0$ and $n$, write $m\mid n$ when $n=mq$ for some integer $q$. Say $m$ <dfn>divides</dfn> $n$; otherwise write $m\nmid n$. This does not require a reciprocal for $m$ inside the integers. Every nonzero integer divides $0$ because $0=m0$, and $1$ and $-1$ divide every integer.</p>
+<p>If $m\mid n$ and $n\mid p$, write $n=mu,p=nv$ to get $p=m(uv)$, proving transitivity. Replacing the signs of the divisor or dividend changes only the sign of the witnessing quotient. If $m\mid a$ and $m\mid b$, writing $a=mu,b=mv$ gives</p>
+$$ax+by=m(ux+vy),$$
+<p>so $m$ divides every <dfn>integer linear combination</dfn> $ax+by$, where $x,y\in\mathbb Z$.</p>
+<p>If $m\mid n$ and $n\ne0$, then $|m|\le|n|$. Indeed $n=mq$ forces $q\ne0$, hence $|q|\ge1$ by the least-positive-integer property. Thus $|n|=|m||q|\ge|m|$. The nonzero condition on $n$ matters: $100\mid0$ but $100\nleq0$. Consequently the only divisors of $1$ are $\pm1$, and if nonzero $m,n$ divide each other, then $|m|=|n|$, giving $m=\pm n$.</p>
+
+<h2 id="primes">10.2 Least divisors and an inexhaustible supply of primes <a class="timestamp" href="https://www.youtube.com/watch?v=jqHwnnFXZ1k&amp;t=1203s">Lesson 20 · 20:03</a></h2>
+<p>A <dfn>prime</dfn> is an integer $p&gt;1$ whose only positive divisors are $1,p$. An integer greater than $1$ that is not prime is <dfn>composite</dfn>. The condition $p&gt;1$ excludes the unit $1$.</p>
+<div class="theorem"><p><strong>Proposition 10.1, proved here.</strong> Every integer $n&gt;1$ has a prime divisor. For any finite list of primes there is another prime outside that list.</p></div>
+<div class="proof"><p>The set of positive divisors of $n$ greater than $1$ is nonempty because it contains $n$. Let $p$ be its least element. If $p$ were composite, it would have a divisor $d$ with $1&lt;d&lt;p$; transitivity would give $d\mid n$, contradicting minimality. Thus $p$ is prime.</p>
+<p>For a finite list $p_1,\ldots,p_k$, form $M=p_1\cdots p_k+1$. The empty list uses product $1$, giving $M=2$; otherwise $M&gt;1$ as well. Choose a prime divisor $q$ of $M$. None of the listed $p_i$ divides $M$: it divides $M-1$, so dividing $M$ also would force it to divide $1$, impossible for a prime. Therefore $q$ is outside the list. <span class="qed">∎</span></p></div>
+<p>This gives infinitely many primes, because no finite list can exhaust them. It does not claim that the product-plus-one number $M$ is prime. For example $2\cdot3\cdot5\cdot7\cdot11\cdot13+1=30031=59\cdot509$ is composite. Both prime factors lie outside the original list. Repeatedly choosing the least prime divisor of the next product-plus-one gives a specified recursion producing distinct primes; no arbitrary infinite selections are required.</p>
+
+<h2 id="division">10.3 Division with a unique nonnegative remainder <a class="timestamp" href="https://www.youtube.com/watch?v=jqHwnnFXZ1k&amp;t=2351s">Lesson 20 · 39:11</a></h2>
+<div class="theorem"><p><strong>Theorem 10.2, division algorithm, proved here.</strong> For integers $a$ and $b&gt;0$, there are unique integers $q,r$ such that $a=bq+r$ and $0\le r&lt;b$.</p></div>
+<div class="proof"><p>Consider $T=\{a-bq:q\in\mathbb Z,\ a-bq\ge0\}$. It is nonempty. For $a\ge0$, take $q=0$. For $a&lt;0$, take $q=a$; since $b\ge1$, $a-ba=a(1-b)\ge0$. Every nonempty subset of $\mathbb N_0$ has a least member: choose zero if present, otherwise use well-ordering in $\mathbb N$. Let $r=a-bq$ be the least member of $T$. If $r\ge b$, then $r-b=a-b(q+1)\ge0$ is a smaller member, a contradiction. Therefore $0\le r&lt;b$.</p>
+<p>If also $a=bq'+r'$ with the same remainder bounds, subtract to get $b(q-q')=r'-r$. If $q\ne q'$, then $|q-q'|\ge1$, so the left side has absolute value at least $b$. But $0\le r,r'&lt;b$ gives $|r'-r|&lt;b$. Thus $q=q'$ and then $r=r'$. <span class="qed">∎</span></p></div>
+<p>For example $7=3\cdot2+1$, whereas $-7=3\cdot(-3)+2$. The expression $-7=3\cdot(-2)-1$ is an integer equality but its negative remainder violates the theorem's convention. If $-a=bq+r$ is already known and $a&lt;0$, then $r=0$ gives $a=b(-q)$; when $r&gt;0$, use $a=b(-q-1)+(b-r)$. The two cases explain the adjustment required when changing the dividend's sign.</p>
+<p>The remainder is zero exactly when $b\mid a$. The theorem is traditionally called an algorithm even though the proof above establishes existence and uniqueness rather than prescribing an efficient implementation. Repeated division becomes a concrete terminating procedure in the next section.</p>
+
+<h2 id="gcd">10.4 Define a greatest common divisor by what divides it <a class="timestamp" href="https://www.youtube.com/watch?v=jqHwnnFXZ1k&amp;t=3558s">Lesson 20 · 59:18</a></h2>
+<div class="definition"><p>For integers $a,b$ not both zero, their <dfn>greatest common divisor</dfn> is a positive integer $d$ such that $d\mid a,d\mid b$, and every common divisor $c$ of $a,b$ divides $d$. Denote it $\gcd(a,b)$ once existence is proved.</p></div>
+<p>The definition implies numerical greatness: any positive common divisor $c$ divides the nonzero $d$, so $c\le d$. It gives uniqueness too: two positive candidates divide each other and therefore are equal. We have not assumed that a numerically largest common divisor automatically has the stronger divisibility property; the construction will establish both.</p>
+<p>For $a\ne0$, $\gcd(a,0)=|a|$: this positive number divides both inputs, and every divisor of $a$ divides its absolute value. The common-divisor sets are unchanged by exchanging $a,b$ or changing either sign. Finally, for every integer $q$, the pairs $(a,b)$ and $(b,a-qb)$ have exactly the same common divisors. One direction follows because a common divisor divides the combination $a-qb$; the other follows from $a=(a-qb)+qb$.</p>
+
+<h2 id="euclid">10.5 Euclid's algorithm: an invariant and a decreasing quantity <a class="timestamp" href="https://www.youtube.com/watch?v=jqHwnnFXZ1k&amp;t=4184s">Lesson 20 · 69:44</a></h2>
+<p>Begin with $(A,B)=(|a|,|b|)$. If $B=0$, output $A$. Otherwise divide $A=qB+r$ with $0\le r&lt;B$, replace $(A,B)$ by $(B,r)$, and repeat. The <dfn>invariant</dfn> is the common-divisor set, unchanged by each replacement. The decreasing quantity is the positive second coordinate whenever another step is needed.</p>
+<div class="theorem"><p><strong>Theorem 10.3, proved here.</strong> This procedure terminates and outputs $\gcd(a,b)$.</p></div>
+<div class="proof"><p>An infinite continuation would give a strictly decreasing sequence of positive second coordinates. Its set of values would have a least member by well-ordering, yet the next step would give a smaller one, a contradiction. Therefore some second coordinate becomes zero. Since the original inputs were not both zero, the resulting first coordinate $d$ is positive. It is the greatest common divisor of $(d,0)$ by the preceding section. Invariance of the common-divisor set makes it a common divisor of the original pair and makes every original common divisor divide it. Thus it satisfies the definition. <span class="qed">∎</span></p></div>
+<p>For the source's example,</p>
+$$252=2(105)+42,\qquad105=2(42)+21,\qquad42=2(21)+0.$$
+<p>The last nonzero remainder is $21$. The invariant proves the answer; the strictly decreasing remainders prove termination. These are different obligations in an algorithm proof.</p>
+
+<h2 id="bezout">10.6 Bézout coefficients are a certificate <a class="timestamp" href="https://www.youtube.com/watch?v=jqHwnnFXZ1k&amp;t=4802s">Lesson 20 · 80:02</a></h2>
+<div class="theorem"><p><strong>Theorem 10.4, Bézout identity, proved here.</strong> There are integers $x,y$ such that $\gcd(a,b)=ax+by$.</p></div>
+<div class="proof"><p>Initially $|a|$ and $|b|$ are integer combinations of $a,b$, using coefficients $1$ or $-1$ according to their signs, or zero for a zero input. If $A=ax+by$ and $B=au+bv$, then the next remainder is $A-qB=a(x-qu)+b(y-qv)$. Induction shows that every new remainder and each coordinate is an integer combination of the original inputs. In particular the final positive coordinate $d$ is such a combination. <span class="qed">∎</span></p></div>
+<p>Back-substitution in the example gives $21=105-2(42)=105-2(252-2(105))=-2(252)+5(105)$. The coefficients are not unique: replacing $x,y$ by $x+5t,y-12t$ keeps this combination unchanged.</p>
+<p>There is also a short existence proof organized around combinations. The set of positive combinations $ax+by$ is nonempty because at least one of $|a|,|b|$ is positive. Let its least member be $d$. Dividing $a$ by $d$ produces $r=a-qd$, another combination, with $0\le r&lt;d$. If $r&gt;0$ it contradicts minimality, so $d\mid a$; the same proof gives $d\mid b$. Every common divisor divides the combination $d$, making it the gcd. This proof establishes existence and Bézout together; the algorithm additionally computes the coefficients.</p>
+<p>Call $a,b$ <dfn>coprime</dfn>, or relatively prime, when $\gcd(a,b)=1$. By the theorem this is equivalent to the existence of $ax+by=1$. Conversely, if that equation holds, their positive gcd divides $1$ and hence equals $1$.</p>
+
+<h2 id="euclid-lemma">10.7 Coprimality permits a special cancellation <a class="timestamp" href="https://www.youtube.com/watch?v=jqHwnnFXZ1k&amp;t=5264s">Lesson 20 · 87:44</a></h2>
+<div class="theorem"><p><strong>Proposition 10.5, proved here.</strong> If $a\ne0$, $a\mid bc$, and $\gcd(a,b)=1$, then $a\mid c$. For a positive integer $p&gt;1$, being prime is equivalent to satisfying $p\mid uv\Rightarrow p\mid u$ or $p\mid v$ for every pair of integers $u,v$.</p></div>
+<div class="proof"><p>Choose $x,y$ with $ax+by=1$ and multiply by $c$: $c=acx+bcy$. Both terms on the right are divisible by $a$, so $a\mid c$.</p>
+<p>If $p$ is prime and $p\nmid u$, its positive common divisor with $u$ cannot be $p$, so $\gcd(p,u)=1$. The first statement applied to $p\mid uv$ gives $p\mid v$. Conversely, suppose the product property holds and $d$ is a positive divisor of $p$. Write $p=de$ with $e&gt;0$. Since $p\mid de$, either $p\mid d$ or $p\mid e$. In the first case $d\mid p$ and positivity force $d=p$. In the second case $e\mid p$ and positivity force $e=p$, then cancellation in $p=dp$ gives $d=1$. Thus $p$ has only positive divisors $1,p$ and is prime. <span class="qed">∎</span></p></div>
+<p>The prime product property is often called <dfn>Euclid's lemma</dfn>. Induction extends it to any nonempty finite product: apply the two-factor statement to the first factor and the remaining product, and continue on the shorter list. This proof uses Bézout, not unique prime factorization, so it can safely be used to prove uniqueness next.</p>
+
+<h2 id="factorization">10.8 Existence and uniqueness of prime factorization <a class="timestamp" href="https://www.youtube.com/watch?v=jqHwnnFXZ1k&amp;t=5612s">Lesson 20 · 93:32</a></h2>
+<div class="theorem"><p><strong>Theorem 10.6, fundamental theorem of arithmetic, proved here.</strong> Every integer $n&gt;1$ is a finite product of positive primes. The list of primes is unique up to permutation, including its length and repeated factors.</p></div>
+<div class="proof"><p><strong>Existence:</strong> use strong induction on $n\ge2$. If $n$ is prime, its one-term product suffices. Otherwise write $n=uv$ with $1&lt;u&lt;n$ and $1&lt;v&lt;n$; a nontrivial positive divisor supplies $u$, and the quotient $v$ has these bounds because $u&gt;1$. By the strong induction hypothesis both $u,v$ are prime products, and concatenating their lists gives one for $n$. The base $n=2$ is prime because there is no integer strictly between $1$ and $2$.</p>
+<p><strong>Uniqueness:</strong> suppose $p_1\cdots p_r=q_1\cdots q_s$ are two prime products. The prime $p_1$ divides the product on the right, so Euclid's lemma gives $p_1\mid q_j$ for some $j$, hence $p_1=q_j$ by primality of $q_j$. Reorder the right list to put that factor first and cancel the common nonzero factor. Repeat this argument, or induct on $r$. When one list is exhausted its remaining product is $1$, the empty-product convention. A nonempty product of positive primes is at least $2$, by positivity and induction on its length, so the other list must also be exhausted. Thus $r=s$ and all factors have been paired with equal factors. <span class="qed">∎</span></p></div>
+<p>For $1$ the prime product is empty; negative nonzero integers add a sign $-1$ to the factorization of their absolute value. Zero has no finite prime factorization, because a product of nonzero integers is nonzero in an integral domain. Chapter 11 will use the theorem to organize divisibility and congruence computations.</p>
+
+<h2 id="laboratory">10.9 Execute the coefficient invariant</h2>
+<pre><code class="language-python">from math import gcd
+
+
+def extended_gcd(a, b):
+    old_r, r = abs(a), abs(b)
+    old_x, x, old_y, y = 1, 0, 0, 1
+    while r:
+        q = old_r // r
+        old_r, r = r, old_r - q * r
+        old_x, x = x, old_x - q * x
+        old_y, y = y, old_y - q * y
+    old_x *= -1 if a &lt; 0 else 1
+    old_y *= -1 if b &lt; 0 else 1
+    return old_r, old_x, old_y
+
+
+checked = 0
+for a in range(-20, 21):
+    for b in range(-20, 21):
+        if a == b == 0:
+            continue
+        d, x, y = extended_gcd(a, b)
+        assert d == gcd(a, b) and d == a * x + b * y
+        checked += 1
+print(extended_gcd(252, 105))
+print(checked)
+print(divmod(-7, 3))</code></pre>
+<pre class="output">(21, -2, 5)
+1680
+(-3, 2)</pre>
+<p>The coefficient updates encode exactly the proof of Theorem 10.4. The tested input grid includes zero coordinates and both signs; it excludes $(0,0)$ because this chapter requires a positive gcd. Python's positive-divisor remainder convention matches Theorem 10.2.</p>
+
+<h2 id="problems">10.10 Problems with complete solutions</h2>
+<details class="exercise"><summary>Problem 1. Signed division</summary><p>Find the quotient and remainder when $-100$ is divided by $7$.</p><div class="solution"><p>We have $-100=7(-15)+5$, and $0\le5&lt;7$. Thus $q=-15,r=5$. The tempting expression $-100=7(-14)-2$ has a negative remainder and does not satisfy the theorem. Uniqueness of the permitted pair excludes any other answer.</p></div></details>
+<details class="exercise"><summary>Problem 2. A gcd with a certificate</summary><p>Compute $\gcd(391,299)$ and express it as a combination of the inputs.</p><div class="solution"><p>Division gives $391=299+92$, $299=3(92)+23$, and $92=4(23)$. Thus the gcd is $23$. Substitution gives $23=299-3(92)=299-3(391-299)=4(299)-3(391)$. The number $23$ divides both inputs, while every common divisor divides this displayed combination, verifying the defining universal property.</p></div></details>
+<details class="exercise"><summary>Problem 3. When does an integer linear equation have a solution?</summary><p>For $a,b$ not both zero, prove $ax+by=c$ has an integer solution exactly when $\gcd(a,b)\mid c$.</p><div class="solution"><p>Write $d=\gcd(a,b)$. If the equation has a solution, $d$ divides its two summands and therefore divides $c$. Conversely write $c=dt$ and choose $u,v$ with $au+bv=d$ by Bézout. Then $x=tu,y=tv$ gives $ax+by=td=c$. This proof also constructs a solution from the extended algorithm; it does not require guessing coefficients.</p></div></details>
+<details class="exercise"><summary>Problem 4. All solutions of the running equation</summary><p>Find every integer solution of $252x+105y=21$.</p><div class="solution"><p>Dividing by $21$ gives $12x+5y=1$, with known solution $(-2,5)$. Subtract its equation to get $12(x+2)+5(y-5)=0$. Thus $5\mid12(x+2)$, and $\gcd(5,12)=1$ gives $5\mid x+2$ by Proposition 10.5. Write $x+2=5t$. Substitution yields $y-5=-12t$. Every solution is therefore $x=-2+5t,y=5-12t$ for $t\in\mathbb Z$. Conversely these values give $12x+5y=-24+60t+25-60t=1$, so all are valid.</p></div></details>
+<details class="exercise"><summary>Problem 5. Why primality cannot be omitted</summary><p>Give $d,u,v$ with $d\mid uv$ but $d\nmid u$ and $d\nmid v$. Identify the missing hypothesis in a proposed cancellation.</p><div class="solution"><p>Take $d=6,u=2,v=3$. Then $uv=6$, so $6\mid uv$, while neither $2$ nor $3$ is divisible by $6$, using the nonzero divisibility bound. Here $6$ is composite, so Euclid's prime lemma is unavailable. Also $\gcd(6,2)=2\ne1$, so the more general coprime cancellation statement is unavailable. A divisibility relation is not an equality with a legally cancellable nonzero factor.</p></div></details>
+<details class="exercise"><summary>Problem 6. Unique factorization counts divisors</summary><p>Determine all positive divisors of $72$ and justify that your list is complete.</p><div class="solution"><p>The factorization is $72=2^3 3^2$. If $d\mid72$, write $72=de$ with $d,e&gt;0$. Unique factorization forces every prime of $d$ to be $2$ or $3$, with its exponents at most $3$ and $2$ respectively. Conversely every $2^i3^j$ with $0\le i\le3$, $0\le j\le2$ divides $72$, with quotient $2^{3-i}3^{2-j}$. The resulting twelve distinct values, in increasing order, are $1,2,3,4,6,8,9,12,18,24,36,72$. Distinct exponent pairs give distinct divisors by uniqueness, which proves both completeness and the count.</p></div></details>
+
+<h2 id="references">10.11 References and boundaries</h2>
+<p>Lesson 20 is the primary source. Judson's <a href="https://judsonbooks.org/aata-files/aata-20260811.pdf">Abstract Algebra: Theory and Applications</a>, §2.2, printed pp.21–24, independently supplies division, gcd/Bézout, Euclid's lemma, and prime factorization. The code tests exact arithmetic on a finite grid; general correctness rests on the proved invariant and termination argument. No prime-generation complexity or closed-form claim is needed here.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-09-cardinality-and-the-limits-of-enumeration.html">Previous chapter</a><a href="index.html">Chapter index</a><a rel="next" href="chapter-11-congruences-and-prime-factorization.html">Next chapter</a></nav></main></div>
+<footer class="site-footer">Independent educational edition of Jaikrishnan J's NPTEL course, IIT Palakkad; coordinating institution IIT Madras. Recordings determine topic order. Added proofs, examples, code, and exercises are original teaching material. Attribution does not imply endorsement. <a href="WORKFLOW.md">Workflow</a> · <a href="source-manifest.json">Source inventory</a> · <a href="validation/summary.json">Validation</a>.</footer></body></html>

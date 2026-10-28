@@ -1,0 +1,2534 @@
+{
+  "schema_version": 1,
+  "scope": "Full extracted-caption reading, section provenance and independent teaching developments; raw sources excluded.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "complete_source_text_reading": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "source_topics": [
+        {
+          "lesson": 0,
+          "start": 16,
+          "end": 485,
+          "topic": "Course scope, foundations, linear algebra, proof practice; previews of later courses"
+        },
+        {
+          "lesson": 1,
+          "start": 16,
+          "end": 959,
+          "topic": "Objects, properties, proof, abstraction, role of exercises and applications"
+        },
+        {
+          "lesson": 2,
+          "start": 16,
+          "end": 1457,
+          "topic": "Naive sets, membership, equality, inclusion, set-builder notation, number sets, empty set"
+        },
+        {
+          "lesson": 3,
+          "start": 16,
+          "end": 1600,
+          "topic": "Statements, connectives, material implication and causation, truth tables, predicates, quantifiers, negation, double negation, order"
+        }
+      ],
+      "teaching_constructions": [
+        "Two-symbol output specification",
+        "Exhaustive acceptability-table enumeration",
+        "Six worked problems"
+      ],
+      "scope_decisions": [
+        "Motivational historical anecdotes and application forecasts are not reproduced as verified historical claims",
+        "Later algebra-course previews are identified as outside this playlist",
+        "Set-theoretic coding of natural numbers is not fixed in this chapter"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Hammack, Book of Proof",
+          "sections": [
+            "1.1",
+            "1.3",
+            "2.3",
+            "2.7",
+            "2.10"
+          ],
+          "printed_pages": [
+            "3–4",
+            "12–13",
+            "42–43",
+            "53–54",
+            "59–60"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No machine-checked formal proof"
+      ],
+      "section_source_map": [
+        {
+          "section": "objects",
+          "lesson": 1,
+          "start": 42,
+          "end": 456
+        },
+        {
+          "section": "sets",
+          "lesson": 2,
+          "start": 35,
+          "end": 874
+        },
+        {
+          "section": "properties",
+          "lesson": 2,
+          "start": 875,
+          "end": 1225
+        },
+        {
+          "section": "connectives",
+          "lesson": 3,
+          "start": 16,
+          "end": 350
+        },
+        {
+          "section": "implication",
+          "lesson": 3,
+          "start": 351,
+          "end": 702
+        },
+        {
+          "section": "quantifiers",
+          "lesson": 3,
+          "start": 899,
+          "end": 1262
+        },
+        {
+          "section": "negation",
+          "lesson": 3,
+          "start": 1263,
+          "end": 1600
+        }
+      ],
+      "manuscript": "chapters/ch01.html",
+      "body_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+      "ledger_sha256": "9795fd6333535537ad583adab7a336aeed7b6c07e8bd57574569fe23349f60be",
+      "recordings": [
+        {
+          "lesson": 0,
+          "video_id": "h8NcKBOo91c",
+          "caption_sha256": "1dd26ad01eec1ee67beabd055b4216a9b1c0ec3e57b1f2d01f4a27229a59785f"
+        },
+        {
+          "lesson": 1,
+          "video_id": "VM-EYUioh3k",
+          "caption_sha256": "5615a73c9c911fda03c9dd3ede5a4510b8d21263fe604d1d032a0a401cc2aa94"
+        },
+        {
+          "lesson": 2,
+          "video_id": "NSDBHOqzQKk",
+          "caption_sha256": "ad8ac0d609b190167fdd38a55981b6334806d9ad56ab4fd520eb4d38839dc3c1"
+        },
+        {
+          "lesson": 3,
+          "video_id": "OmZ9NoqBIbE",
+          "caption_sha256": "94e6864ee6071a600493fb981d6b4f99a28cfa7ac9fc05172f56628fd95106db"
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "complete_source_text_reading": [
+        4,
+        5,
+        6
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "inference",
+          "lesson": 4,
+          "start": 79,
+          "end": 787
+        },
+        {
+          "section": "equivalence",
+          "lesson": 4,
+          "start": 787,
+          "end": 1188
+        },
+        {
+          "section": "contradiction",
+          "lesson": 5,
+          "start": 44,
+          "end": 570
+        },
+        {
+          "section": "contrapositive",
+          "lesson": 5,
+          "start": 570,
+          "end": 996
+        },
+        {
+          "section": "operations",
+          "lesson": 6,
+          "start": 21,
+          "end": 575
+        },
+        {
+          "section": "distributivity",
+          "lesson": 6,
+          "start": 575,
+          "end": 703
+        },
+        {
+          "section": "de-morgan",
+          "lesson": 6,
+          "start": 703,
+          "end": 1091
+        }
+      ],
+      "teaching_constructions": [
+        "Selection-rule rewrite",
+        "Formal five-line derivation",
+        "Exhaustive finite subset test",
+        "Six worked problems"
+      ],
+      "scope_decisions": [
+        "Full completeness theorem for a logical calculus is outside scope",
+        "Formal verification software forecasts are not presented as current facts",
+        "Excluded middle and noncontradiction are distinguished",
+        "Arithmetic prerequisite facts are identified rather than claimed already reconstructed"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Hammack, Book of Proof",
+          "sections": [
+            "4.3",
+            "5.1",
+            "6.1",
+            "8.3"
+          ],
+          "printed_pages": [
+            "118–119",
+            "129",
+            "138–139",
+            "163–165"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch02.html",
+      "body_sha256": "9d622ac42050c99e4837d5c02e82aa02d963e14341269749c8de54e7efec6bee",
+      "ledger_sha256": "100ffc256993487f5b03f5e7840c6afca0fd0f453a30c0f3a427edd4ccb12f82",
+      "recordings": [
+        {
+          "lesson": 4,
+          "video_id": "hYMIFvh2hY4",
+          "caption_sha256": "aa656fed8d793014861122b5d2d9a38de38dbf41b47e88b975008219d803da3b"
+        },
+        {
+          "lesson": 5,
+          "video_id": "9iikmsC07_s",
+          "caption_sha256": "2856208e0c5ce116b988a0c5f4f25ea7395a0420dd23c4f579662d7147b18ef9"
+        },
+        {
+          "lesson": 6,
+          "video_id": "nr7oYcTd-J8",
+          "caption_sha256": "37ddddd9f030240d4e1d854603ea87f8ff0c177bd92a7e8ac6fd3d70dfcc08b5"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "complete_source_text_reading": [
+        7
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "relations",
+          "lesson": 7,
+          "start": 60,
+          "end": 465
+        },
+        {
+          "section": "definition",
+          "lesson": 7,
+          "start": 465,
+          "end": 869
+        },
+        {
+          "section": "descriptions",
+          "lesson": 7,
+          "start": 869,
+          "end": 1470
+        },
+        {
+          "section": "types",
+          "lesson": 7,
+          "start": 1470,
+          "end": 1644
+        },
+        {
+          "section": "composition",
+          "lesson": 7,
+          "start": 1644,
+          "end": 1837
+        },
+        {
+          "section": "inverse",
+          "lesson": 7,
+          "start": 1837,
+          "end": 2050
+        }
+      ],
+      "teaching_constructions": [
+        "Square-map repairs",
+        "Finite relation validator",
+        "One-sided inverse on nonnegative integers",
+        "Six worked problems"
+      ],
+      "scope_decisions": [
+        "Adjacency is distinguished from reachability",
+        "No unsupported claim about a simple formula for nth prime",
+        "Constant maps require a chosen codomain element",
+        "Empty functions handled explicitly",
+        "Subset image and preimage operations deferred to chapter4 in accordance with lesson10; singleton-preimage terminology defined locally in chapter3"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Hammack, Book of Proof",
+          "sections": [
+            "12.1",
+            "12.2",
+            "12.4",
+            "12.5"
+          ],
+          "printed_pages": [
+            "223–224",
+            "228",
+            "235–236",
+            "238–239"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch03.html",
+      "body_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+      "ledger_sha256": "f0d3656f55c91439e21aaee7b9a324957b2a88bcdc9e811a924892e222b68b2f",
+      "recordings": [
+        {
+          "lesson": 7,
+          "video_id": "UzydRbUC-rM",
+          "caption_sha256": "d1c96f363c029ea596fd5e77b767fc98e18eeecb8ee129188b7df25cf9a814fa"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "complete_source_text_reading": [
+        8,
+        9,
+        10
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "relations",
+          "lesson": 8,
+          "start": 40,
+          "end": 1349
+        },
+        {
+          "section": "partitions",
+          "lesson": 8,
+          "start": 1349,
+          "end": 2989
+        },
+        {
+          "section": "quotient",
+          "lesson": 9,
+          "start": 36,
+          "end": 351
+        },
+        {
+          "section": "descent",
+          "lesson": 9,
+          "start": 351,
+          "end": 1505
+        },
+        {
+          "section": "factorization",
+          "lesson": 9,
+          "start": 1505,
+          "end": 2572
+        },
+        {
+          "section": "images",
+          "lesson": 10,
+          "start": 58,
+          "end": 416
+        },
+        {
+          "section": "set-laws",
+          "lesson": 10,
+          "start": 416,
+          "end": 795
+        },
+        {
+          "section": "one-sided",
+          "lesson": 10,
+          "start": 795,
+          "end": 1404
+        }
+      ],
+      "teaching_constructions": [
+        "Five-record classification",
+        "Detailed canonical factorization proof",
+        "Finite fiber/descent checks",
+        "Six worked problems"
+      ],
+      "scope_decisions": [
+        "Indexed families retain naming information rather than being identified with their images",
+        "Empty partition allowed for empty set",
+        "Left-inverse empty-domain exception explicit",
+        "Right-inverse general construction states and proves dependence on axiom of choice",
+        "Nonempty-index boundary for direct-image intersection equality explicit",
+        "Fractions constructed from formal integer pairs rather than presupposed quotient equality"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Hammack, Book of Proof",
+          "sections": [
+            "11.3",
+            "11.4",
+            "12.6"
+          ],
+          "printed_pages": [
+            "210",
+            "215–217",
+            "242–243"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch04.html",
+      "body_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+      "ledger_sha256": "8ff207fddc82ccfbdd9a323e9da9df87eea34989d172843ceb88ca075915a01e",
+      "recordings": [
+        {
+          "lesson": 8,
+          "video_id": "iM61eZVc4IQ",
+          "caption_sha256": "57ec7e98b5d044083e9323faa6d7a80f985ea09df726584dec27ed48bb80eaa6"
+        },
+        {
+          "lesson": 9,
+          "video_id": "305We8ZFecA",
+          "caption_sha256": "0d4c5ce821b57d94d215a9cdee07a433ac2803760e8dad4e79b3bf00c8bea3f3"
+        },
+        {
+          "lesson": 10,
+          "video_id": "n--JD7jF6Z8",
+          "caption_sha256": "57969fcb88f3236590fc37de2518256663ccd84d991e2656dd573301b2bc3ddc"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "complete_source_text_reading": [
+        11,
+        12
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "operations",
+          "lesson": 11,
+          "start": 71,
+          "end": 677
+        },
+        {
+          "section": "identities",
+          "lesson": 11,
+          "start": 677,
+          "end": 1808
+        },
+        {
+          "section": "groups",
+          "lesson": 12,
+          "start": 80,
+          "end": 354
+        },
+        {
+          "section": "small",
+          "lesson": 12,
+          "start": 354,
+          "end": 834
+        },
+        {
+          "section": "groups",
+          "lesson": 12,
+          "start": 834,
+          "end": 1116
+        },
+        {
+          "section": "subgroups",
+          "lesson": 12,
+          "start": 1116,
+          "end": 1260
+        },
+        {
+          "section": "morphisms",
+          "lesson": 12,
+          "start": 1260,
+          "end": 2226
+        },
+        {
+          "section": "kernel",
+          "lesson": 12,
+          "start": 2226,
+          "end": 2795
+        }
+      ],
+      "teaching_constructions": [
+        "Reversible three-object rearrangements",
+        "Nonassociative inverse counterexample",
+        "S3 exhaustive checks and all binary operations on two labels",
+        "Six worked problems"
+      ],
+      "scope_decisions": [
+        "Triangle rotations use120-degree increments; no unconfirmed caption discrepancy attributed to instructor",
+        "Identity uniqueness requires no associativity; inverse uniqueness does",
+        "Subgroup nonemptiness explicit",
+        "General finite associativity proof assigned to induction chapter8",
+        "Matrix group theorem presented as consequence of the proved monoid-units result, with matrix algebra developed in chapter16"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Judson, Abstract Algebra: Theory and Applications,2026",
+          "url": "https://judsonbooks.org/aata-files/aata-20260811.pdf",
+          "sections": [
+            "3.2",
+            "3.3",
+            "9.1",
+            "11.1"
+          ],
+          "printed_pages": [
+            "33–35",
+            "38–39",
+            "119",
+            "139–141"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch05.html",
+      "body_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+      "ledger_sha256": "40a78b7c2081e9acfe657f0c311f47d719f579262ebf82911b57bcd86ef89d78",
+      "recordings": [
+        {
+          "lesson": 11,
+          "video_id": "ltP728Kp6PY",
+          "caption_sha256": "2ea7ae4298651d28292da8b0bf3173b5192b5f41a88f4dd23e6b6f889eb87e7c"
+        },
+        {
+          "lesson": 12,
+          "video_id": "LNImE9lvbdQ",
+          "caption_sha256": "62b689882652333da9120aaac87ee06cdeaf29dcac90dbf5feb1b9621caeae68"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "complete_source_text_reading": [
+        13,
+        14
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "rings",
+          "lesson": 13,
+          "start": 80,
+          "end": 758
+        },
+        {
+          "section": "function-ring",
+          "lesson": 13,
+          "start": 758,
+          "end": 898
+        },
+        {
+          "section": "subrings",
+          "lesson": 13,
+          "start": 898,
+          "end": 1071
+        },
+        {
+          "section": "domains",
+          "lesson": 13,
+          "start": 1071,
+          "end": 1341
+        },
+        {
+          "section": "order",
+          "lesson": 13,
+          "start": 1341,
+          "end": 2175
+        },
+        {
+          "section": "separation",
+          "lesson": 14,
+          "start": 118,
+          "end": 685
+        },
+        {
+          "section": "foundation",
+          "lesson": 14,
+          "start": 685,
+          "end": 1217
+        }
+      ],
+      "teaching_constructions": [
+        "Kuratowski pair construction with degenerate case",
+        "Finite function ring exhaustive check",
+        "Six complete worked problems"
+      ],
+      "scope_decisions": [
+        "Unital rings, common-identity subrings and unital homomorphisms explicitly chosen; operation preservation alone does not force preservation of 1",
+        "Nontriviality explicit for integral domains",
+        "Selected set axioms are not a complete ZF list",
+        "Russell contradiction distinguished from the foundation axiom"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Judson, Abstract Algebra: Theory and Applications,2026",
+          "url": "https://judsonbooks.org/aata-files/aata-20260811.pdf",
+          "sections": [
+            "16.1",
+            "16.2"
+          ],
+          "printed_pages": [
+            "198–203"
+          ]
+        },
+        {
+          "source": "Hammack, Book of Proof",
+          "url": "https://richardhammack.github.io/BookOfProof/Main.pdf",
+          "sections": [
+            "1.10"
+          ],
+          "printed_pages": [
+            "32"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch06.html",
+      "body_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+      "ledger_sha256": "0dbabb685746b5299175aa3277e59b75160d1dd621b847ff1f222412f81664ff",
+      "recordings": [
+        {
+          "lesson": 13,
+          "video_id": "4WGGK6tWPsw",
+          "caption_sha256": "773e796bbe1edb5518e45fffafa9a223be15eec10cb97270c6637da4742d3224"
+        },
+        {
+          "lesson": 14,
+          "video_id": "jfHnbxuxlDs",
+          "caption_sha256": "d38eaaa425c62528f9d8692154141ad47772c51f713c702bbc062fbbc5753702"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "complete_source_text_reading": [
+        15,
+        16
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "axioms",
+          "lesson": 15,
+          "start": 307,
+          "end": 834
+        },
+        {
+          "section": "discrete",
+          "lesson": 15,
+          "start": 834,
+          "end": 1451
+        },
+        {
+          "section": "well-order",
+          "lesson": 15,
+          "start": 1451,
+          "end": 1915
+        },
+        {
+          "section": "axioms",
+          "lesson": 15,
+          "start": 1915,
+          "end": 2660
+        },
+        {
+          "section": "induction",
+          "lesson": 16,
+          "start": 50,
+          "end": 245
+        },
+        {
+          "section": "well-order",
+          "lesson": 16,
+          "start": 245,
+          "end": 351
+        },
+        {
+          "section": "examples",
+          "lesson": 16,
+          "start": 351,
+          "end": 574
+        },
+        {
+          "section": "recursion",
+          "lesson": 16,
+          "start": 574,
+          "end": 1936
+        }
+      ],
+      "teaching_constructions": [
+        "Compatible finite-history implementation",
+        "Six completely solved problems"
+      ],
+      "scope_decisions": [
+        "Full subset induction distinguished from first-order arithmetic schemas",
+        "Existence of integer structure assumed; uniqueness up to isomorphism assigned to chapter8",
+        "Recursion rules start at n=k and have domain E^n",
+        "Strong induction established before its use in well-ordering proof"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Hammack, Book of Proof",
+          "url": "https://richardhammack.github.io/BookOfProof/Main.pdf",
+          "sections": [
+            "10.1",
+            "10.2",
+            "10.3"
+          ],
+          "printed_pages": [
+            "182–183",
+            "187–188",
+            "191"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch07.html",
+      "body_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+      "ledger_sha256": "593f73468e0af796dae9a06eeeabcf850f5735288192ae1188e550a7e4826766",
+      "recordings": [
+        {
+          "lesson": 15,
+          "video_id": "TUzAHnMLbJw",
+          "caption_sha256": "59df206e4de81e832f8bf3d1a2a0cd963a98b8c334dc3e9ff64343198b45385a"
+        },
+        {
+          "lesson": 16,
+          "video_id": "Mnh5V0D8NLU",
+          "caption_sha256": "609fe5345485c18ead0e3e5c68d34542c9d582ca074a57cb8eb06c4a29d59145"
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "complete_source_text_reading": [
+        17,
+        18
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "powers",
+          "lesson": 17,
+          "start": 38,
+          "end": 722
+        },
+        {
+          "section": "integer-action",
+          "lesson": 17,
+          "start": 722,
+          "end": 1033
+        },
+        {
+          "section": "products",
+          "lesson": 17,
+          "start": 1033,
+          "end": 1818
+        },
+        {
+          "section": "distribution",
+          "lesson": 17,
+          "start": 1818,
+          "end": 1897
+        },
+        {
+          "section": "absolute",
+          "lesson": 17,
+          "start": 1897,
+          "end": 2520
+        },
+        {
+          "section": "forced",
+          "lesson": 18,
+          "start": 16,
+          "end": 1594
+        },
+        {
+          "section": "construction",
+          "lesson": 18,
+          "start": 1594,
+          "end": 3351
+        }
+      ],
+      "teaching_constructions": [
+        "Full proof of arbitrary finite reordering using labeled positions",
+        "Exact permutation parenthesization program",
+        "Six solved problems"
+      ],
+      "scope_decisions": [
+        "All integer-exponent sign cases proved",
+        "Canonical means unique isomorphism for this particular theorem, not a universal definition",
+        "Surjective operation-preserving ring maps automatically preserve unit; general maps need not",
+        "All multiplication/order/injection/target-induction details supplied in integer uniqueness",
+        "Binomial theorem deferred to chapter13 per source",
+        "Integer structure existence assumed, not constructed"
+      ],
+      "reference_sections_inspected": [],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch08.html",
+      "body_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+      "ledger_sha256": "c51eae2a2eb21e2e66c72eb2e0406ee3aa6a0915b720a193fc7de26d2832bc55",
+      "recordings": [
+        {
+          "lesson": 17,
+          "video_id": "4R75Li1kV2A",
+          "caption_sha256": "3771bcfa8ebf350e239582a77d434eb60481294fe671b34b81aa58ab482e49e7"
+        },
+        {
+          "lesson": 18,
+          "video_id": "8cJImBqqb5g",
+          "caption_sha256": "7ccf1227a95b1b61ede910d5055415f2d4942f53746ccb164e2ea30720243715"
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "complete_source_text_reading": [
+        19
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "finite",
+          "lesson": 19,
+          "start": 90,
+          "end": 619
+        },
+        {
+          "section": "infinite",
+          "lesson": 19,
+          "start": 619,
+          "end": 1194
+        },
+        {
+          "section": "shift",
+          "lesson": 19,
+          "start": 1194,
+          "end": 2093
+        },
+        {
+          "section": "cantor",
+          "lesson": 19,
+          "start": 2093,
+          "end": 2651
+        },
+        {
+          "section": "countable",
+          "lesson": 19,
+          "start": 2651,
+          "end": 3231
+        },
+        {
+          "section": "diagonals",
+          "lesson": 19,
+          "start": 3231,
+          "end": 3738
+        }
+      ],
+      "teaching_constructions": [
+        "Explicit triangular diagonal index and inverse existence proof",
+        "Exhaustive512 finite diagonal lists",
+        "Six solved problems"
+      ],
+      "scope_decisions": [
+        "Full axiom of choice explicitly sufficient for arbitrary infinite-set selections; no minimality assertion",
+        "Countable-union proof includes empty members and chosen listings",
+        "Increasing enumeration surjectivity proved by finite pigeonhole",
+        "Cantor argument includes empty set",
+        "Continuum independence discussion omitted rather than asserted without a proof"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Hammack, Book of Proof",
+          "url": "https://richardhammack.github.io/BookOfProof/Main.pdf",
+          "sections": [
+            "14.2"
+          ],
+          "printed_pages": [
+            "275–279"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch09.html",
+      "body_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+      "ledger_sha256": "9af7a8cefd55d003d5bc238b56052b6535fa6770b5f623b0c4d4ba4b0a6988d2",
+      "recordings": [
+        {
+          "lesson": 19,
+          "video_id": "wi2uvQjrVgY",
+          "caption_sha256": "6d3c5db5aef9d1cfe9f2b6e1c21434d2d20edcf915f2ea1818f45aabaa1718ac"
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "complete_source_text_reading": [
+        20
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "divisibility",
+          "lesson": 20,
+          "start": 74,
+          "end": 1203
+        },
+        {
+          "section": "primes",
+          "lesson": 20,
+          "start": 1203,
+          "end": 2351
+        },
+        {
+          "section": "division",
+          "lesson": 20,
+          "start": 2351,
+          "end": 3558
+        },
+        {
+          "section": "gcd",
+          "lesson": 20,
+          "start": 3558,
+          "end": 4184
+        },
+        {
+          "section": "euclid",
+          "lesson": 20,
+          "start": 4184,
+          "end": 4802
+        },
+        {
+          "section": "bezout",
+          "lesson": 20,
+          "start": 4802,
+          "end": 5264
+        },
+        {
+          "section": "euclid-lemma",
+          "lesson": 20,
+          "start": 5264,
+          "end": 5612
+        },
+        {
+          "section": "factorization",
+          "lesson": 20,
+          "start": 5612,
+          "end": 6316
+        }
+      ],
+      "teaching_constructions": [
+        "Least nonnegative remainder proof handles all signed dividends at once",
+        "Extended Euclid coefficient invariant with1680 signed input pairs",
+        "Six completely solved problems"
+      ],
+      "scope_decisions": [
+        "Divisors nonzero; gcd inputs not bothzero",
+        "Primefactorization proved here because source20 contains it, appliedfurtherinch11",
+        "Signeddivision anduniquenessbounds corrected explicitly",
+        "General prime product lemma precedes factorizationuniqueness",
+        "No assertion about nthprime formulas or algorithm complexity"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Judson, Abstract Algebra: Theory and Applications,2026",
+          "url": "https://judsonbooks.org/aata-files/aata-20260811.pdf",
+          "sections": [
+            "2.2"
+          ],
+          "printed_pages": [
+            "21–24"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch10.html",
+      "body_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+      "ledger_sha256": "25882d0b127a065a435c9db34dcc87c62daa97eca1bf046026cb6865cbef88b5",
+      "recordings": [
+        {
+          "lesson": 20,
+          "video_id": "jqHwnnFXZ1k",
+          "caption_sha256": "c2eb534b0fc6f5be6df661e9ea54582b5ce95f9e645842190f46890280d101c5"
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "complete_source_text_reading": [
+        21,
+        22
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "congruence",
+          "lesson": 21,
+          "start": 47,
+          "end": 1097
+        },
+        {
+          "section": "classes",
+          "lesson": 21,
+          "start": 1097,
+          "end": 2408
+        },
+        {
+          "section": "problems",
+          "lesson": 21,
+          "start": 2408,
+          "end": 2715
+        },
+        {
+          "section": "permutation",
+          "lesson": 22,
+          "start": 614,
+          "end": 870
+        },
+        {
+          "section": "necklaces",
+          "lesson": 22,
+          "start": 870,
+          "end": 1370
+        },
+        {
+          "section": "fermat",
+          "lesson": 22,
+          "start": 1370,
+          "end": 1769
+        },
+        {
+          "section": "euler",
+          "lesson": 22,
+          "start": 1769,
+          "end": 2128
+        },
+        {
+          "section": "linear",
+          "lesson": 22,
+          "start": 2128,
+          "end": 2721
+        },
+        {
+          "section": "wilson",
+          "lesson": 22,
+          "start": 2721,
+          "end": 2873
+        }
+      ],
+      "teaching_constructions": [
+        "Explicit quotient ring and unit characterization",
+        "Full Wilson proof, source states theorem only",
+        "Necklace orbit proof completed using modular cancellation",
+        "243word rotation experiment",
+        "Six solved problems"
+      ],
+      "scope_decisions": [
+        "Exactly n residueclasses includes zero",
+        "Phi(1)=1 explicitly defined",
+        "Alllinearcongruences includingzero coefficients andmodulus1",
+        "Fixedbase Fermatpass doesnotcertifyprime,341example verified",
+        "No unverified historical naming claims or practical cryptographic security assertions"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Judson, Abstract Algebra: Theory and Applications,2026",
+          "url": "https://judsonbooks.org/aata-files/aata-20260811.pdf",
+          "sections": [
+            "3.1",
+            "6.3"
+          ],
+          "printed_pages": [
+            "29–31",
+            "80–81"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch11.html",
+      "body_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+      "ledger_sha256": "0d15079f0d71f0cf609abf54dfd0660e493e8b03ac761920c87e24818e7e7c50",
+      "recordings": [
+        {
+          "lesson": 21,
+          "video_id": "yKJuo3DSESk",
+          "caption_sha256": "837ff19789687056dbef61a111e076d234c975c4a1e186cbbffddec442686d15"
+        },
+        {
+          "lesson": 22,
+          "video_id": "tj0D5Mg1p70",
+          "caption_sha256": "02c8347e2db98ef8e488be045b89b1e65e18966b3b1e8aa0ca0a46fbbe0161d3"
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "complete_source_text_reading": [
+        23
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "finite",
+          "lesson": 23,
+          "start": 16,
+          "end": 1119
+        },
+        {
+          "section": "fields",
+          "lesson": 23,
+          "start": 1119,
+          "end": 1429
+        },
+        {
+          "section": "ordered-fields",
+          "lesson": 23,
+          "start": 1429,
+          "end": 1763
+        },
+        {
+          "section": "fractions",
+          "lesson": 23,
+          "start": 1763,
+          "end": 2083
+        },
+        {
+          "section": "axioms",
+          "lesson": 23,
+          "start": 1929,
+          "end": 2083
+        },
+        {
+          "section": "reduced",
+          "lesson": 23,
+          "start": 2083,
+          "end": 2219
+        },
+        {
+          "section": "order",
+          "lesson": 23,
+          "start": 2219,
+          "end": 2327
+        },
+        {
+          "section": "embedding",
+          "lesson": 23,
+          "start": 2327,
+          "end": 3075
+        }
+      ],
+      "teaching_constructions": [
+        "Full rational fieldlaw andpositive-denominator order verification",
+        "Generalfinite-domain theorem",
+        "Exact representative grid:42pairs,156equivalent ordered pairs",
+        "Six solvedproblems including non-domain transitivitycounterexample"
+      ],
+      "scope_decisions": [
+        "Zero ring excluded from fields and domains",
+        "Positive denominator enforced for crossproduct order",
+        "Reducedform includes zero uniquely0/1",
+        "Integer andQ embeddings targetorderedfield; no claim for arbitrary positivecharacteristic fields",
+        "General fractionfield result cited as context; integercase proved fully"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Judson, Abstract Algebra: Theory and Applications,2026",
+          "url": "https://judsonbooks.org/aata-files/aata-20260811.pdf",
+          "sections": [
+            "18.1"
+          ],
+          "printed_pages": [
+            "234–237"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch12.html",
+      "body_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+      "ledger_sha256": "d87c5553592da410e372daa7f9eca62ce27b29b1806d16aa9e483cf1014c18ad",
+      "recordings": [
+        {
+          "lesson": 23,
+          "video_id": "mEBKTbPYzBE",
+          "caption_sha256": "b7bbc2969fea420dfbcd24146f670f4723d1f55949b03a4b269a0aea04de6d10"
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "complete_source_text_reading": [
+        24
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "supremum",
+          "lesson": 24,
+          "start": 16,
+          "end": 1264
+        },
+        {
+          "section": "epsilon",
+          "lesson": 24,
+          "start": 1264,
+          "end": 1695
+        },
+        {
+          "section": "nested",
+          "lesson": 24,
+          "start": 1695,
+          "end": 2246
+        },
+        {
+          "section": "archimedean",
+          "lesson": 24,
+          "start": 2246,
+          "end": 2898
+        },
+        {
+          "section": "shrinking",
+          "lesson": 24,
+          "start": 2898,
+          "end": 3335
+        },
+        {
+          "section": "root",
+          "lesson": 24,
+          "start": 3335,
+          "end": 3922
+        },
+        {
+          "section": "converse",
+          "lesson": 24,
+          "start": 3922,
+          "end": 4483
+        },
+        {
+          "section": "references",
+          "lesson": 24,
+          "start": 4483,
+          "end": 4792
+        }
+      ],
+      "teaching_constructions": [
+        "Complete bisection root equation via algebraicerror estimate",
+        "Explicit rationalmissing-supremum proof",
+        "Rationaldensity andrealuncountability via interval avoidance",
+        "Pascalrecursion binomialproof closes earlierpromise",
+        "Exact32step rationalbracket program",
+        "Six solvedproblems"
+      ],
+      "scope_decisions": [
+        "Ordercompleteness only; metriccompleteness andalgebraicclosure notconflated",
+        "Realfieldexistence anduniquenessuptoorderedisomorphism explicitlybackground, notproved",
+        "Nestedintervals boundedclosednonempty; uniquenessseparate fromexistence",
+        "No unverified nonArchimedean nestedintervalexample",
+        "Selectedsourcegeometry/historicaldigressions omitted"
+      ],
+      "reference_sections_inspected": [],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification",
+        "Realnumber construction anduniqueness theorem assumed asbackground"
+      ],
+      "manuscript": "chapters/ch13.html",
+      "body_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+      "ledger_sha256": "2305141e5c548bb0b5d4ffcb3bfe615c275954c9f9239b325166dc88ac0c3156",
+      "recordings": [
+        {
+          "lesson": 24,
+          "video_id": "WNNc4HMWv5w",
+          "caption_sha256": "58157d440cea9c4d32b9984d3f7738e86c6284a9e59b9899d2a8162dba9679d6"
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "complete_source_text_reading": [
+        25,
+        26
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "cubic",
+          "lesson": 25,
+          "start": 16,
+          "end": 1285
+        },
+        {
+          "section": "complex-field",
+          "lesson": 25,
+          "start": 1285,
+          "end": 1703
+        },
+        {
+          "section": "norm",
+          "lesson": 25,
+          "start": 1703,
+          "end": 2243
+        },
+        {
+          "section": "polar",
+          "lesson": 25,
+          "start": 2243,
+          "end": 2517
+        },
+        {
+          "section": "order-obstructions",
+          "lesson": 25,
+          "start": 2517,
+          "end": 2995
+        },
+        {
+          "section": "formal",
+          "lesson": 26,
+          "start": 54,
+          "end": 1253
+        },
+        {
+          "section": "degree",
+          "lesson": 26,
+          "start": 1253,
+          "end": 1964
+        },
+        {
+          "section": "division",
+          "lesson": 26,
+          "start": 1964,
+          "end": 2868
+        },
+        {
+          "section": "gcd",
+          "lesson": 26,
+          "start": 2868,
+          "end": 3033
+        },
+        {
+          "section": "roots",
+          "lesson": 26,
+          "start": 3033,
+          "end": 3290
+        }
+      ],
+      "teaching_constructions": [
+        "Allcomplexfieldaxioms explicitlychecked",
+        "Full complextriangle/Cauchyrealpair proof",
+        "Branchcoherent cubicderivation",
+        "Formalpolynomialgcd/Bezout/irreduciblefactorization details",
+        "Exact symbolicpolynomialdivision andcubicchecks",
+        "Six solvedproblems"
+      ],
+      "scope_decisions": [
+        "Trigonometry andpositive realnthroots declaredbackground; Eulerexpression usedasnotation",
+        "Real3obstruction requiresusualrealcoordinates andrealbilinear associative unitalmultiplication",
+        "No general impossibilityofallrealcubicformulas asserted",
+        "Formalpolynomials distinctfromevaluationfunctions overfinitefields",
+        "Fundamentaltheoremofalgebra statedwithoutproof, factorizationconsequencesproved"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Axler, Linear Algebra Done Right, fourth edition",
+          "url": "https://linear.axler.net/LADR4e.pdf",
+          "sections": [
+            "1A",
+            "4"
+          ],
+          "printed_pages": [
+            "2–4",
+            "119–127"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification",
+        "Fundamentaltheoremofalgebra assumed asstatedbackground"
+      ],
+      "manuscript": "chapters/ch14.html",
+      "body_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+      "ledger_sha256": "bc23d0b1876d025477dd9dbd72fd00a7eb318f6f81944e08648efc25c7bc881a",
+      "recordings": [
+        {
+          "lesson": 25,
+          "video_id": "TPBugn_HcBk",
+          "caption_sha256": "02cde7a14b844595777da94e67ecea1ca8b8401d8b7d3ed2b67c508ae2f9241c"
+        },
+        {
+          "lesson": 26,
+          "video_id": "SZjALtTehjw",
+          "caption_sha256": "1382042a84dbfc45c41095e2261001d2b6f340408e0eadaef6c051a7a6fb0e08"
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "complete_source_text_reading": [
+        27,
+        28
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "systems",
+          "lesson": 27,
+          "start": 16,
+          "end": 2039
+        },
+        {
+          "section": "row-operations",
+          "lesson": 27,
+          "start": 2039,
+          "end": 2240
+        },
+        {
+          "section": "matrices",
+          "lesson": 28,
+          "start": 57,
+          "end": 789
+        },
+        {
+          "section": "row-operations",
+          "lesson": 28,
+          "start": 789,
+          "end": 1922
+        },
+        {
+          "section": "echelon",
+          "lesson": 28,
+          "start": 1922,
+          "end": 2085
+        },
+        {
+          "section": "existence",
+          "lesson": 28,
+          "start": 2085,
+          "end": 2604
+        },
+        {
+          "section": "solutions",
+          "lesson": 28,
+          "start": 2604,
+          "end": 3697
+        },
+        {
+          "section": "certificates",
+          "lesson": 28,
+          "start": 3697,
+          "end": 3978
+        }
+      ],
+      "teaching_constructions": [
+        "Full RREF uniqueness proof using rowcombination sets",
+        "Explicit rational versusF2sameequations comparison",
+        "Complete solutionparameterization bijection andfinitefieldcounts",
+        "Inconsistencycertificate proof",
+        "ExactFraction GaussJordan implementation",
+        "Six solvedproblems"
+      ],
+      "scope_decisions": [
+        "Matrixmultiplication developed nextchapter; coefficientnotation sufficient here",
+        "Example requiringdivideby5 explicitlyoverQ",
+        "Freevariables implyinfinitelymanysolutions onlyoverinfinitefield andconsistent system",
+        "Echelon distinctfromreducedechelon",
+        "Numericalstability notinferredfromexactarithmetic"
+      ],
+      "reference_sections_inspected": [],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch15.html",
+      "body_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+      "ledger_sha256": "914324a4300e888cf3751b34d7b6ca91d020956c6f601eb56d946ccfd3688f6d",
+      "recordings": [
+        {
+          "lesson": 27,
+          "video_id": "4Bmx287z49E",
+          "caption_sha256": "3b783679b6a7706dc8d50d3b1b7ec1379e396e5141fc9572777080f4736b1f62"
+        },
+        {
+          "lesson": 28,
+          "video_id": "iArOEPpp7mQ",
+          "caption_sha256": "f5c6e356f1d158e48abfc5e1260d295e3be92ea8f5431a4c34fe161e0049d52a"
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "complete_source_text_reading": [
+        29,
+        30
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "product",
+          "lesson": 29,
+          "start": 48,
+          "end": 683
+        },
+        {
+          "section": "composition",
+          "lesson": 29,
+          "start": 683,
+          "end": 1029
+        },
+        {
+          "section": "product",
+          "lesson": 29,
+          "start": 1029,
+          "end": 1816
+        },
+        {
+          "section": "composition",
+          "lesson": 29,
+          "start": 1816,
+          "end": 2577
+        },
+        {
+          "section": "elementary",
+          "lesson": 29,
+          "start": 2577,
+          "end": 3376
+        },
+        {
+          "section": "inverses",
+          "lesson": 29,
+          "start": 3376,
+          "end": 3579
+        },
+        {
+          "section": "equivalences",
+          "lesson": 30,
+          "start": 16,
+          "end": 1379
+        },
+        {
+          "section": "one-sided",
+          "lesson": 30,
+          "start": 1379,
+          "end": 1799
+        }
+      ],
+      "teaching_constructions": [
+        "Coordinatefunctioncomposition proof ofmatrixassociation",
+        "Transposeidentities",
+        "Complete sixequivalencecycle andsquareone-sidedinverse proof",
+        "Rectangularandfunctionone-sidedcounterexamples",
+        "Exactsymbolicinverse/compatibleproducts",
+        "Six solvedproblems"
+      ],
+      "scope_decisions": [
+        "Matrixdotproduct has no conjugation overC",
+        "Elementarymultiplierdimension m×m for mrows",
+        "Allsquareequivalences requiren≥1, exactlyone includesexistence",
+        "No determinant orformalrankusedbeforedefinition",
+        "GPUandoptimalalgorithmclaims omitted asoutsidealgebraic scope"
+      ],
+      "reference_sections_inspected": [],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch16.html",
+      "body_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+      "ledger_sha256": "2feeea88da73edae510e7b48ed514cd745d482d87d32757f0cc985aa844aa58e",
+      "recordings": [
+        {
+          "lesson": 29,
+          "video_id": "JGp1ej82CJI",
+          "caption_sha256": "bb6117b4c93cfbde1096ae7f6fccf3abe8e789499a1143b9aa4b261b4ef30a39"
+        },
+        {
+          "lesson": 30,
+          "video_id": "qhhtmOt76Pk",
+          "caption_sha256": "28fee25d93ccbf32335237871dd39c98211e1c89a3fc641c189d9df36645f9c7"
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "complete_source_text_reading": [
+        31
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "null",
+          "lesson": 31,
+          "start": 24,
+          "end": 318
+        },
+        {
+          "section": "span",
+          "lesson": 31,
+          "start": 318,
+          "end": 731
+        },
+        {
+          "section": "special",
+          "lesson": 31,
+          "start": 731,
+          "end": 1628
+        },
+        {
+          "section": "rank",
+          "lesson": 31,
+          "start": 1628,
+          "end": 1777
+        },
+        {
+          "section": "row-column",
+          "lesson": 31,
+          "start": 1777,
+          "end": 1896
+        },
+        {
+          "section": "annihilation",
+          "lesson": 31,
+          "start": 1896,
+          "end": 2337
+        }
+      ],
+      "teaching_constructions": [
+        "Generalinterspersedpivot specialvectors withuniqueparameters",
+        "Minimumgeneratornumberproof withoutdimensiontheorem",
+        "Originalpivotcolumn generation andnonredundancyproof",
+        "Columnspace versusrowspace rowreductionwarning",
+        "All32F2input enumeration8solutions",
+        "Six solvedproblems"
+      ],
+      "scope_decisions": [
+        "Rankwelldefined usingearlierRREFuniquenessproof",
+        "Noformalabstractdimension beforechapter19",
+        "Realorthogonality distinctfrombilinearpairing overC",
+        "Spanofzero ordependentvectors maydegenerate",
+        "Squareinconsistent systems stillhavemeaningfulcolumnspace; no blanketautomaticconsistency"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Axler, Linear Algebra Done Right, fourth edition",
+          "url": "https://linear.axler.net/LADR4e.pdf",
+          "sections": [
+            "3B"
+          ],
+          "printed_pages": [
+            "59–64"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch17.html",
+      "body_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+      "ledger_sha256": "836a23094da87b43cb9f7af748a17ad5c364762775ac88ce8523957b28105314",
+      "recordings": [
+        {
+          "lesson": 31,
+          "video_id": "jhv4Oo8xVFY",
+          "caption_sha256": "ea1e0f5fe0160a88f83faae431e7a5e7d3c598196e24a9dd3b2bcc7911f61ca3"
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "complete_source_text_reading": [
+        32,
+        33
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "axioms",
+          "lesson": 32,
+          "start": 16,
+          "end": 869
+        },
+        {
+          "section": "examples",
+          "lesson": 32,
+          "start": 869,
+          "end": 1424
+        },
+        {
+          "section": "axioms",
+          "lesson": 32,
+          "start": 1424,
+          "end": 1739
+        },
+        {
+          "section": "subspaces",
+          "lesson": 32,
+          "start": 1739,
+          "end": 2352
+        },
+        {
+          "section": "analysis",
+          "lesson": 32,
+          "start": 1865,
+          "end": 1993
+        },
+        {
+          "section": "sums",
+          "lesson": 33,
+          "start": 114,
+          "end": 777
+        },
+        {
+          "section": "direct",
+          "lesson": 33,
+          "start": 777,
+          "end": 1740
+        },
+        {
+          "section": "decompose",
+          "lesson": 33,
+          "start": 998,
+          "end": 1140
+        }
+      ],
+      "teaching_constructions": [
+        "Completepointwisefunctionspace check includingemptydomain",
+        "Epsilonproofs fornullsequences/continuousfunctions",
+        "Intersectionandtwounioncriterion",
+        "General directcriterion andcomplementprojections",
+        "Evenoddfunctor decomposition withscalarcaveat",
+        "All16F2³subspacesand256pairchecks",
+        "Six solvedproblems"
+      ],
+      "scope_decisions": [
+        "Scalarfieldpartofvectorspacestructure",
+        "Emptyclosedsubsetnotasubspace",
+        "Pairwisezerointersectionsinsufficientforthreeormore",
+        "Coefficientparity polynomialsplitworksallfields; functionalparitydivisionby2requiresrealfieldhere",
+        "Topologicalclosure distinctfromoperationclosure"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Axler, Linear Algebra Done Right, fourth edition",
+          "url": "https://linear.axler.net/LADR4e.pdf",
+          "sections": [
+            "1B",
+            "1C"
+          ],
+          "printed_pages": [
+            "12–14",
+            "18–23"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch18.html",
+      "body_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+      "ledger_sha256": "6c2c5519ef5b37da080a14eaad8b5fc2edd003f12c6524998cef33ea15d34844",
+      "recordings": [
+        {
+          "lesson": 32,
+          "video_id": "yiwFEBZQ8c0",
+          "caption_sha256": "d11d029b09ff537519ebef036cfc8d70e097defae38c04e94d63c5fe927381d1"
+        },
+        {
+          "lesson": 33,
+          "video_id": "cjCXI8hP01U",
+          "caption_sha256": "f8bd7444b63765c1a45acbc753ecfc0a35e41e51359100f74d88d06667a5b9e5"
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "complete_source_text_reading": [
+        34,
+        35
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "span",
+          "lesson": 34,
+          "start": 162,
+          "end": 1037
+        },
+        {
+          "section": "deletion",
+          "lesson": 34,
+          "start": 1037,
+          "end": 1999
+        },
+        {
+          "section": "exchange",
+          "lesson": 35,
+          "start": 57,
+          "end": 1312
+        },
+        {
+          "section": "bases",
+          "lesson": 35,
+          "start": 1312,
+          "end": 2501
+        },
+        {
+          "section": "dimension",
+          "lesson": 35,
+          "start": 2501,
+          "end": 2676
+        },
+        {
+          "section": "complements",
+          "lesson": 35,
+          "start": 2676,
+          "end": 3318
+        },
+        {
+          "section": "sum",
+          "lesson": 35,
+          "start": 3318,
+          "end": 4214
+        }
+      ],
+      "teaching_constructions": [
+        "All field and empty-list cases",
+        "Finite direct-sum dimension criterion proof",
+        "Formal polynomial and infinite-sequence distinctions",
+        "Exhaustive ordered independent lists in F2^3",
+        "Six solved problems"
+      ],
+      "scope_decisions": [
+        "Finite-dimensional bases proved without choice",
+        "No claim that coordinate sequences span all sequences",
+        "Correct closing source slip: concatenation spans sum, not necessarily ambient space"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Axler, Linear Algebra Done Right, fourth edition",
+          "url": "https://linear.axler.net/LADR4e.pdf",
+          "sections": [
+            "2A",
+            "2B",
+            "2C"
+          ],
+          "printed_pages": [
+            "28–29",
+            "31–36",
+            "39–42",
+            "44–48"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch19.html",
+      "body_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+      "ledger_sha256": "a8ef0058713d90c22e7835ac7d168db82a876b1e818ad475c3431aca46bc4410",
+      "recordings": [
+        {
+          "lesson": 34,
+          "video_id": "uuU3XeTGzjk",
+          "caption_sha256": "b2eda96187187db23c8a08f82c3941aa98049cdf1f5cf484cc653fece6f306cb"
+        },
+        {
+          "lesson": 35,
+          "video_id": "Nm9N9cLeaKU",
+          "caption_sha256": "0864750134fbc80a720f578e900d50a2932ea01c9c2514163cb0494f69ab72e1"
+        }
+      ]
+    },
+    {
+      "chapter": 20,
+      "complete_source_text_reading": [
+        36,
+        37
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "linear",
+          "lesson": 36,
+          "start": 85,
+          "end": 371
+        },
+        {
+          "section": "examples",
+          "lesson": 36,
+          "start": 371,
+          "end": 829
+        },
+        {
+          "section": "prescription",
+          "lesson": 36,
+          "start": 829,
+          "end": 1293
+        },
+        {
+          "section": "algebra",
+          "lesson": 36,
+          "start": 1293,
+          "end": 1554
+        },
+        {
+          "section": "kernel",
+          "lesson": 37,
+          "start": 55,
+          "end": 568
+        },
+        {
+          "section": "rank-nullity",
+          "lesson": 37,
+          "start": 568,
+          "end": 1117
+        },
+        {
+          "section": "consequences",
+          "lesson": 37,
+          "start": 1117,
+          "end": 1398
+        },
+        {
+          "section": "matrices",
+          "lesson": 37,
+          "start": 1398,
+          "end": 1668
+        }
+      ],
+      "teaching_constructions": [
+        "Complete basis-prescription and operator algebra proofs",
+        "Inverse linearity and infinite shifts boundary",
+        "Characteristic-p derivative kernel comparison",
+        "Six solved problems"
+      ],
+      "scope_decisions": [
+        "Correct matrix-map direction to Fn→Fm",
+        "Differentiate only polynomials or suitable smooth domains",
+        "Constant-only derivative kernel restricted to characteristic zero"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Axler, Linear Algebra Done Right, fourth edition",
+          "url": "https://linear.axler.net/LADR4e.pdf",
+          "sections": [
+            "3A",
+            "3B"
+          ],
+          "printed_pages": [
+            "52–64"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch20.html",
+      "body_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+      "ledger_sha256": "ce3b7cda31127d535351528eb9cd7d385be3453e2c9b61bc5a6b650a61ef0c54",
+      "recordings": [
+        {
+          "lesson": 36,
+          "video_id": "3TJPmpaDluQ",
+          "caption_sha256": "85c1575ecbafd9da44837554f80ce2809e9dc51e53a4b0d827795f103f77d1f5"
+        },
+        {
+          "lesson": 37,
+          "video_id": "I2KtVbQ1Pxk",
+          "caption_sha256": "4f3120cbe1dffe5937bd1987a233aa638b1ccb127f1c62fc60e71b9e5b83b193"
+        }
+      ]
+    },
+    {
+      "chapter": 21,
+      "complete_source_text_reading": [
+        38,
+        39
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "coordinates",
+          "lesson": 38,
+          "start": 71,
+          "end": 1007
+        },
+        {
+          "section": "representation",
+          "lesson": 38,
+          "start": 1007,
+          "end": 2213
+        },
+        {
+          "section": "composition",
+          "lesson": 38,
+          "start": 2213,
+          "end": 2673
+        },
+        {
+          "section": "representation",
+          "lesson": 38,
+          "start": 2673,
+          "end": 3003
+        },
+        {
+          "section": "change",
+          "lesson": 39,
+          "start": 70,
+          "end": 544
+        },
+        {
+          "section": "two-sided",
+          "lesson": 39,
+          "start": 544,
+          "end": 1379
+        },
+        {
+          "section": "similarity",
+          "lesson": 39,
+          "start": 1379,
+          "end": 2149
+        },
+        {
+          "section": "rank",
+          "lesson": 39,
+          "start": 2149,
+          "end": 3496
+        }
+      ],
+      "teaching_constructions": [
+        "Explicit coordinate conversion directions",
+        "Complete map-space isomorphism",
+        "Both rank proofs with omitted basis checks and zero case",
+        "Characteristic-two example boundary",
+        "Six solved problems and exact coordinate lab"
+      ],
+      "scope_decisions": [
+        "Repair source changing indices and direction slips",
+        "Distinguish independent input/output changes from operator similarity",
+        "Same basis on both sides needed for identity operator matrix to be I"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Axler, Linear Algebra Done Right, fourth edition",
+          "url": "https://linear.axler.net/LADR4e.pdf",
+          "sections": [
+            "3C",
+            "3D"
+          ],
+          "printed_pages": [
+            "69–73",
+            "77–80",
+            "82–85"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch21.html",
+      "body_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+      "ledger_sha256": "6ddbcb7003da5bc41e1895ccb9baabc0deecc10b439479fd1746562c0bcdefc1",
+      "recordings": [
+        {
+          "lesson": 38,
+          "video_id": "ZPbv320dTbs",
+          "caption_sha256": "be9fb60793bdf8536f1070532ecf2f8e5d853aa74a1c5d526eed08fdef557fec"
+        },
+        {
+          "lesson": 39,
+          "video_id": "DYwgO80HY0A",
+          "caption_sha256": "1b58363f42fd89d7b5b01d5f53219f2b35a448d956d208185b416ff118de34c7"
+        }
+      ]
+    },
+    {
+      "chapter": 22,
+      "complete_source_text_reading": [
+        40
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "diagonal",
+          "lesson": 40,
+          "start": 16,
+          "end": 626
+        },
+        {
+          "section": "eigen",
+          "lesson": 40,
+          "start": 626,
+          "end": 1241
+        },
+        {
+          "section": "diagonal",
+          "lesson": 40,
+          "start": 1241,
+          "end": 1409
+        },
+        {
+          "section": "rotation",
+          "lesson": 40,
+          "start": 1409,
+          "end": 1681
+        },
+        {
+          "section": "direct",
+          "lesson": 40,
+          "start": 1681,
+          "end": 2529
+        },
+        {
+          "section": "invariant",
+          "lesson": 40,
+          "start": 2529,
+          "end": 2947
+        },
+        {
+          "section": "polynomials",
+          "lesson": 40,
+          "start": 2947,
+          "end": 3498
+        },
+        {
+          "section": "computation",
+          "lesson": 40,
+          "start": 945,
+          "end": 1187
+        }
+      ],
+      "teaching_constructions": [
+        "Complete eigenspace directness proof",
+        "Real and complex rotation calculation and periodic qualification",
+        "Invariant complements counterexample",
+        "Six solutions and exact eigenvector/polynomial lab"
+      ],
+      "scope_decisions": [
+        "No zero eigenvectors but zero retained in eigenspaces",
+        "Finite-dimensional noninvertible eigenvalue criterion",
+        "Radical formulas distinguished from numerical computability",
+        "Determinants and characteristic polynomials remain outside proof dependencies"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Axler, Linear Algebra Done Right, fourth edition",
+          "url": "https://linear.axler.net/LADR4e.pdf",
+          "sections": [
+            "5A"
+          ],
+          "printed_pages": [
+            "133–139"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch22.html",
+      "body_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+      "ledger_sha256": "5022d011ed905a0acfc38412bf2b7f05c460805131b582f282392ac214790eb7",
+      "recordings": [
+        {
+          "lesson": 40,
+          "video_id": "Mcg7q471nJ4",
+          "caption_sha256": "29b33c8b9443ee8435a25a4cce1b91da05e0befb5d71bbc001056601e23db497"
+        }
+      ]
+    },
+    {
+      "chapter": 23,
+      "complete_source_text_reading": [
+        41,
+        42
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "existence",
+          "lesson": 41,
+          "start": 436,
+          "end": 2047
+        },
+        {
+          "section": "minimal",
+          "lesson": 41,
+          "start": 2047,
+          "end": 2320
+        },
+        {
+          "section": "roots",
+          "lesson": 41,
+          "start": 2320,
+          "end": 2700
+        },
+        {
+          "section": "cyclic",
+          "lesson": 41,
+          "start": 2700,
+          "end": 3305
+        },
+        {
+          "section": "roots",
+          "lesson": 41,
+          "start": 3551,
+          "end": 3667
+        },
+        {
+          "section": "diagonalization",
+          "lesson": 41,
+          "start": 3667,
+          "end": 4086
+        },
+        {
+          "section": "roots",
+          "lesson": 41,
+          "start": 4086,
+          "end": 4222
+        },
+        {
+          "section": "odd",
+          "lesson": 42,
+          "start": 16,
+          "end": 624
+        },
+        {
+          "section": "quotients",
+          "lesson": 42,
+          "start": 624,
+          "end": 1362
+        },
+        {
+          "section": "odd",
+          "lesson": 42,
+          "start": 1362,
+          "end": 1750
+        },
+        {
+          "section": "diagonalization",
+          "lesson": 42,
+          "start": 1750,
+          "end": 3045
+        }
+      ],
+      "teaching_constructions": [
+        "Kernel/range direct-sum counterexample repairing source slip",
+        "Complete quotient vector-space/eigenlifting proofs",
+        "Cyclic certificate replacing unqualified heuristic",
+        "Bézout two-factor decomposition and finite induction",
+        "Exact full-matrix algorithm and six solutions"
+      ],
+      "scope_decisions": [
+        "Nonzero annihilator distinct from always-present zero polynomial",
+        "Zero-space minimal polynomial is1",
+        "FTA explicit dependency of parity argument",
+        "No universal random-vector success probability",
+        "Companion relation corrected to T^5−6T+3I"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Axler, Linear Algebra Done Right, fourth edition",
+          "url": "https://linear.axler.net/LADR4e.pdf",
+          "sections": [
+            "5B",
+            "3E"
+          ],
+          "printed_pages": [
+            "143–150",
+            "98–101"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch23.html",
+      "body_sha256": "8d9501de86f6a1909bb3a091885b4c3e35e122553abe7201db1cc659798e126e",
+      "ledger_sha256": "45725a7b9c004524f3149f0fd35f88f506edb4f795940383fa455825be87631e",
+      "recordings": [
+        {
+          "lesson": 41,
+          "video_id": "Bt0_QVRosXk",
+          "caption_sha256": "dd92277a680fc10a0b3ebd4f0a55b8b2074a6494f515afacb08db4f061fc46fa"
+        },
+        {
+          "lesson": 42,
+          "video_id": "N-QvM6uq8NI",
+          "caption_sha256": "38cf399ba816b4e62ceeaac850feec993307bdf4d0b822bce4ef466754b47d19"
+        }
+      ]
+    },
+    {
+      "chapter": 24,
+      "complete_source_text_reading": [
+        43
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "flags",
+          "lesson": 43,
+          "start": 16,
+          "end": 707
+        },
+        {
+          "section": "annihilator",
+          "lesson": 43,
+          "start": 707,
+          "end": 1215
+        },
+        {
+          "section": "spectrum",
+          "lesson": 43,
+          "start": 1215,
+          "end": 1555
+        },
+        {
+          "section": "criterion",
+          "lesson": 43,
+          "start": 1555,
+          "end": 2840
+        },
+        {
+          "section": "example",
+          "lesson": 43,
+          "start": 2840,
+          "end": 3066
+        }
+      ],
+      "teaching_constructions": [
+        "Complete invariant flag equivalence",
+        "Flag lowering annihilator proof with zero case",
+        "Explicit real swap eigenbasis and characteristic2 contrast",
+        "Row elimination versus similarity example",
+        "Exact flag lab and six solutions"
+      ],
+      "scope_decisions": [
+        "Minimal polynomial exponents not diagonal multiplicities",
+        "Triangular basis vectors need not all be eigenvectors",
+        "Finite-dimensional complex triangularization depends on FTA"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Axler, Linear Algebra Done Right, fourth edition",
+          "url": "https://linear.axler.net/LADR4e.pdf",
+          "sections": [
+            "5C"
+          ],
+          "printed_pages": [
+            "154–160"
+          ]
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch24.html",
+      "body_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+      "ledger_sha256": "f653caa1a917f94ed71e8a2aa63a7cdbf5d3544597621ba7452567353ee1f938",
+      "recordings": [
+        {
+          "lesson": 43,
+          "video_id": "6hsgh3IRFAA",
+          "caption_sha256": "1d79eb671429f0f494c8fc41f784402e8308a494b54376b6b2e580b4dd0c6582"
+        }
+      ]
+    },
+    {
+      "chapter": 25,
+      "complete_source_text_reading": [
+        44,
+        45
+      ],
+      "reading_method": "sequential reading of all extracted caption segments",
+      "section_source_map": [
+        {
+          "section": "blocks",
+          "lesson": 44,
+          "start": 16,
+          "end": 1052
+        },
+        {
+          "section": "jordan",
+          "lesson": 44,
+          "start": 1052,
+          "end": 1684
+        },
+        {
+          "section": "primary",
+          "lesson": 44,
+          "start": 1684,
+          "end": 1824
+        },
+        {
+          "section": "stabilization",
+          "lesson": 44,
+          "start": 1824,
+          "end": 2583
+        },
+        {
+          "section": "orbits",
+          "lesson": 44,
+          "start": 2583,
+          "end": 2899
+        },
+        {
+          "section": "exchange",
+          "lesson": 44,
+          "start": 2899,
+          "end": 3594
+        },
+        {
+          "section": "examples",
+          "lesson": 45,
+          "start": 16,
+          "end": 1325
+        }
+      ],
+      "teaching_constructions": [
+        "Complete stabilization proof with correct kernel equality",
+        "Fully indexed orbit-exchange proof permitting zero replacement",
+        "Kernel-growth formula proving Jordan block uniqueness",
+        "Explicit chain bases and verified source example matrices",
+        "Original rank-one square-zero replacement for caption-ambiguous final matrix",
+        "Binomial block power derivation and six solutions"
+      ],
+      "scope_decisions": [
+        "Upperblock is leftshift in standard column convention; reverse orbit order",
+        "Correct source mistaken A(Km)=Km stabilization",
+        "Do not equate nontrivial coefficient relation with nonzero vector sum",
+        "Source B−2I squared not globally zero on eigenvalue3block",
+        "Jordan exists when particular minimal polynomial splits over field",
+        "No numerical stability claim"
+      ],
+      "reference_sections_inspected": [
+        {
+          "source": "Axler, Linear Algebra Done Right, fourth edition",
+          "url": "https://linear.axler.net/LADR4e.pdf",
+          "sections": [
+            "8A",
+            "8C"
+          ],
+          "printed_pages": [
+            "298–305",
+            "321–324"
+          ]
+        },
+        {
+          "source": "Terence Tao, The Jordan normal form and the Euclidean algorithm",
+          "url": "https://terrytao.wordpress.com/2007/10/12/the-jordan-normal-form-and-the-euclidean-algorithm/",
+          "sections": [
+            "Reduction to the nilpotent case",
+            "Proof of the nilpotent case"
+          ],
+          "publication_date": "2007-10-12"
+        }
+      ],
+      "limits": [
+        "No comprehensive audiovisual review",
+        "Caption-ambiguous final matrix replaced with explicitly original verified example",
+        "No formal proof-assistant verification"
+      ],
+      "manuscript": "chapters/ch25.html",
+      "body_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+      "ledger_sha256": "d669b7a3af9d04e94a10b5e3975b72a8f83c63706758ffbfa874c25d35f912e2",
+      "recordings": [
+        {
+          "lesson": 44,
+          "video_id": "_0kG3mC7oF4",
+          "caption_sha256": "6eb7402586e1a50533e5b27084225218a37fc93110d9467016954f0c68662c21"
+        },
+        {
+          "lesson": 45,
+          "video_id": "RjhmSLkjnNM",
+          "caption_sha256": "9cd9c23f4c486d4015d1e473a81500916ebed68fe193f61523b609a3f8b51cf5"
+        }
+      ]
+    }
+  ]
+}

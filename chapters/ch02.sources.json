@@ -1,0 +1,18 @@
+{
+  "chapter": 2,
+  "complete_source_text_reading": [4, 5, 6],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {"section":"inference","lesson":4,"start":79,"end":787},
+    {"section":"equivalence","lesson":4,"start":787,"end":1188},
+    {"section":"contradiction","lesson":5,"start":44,"end":570},
+    {"section":"contrapositive","lesson":5,"start":570,"end":996},
+    {"section":"operations","lesson":6,"start":21,"end":575},
+    {"section":"distributivity","lesson":6,"start":575,"end":703},
+    {"section":"de-morgan","lesson":6,"start":703,"end":1091}
+  ],
+  "teaching_constructions": ["Selection-rule rewrite", "Formal five-line derivation", "Exhaustive finite subset test", "Six worked problems"],
+  "scope_decisions": ["Full completeness theorem for a logical calculus is outside scope", "Formal verification software forecasts are not presented as current facts", "Excluded middle and noncontradiction are distinguished", "Arithmetic prerequisite facts are identified rather than claimed already reconstructed"],
+  "reference_sections_inspected": [{"source":"Hammack, Book of Proof","sections":["4.3","5.1","6.1","8.3"],"printed_pages":["118–119","129","138–139","163–165"]}],
+  "limits": ["No comprehensive audiovisual review", "No formal proof-assistant verification"]
+}

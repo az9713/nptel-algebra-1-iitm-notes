@@ -1,0 +1,86 @@
+{
+  "chapter": 12,
+  "complete_source_text_reading": [
+    23
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "finite",
+      "lesson": 23,
+      "start": 16,
+      "end": 1119
+    },
+    {
+      "section": "fields",
+      "lesson": 23,
+      "start": 1119,
+      "end": 1429
+    },
+    {
+      "section": "ordered-fields",
+      "lesson": 23,
+      "start": 1429,
+      "end": 1763
+    },
+    {
+      "section": "fractions",
+      "lesson": 23,
+      "start": 1763,
+      "end": 2083
+    },
+    {
+      "section": "axioms",
+      "lesson": 23,
+      "start": 1929,
+      "end": 2083
+    },
+    {
+      "section": "reduced",
+      "lesson": 23,
+      "start": 2083,
+      "end": 2219
+    },
+    {
+      "section": "order",
+      "lesson": 23,
+      "start": 2219,
+      "end": 2327
+    },
+    {
+      "section": "embedding",
+      "lesson": 23,
+      "start": 2327,
+      "end": 3075
+    }
+  ],
+  "teaching_constructions": [
+    "Full rational fieldlaw andpositive-denominator order verification",
+    "Generalfinite-domain theorem",
+    "Exact representative grid:42pairs,156equivalent ordered pairs",
+    "Six solvedproblems including non-domain transitivitycounterexample"
+  ],
+  "scope_decisions": [
+    "Zero ring excluded from fields and domains",
+    "Positive denominator enforced for crossproduct order",
+    "Reducedform includes zero uniquely0/1",
+    "Integer andQ embeddings targetorderedfield; no claim for arbitrary positivecharacteristic fields",
+    "General fractionfield result cited as context; integercase proved fully"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Judson, Abstract Algebra: Theory and Applications,2026",
+      "url": "https://judsonbooks.org/aata-files/aata-20260811.pdf",
+      "sections": [
+        "18.1"
+      ],
+      "printed_pages": [
+        "234–237"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

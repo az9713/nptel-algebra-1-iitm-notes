@@ -1,0 +1,113 @@
+{
+  "chapter": 1,
+  "complete_source_text_reading": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "source_topics": [
+    {
+      "lesson": 0,
+      "start": 16,
+      "end": 485,
+      "topic": "Course scope, foundations, linear algebra, proof practice; previews of later courses"
+    },
+    {
+      "lesson": 1,
+      "start": 16,
+      "end": 959,
+      "topic": "Objects, properties, proof, abstraction, role of exercises and applications"
+    },
+    {
+      "lesson": 2,
+      "start": 16,
+      "end": 1457,
+      "topic": "Naive sets, membership, equality, inclusion, set-builder notation, number sets, empty set"
+    },
+    {
+      "lesson": 3,
+      "start": 16,
+      "end": 1600,
+      "topic": "Statements, connectives, material implication and causation, truth tables, predicates, quantifiers, negation, double negation, order"
+    }
+  ],
+  "teaching_constructions": [
+    "Two-symbol output specification",
+    "Exhaustive acceptability-table enumeration",
+    "Six worked problems"
+  ],
+  "scope_decisions": [
+    "Motivational historical anecdotes and application forecasts are not reproduced as verified historical claims",
+    "Later algebra-course previews are identified as outside this playlist",
+    "Set-theoretic coding of natural numbers is not fixed in this chapter"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Hammack, Book of Proof",
+      "sections": [
+        "1.1",
+        "1.3",
+        "2.3",
+        "2.7",
+        "2.10"
+      ],
+      "printed_pages": [
+        "3–4",
+        "12–13",
+        "42–43",
+        "53–54",
+        "59–60"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No machine-checked formal proof"
+  ],
+  "section_source_map": [
+    {
+      "section": "objects",
+      "lesson": 1,
+      "start": 42,
+      "end": 456
+    },
+    {
+      "section": "sets",
+      "lesson": 2,
+      "start": 35,
+      "end": 874
+    },
+    {
+      "section": "properties",
+      "lesson": 2,
+      "start": 875,
+      "end": 1225
+    },
+    {
+      "section": "connectives",
+      "lesson": 3,
+      "start": 16,
+      "end": 350
+    },
+    {
+      "section": "implication",
+      "lesson": 3,
+      "start": 351,
+      "end": 702
+    },
+    {
+      "section": "quantifiers",
+      "lesson": 3,
+      "start": 899,
+      "end": 1262
+    },
+    {
+      "section": "negation",
+      "lesson": 3,
+      "start": 1263,
+      "end": 1600
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "order": 9,
+  "title": "Cardinality and the limits of enumeration",
+  "lecture_numbers": [
+    19
+  ],
+  "file": "chapter-09-cardinality-and-the-limits-of-enumeration.html",
+  "manuscript": "chapters/ch09.html",
+  "status": "complete; independently reviewed",
+  "chapter": 9,
+  "body_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+  "words_excluding_code": 2556,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 6,
+  "sections": [
+    {
+      "heading": "9.1 Counting means a bijection Lesson 19 · 01:30",
+      "anchor": "finite",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=90s"
+      ]
+    },
+    {
+      "heading": "9.2 Infinite sets and finite deletion Lesson 19 · 10:19",
+      "anchor": "infinite",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=619s"
+      ]
+    },
+    {
+      "heading": "9.3 A proper subset can have the same size Lesson 19 · 19:54",
+      "anchor": "shift",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=1194s"
+      ]
+    },
+    {
+      "heading": "9.4 Lists with repetitions can be repaired Lesson 19 · 41:16",
+      "anchor": "countable",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=2476s"
+      ]
+    },
+    {
+      "heading": "9.5 Count the grid, then count a union Lesson 19 · 53:51",
+      "anchor": "diagonals",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=3231s"
+      ]
+    },
+    {
+      "heading": "9.6 A subset missing from every proposed list Lesson 19 · 34:53",
+      "anchor": "cantor",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=2093s"
+      ]
+    }
+  ]
+}

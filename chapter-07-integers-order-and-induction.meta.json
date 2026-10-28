@@ -1,0 +1,61 @@
+{
+  "order": 7,
+  "title": "Integers, order, and induction",
+  "lecture_numbers": [
+    15,
+    16
+  ],
+  "file": "chapter-07-integers-order-and-induction.html",
+  "manuscript": "chapters/ch07.html",
+  "status": "complete; independently reviewed",
+  "chapter": 7,
+  "body_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+  "words_excluding_code": 2256,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 6,
+  "sections": [
+    {
+      "heading": "7.1 An algebraic structure with a global condition Lesson 15 · 05:07",
+      "anchor": "axioms",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=TUzAHnMLbJw&t=307s"
+      ]
+    },
+    {
+      "heading": "7.2 The least positive element and the next integer Lesson 15 · 13:54",
+      "anchor": "discrete",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=TUzAHnMLbJw&t=834s"
+      ]
+    },
+    {
+      "heading": "7.3 Ordinary, shifted, and strong induction Lesson 16 · 00:50",
+      "anchor": "induction",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Mnh5V0D8NLU&t=50s"
+      ]
+    },
+    {
+      "heading": "7.4 Well-ordering and the smallest counterexample Lesson 15 · 24:11",
+      "anchor": "well-order",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=TUzAHnMLbJw&t=1451s"
+      ]
+    },
+    {
+      "heading": "7.5 Rules that determine a sequence Lesson 16 · 09:34",
+      "anchor": "recursion",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Mnh5V0D8NLU&t=574s"
+      ]
+    },
+    {
+      "heading": "7.6 Factorials and Fibonacci states Lesson 16 · 07:01",
+      "anchor": "examples",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Mnh5V0D8NLU&t=421s"
+      ]
+    }
+  ]
+}

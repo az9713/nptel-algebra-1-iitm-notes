@@ -1,0 +1,67 @@
+{
+  "order": 13,
+  "title": "Real numbers and completeness",
+  "lecture_numbers": [
+    24
+  ],
+  "file": "chapter-13-real-numbers-and-completeness.html",
+  "manuscript": "chapters/ch13.html",
+  "status": "complete; independently reviewed",
+  "chapter": 13,
+  "body_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+  "words_excluding_code": 2684,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 7,
+  "sections": [
+    {
+      "heading": "13.1 A bound need not belong to the set Lesson 24 · 09:40",
+      "anchor": "supremum",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=580s"
+      ]
+    },
+    {
+      "heading": "13.2 The useful local test for a supremum Lesson 24 · 21:04",
+      "anchor": "epsilon",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=1264s"
+      ]
+    },
+    {
+      "heading": "13.3 Nested closed intervals have a common point Lesson 24 · 30:06",
+      "anchor": "nested",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=1806s"
+      ]
+    },
+    {
+      "heading": "13.4 No positive scale escapes integer multiples Lesson 24 · 38:26",
+      "anchor": "archimedean",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=2306s"
+      ]
+    },
+    {
+      "heading": "13.5 Shrinking makes the common point unique Lesson 24 · 48:18",
+      "anchor": "shrinking",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=2898s"
+      ]
+    },
+    {
+      "heading": "13.6 A square root constructed by rational bisection Lesson 24 · 55:35",
+      "anchor": "root",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=3335s"
+      ]
+    },
+    {
+      "heading": "13.8 Recover completeness from interval intersection Lesson 24 · 65:22",
+      "anchor": "converse",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=3922s"
+      ]
+    }
+  ]
+}

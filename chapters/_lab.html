@@ -1,0 +1,21 @@
+<h1>Algebra laboratory</h1>
+<p class="lead">Use finite experiments to inspect a theorem's mechanism. Each chapter contains one executable Python listing with its checked output. This page connects those experiments and offers an offline explorer for Jordan-chain lengths.</p>
+<h2 id="chain-explorer">From chains to kernel dimensions</h2>
+<p>Enter the sizes of Jordan blocks for one eigenvalue. For a size-$s$ block, applying $T-\lambda I$ repeatedly kills one more coordinate at each step. The kernel of its $k$th power has dimension $\min(k,s)$. Adding these contributions across blocks produces the nullity sequence proved in Chapter25.</p>
+<label for="block-sizes">Block sizes, separated by commas (1–8 each, total at most32)</label>
+<input id="block-sizes" value="3,2,1" autocomplete="off" inputmode="text">
+<button type="button" id="explore-chains">Inspect chains</button>
+<p id="chain-status" role="status"></p><div id="chain-diagram" aria-label="Jordan chains"></div>
+<div id="chain-table"></div>
+<p>Each displayed arrow points toward the vector obtained after applying $T-\lambda I$ once. The leftmost chain vector maps to zero. Changing these sizes changes the operator's block structure; changing the particular chain basis within a fixed structure does not change the table.</p>
+<h2 id="python">Run the exact chapter experiments</h2>
+<p>Use Python3 with the dependencies in <a href="requirements.txt">requirements.txt</a>. The early chapters rely chiefly on the standard library; later listings use SymPy for exact symbolic and rational arithmetic. Copy a listing into a file or run all chapter listings with <code>python tools/check_chapter_code.py</code> from the repository root. The checker compares the executed output with the printed output and records the manuscript hash.</p>
+<table><thead><tr><th>Chapters</th><th>Experiment theme</th><th>What the computation establishes</th></tr></thead><tbody>
+<tr><td>1–4</td><td>Finite logic, sets, functions, and quotients</td><td>The specified finite examples and enumerations; universal claims still depend on the supplied proofs.</td></tr>
+<tr><td>5–14</td><td>Algebraic laws, induction, arithmetic, number systems, and polynomials</td><td>Exact checks within stated bounds, with explicit field and representation conventions.</td></tr>
+<tr><td>15–21</td><td>Elimination, affine solutions, subspaces, finite bases, rank, and coordinate conversions</td><td>Listed identities, exhaustive small finite spaces, or exact matrix calculations.</td></tr>
+<tr><td>22–25</td><td>Eigenvectors, minimal polynomials, invariant flags, and chain partitions</td><td>Exact polynomial identities, basis-change certificates, and kernel-growth counts.</td></tr>
+</tbody></table>
+<h2 id="experiments">Four variations worth predicting first</h2>
+<ol><li>In Chapter20 change the prime field for differentiation. Predict which monomials enter the kernel when the characteristic divides their exponent.</li><li>In Chapter21 reverse the direction of a basis conversion deliberately. Identify the mismatched coordinate spaces before running the equality check.</li><li>In Chapter23 choose a vector inside one eigenspace. Compare its cyclic polynomial with the full operator's minimal polynomial.</li><li>In the explorer, compare block lists <code>2,2</code> and <code>2,1,1</code>. Both have largest block two and total dimension four, but their first kernel dimensions differ.</li></ol>
+<p>The browser explorer uses exact integer counting and performs no network requests. The Python laboratories are separate from the browser; the site does not execute arbitrary Python or accept uploaded code.</p>

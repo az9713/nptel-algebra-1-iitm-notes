@@ -1,0 +1,82 @@
+{
+  "order": 14,
+  "title": "Complex numbers and polynomial arithmetic",
+  "lecture_numbers": [
+    25,
+    26
+  ],
+  "file": "chapter-14-complex-numbers-and-polynomial-arithmetic.html",
+  "manuscript": "chapters/ch14.html",
+  "status": "complete; independently reviewed",
+  "chapter": 14,
+  "body_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+  "words_excluding_code": 2946,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 9,
+  "sections": [
+    {
+      "heading": "14.1 Build the field on real pairs Lesson 25 · 21:25",
+      "anchor": "complex-field",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=TPBugn_HcBk&t=1285s"
+      ]
+    },
+    {
+      "heading": "14.2 Magnitude, a real scalar product, and triangle inequality Lesson 25 · 28:23",
+      "anchor": "norm",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=TPBugn_HcBk&t=1703s"
+      ]
+    },
+    {
+      "heading": "14.3 Rotation, scaling, and choices of argument Lesson 25 · 37:23",
+      "anchor": "polar",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=TPBugn_HcBk&t=2243s"
+      ]
+    },
+    {
+      "heading": "14.4 A real answer through nonreal intermediate values Lesson 25 · 07:26",
+      "anchor": "cubic",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=TPBugn_HcBk&t=446s"
+      ]
+    },
+    {
+      "heading": "14.5 Two precise obstructions Lesson 25 · 41:57",
+      "anchor": "order-obstructions",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=TPBugn_HcBk&t=2517s"
+      ]
+    },
+    {
+      "heading": "14.6 A polynomial is a finite coefficient sequence Lesson 26 · 00:54",
+      "anchor": "formal",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=SZjALtTehjw&t=54s"
+      ]
+    },
+    {
+      "heading": "14.7 Degree and evaluation measure different information Lesson 26 · 20:53",
+      "anchor": "degree",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=SZjALtTehjw&t=1253s"
+      ]
+    },
+    {
+      "heading": "14.8 Long division is a terminating proof Lesson 26 · 36:29",
+      "anchor": "division",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=SZjALtTehjw&t=2189s"
+      ]
+    },
+    {
+      "heading": "14.10 Roots, linear factors, and the fundamental theorem Lesson 26 · 50:33",
+      "anchor": "roots",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=SZjALtTehjw&t=3033s"
+      ]
+    }
+  ]
+}

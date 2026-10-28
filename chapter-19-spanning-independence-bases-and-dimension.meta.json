@@ -1,0 +1,68 @@
+{
+  "order": 19,
+  "title": "Spanning, independence, bases, and dimension",
+  "lecture_numbers": [
+    34,
+    35
+  ],
+  "file": "chapter-19-spanning-independence-bases-and-dimension.html",
+  "manuscript": "chapters/ch19.html",
+  "status": "complete; independently reviewed",
+  "chapter": 19,
+  "body_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+  "words_excluding_code": 2518,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 7,
+  "sections": [
+    {
+      "heading": "19.1 Enough vectors and no redundant vectors Lesson 34 · 05:00",
+      "anchor": "span",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=uuU3XeTGzjk&t=300s"
+      ]
+    },
+    {
+      "heading": "19.2 The deletion lemma Lesson 34 · 23:41",
+      "anchor": "deletion",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=uuU3XeTGzjk&t=1421s"
+      ]
+    },
+    {
+      "heading": "19.3 Exchange: why coordinate counts are bounded Lesson 35 · 00:57",
+      "anchor": "exchange",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Nm9N9cLeaKU&t=57s"
+      ]
+    },
+    {
+      "heading": "19.4 Extracting and extending bases Lesson 35 · 23:48",
+      "anchor": "bases",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Nm9N9cLeaKU&t=1428s"
+      ]
+    },
+    {
+      "heading": "19.5 Dimension is well defined Lesson 35 · 41:41",
+      "anchor": "dimension",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Nm9N9cLeaKU&t=2501s"
+      ]
+    },
+    {
+      "heading": "19.6 Subspace dimensions and complements Lesson 35 · 44:36",
+      "anchor": "complements",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Nm9N9cLeaKU&t=2676s"
+      ]
+    },
+    {
+      "heading": "19.7 Count shared directions once Lesson 35 · 55:18",
+      "anchor": "sum",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Nm9N9cLeaKU&t=3318s"
+      ]
+    }
+  ]
+}

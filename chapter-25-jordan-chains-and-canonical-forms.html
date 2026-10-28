@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; object-src 'none'">
+<meta name="description" content="Independent transcript-grounded Algebra 1 textbook: proofs, worked examples, exercises, and offline mathematics.">
+<title>Jordan chains and canonical forms · Algebra 1: Foundations</title><link rel="stylesheet" href="assets/book.css">
+<script src="assets/math-config.js"></script><script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script><script defer src="assets/lab.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Algebra 1: Foundations · NPTEL</a><nav class="course-nav" aria-label="Book"><a href="index.html">Chapters</a><a href="book-overview.html">Study guide</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Algebra laboratory</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>25. Jordan chains and canonical forms</h1>
+<p class="lead">When an operator lacks an eigenbasis, generalized eigenvectors supply the missing directions. They come in chains: applying $T-\lambda I$ moves one step toward an eigenvector and eventually reaches zero. Jordan form organizes a whole space into such chains. Their lengths, rather than an arbitrary choice of chain vectors, are the invariant information.</p>
+<p class="source-note">Lessons 44–45 introduce Jordan blocks, reduction to nilpotence, the orbit-exchange proof, and small canonical-form computations. We correct the shift orientation for column coordinates, prove stabilization explicitly, complete the exchange argument including zero replacements, and add a kernel-growth proof of uniqueness of block sizes.</p>
+
+<h2 id="blocks">25.1 Fix the orientation before building chains <a class="timestamp" href="https://www.youtube.com/watch?v=_0kG3mC7oF4&amp;t=32s">Lesson 44 · 00:32</a></h2>
+<div class="definition"><p>An operator $N$ is <dfn>nilpotent</dfn> if $N^r=0$ for some positive integer $r$. Its <dfn>nilpotence index</dfn> is the least such positive integer. A nonzero vector $v$ is a <dfn>generalized eigenvector</dfn> for $\lambda$ if $(T-\lambda I)^kv=0$ for some positive integer $k$.</p></div>
+<p>For a positive integer $s$, define $J_s(\lambda)$ to have $\lambda$ on the diagonal, one immediately above the diagonal, and zero elsewhere. Thus $J_s(\lambda)=\lambda I+N_s$, where</p>
+$$N_se_1=0,\qquad N_se_j=e_{j-1}\quad(2\le j\le s).$$
+<p>On coordinate columns $N_s(x_1,\ldots,x_s)^{\mathsf T}=(x_2,\ldots,x_s,0)^{\mathsf T}$, a left shift. A right shift has ones below the diagonal in the standard column convention. Reversing the basis exchanges these two presentations. We consistently use the upper Jordan block.</p>
+<p>A <dfn>Jordan matrix</dfn> is block diagonal with blocks $J_{s_i}(\lambda_i)$; several blocks may share the same eigenvalue. A <dfn>Jordan chain</dfn> for $\lambda$ is an independent ordered list $(u_1,\ldots,u_s)$ satisfying $(T-\lambda I)u_1=0$ and $(T-\lambda I)u_j=u_{j-1}$ for $j\ge2$. Its span is invariant, and the restriction has matrix $J_s(\lambda)$ in that order.</p>
+<p>A single block has eigenspace $Fe_1$, since $N_sx=0$ forces $x_2=\cdots=x_s=0$. Also $N_s^s=0$ while $N_s^{s-1}e_s=e_1\ne0$. Chapter 23 proves that its minimal polynomial is $(X-\lambda)^s$. Therefore a block of size greater than one is not diagonalizable. Its only eigenvalue is $\lambda$, either by this minimal polynomial or by triangularity.</p>
+
+<h2 id="stabilization">25.2 A valid kernel–range splitting after stabilization <a class="timestamp" href="https://www.youtube.com/watch?v=_0kG3mC7oF4&amp;t=1824s">Lesson 44 · 30:24</a></h2>
+<p>For an operator $A$ on an $n$-dimensional space, let $K_j=\ker A^j$ and $R_j=\operatorname{im}A^j$, including $K_0=\{0\}$ and $R_0=V$. Then $K_j\subseteq K_{j+1}$ because applying $A$ to zero still gives zero, while $R_{j+1}\subseteq R_j$ because $A^{j+1}v=A^j(Av)$.</p>
+<div class="theorem"><p><strong>Proposition 25.1, proved here.</strong> Once consecutive kernels are equal, all later kernels equal them. They stabilize by index $n$, and</p>
+$$V=\ker A^n\oplus\operatorname{im}A^n.$$
+</div>
+<div class="proof"><p>If $K_m=K_{m+1}$ and $v\in K_{m+2}$, then $Av\in K_{m+1}=K_m$, so $A^{m+1}v=0$ and $v\in K_{m+1}$. Thus $K_{m+1}=K_{m+2}$, and induction repeats the equality. If stabilization had not occurred by $n$, all $n+1$ inclusions from $K_0$ to $K_{n+1}$ would be strict. Each raises dimension at least one, impossible in dimension $n$. Hence $K_n=K_{2n}$.</p>
+<p>If $u\in K_n\cap R_n$, write $u=A^nv$. Then $0=A^nu=A^{2n}v$, so $v\in K_{2n}=K_n$ and $u=A^nv=0$. The intersection is trivial. Rank–nullity for $A^n$ gives $\dim K_n+\dim R_n=n$, so the direct sum has full dimension and equals $V$. ∎</p></div>
+<p>Both summands are invariant under $A$. On $K_n$, $A$ is nilpotent; on $R_n$, it is invertible. For the latter, $Ax=0$ with $x\in R_n$ implies $x\in K_n\cap R_n=\{0\}$, and finite-dimensional injectivity gives bijectivity. The ranges also stabilize by $n$: nestedness plus rank–nullity and stabilized kernel dimensions give equal dimensions and hence equal subspaces.</p>
+<p>The equality that stabilizes is $K_m=K_{m+1}$, not $A(K_m)=K_m$. A nilpotent chain generally has $A(K_m)$ strictly smaller than $K_m$. This distinguishes the source's intended finite-dimensional stabilization from a misleading caption formula.</p>
+
+<h2 id="primary">25.3 Separate eigenvalues, then subtract the scalar <a class="timestamp" href="https://www.youtube.com/watch?v=_0kG3mC7oF4&amp;t=1684s">Lesson 44 · 28:04</a></h2>
+<p>Suppose $m_T=\prod_{i=1}^r(X-\lambda_i)^{a_i}$ splits over $F$, with distinct $\lambda_i$. Chapter 23's relatively prime factor theorem gives</p>
+$$V=\bigoplus_{i=1}^rG_i,\qquad G_i=\ker(T-\lambda_iI)^{a_i}.$$
+<p>Each $G_i$ is invariant, and $N_i=(T-\lambda_iI)|_{G_i}$ is nilpotent. A Jordan basis for $N_i$ becomes one for $T|_{G_i}$ merely by adding $\lambda_i$ to each diagonal entry. A basis made from all these bases gives a block diagonal matrix. Thus it suffices to prove that every nilpotent operator has a chain basis. This works over any field where the particular minimal polynomial splits; algebraic closure is a sufficient condition for every operator, not a necessary condition for this one.</p>
+<p>The lecture also gives a route using Proposition25.1: choose an eigenvalue $\lambda$, apply the stabilized splitting to $A=T-\lambda I$, and separate its nilpotent part from its invertible part. Both pieces are invariant under $T=A+\lambda I$. If both are nonzero, their dimensions are smaller and induction applies; if the kernel piece is all of $V$, the nilpotent case remains. The polynomial splitting above makes all eigenvalue pieces explicit at once.</p>
+
+<h2 id="orbits">25.4 An orbit stays independent until it dies <a class="timestamp" href="https://www.youtube.com/watch?v=_0kG3mC7oF4&amp;t=2643s">Lesson 44 · 44:03</a></h2>
+<p>Let $N$ be nilpotent. For $v\ne0$, its <dfn>lifespan</dfn> is the least positive integer $\ell$ with $N^\ell v=0$. Then $N^{\ell-1}v\ne0$.</p>
+<div class="theorem"><p><strong>Lemma 25.2, proved here.</strong> The list $v,Nv,\ldots,N^{\ell-1}v$ is independent, and its reverse is a Jordan chain for zero.</p></div>
+<div class="proof"><p>Suppose $\sum_{j=0}^{\ell-1}c_jN^jv=0$ is a nontrivial relation, and let $j_0$ be the least index with $c_{j_0}\ne0$. Applying $N^{\ell-1-j_0}$ kills every later term and gives $c_{j_0}N^{\ell-1}v=0$, contradiction. Reversing the independent list orders it as $N^{\ell-1}v,\ldots,Nv,v$, and $N$ sends each entry to its predecessor, killing the first. ∎</p></div>
+<p>Choosing arbitrary orbits until they span does not guarantee independence between orbits. For instance, $Ne_2=e_1$, $Ne_1=0$: the orbits starting at $e_2$ and $e_1$ overlap. The next argument removes this redundancy while preserving entire orbit structure.</p>
+
+<h2 id="exchange">25.5 Shorten dependent orbits until they form a basis <a class="timestamp" href="https://www.youtube.com/watch?v=_0kG3mC7oF4&amp;t=2899s">Lesson 44 · 48:19</a></h2>
+<div class="theorem"><p><strong>Theorem 25.3, proved here.</strong> Every nilpotent operator on a finite-dimensional space over any field has a basis made from reversed finite orbits. Hence it has a Jordan matrix with every diagonal entry zero.</p></div>
+<div class="proof"><p>Choose among all finite families of full nonzero orbits spanning $V$ one with the smallest total number of listed vectors. Such families exist by taking the orbits of a basis, and a minimum exists by well-ordering. If $V=0$, take the empty family. Write the chosen orbits as $v_i,Nv_i,\ldots,N^{\ell_i-1}v_i$.</p>
+<p>Suppose their concatenation has a nontrivial relation $\sum_{i,j}c_{ij}N^jv_i=0$. Among its nonzero coefficient positions, let $h$ be the maximum of $\ell_i-1-j$, and apply $N^h$. Terms with smaller remaining lifespan vanish, and terms attaining the maximum become terminal orbit vectors. We obtain a relation</p>
+$$\sum_{i\in S}b_iN^{\ell_i-1}v_i=0,$$
+<p>where $S$ is nonempty and each $b_i\ne0$. For each orbit at most one original position attains the maximum, so its displayed coefficient has not been canceled by another position of the same orbit. The relation is nontrivial as a list of coefficients; its vector sum, of course, is zero.</p>
+<p>Choose $i_0\in S$ with the smallest $\ell_i$ in $S$ and put $d=\ell_{i_0}-1$. Define</p>
+$$u=\sum_{i\in S}b_iN^{\ell_i-\ell_{i_0}}v_i.$$
+<p>All exponents are nonnegative, and the terminal relation gives $N^du=0$. The term from $i_0$ is $b_{i_0}v_{i_0}$ with nonzero coefficient. Hence $v_{i_0}$ can be recovered from $u$ and vectors of the other orbits by solving that expression. Applying powers of $N$ recovers the whole old orbit from the new orbit of $u$ and the other orbits. Conversely all new vectors lie in the old span, so replacing the orbit of $v_{i_0}$ preserves the total span.</p>
+<p>If $u\ne0$, its lifespan is at most $d&lt;\ell_{i_0}$, so the replacement strictly reduces total length. If $u=0$, omit the old orbit entirely, again reducing length while preserving span. In particular when $d=0$, $N^0u=u=0$ and this second case is required. Either case contradicts minimality. Thus the original minimal family was independent as well as spanning. Reverse each orbit to get upper Jordan blocks, by Lemma25.2. ∎</p></div>
+<p>The argument is the lecture's orbit version of exchange, with two points made precise: a nontrivial coefficient relation still sums to zero, and the replacement vector is allowed to be zero. One must not infer that it has exactly one fewer surviving iterate; an upper bound on the shorter lifespan is sufficient.</p>
+
+<h2 id="jordan">25.6 Existence and the minimal polynomial of a Jordan matrix <a class="timestamp" href="https://www.youtube.com/watch?v=_0kG3mC7oF4&amp;t=1052s">Lesson 44 · 17:32</a></h2>
+<div class="theorem"><p><strong>Theorem 25.4, Jordan existence, proved here.</strong> If $m_T$ splits over $F$, then $T$ has a basis in which its matrix is block diagonal with upper Jordan blocks. In particular this holds for every finite-dimensional complex operator.</p></div>
+<div class="proof"><p>Use the invariant generalized-eigenvalue decomposition in §25.3. Apply Theorem25.3 to each nilpotent $N_i$, add $\lambda_iI$ back on that piece, and concatenate the bases. Invariance prevents cross-block entries; directness makes the concatenation a basis. Over $\mathbb C$, splitting follows from the fundamental theorem of algebra. ∎</p></div>
+<p>For a block diagonal operator, $p(T)=0$ exactly when $p$ kills every block, because each restriction acts separately. Its minimal polynomial is therefore the monic least common multiple of the block minimal polynomials: divisibility by each is necessary and sufficient. Since a size-$s$ block for $\lambda$ has polynomial $(X-\lambda)^s$, the whole matrix has</p>
+$$m_T(X)=\prod_{\lambda}(X-\lambda)^{L_\lambda},$$
+<p>where $L_\lambda$ is the largest block size for that eigenvalue. The number of blocks and the sum of their sizes are different quantities. The eigenspace dimension equals the number of blocks for that eigenvalue, since each such block contributes one kernel direction and other-eigenvalue blocks contribute none.</p>
+
+<h2 id="uniqueness">25.7 Kernel growth recovers every block size</h2>
+<p>Fix $\lambda$ and put $d_k=\dim\ker(T-\lambda I)^k$, $d_0=0$. On a size-$s$ block for $\lambda$, the kernel has dimension $\min(k,s)$: the first $\min(k,s)$ coordinate vectors are killed and any later coordinate survives the $k$-step shift. On a block for $\mu\ne\lambda$, $T-\lambda I=(\mu-\lambda)I+N$ is invertible, because the finite geometric sum</p>
+$$((\mu-\lambda)I+N)^{-1}
+=\frac1{\mu-\lambda}\sum_{j=0}^{s-1}\left(-\frac{N}{\mu-\lambda}\right)^j$$
+<p>multiplies to $I$ after cancellation and $N^s=0$. Such blocks contribute zero. Thus $d_k=\sum_s b_s\min(k,s)$, where $b_s$ counts the size-$s$ blocks for $\lambda$. Subtract consecutive values:</p>
+$$d_k-d_{k-1}=\sum_{s\ge k}b_s,\qquad
+b_k=2d_k-d_{k-1}-d_{k+1}.$$
+<p>The first difference counts blocks of size at least $k$; its next difference counts exactly size $k$. Therefore these counts are determined by $T$, since similarity preserves kernel dimensions. They determine the Jordan matrix up to reordering blocks. Conversely matching block lists give similar matrices by permuting the chain bases. This proves the canonical uniqueness claim, while the chain vectors themselves remain nonunique.</p>
+<p>For example $d_0,d_1,d_2,d_3,d_4=0,3,5,6,6$ gives first differences $3,2,1,0$: three blocks in total, two at least size two, one at least size three. The exact sizes are $3,2,1$. Their sum six agrees with the stabilized kernel dimension.</p>
+
+<h2 id="examples">25.8 Finish the course examples with explicit bases <a class="timestamp" href="https://www.youtube.com/watch?v=RjhmSLkjnNM&amp;t=764s">Lesson 45 · 12:44</a></h2>
+<p>The swap example was fully diagonalized in Chapter24. Another lecture example is $B=\begin{pmatrix}2&amp;1&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;3\end{pmatrix}$. Its eigenspaces are $E_2=Fe_1$ and $E_3=Fe_3$ over $\mathbb R$, so it is not diagonalizable. It already has Jordan form $J_2(2)\oplus J_1(3)$ and minimal polynomial $(X-2)^2(X-3)$. Here $(B-2I)^2$ is not zero: it fixes $e_3$. The squared factor kills the eigenvalue-two block, and the additional factor $B-3I$ is needed to kill the other block. This repairs the source's global zero assertion.</p>
+<p>For the lecture's single-chain example, define $N e_1=0$, $Ne_2=e_3$, $Ne_3=e_1$, so</p>
+$$B=2I+N=\begin{pmatrix}2&amp;0&amp;1\\0&amp;2&amp;0\\0&amp;1&amp;2\end{pmatrix}.$$
+<p>The orbit of $e_2$ is $e_2,e_3,e_1$ and then zero. The reversed order $(e_1,e_3,e_2)$ gives the upper block $J_3(2)$. With $Q=(e_1\ e_3\ e_2)$, $BQ=QJ_3(2)$ verifies the basis change without ambiguity. The forward orbit order would give the lower block instead.</p>
+<p>A fully specified nilpotent example from the source's three-dimensional arc is</p>
+$$A=\begin{pmatrix}0&amp;1&amp;0\\1&amp;0&amp;1\\0&amp;-1&amp;0\end{pmatrix}.$$
+<p>Its orbit from $e_1$ is $e_1,e_2,e_1-e_3,0$, so $A^3=0$ on that independent three-vector basis and $A^2e_1\ne0$. The upper Jordan basis is $(e_1-e_3,e_2,e_1)$, with matrix $J_3(0)$. Independence follows by inspecting third, then second, then first coordinates.</p>
+<p>For a separate original two-chain example, take $C=uv^{\mathsf T}$ with $u=(1,-1,1)^{\mathsf T}$ and $v=(1,1,0)^{\mathsf T}$ over $\mathbb R$. Since $v^{\mathsf T}u=0$, $C^2=0$, while $Ce_1=u\ne0$. The chain $(u,e_1)$ and the additional kernel vector $e_3$ are independent by coordinate comparison and give $J_2(0)\oplus J_1(0)$. This explicit example replaces an ambiguous caption-only matrix in the final source example; it is not represented as its exact transcription.</p>
+
+<h2 id="powers">25.9 A chain explains polynomial growth in iterates</h2>
+<p>For $J=\lambda I+N$ of size $s$ and integer $m\ge0$, the commuting binomial theorem gives</p>
+$$J^m=\sum_{j=0}^{\min(m,s-1)}\binom mj\lambda^{m-j}N^j.$$
+<p>The proof of the scalar binomial theorem in Chapter13 used only distributivity and commutation, so the same induction applies to the commuting operators $\lambda I,N$. Terms with $j\ge s$ vanish. The formula uses only nonnegative powers, including the constant $\lambda^0=1$. For $\lambda\ne0$, an off-diagonal chain can contribute factors $m,\binom m2,\ldots$ alongside $\lambda^m$. For $\lambda=0$, the block becomes zero after $s$ steps. Jordan structure describes this exact behavior; numerical sensitivity of detecting that structure under perturbations is a different problem.</p>
+
+<h2 id="laboratory">25.10 Verify chain bases and reconstruct a block partition</h2>
+<pre><code class="language-python">from sympy import Matrix, diag, eye
+
+
+def block(size, scalar):
+    M = scalar * eye(size)
+    for j in range(size - 1):
+        M[j, j + 1] = 1
+    return M
+
+
+N = Matrix([[0, 0, 1], [0, 0, 0], [0, 1, 0]])
+Q = Matrix([[1, 0, 0], [0, 0, 1], [0, 1, 0]])
+assert Q.inv() * (2 * eye(3) + N) * Q == block(3, 2)
+u = Matrix([1, -1, 1])
+C = u * Matrix([[1, 1, 0]])
+P = Matrix.hstack(u, Matrix([1, 0, 0]), Matrix([0, 0, 1]))
+assert P.inv() * C * P == diag(block(2, 0), block(1, 0))
+J = diag(block(3, 2), block(2, 2), block(1, 2), block(2, 5))
+d = [len(((J - 2 * eye(8)) ** k).nullspace()) for k in range(5)]
+at_least = [d[k] - d[k - 1] for k in range(1, 5)]
+exact = [at_least[k] - at_least[k + 1] for k in range(3)]
+print(d)
+print(at_least)
+print(exact)
+assert exact == [1, 1, 1]
+print("chain basis identities passed")</code></pre>
+<pre class="output">[0, 3, 5, 6, 6]
+[3, 2, 1, 0]
+[1, 1, 1]
+chain basis identities passed</pre>
+<p>The eigenvalue-five block contributes nothing to the eigenvalue-two kernels. The last three counts mean one block of each size one, two, and three for eigenvalue two. Two independent matrix identities verify both the single-chain and two-chain bases.</p>
+
+<h2 id="problems">25.11 Problems with complete solutions</h2>
+<details class="exercise"><summary>Problem 1. Read two invariants from blocks</summary><p>For $J=J_3(2)\oplus J_1(2)\oplus J_2(-1)$ over $\mathbb R$, find the minimal polynomial and eigenspace dimensions.</p><div class="solution"><p>The largest eigenvalue-two block has size three and the largest eigenvalue-minus-one block size two, so $m_J=(X-2)^3(X+1)^2$. Each block contributes one ordinary eigenvector for its own scalar. There are two blocks for two, giving $\dim E_2=2$, and one for minus one, giving $\dim E_{-1}=1$. Their total is three, below ambient dimension six, so the matrix is not diagonalizable.</p></div></details>
+<details class="exercise"><summary>Problem 2. Recover the partition from nullities</summary><p>A nilpotent map has consecutive kernel dimensions $d_0,d_1,d_2,d_3,d_4=0,4,7,9,10$ and $d_5=10$. Find its block sizes.</p><div class="solution"><p>The increments are $4,3,2,1,0$, counting blocks of length at least one through five. Their successive differences are $1,1,1,1$, so there is one block of each size one, two, three, four. Their sizes sum to ten, the ambient dimension, and the largest size four gives nilpotence index four. The sequence would be inconsistent if its increments increased or became negative.</p></div></details>
+<details class="exercise"><summary>Problem 3. A minimal polynomial does not classify the whole form</summary><p>Give two nonsimilar nilpotent operators on a four-dimensional space with the same minimal polynomial.</p><div class="solution"><p>Take $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0)\oplus J_1(0)$. Each is nonzero and squares to zero, so each has minimal polynomial $X^2$. Their kernel dimensions are respectively two and three, since each block contributes one. Similarity preserves kernel dimension, so they are not similar. The largest block alone does not determine all block counts.</p></div></details>
+<details class="exercise"><summary>Problem 4. Complete a chain</summary><p>Suppose $N^2v\ne0$ and $N^3v=0$ on a three-dimensional space. Give a Jordan basis and prove it is a basis.</p><div class="solution"><p>The list $(N^2v,Nv,v)$ is a chain. If $aN^2v+bNv+cv=0$, applying $N^2$ gives $cN^2v=0$, so $c=0$. Applying $N$ to the remaining relation gives $bN^2v=0$, so $b=0$, and then $a=0$. The independent length-three list is a basis. Its matrix is $J_3(0)$, and the same basis gives $J_3(\lambda)$ for $T=\lambda I+N$.</p></div></details>
+<details class="exercise"><summary>Problem 5. Powers of a two-vector chain</summary><p>Over $\mathbb R$, compute $J_2(1)^m$ and explain why eigenvalue one alone does not imply bounded iterates.</p><div class="solution"><p>Write $J_2(1)=I+N$ with $N^2=0$. The binomial formula gives $J_2(1)^m=I+mN=\begin{pmatrix}1&amp;m\\0&amp;1\end{pmatrix}$ for integers $m\ge0$. Acting on $e_2$ gives $me_1+e_2$, whose first coordinate grows without bound. The only eigenvalue is one, yet the size-two chain creates linear growth that a diagonal eigenvalue list alone cannot reveal.</p></div></details>
+<details class="exercise"><summary>Problem 6. A stabilized splitting in a mixed example</summary><p>For $A=J_2(0)\oplus J_1(3)$ on $\mathbb R^3$, compare kernel–range intersections for $A$ and $A^2$.</p><div class="solution"><p>In standard coordinates $Ae_1=0$, $Ae_2=e_1$, $Ae_3=3e_3$. Thus $\ker A=Fe_1$, $\operatorname{im}A=\operatorname{span}(e_1,e_3)$, and their intersection is the nonzero line $Fe_1$. But $A^2e_1=A^2e_2=0$, $A^2e_3=9e_3$, so $\ker A^2=\operatorname{span}(e_1,e_2)$ and $\operatorname{im}A^2=Fe_3$. They are complementary. Stabilization happens already at two, earlier than the general bound $n=3$.</p></div></details>
+
+<h2 id="references">25.12 References and boundaries</h2>
+<p>Lessons44–45 are primary. Axler's <a href="https://linear.axler.net/LADR4e.pdf">Linear Algebra Done Right, fourth edition</a>, §8A, printed pp.298–305, independently supports kernel stabilization, generalized eigenvectors and nilpotence; §8C, pp.321–324, supports Jordan bases and existence with a different nilpotent proof. The lecture credits Terence Tao's <a href="https://terrytao.wordpress.com/2007/10/12/the-jordan-normal-form-and-the-euclidean-algorithm/">The Jordan normal form and the Euclidean algorithm</a> (12 October2007) for its orbit-exchange perspective; the primary post was inspected. Our explicit indexing and zero-replacement cases complete that lecture proof. Kernel-growth uniqueness, the exact code laboratory, and the six solutions are added developments. This concludes all45 instructional lessons; it does not claim numerical stability of Jordan-form computation or formal proof-assistant certification.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-24-triangular-forms-and-invariant-flags.html">Previous chapter</a><a href="index.html">Chapter index</a><span>End of book</span></nav></main></div>
+<footer class="site-footer">Independent educational edition of Jaikrishnan J's NPTEL course, IIT Palakkad; coordinating institution IIT Madras. Recordings determine topic order. Added proofs, examples, code, and exercises are original teaching material. Attribution does not imply endorsement. <a href="WORKFLOW.md">Workflow</a> · <a href="source-manifest.json">Source inventory</a> · <a href="validation/summary.json">Validation</a>.</footer></body></html>

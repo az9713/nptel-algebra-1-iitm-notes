@@ -1,0 +1,60 @@
+{
+  "order": 17,
+  "title": "The geometry and parameters of a solution set",
+  "lecture_numbers": [
+    31
+  ],
+  "file": "chapter-17-the-geometry-and-parameters-of-a-solution-set.html",
+  "manuscript": "chapters/ch17.html",
+  "status": "complete; independently reviewed",
+  "chapter": 17,
+  "body_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+  "words_excluding_code": 1974,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 6,
+  "sections": [
+    {
+      "heading": "17.1 Homogeneous solutions survive addition and scaling Lesson 31 · 00:24",
+      "anchor": "null",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=24s"
+      ]
+    },
+    {
+      "heading": "17.2 Replace a set by its finite generating list Lesson 31 · 05:18",
+      "anchor": "span",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=318s"
+      ]
+    },
+    {
+      "heading": "17.3 Construct special solutions without moving columns Lesson 31 · 12:11",
+      "anchor": "special",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=731s"
+      ]
+    },
+    {
+      "heading": "17.4 Rank counts pivots, not written equations Lesson 31 · 27:08",
+      "anchor": "rank",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=1628s"
+      ]
+    },
+    {
+      "heading": "17.5 What rows and columns each tell us Lesson 31 · 29:37",
+      "anchor": "row-column",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=1777s"
+      ]
+    },
+    {
+      "heading": "17.6 Row annihilation and geometric language Lesson 31 · 31:36",
+      "anchor": "annihilation",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=1896s"
+      ]
+    }
+  ]
+}

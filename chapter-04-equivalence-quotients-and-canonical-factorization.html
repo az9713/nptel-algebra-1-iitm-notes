@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; object-src 'none'">
+<meta name="description" content="Independent transcript-grounded Algebra 1 textbook: proofs, worked examples, exercises, and offline mathematics.">
+<title>Equivalence, quotients, and canonical factorization · Algebra 1: Foundations</title><link rel="stylesheet" href="assets/book.css">
+<script src="assets/math-config.js"></script><script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script><script defer src="assets/lab.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Algebra 1: Foundations · NPTEL</a><nav class="course-nav" aria-label="Book"><a href="index.html">Chapters</a><a href="book-overview.html">Study guide</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Algebra laboratory</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>4. Equivalence, quotients, and canonical factorization</h1>
+<p class="lead">Five records receive three color labels. Records with the same label become indistinguishable to any later computation that sees only the color. A quotient makes this loss of information into a precise mathematical object. Its universal property determines exactly which later computations remain possible after the original records have been replaced by their classes.</p>
+<p class="source-note">Official lessons 8–10 supply the sequence: relation properties and partitions, quotient maps and canonical factorization, then images, preimages, and inverse conditions. Proofs and the finite record example are independently developed. Empty-set conditions and the role of the axiom of choice are made explicit.</p>
+
+<h2 id="relations">4.1 Equality-like and order-like relations <a class="timestamp" href="https://www.youtube.com/watch?v=iM61eZVc4IQ&amp;t=40s">Lesson 8 · 00:40</a></h2>
+<p>For a relation $R$ on a set $X$, <dfn>reflexivity</dfn> means $xRx$ for every $x\in X$. <dfn>Symmetry</dfn> means $xRy$ implies $yRx$. <dfn>Transitivity</dfn> means $xRy$ and $yRz$ together imply $xRz$. A relation is <dfn>antisymmetric</dfn> when $xRy$ and $yRx$ force $x=y$, and <dfn>irreflexive</dfn> when no $xRx$ holds.</p>
+<p>Antisymmetry does not mean failure of symmetry. Equality is both symmetric and antisymmetric. A <dfn>partial order</dfn> is a reflexive, antisymmetric, transitive relation; it is a <dfn>total order</dfn> if every pair is comparable. Inclusion orders the subsets of a fixed set, but $\{a\}$ and $\{b\}$ are incomparable when $a\ne b$. The ordinary relation $\le$ totally orders integers. The strict relation $\lt$ is irreflexive, so it is not a partial order under this non-strict convention.</p>
+<p>Divisibility partially orders positive integers. If $a\mid b$ and $b\mid a$, write $b=ka$ and $a=\ell b$ with positive integers $k,\ell$. Then $k\ell=1$, so both equal one and $a=b$. On all integers antisymmetry fails: $2\mid-2$ and $-2\mid2$, yet $2\ne-2$. Divisibility is defined by multiplication, not by evaluating a quotient at zero.</p>
+<div class="definition"><p><strong>Definition 4.1.</strong> An <dfn>equivalence relation</dfn>, denoted $\sim$, is reflexive, symmetric, and transitive. The <dfn>equivalence class</dfn> of $x$ is $[x]:=\{y\in X:y\sim x\}$. An element of a class is a <dfn>representative</dfn> of that class.</p></div>
+<p>Fix $X=\{a,b,c,d,e\}$ and $Y=\{\mathrm{red},\mathrm{blue},\mathrm{green},\mathrm{black}\}$. Define $f:X\to Y$ by assigning red to $a,b$, blue to $c,d$, and green to $e$. Define $x\sim y$ when $f(x)=f(y)$. Equality of labels supplies all three equivalence laws. The classes are $\{a,b\}$, $\{c,d\}$, and $\{e\}$. The unused label black contributes no class.</p>
+<p>Reflexivity and symmetry do not ensure transitivity. On integers greater than one, “has a common divisor greater than one” has the first two properties. But $4$ relates to $6$ and $6$ to $9$, whereas $4$ does not relate to $9$. In the geometric example $(x,y)\sim(u,v)$ when $x^2+y^2=u^2+v^2$, the classes are circles centered at zero and the singleton containing the origin. The origin is related to itself; it is not an exception to reflexivity.</p>
+
+<h2 id="partitions">4.2 Classes partition the original set <a class="timestamp" href="https://www.youtube.com/watch?v=iM61eZVc4IQ&amp;t=1349s">Lesson 8 · 22:29</a></h2>
+<div class="theorem"><p><strong>Proposition 4.2, proved here.</strong> For an equivalence relation on $X$, $x\sim y$ if and only if $[x]=[y]$. Two classes are therefore either equal or disjoint.</p></div>
+<div class="proof"><p>If $x\sim y$ and $z\in[x]$, then $z\sim x$ and transitivity gives $z\sim y$, so $[x]\subseteq[y]$. Symmetry gives $y\sim x$, and the same argument yields the reverse inclusion. Conversely, if $[x]=[y]$, reflexivity puts $x$ in $[x]$ and hence in $[y]$, giving $x\sim y$.</p>
+<p>If a point $z$ lies in both classes, then $z\sim x$ and $z\sim y$. Symmetry changes the first relation to $x\sim z$, and transitivity gives $x\sim y$. The first part then proves equality. Thus distinct classes share no point. <span class="qed">∎</span></p></div>
+<p>The <dfn>power set</dfn> $\mathcal P(X)$ consists of all subsets of $X$. An <dfn>indexed family</dfn> $(A_i)_{i\in I}$ of subsets is a function $I\to\mathcal P(X)$ assigning $A_i$ to index $i$. Different indices may name the same subset. The indexed family contains this naming information; its image as a set of subsets forgets repeated names.</p>
+<p>A <dfn>partition</dfn> of $X$ is a set of nonempty, pairwise disjoint subsets, called its blocks, whose union is $X$. Equivalently it is an indexed family of such blocks without repetitions. One may index the blocks by themselves using the identity function. The empty family is the partition of the empty set; nonempty blocks prevent any other partition of that set.</p>
+<div class="theorem"><p><strong>Theorem 4.3, proved here.</strong> Equivalence relations on a fixed set $X$ correspond bijectively to partitions of $X$.</p></div>
+<div class="proof"><p>Given an equivalence relation, each class is nonempty because $x\in[x]$. Every element belongs to its own class, so the union of the classes is $X$. Proposition 4.2 shows that distinct classes are disjoint. They form a partition.</p>
+<p>Conversely, given a partition, declare two elements related when they lie in the same block. Every element lies in a block, giving reflexivity, and reversing their names gives symmetry. If $x,y$ lie in one block and $y,z$ in another, the shared point $y$ forces the blocks to be equal; then $x,z$ lie together, giving transitivity.</p>
+<p>Starting from an equivalence relation, membership in one of its class blocks is exactly the original relation by Proposition 4.2, so the first round trip returns that relation. Starting from a partition, the class of any $x$ is precisely its unique block, so the second round trip returns the partition. Thus the constructions are inverse functions and give a bijection. <span class="qed">∎</span></p></div>
+<p>The two round trips are part of the theorem. Merely defining a construction in each direction would not prove they are inverse. <a href="https://richardhammack.github.io/BookOfProof/Main.pdf#page=227">Hammack §11.4, printed pp. 215–217</a>, proves the class equality and partition properties; here the explicit inverse constructions establish the correspondence.</p>
+
+<h2 id="quotient">4.3 The quotient and its projection <a class="timestamp" href="https://www.youtube.com/watch?v=305We8ZFecA&amp;t=36s">Lesson 9 · 00:36</a></h2>
+<p>The <dfn>quotient set</dfn> is $X/{\sim}:=\{[x]:x\in X\}$. Its elements are entire classes, not individual representatives. The <dfn>quotient map</dfn>, or <dfn>canonical projection</dfn>, is $\pi:X\to X/{\sim}$ defined by $\pi(x)=[x]$. It is surjective because every class has a representative. Calling it canonical says the given relation determines this map without choosing a preferred representative in each class.</p>
+<p>In the color example, $\pi(a)=\pi(b)=\{a,b\}$. The label red is not literally this two-element set. There is instead a specified bijection between classes and attained labels, sending $\{a,b\}$ to red. Identifying isomorphic or bijective objects must not erase the map that makes the identification valid.</p>
+<p>Fraction notation has the same issue. Begin with formal pairs $(a,b)$ of integers with $b\ne0$, and declare $(a,b)\sim(c,d)$ when $ad=bc$. Reflexivity is $ab=ba$; symmetry reverses the equality. For transitivity, if $ad=bc$ and $ch=de$, multiply the first equation by $h$ and use the second to get $adh=bch=bde$. Cancelling the nonzero integer $d$ gives $ah=be$, the required relation between $(a,b)$ and $(e,h)$. Thus the relation is an equivalence. The different pairs $(1,2)$ and $(2,4)$ represent one class. Chapter 12 equips these classes with rational arithmetic and verifies that its formulas do not depend on representatives.</p>
+<p>For an integer example, let $m\ge1$ and define $a\sim b$ when $a-b=mk$ for some integer $k$. Reflexivity uses $k=0$; symmetry changes $k$ to $-k$; transitivity adds the two witnesses. This is <dfn>congruence modulo $m$</dfn>, and its quotient is denoted $\mathbb Z/m\mathbb Z$. At $m=2$, the classes are even and odd integers by the school parity dichotomy. Arithmetic on these classes needs a further compatibility argument developed in Chapter 11.</p>
+
+<h2 id="descent">4.4 Which computations survive quotienting? <a class="timestamp" href="https://www.youtube.com/watch?v=305We8ZFecA&amp;t=351s">Lesson 9 · 05:51</a></h2>
+<p>Suppose $h:X\to Z$ is a second function. We ask whether its output can be determined from $[x]$ alone, without knowing which representative $x$ was originally present. A function $\bar h:X/{\sim}\to Z$ accomplishing this must satisfy $h=\bar h\circ\pi$. This equality is a <dfn>commutative diagram</dfn> condition: taking the direct path $h$ or the path through the quotient must produce the same output for each input.</p>
+<div class="theorem"><p><strong>Theorem 4.4, the quotient universal property, proved here.</strong> There exists a function $\bar h$ with $h=\bar h\circ\pi$ if and only if $x\sim y$ implies $h(x)=h(y)$. When it exists it is unique.</p></div>
+<div class="proof"><p>If such $\bar h$ exists and $x\sim y$, then $[x]=[y]$, so $h(x)=\bar h([x])=\bar h([y])=h(y)$. This proves necessity.</p>
+<p>For sufficiency, assume $h$ is constant on every class. Define $\bar h([x]):=h(x)$. A class may have many representatives, but any two give the same value by assumption. Therefore this rule is well defined and assigns one value to each class. Its defining equation gives $\bar h(\pi(x))=h(x)$. Finally, any factorization satisfying that equation must assign $h(x)$ to $[x]$. Surjectivity of $\pi$ ensures that this determines the function at every element of its domain, proving uniqueness. <span class="qed">∎</span></p></div>
+<p>A property like “label is red” is constant on our color classes and survives quotienting. A property like “record is $a$” does not: $a$ and $b$ are equivalent, but their answers differ. The failure is caused by losing information that the desired output still needs.</p>
+<p>Parity descends from integers modulo $10$. If $a-b=10k$, then $a-b$ is even, so both integers have the same parity. Parity does not descend modulo $3$, since $0$ and $3$ represent the same class but have different parity. A quotient is useful for a computation only when its identification rule respects that computation.</p>
+
+<h2 id="factorization">4.5 Every function separates loss, relabeling, and inclusion <a class="timestamp" href="https://www.youtube.com/watch?v=305We8ZFecA&amp;t=2175s">Lesson 9 · 36:15</a></h2>
+<p>For any function $f:X\to Y$, define $x\sim_f x'$ exactly when $f(x)=f(x')$. Equality in $Y$ gives reflexivity, symmetry, and transitivity, so this is an equivalence relation. Its classes consist of inputs sharing an output. Define $\widetilde f:X/{\sim_f}\to f(X)$ by $\widetilde f([x])=f(x)$ and let $\iota:f(X)\to Y$ be the inclusion, $\iota(y)=y$.</p>
+<div class="theorem"><p><strong>Theorem 4.5, proved here.</strong> The factorization</p>
+$$X\ \xrightarrow{\ \pi\ }\ X/{\sim_f}\ \xrightarrow{\ \widetilde f\ }\ f(X)\ \xrightarrow{\ \iota\ }\ Y,
+\qquad f=\iota\circ\widetilde f\circ\pi,$$
+<p>has a surjective first map, a bijective middle map, and an injective last map.</p></div>
+<div class="proof"><p>The projection is surjective by the definition of a quotient. The middle map is well defined because equal classes have representatives with equal $f$-values. It is onto $f(X)$ because each attained value is $f(x)$ for some $x$. If $\widetilde f([x])=\widetilde f([x'])$, then $f(x)=f(x')$, so $x\sim_f x'$ and $[x]=[x']$; hence it is injective. Inclusion is injective because it leaves its input unchanged. Evaluating the composite at any $x$ gives $f(x)$, and its domain and codomain match the original function. <span class="qed">∎</span></p></div>
+<p>In our example, five records project to three classes, the three classes correspond bijectively to three used colors, and those colors include into the four declared colors. Only the first stage merges distinct inputs. The final stage records unused potential outputs. This explains why making the codomain equal to the image repairs surjectivity without repairing collisions.</p>
+<p>Every equivalence relation arises from a function: take its own projection $\pi$. By Proposition 4.2, $\pi(x)=\pi(y)$ precisely when $x\sim y$. Thus an equivalence relation can be described either as a partition or as a rule saying which inputs some function fails to distinguish.</p>
+
+<h2 id="images">4.6 Images, preimages, and saturation <a class="timestamp" href="https://www.youtube.com/watch?v=n--JD7jF6Z8&amp;t=176s">Lesson 10 · 02:56</a></h2>
+<p>For $A\subseteq X$, define the <dfn>direct image</dfn> $f(A):=\{f(x):x\in A\}$. For $B\subseteq Y$, define the <dfn>preimage</dfn> $f^{-1}(B):=\{x\in X:f(x)\in B\}$. These are functions between power sets in opposite directions: $\mathcal P(X)\to\mathcal P(Y)$ and $\mathcal P(Y)\to\mathcal P(X)$. Preimage notation does not require an inverse function. The <dfn>fiber</dfn> over $y$ is $f^{-1}(\{y\})$; it can be empty.</p>
+<p>The nonempty fibers are precisely the classes of $\sim_f$. For instance the fiber over red is $\{a,b\}$, while the fiber over black is empty and is not a partition block. Starting from $A=\{a,c\}$, direct image gives the colors red and blue, and taking the preimage returns $\{a,b,c,d\}$. The original individual choices cannot be recovered from the colors alone.</p>
+<div class="theorem"><p><strong>Proposition 4.6, proved here.</strong> For all $A\subseteq X$ and $B\subseteq Y$,</p>
+$$A\subseteq f^{-1}(f(A)),\qquad f(f^{-1}(B))=B\cap f(X).$$
+</div>
+<div class="proof"><p>If $x\in A$, then $f(x)\in f(A)$, so $x\in f^{-1}(f(A))$. For the second equality, an element of the left side is $f(x)$ for some $x$ with $f(x)\in B$; it lies in both $B$ and $f(X)$. Conversely, a point in $B\cap f(X)$ equals $f(x)$ for some $x$, and that $x$ lies in $f^{-1}(B)$. This yields the reverse inclusion. <span class="qed">∎</span></p></div>
+<p>The set $f^{-1}(f(A))$ is the <dfn>saturation</dfn> of $A$: the union of all fibers meeting $A$. This description follows because $x$ belongs exactly when $f(x)=f(a)$ for some $a\in A$. It equals $A$ whenever $A$ is already a union of fibers. Equality for every $A$ is equivalent to injectivity. If two distinct inputs share an output, a singleton containing only one expands, disproving equality for every subset. Conversely, if $f$ is injective and $x\in f^{-1}(f(A))$, choose $a\in A$ with $f(x)=f(a)$. Injectivity forces $x=a$, so $x\in A$; together with Proposition 4.6 this proves equality. The second formula equals $B$ for every $B$ exactly when $f$ is surjective: surjectivity makes $f(X)=Y$, while equality for each singleton $B=\{y\}$ forces every $y$ to lie in $f(X)$.</p>
+<p>Both operations preserve inclusion. If $A\subseteq A'$, each value attained on $A$ is attained on $A'$. If $B\subseteq B'$, every input landing in $B$ lands in $B'$. These are the <dfn>monotonicity</dfn> properties of direct image and preimage.</p>
+
+<h2 id="set-laws">4.7 Which set operations are preserved? <a class="timestamp" href="https://www.youtube.com/watch?v=n--JD7jF6Z8&amp;t=416s">Lesson 10 · 06:56</a></h2>
+<p>For an indexed family $(A_i)_{i\in I}$, membership in $\bigcup_{i\in I}A_i$ means membership in at least one $A_i$. For a family of subsets of a specified ambient set, membership in its intersection means membership in every constituent. We interpret the empty union as empty and the empty intersection as the entire ambient set.</p>
+<p>Direct image preserves arbitrary unions:</p>
+$$f\left(\bigcup_{i\in I}A_i\right)=\bigcup_{i\in I}f(A_i).$$
+<p>A value on the left is $f(x)$ for some $x$ in at least one $A_i$, hence belongs to an image on the right. Conversely, a value in one of those images is attained on the union. This also proves the empty-index case because $f(\varnothing)=\varnothing$.</p>
+<p>Preimage preserves unions, intersections, and complements:</p>
+$$f^{-1}\left(\bigcup_iB_i\right)=\bigcup_if^{-1}(B_i),\qquad
+f^{-1}\left(\bigcap_iB_i\right)=\bigcap_if^{-1}(B_i),\qquad
+f^{-1}(Y\setminus B)=X\setminus f^{-1}(B).$$
+<p>For a fixed input $x$, the first formula says that $f(x)$ belongs to some $B_i$ on either side. The second says it belongs to every $B_i$ on either side. The third says it does not belong to $B$ on either side. These reversible membership descriptions prove the three identities, including empty index sets when intersections use $Y$ and $X$ as their respective ambient sets.</p>
+<p>Direct image behaves differently on intersections: $f(A\cap A')\subseteq f(A)\cap f(A')$. An output attained by an input in both sets certainly lies in both images. The reverse can fail because the two occurrences of that output may come from different inputs. In our color example, $A=\{a\}$ and $A'=\{b\}$ are disjoint, but both images contain red.</p>
+<p>If $f$ is injective, equal outputs force the two witnesses equal, restoring equality for binary intersections. The same reasoning works for a nonempty indexed family: choose one index $i_0$ and a preimage $x\in A_{i_0}$ of a value in every image. For any index $i$, its witness has the same output as $x$, so injectivity forces it to be $x$. Thus $x$ belongs to every $A_i$.</p>
+<p>The nonempty-index condition is necessary for this last equality under injectivity alone. For the empty family, the claimed equality would read $f(X)=Y$, which additionally requires surjectivity. These conventions make “arbitrary intersections” precise rather than hiding an exceptional case. <a href="https://richardhammack.github.io/BookOfProof/Main.pdf#page=254">Hammack §12.6, printed pp. 242–243</a>, states the binary laws; the indexed and empty-family boundaries are developed here.</p>
+
+<h2 id="one-sided">4.8 One-sided inverses and the choices they require <a class="timestamp" href="https://www.youtube.com/watch?v=n--JD7jF6Z8&amp;t=795s">Lesson 10 · 13:15</a></h2>
+<p>A <dfn>left inverse</dfn> of $f:X\to Y$ is $g:Y\to X$ with $g\circ f=\operatorname{id}_X$. A <dfn>right inverse</dfn> is $s:Y\to X$ with $f\circ s=\operatorname{id}_Y$. The proofs in Chapter 3 show that a left inverse implies injectivity and a right inverse implies surjectivity.</p>
+<p>If $X$ is nonempty and $f$ is injective, choose one $x_0\in X$. Define $g(y)$ as the unique preimage when $y\in f(X)$, and as $x_0$ otherwise. Injectivity makes the first clause unambiguous, the two clauses cover $Y$, and evaluating at $f(x)$ gives $x$. Thus an injection with nonempty domain has a left inverse. If $X=\varnothing$ and $Y\ne\varnothing$, the unique injection has no left inverse because there is no function $Y\to\varnothing$. If both sets are empty, the inverse exists.</p>
+<p>Constructing a right inverse of a surjection requires choosing an input in each nonempty fiber. For a finite codomain, make these finitely many choices. For arbitrary sets, the blanket assertion that such a selection always exists uses the <dfn>axiom of choice</dfn>: every indexed family of nonempty sets admits a function selecting one member of each set. Under this assumption, choose $s(y)\in f^{-1}(\{y\})$; then $f(s(y))=y$.</p>
+<p>The dependence on choice is exact. Conversely, suppose every surjection has a right inverse. Given nonempty sets $(A_i)_{i\in I}$, form the disjoint union $D:=\{(i,a):i\in I,\ a\in A_i\}$. The projection $D\to I$ is surjective. A right inverse sends $i$ to a pair $(i,a_i)$ with $a_i\in A_i$, giving a choice function. Therefore “every surjection splits” and the axiom of choice imply one another. No such additional choice is needed to define the quotient projection or its canonical factorization: neither selects a distinguished member of every class.</p>
+
+<h2 id="experiment">4.9 Compute fibers and test descent</h2>
+<p>The program implements the five-record model using finite dictionaries. It groups inputs by output, constructs the quotient-to-image correspondence, and rejects an attempted descendant that distinguishes two members of one class. It then checks saturation for every subset of the domain. These operations have no file or network effects. The input function tables are fixed, complete finite tables; a general implementation would first validate them as in Chapter 3.</p>
+<pre><code class="language-python">from itertools import combinations
+
+f = dict(a="red", b="red", c="blue", d="blue", e="green")
+fibers = {}
+for x, y in f.items():
+    fibers.setdefault(y, set()).add(x)
+blocks = list(fibers.values())
+assert set().union(*blocks) == set(f)
+assert all(f[x] == y for y, block in fibers.items() for x in block)
+
+
+def descend(values):
+    result = {}
+    for block in blocks:
+        outputs = {values[x] for x in block}
+        if len(outputs) != 1:
+            raise ValueError("not constant on a class")
+        result[frozenset(block)] = outputs.pop()
+    return result
+
+
+good = {x: int(f[x] == "green") for x in f}
+assert len(descend(good)) == 3
+bad = good | {"a": 7}
+rejected = False
+try:
+    descend(bad)
+except ValueError:
+    rejected = True
+checked = 0
+for size in range(len(f) + 1):
+    for members in combinations(f, size):
+        a = set(members)
+        image = {f[x] for x in a}
+        saturation = {x for x in f if f[x] in image}
+        assert a &lt;= saturation
+        assert {f[x] for x in saturation} == image
+        checked += 1
+print("fibers:", [sorted(b) for b in blocks])
+print("subsets checked:", checked)
+print("bad descent rejected:", rejected)
+</code></pre>
+<pre class="output">fibers: [['a', 'b'], ['c', 'd'], ['e']]
+subsets checked: 32
+bad descent rejected: True</pre>
+<p>The descendant's dictionary keys are whole immutable classes, represented by <code>frozenset</code> values. Picking a convenient representative to compute a value is safe only after the constancy test. The rejected value table would give the same class both $7$ and $0$, violating the function definition.</p>
+
+<h2 id="problems">4.10 Problems and worked solutions</h2>
+<h3 id="problem-1">Problem 1 · A relation with incompatible ambitions</h3>
+<p>Prove that a relation is both a partial order and an equivalence relation on $X$ exactly when it is equality on $X$. Does the statement include $X=\varnothing$?</p>
+<details><summary>Solution</summary><p>If $xRy$, symmetry gives $yRx$, and antisymmetry then gives $x=y$. Thus the relation contains only equal pairs. Reflexivity supplies every equal pair, so the relation is exactly equality. Conversely, equality is reflexive, transitive, symmetric, and antisymmetric, meeting both definitions. On the empty set, the only relation is empty and all the required universally quantified properties hold. It is also exactly the equality relation there, so no exception is needed.</p></details>
+<h3 id="problem-2">Problem 2 · Count partitions without repeated names</h3>
+<p>Count the partitions of a fixed four-element set by classifying their block sizes. Explain why indexing the same partition blocks with repeated names must not increase this count.</p>
+<details><summary>Solution</summary><p>A single block of size four gives one partition. A size-three block and singleton give four choices for the singleton. Two size-two blocks give three partitions: choose the partner of one fixed element among the other three; the remaining two form the other block. A size-two block and two singletons give six choices for the pair. Four singletons give one partition. The total is $1+4+3+6+1=15$. A partition is a set of blocks; adding a repeated index name does not create another block or a new partition. Counting indexed descriptions instead would count representation choices that the equivalence relation does not contain.</p></details>
+<h3 id="problem-3">Problem 3 · Which moduli retain parity?</h3>
+<p>For a positive integer $m$, determine exactly when integer parity descends to a function on $\mathbb Z/m\mathbb Z$. Use the universal property rather than a table of a few moduli.</p>
+<details><summary>Solution</summary><p>If $m$ is even and $a-b=mk$, then $a-b$ is even, so $a,b$ have the same parity. The parity function is constant on classes and therefore descends uniquely. If $m$ is odd, $0$ and $m$ lie in the same congruence class but have opposite parity. Constancy fails, so no descendant can exist. Hence precisely the even positive moduli work. The case $m=1$ fails by the same counterexample; all integers then lie in one class.</p></details>
+<h3 id="problem-4">Problem 4 · A coarser classification</h3>
+<p>In the five-record example, define $h(x)=0$ for red or blue records and $h(x)=1$ for green records. Find the induced classes of $h$, construct its descendant on the color quotient, and state what information it discards in addition to $f$.</p>
+<details><summary>Solution</summary><p>The $h$-classes are $\{a,b,c,d\}$ and $\{e\}$. On the three color classes, its descendant maps $\{a,b\}$ and $\{c,d\}$ to $0$, and $\{e\}$ to $1$. It is well defined because $h$ is constant within each color class. Composing with the color projection reproduces $h$ at every original record. Relative to $f$, the function additionally merges the red and blue classes; it cannot distinguish their labels, although it still distinguishes either from green. This is a coarsening of the original partition.</p></details>
+<h3 id="problem-5">Problem 5 · Saturation as a closure operation</h3>
+<p>Let $C(A):=f^{-1}(f(A))$ for subsets of $X$. Prove that $A\subseteq C(A)$, that inclusion $A\subseteq A'$ implies $C(A)\subseteq C(A')$, and that $C(C(A))=C(A)$. Must $C$ preserve intersections?</p>
+<details><summary>Solution</summary><p>The first property is Proposition 4.6. For the second, direct-image monotonicity gives $f(A)\subseteq f(A')$ and preimage monotonicity gives the desired inclusion. For the third, Proposition 4.6 applied to $B=f(A)$ gives $f(f^{-1}(f(A)))=f(A)\cap f(X)=f(A)$. Taking preimages yields $C(C(A))=C(A)$. Intersections need not be preserved. In the color example, $C(\{a\})=C(\{b\})=\{a,b\}$, so their intersection is nonempty, whereas $C(\{a\}\cap\{b\})=C(\varnothing)=\varnothing$. The collision between distinct inputs causes the failure.</p></details>
+<h3 id="problem-6">Problem 6 · Audit the inverse claims</h3>
+<p>Give an injective function with no left inverse. Explain the additional assumption that makes every surjection admit a right inverse for arbitrary sets, and why canonical factorization does not require that assumption.</p>
+<details><summary>Solution</summary><p>The empty function $\varnothing\to\{0\}$ is injective but has no left inverse, because no function $\{0\}\to\varnothing$ exists. With a nonempty domain, one chosen default domain element repairs the construction off the image. For a surjection, a right inverse selects one input from every fiber; arbitrary simultaneous selections are guaranteed by the axiom of choice. Conversely, applying the splitting assertion to a disjoint-union projection constructs a choice function, so the dependence is exact. Canonical factorization uses each whole fiber as an element of the quotient and labels it by its common output. It never chooses one representative from every fiber, and hence does not need that selection principle.</p></details>
+
+<h2 id="sources">Sources and the remaining compatibility question</h2>
+<p><a href="https://www.youtube.com/watch?v=iM61eZVc4IQ">Lesson 8</a> supplies relation properties, equivalence examples, indexed families, and the partition correspondence. <a href="https://www.youtube.com/watch?v=305We8ZFecA">Lesson 9</a> supplies projection, descent, fibers, and canonical factorization. <a href="https://www.youtube.com/watch?v=n--JD7jF6Z8">Lesson 10</a> supplies power-set operations, image/preimage laws, and one-sided inverses. <a href="https://richardhammack.github.io/BookOfProof/">Hammack</a>, §§11.3–11.4 and 12.6, supports the inspected definitions and binary set-operation laws.</p>
+<p>The reader can now construct a quotient, prove that a formula descends, and separate a function's identifications from its attained outputs. A quotient set alone has no addition or multiplication. An operation on representatives defines an operation on classes only when equivalent representatives produce equivalent results. The next chapters introduce operations and algebraic structures, making that compatibility question concrete.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-03-functions-and-the-information-they-preserve.html">Previous chapter</a><a href="index.html">Chapter index</a><a rel="next" href="chapter-05-binary-operations-and-groups.html">Next chapter</a></nav></main></div>
+<footer class="site-footer">Independent educational edition of Jaikrishnan J's NPTEL course, IIT Palakkad; coordinating institution IIT Madras. Recordings determine topic order. Added proofs, examples, code, and exercises are original teaching material. Attribution does not imply endorsement. <a href="WORKFLOW.md">Workflow</a> · <a href="source-manifest.json">Source inventory</a> · <a href="validation/summary.json">Validation</a>.</footer></body></html>

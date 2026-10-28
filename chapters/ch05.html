@@ -1,0 +1,136 @@
+<h1>5. Binary operations and groups</h1>
+<p class="lead">Rearrange three labeled objects, then rearrange them again. The combined action is another rearrangement, every action can be undone, and doing nothing has a precise mathematical role. These facts make reversible rearrangements a group. They do not make the actions commute: swapping the first two objects and then the last two can differ from doing those swaps in the opposite order.</p>
+<p class="source-note">Official lessons 11–12 supply binary operations, identity and inverse arguments, group examples, subgroups, homomorphisms, and kernel fibers. The permutation calculations and finite checks are original. Early integer and modular examples use familiar school arithmetic; its construction is examined in the subsequent chapters.</p>
+
+<h2 id="operations">5.1 The operation is part of the structure <a class="timestamp" href="https://www.youtube.com/watch?v=ltP728Kp6PY&amp;t=71s">Lesson 11 · 01:11</a></h2>
+<p>A <dfn>binary operation</dfn> on a set $S$ is a function $\ast:S\times S\to S$. It takes every ordered pair of elements to exactly one element of the same set. We use <dfn>infix notation</dfn> $a\ast b$ for $\ast((a,b))$. Its symbol alone conveys no algebraic law.</p>
+<p>Integer subtraction is a binary operation on $\mathbb Z$, but subtraction is not an operation on $\mathbb N$: $1-2$ leaves the set. Division is not an operation on all rational numbers because a pair with zero in its second coordinate has no rational quotient. Specifying a smaller domain of pairs defines a different function type, not a binary operation on the original whole set.</p>
+<p>If $S$ has $n\ge1$ elements, a table describes an operation by giving one output for each of $n^2$ input pairs. Each entry has $n$ independent choices, so there are $n^{n^2}$ operations on the labeled set. For four elements this gives $4^{16}=4,294,967,296$ tables. Algebraic laws impose additional constraints on this large collection.</p>
+<p>The operation is <dfn>associative</dfn> when $(a\ast b)\ast c=a\ast(b\ast c)$ for every triple, and <dfn>commutative</dfn> when $a\ast b=b\ast a$ for every pair. These conditions concern different changes: moving parentheses and exchanging order. Subtraction violates both: $(5-3)-1=1$ whereas $5-(3-1)=3$, and $5-3\ne3-5$.</p>
+<p>Associativity suffices to equate all five parenthesizations of a four-term product. Starting from $((ab)c)d$, reassociate to $(ab)(cd)$ and then to $a(b(cd))$. Also reassociate the inner $((ab)c)$ to $a(bc)$, giving $(a(bc))d=a((bc)d)$; the inner associativity $(bc)d=b(cd)$ returns the previous expression. Here juxtaposition denotes the operation. A proof for every finite number of factors requires an induction argument, supplied in Chapter 8. No exchange of factors is justified by reassociation alone.</p>
+<p>If the operation is also commutative, adjacent factors may be exchanged after reassociating to put them together. Move the desired first factor left by such exchanges, then arrange the remaining factors in the same way. Thus every finite reordering has the same product. Chapter 8 supplies the induction that makes this argument precise for every number of factors.</p>
+
+<h2 id="identities">5.2 Identities and inverses use different hypotheses <a class="timestamp" href="https://www.youtube.com/watch?v=ltP728Kp6PY&amp;t=677s">Lesson 11 · 11:17</a></h2>
+<p>An <dfn>identity</dfn> is an element $e\in S$ satisfying $e\ast a=a\ast e=a$ for every $a$. If $e,e'$ are both identities, then $e=e\ast e'=e'$. This proves uniqueness without assuming associativity, commutativity, or inverses. The two equalities use the right-identity property of $e'$ and the left-identity property of $e$ respectively.</p>
+<p>A set with an associative binary operation and an identity is a <dfn>monoid</dfn>. In a monoid, $b$ is a <dfn>left inverse</dfn> of $a$ when $ba=e$, and $c$ is a <dfn>right inverse</dfn> when $ac=e$. If both exist,</p>
+$$b=be=b(ac)=(ba)c=ec=c.$$
+<p>Associativity licenses the middle step. Thus a left and a right inverse agree, and the resulting two-sided inverse is unique. We denote it by $a^{-1}$. An element with such an inverse is <dfn>invertible</dfn>.</p>
+<p>The hypothesis is necessary. On $\{e,a,b\}$, let $e$ be an identity and define every product of two members of $\{a,b\}$ to be $e$. Both $a$ and $b$ are two-sided inverses of $a$. The operation is not associative: $(aa)b=eb=b$, while $a(ab)=ae=a$. Identity uniqueness survives, but inverse uniqueness does not.</p>
+<div class="theorem"><p><strong>Proposition 5.1, cancellation by an invertible element, proved here.</strong> In a monoid, if $a$ is invertible, $ab=ac$ implies $b=c$, and $ba=ca$ implies $b=c$.</p></div>
+<div class="proof"><p>For the first equation, multiply both sides on the left by $a^{-1}$ and reassociate: $a^{-1}(ab)=(a^{-1}a)b=eb=b$, and likewise the right side becomes $c$. For the second equation, multiply both sides on the right by $a^{-1}$: $(ba)a^{-1}=b(aa^{-1})=be=b$, and the other side becomes $c$. <span class="qed">∎</span></p></div>
+<p>Cancellation can hold without inverses: addition on $\mathbb N_0$ cancels, but the element $1$ has no additive inverse there. Cancellation can also fail in a monoid: integer multiplication has $0\cdot1=0\cdot2$ with $1\ne2$. Knowing that a factor is present on both sides is not sufficient grounds for cancelling it.</p>
+
+<h2 id="groups">5.3 Groups model reversible operations <a class="timestamp" href="https://www.youtube.com/watch?v=LNImE9lvbdQ&amp;t=80s">Lesson 12 · 01:20</a></h2>
+<div class="definition"><p><strong>Definition 5.2.</strong> A <dfn>group</dfn> is a set $G$ with an associative binary operation, an identity $e$, and a two-sided inverse for every element. A group is <dfn>abelian</dfn> when its operation is commutative. A group is nonempty because it contains its identity.</p></div>
+<p>The integers with addition form an abelian group: the identity is $0$, and the inverse of $n$ is $-n$. The nonzero rational numbers with multiplication form another: the identity is $1$, and the inverse of $a/b$ is $b/a$ when $a\ne0$. The same underlying number can therefore have different inverses under different operations. The pair of set and operation is the structure.</p>
+<p>More generally, the invertible elements of any monoid form a group. The identity is invertible, and for invertible $a,b$, the candidate inverse of $ab$ is $b^{-1}a^{-1}$: the products $(ab)(b^{-1}a^{-1})$ and $(b^{-1}a^{-1})(ab)$ both reassociate and cancel to the identity. This proves closure and existence of inverses; associativity is inherited. Once matrix multiplication is established in Chapter 16, the same argument gives the group $\operatorname{GL}_n(F)$ of invertible $n\times n$ matrices over a field $F$. <a href="https://judsonbooks.org/aata-files/aata-20260811.pdf#page=45">Judson, <cite>Abstract Algebra: Theory and Applications</cite>, §3.2, printed pp. 33–35</a>, gives the group axioms and matrix example.</p>
+<p>For any set $X$, let $\operatorname{Sym}(X)$ be the set of bijections $X\to X$. Composition is closed: if $p,q$ are bijections, $q^{-1}\circ p^{-1}$ is a two-sided inverse of $p\circ q$, by associativity and the inverse identities. Composition is associative by Chapter 3, its identity is $\operatorname{id}_X$, and every member has its inverse bijection. Hence $\operatorname{Sym}(X)$ is a group. For $X=\{1,\ldots,n\}$ it is denoted $S_n$.</p>
+<p>A <dfn>permutation</dfn> is such a bijection. The cycle notation $(12)$ swaps $1,2$ and fixes other elements; $(123)$ sends $1$ to $2$, $2$ to $3$, and $3$ to $1$. In products of permutations we use function composition, so the rightmost permutation acts first. Let $p=(12)$ and $q=(23)$ in $S_3$. Then $(p\circ q)(1)=2$, while $(q\circ p)(1)=3$. Thus $S_3$ is not abelian.</p>
+<p>There are $3\cdot2\cdot1=6$ permutations of three labels: $\operatorname{id},(12),(13),(23),(123),(132)$. An equilateral triangle gives a geometric realization. Its three rotations by $0$, $120$, and $240$ degrees and its three reflections across a vertex-to-opposite-side-midpoint axis induce six different permutations of the vertices. Every permutation preserves the three equal side lengths, and each is realized by one of those motions. Under composition their vertex actions give a group isomorphic to $S_3$. We denote this triangle symmetry group by $D_3$, specifying that it has six elements; conventions for dihedral subscripts vary.</p>
+
+<h2 id="small">5.4 Small groups and the meaning of “the same” <a class="timestamp" href="https://www.youtube.com/watch?v=LNImE9lvbdQ&amp;t=354s">Lesson 12 · 05:54</a></h2>
+<p>The <dfn>order</dfn> of a finite group is its number of elements. A one-element set has just one possible operation, and that element serves as identity and inverse. For two elements $\{e,a\}$, the identity fills three table entries. The remaining product cannot be $a$, because $aa=ae$ would give $a=e$ by cancellation. Thus $aa=e$, fixing the whole table.</p>
+<p>For a three-element group $\{e,a,b\}$, the product $ab$ cannot equal $a$, since cancelling $a$ would give $b=e$, and cannot equal $b$, since cancelling $b$ would give $a=e$. Hence $ab=e$. The three outputs in the row $a\cdot e,a\cdot a,a\cdot b$ must be distinct by cancellation. The first is $a$ and the third $e$, forcing $aa=b$. Applying the same reasoning to $b$ gives $ba=e$ and $bb=a$. These entries specify the whole table, the cyclic group $C_3$.</p>
+<p>The two- and three-element tables are realized by addition of residues modulo $2$ and $3$. Familiar remainder arithmetic verifies their associativity; Chapter 11 supplies its general quotient construction. Thus the forced tables really exist as groups, rather than merely being necessary candidates.</p>
+<p>At four elements, there are different patterns. The group $C_4$ consists of four residues under addition modulo $4$; its element $1$ requires four repeated additions to return to zero. The <dfn>Klein four group</dfn> $V_4$ consists of pairs of binary residues with coordinatewise addition modulo $2$. Every element added to itself gives $(0,0)$. Both operations are associative by coordinate arithmetic, but their element behavior differs. A structure-preserving renaming cannot turn one pattern into the other.</p>
+
+<h2 id="subgroups">5.5 Subgroups inherit the actual operation <a class="timestamp" href="https://www.youtube.com/watch?v=LNImE9lvbdQ&amp;t=1116s">Lesson 12 · 18:36</a></h2>
+<p>A <dfn>subgroup</dfn> $H$ of $G$ is a subset that is a group under the restricted operation. Closure must be checked: the product of two members must stay in $H$. Associativity is inherited because it already holds for every triple in $G$.</p>
+<p>The identity of an inherited group cannot be different. If $e_H$ is its identity, then $e_He_H=e_H=e_He_G$ in $G$; cancelling $e_H$ gives $e_H=e_G$. An inverse within $H$ therefore satisfies the same two equations as the inverse within $G$, so uniqueness makes them equal too.</p>
+<div class="theorem"><p><strong>Proposition 5.3, subgroup test, proved here.</strong> A subset $H\subseteq G$ is a subgroup exactly when it is nonempty and $ab^{-1}\in H$ for every $a,b\in H$.</p></div>
+<div class="proof"><p>If $H$ is a subgroup, its identity and inverses agree with those of $G$ by the preceding paragraph. Closure under inverses and products therefore gives $ab^{-1}\in H$ for every $a,b\in H$.</p>
+<p>Conversely, assume $H$ is nonempty and satisfies the displayed condition. Choose $c\in H$; then $cc^{-1}=e\in H$. For any $b\in H$, applying the condition to $e,b$ gives $b^{-1}\in H$. Now let $a,b\in H$ be arbitrary. Applying the condition to $a,b^{-1}$ gives $a(b^{-1})^{-1}=ab\in H$; the equality follows from inverse uniqueness, since $b$ is the inverse of $b^{-1}$. The inherited associative operation, original identity, and original inverses make $H$ a group. <span class="qed">∎</span></p></div>
+<p>The even integers form a subgroup of $(\mathbb Z,+)$: the set is nonempty, and $2a-2b=2(a-b)$ stays even. The positive integers do not form a subgroup of the additive integers because they omit zero and additive inverses.</p>
+<p><a href="https://judsonbooks.org/aata-files/aata-20260811.pdf#page=50">Judson §3.3, printed pp. 38–39</a>, emphasizes the inherited operation. A subset that is a group under a different operation need not be a subgroup of the original group.</p>
+<p>There is a natural injective map from $S_n$ into $S_{n+1}$: extend a permutation by fixing the new label $n+1$. Composition of extensions is the extension of composition, and restriction recovers the original permutation, proving injectivity. The image is a subgroup. The two symmetric groups are not literally sets of the same functions because their function domains differ; the embedding specifies the comparison.</p>
+
+<h2 id="morphisms">5.6 Homomorphisms preserve operations <a class="timestamp" href="https://www.youtube.com/watch?v=LNImE9lvbdQ&amp;t=1260s">Lesson 12 · 21:00</a></h2>
+<p>For groups $(G,\ast)$ and $(H,\diamond)$, a <dfn>homomorphism</dfn> is a function $\phi:G\to H$ satisfying $\phi(a\ast b)=\phi(a)\diamond\phi(b)$ for every pair. An <dfn>isomorphism</dfn> is a bijective homomorphism. The two operations live on different sets even when both are written by juxtaposition.</p>
+<p>The map $\phi:\mathbb Z\to2\mathbb Z$, $\phi(n)=2n$, is an additive isomorphism. It preserves addition because $2(m+n)=2m+2n$, is injective by integer cancellation, and is onto the even integers by their definition. As a map $\mathbb Z\to\mathbb Z$ with the same formula it is a homomorphism but not an isomorphism, since its image omits odd integers.</p>
+<p>The condition agrees with <a href="https://judsonbooks.org/aata-files/aata-20260811.pdf#page=131">Judson §9.1, printed p. 119</a>. It says precisely how a renaming must interact with the multiplication tables; an arbitrary set bijection need not do so.</p>
+<div class="theorem"><p><strong>Proposition 5.4, proved here.</strong> A group homomorphism sends identity to identity and inverses to inverses. The inverse function of an isomorphism is a homomorphism.</p></div>
+<div class="proof"><p>Write the identities as $e_G,e_H$. Let $u=\phi(e_G)$. Then $u=\phi(e_Ge_G)=u^2$. Comparing $ue_H=uu$ and cancelling $u$ gives $u=e_H$. Next $\phi(a)\phi(a^{-1})=\phi(aa^{-1})=e_H$, and reversing the factors gives the other inverse equation. Inverse uniqueness yields $\phi(a^{-1})=\phi(a)^{-1}$.</p>
+<p>If $\phi$ is bijective and $h_1,h_2\in H$, write their unique preimages as $a_1,a_2$. Since $\phi(a_1a_2)=h_1h_2$, applying the inverse function gives $\phi^{-1}(h_1h_2)=a_1a_2=\phi^{-1}(h_1)\phi^{-1}(h_2)$. This is the homomorphism condition for the inverse. <span class="qed">∎</span></p></div>
+<p>Isomorphisms preserve equations, not merely set size. If $a^2=e_G$, then $\phi(a)^2=e_H$. In $V_4$ every element has this property, while in $C_4$ the element $1$ does not. Therefore no group isomorphism exists between them, although their underlying sets are bijective.</p>
+
+<h2 id="kernel">5.7 The kernel controls every nonempty fiber <a class="timestamp" href="https://www.youtube.com/watch?v=LNImE9lvbdQ&amp;t=2226s">Lesson 12 · 37:06</a></h2>
+<p>The <dfn>kernel</dfn> of a homomorphism is $K:=\ker\phi=\{g\in G:\phi(g)=e_H\}$. It is nonempty because $e_G\in K$. If $a,b\in K$, then $\phi(ab^{-1})=\phi(a)\phi(b)^{-1}=e_H$, so $ab^{-1}\in K$. The subgroup test proves that $K$ is a subgroup. The image $\phi(G)$ is also a subgroup: it contains $e_H$, and $\phi(a)\phi(b)^{-1}=\phi(ab^{-1})$ remains in the image.</p>
+<div class="theorem"><p><strong>Proposition 5.5, proved here.</strong> For any $g\in G$, the fiber of $\phi(g)$ is the set $gK:=\{gk:k\in K\}$. Moreover, $\phi$ is injective exactly when $K=\{e_G\}$.</p></div>
+<div class="proof"><p>If $k\in K$, then $\phi(gk)=\phi(g)e_H=\phi(g)$, so $gK$ lies in the fiber. Conversely, if $\phi(x)=\phi(g)$, then $\phi(g^{-1}x)=\phi(g)^{-1}\phi(x)=e_H$. Hence $k:=g^{-1}x\in K$ and $x=gk$, proving the reverse inclusion.</p>
+<p>If $\phi$ is injective, any kernel element has the same image as $e_G$ and therefore equals $e_G$. If the kernel is trivial and $\phi(x)=\phi(g)$, the fiber description gives $x=gk=ge_G=g$. Thus equal outputs force equal inputs. <span class="qed">∎</span></p></div>
+<p>The map from additive integers to $C_2$ that records parity is a homomorphism: adding two integers adds their parity residues modulo $2$. Its kernel is $2\mathbb Z$. The fiber containing $n$ is $n+2\mathbb Z$, precisely its parity class. The earlier quotient-by-equal-output construction is now constrained by an operation: all nonempty fibers are translates of one subgroup.</p>
+<p><a href="https://judsonbooks.org/aata-files/aata-20260811.pdf#page=151">Judson §11.1, printed pp. 139–140</a>, states the homomorphism laws and the kernel construction. Our fiber calculation gives the precise information-loss interpretation used in the preceding chapter.</p>
+<p>This is a statement about fibers and the canonical set factorization. To equip an arbitrary quotient set with a group operation, one must still verify representative independence. The kernel example motivates that general question without assuming the full group isomorphism theorems.</p>
+
+<h2 id="experiment">5.8 Exhaustive checks for finite group models</h2>
+<p>The standard-library program represents a permutation by a tuple of its outputs on $0,1,2$. It verifies closure, identity, inverses, and all 216 associativity triples for $S_3$. It also enumerates all 16 binary-operation tables on two labeled elements and finds which satisfy the group axioms. The functions accept these fixed finite representations, return tuples or Boolean verdicts, and perform no file or network operations. This is exhaustive finite checking; the earlier proofs establish the general group mechanisms.</p>
+<pre><code class="language-python">from itertools import permutations, product
+
+
+def compose(p, q):
+    return tuple(p[q[i]] for i in range(3))
+
+
+perms = list(permutations(range(3)))
+identity = tuple(range(3))
+assert all(compose(p, q) in perms for p, q in product(perms, repeat=2))
+assert all(compose(p, identity) == compose(identity, p) == p for p in perms)
+assert all(any(compose(p, q) == compose(q, p) == identity for q in perms)
+           for p in perms)
+triples = list(product(perms, repeat=3))
+assert all(compose(compose(p, q), r) == compose(p, compose(q, r))
+           for p, q, r in triples)
+
+
+def is_group(table):
+    xs = range(len(table))
+    ids = [
+        e for e in xs
+        if all(table[e][x] == table[x][e] == x for x in xs)
+    ]
+    if len(ids) != 1:
+        return False
+    e = ids[0]
+    if not all(table[table[a][b]][c] == table[a][table[b][c]]
+               for a, b, c in product(xs, repeat=3)):
+        return False
+    return all(any(table[a][b] == table[b][a] == e for b in xs)
+               for a in xs)
+
+
+tables = [[list(v[:2]), list(v[2:])] for v in product(range(2), repeat=4)]
+p, q = (1, 0, 2), (0, 2, 1)
+print("S3 elements:", len(perms))
+print("associativity triples:", len(triples))
+print("noncommuting swaps:", compose(p, q) != compose(q, p))
+print("two-element group tables:", sum(is_group(t) for t in tables))
+</code></pre>
+<pre class="output">S3 elements: 6
+associativity triples: 216
+noncommuting swaps: True
+two-element group tables: 2</pre>
+<p>The two labeled two-element tables differ in which label is the identity. After a structure-preserving renaming, they describe the same group. Counting tables on a fixed labeled set and counting isomorphism types are different problems.</p>
+
+<h2 id="problems">5.9 Problems and worked solutions</h2>
+<h3 id="problem-1">Problem 1 · A one-sided identity is different</h3>
+<p>On a set $S$ with at least two elements, define $a\ast b=b$. Show that every element is a left identity, no element is a right identity, and the operation is associative. Why does this not contradict identity uniqueness?</p>
+<details><summary>Solution</summary><p>For any chosen $e$, $e\ast a=a$, so every element is a left identity. But $a\ast e=e$ for every $a$; this could equal every $a$ only if the set had one element. Thus no right identity exists. Both $(a\ast b)\ast c$ and $a\ast(b\ast c)$ equal $c$, proving associativity. The uniqueness theorem concerns an element satisfying both identity conditions. None does here, so it does not apply to the multiple one-sided identities.</p></details>
+<h3 id="problem-2">Problem 2 · Cancellation without reversibility</h3>
+<p>Explain why $(\mathbb N_0,+)$ is a cancellative monoid but not a group. Which part of the cancellation proof in §5.2 cannot be reversed to infer inverses?</p>
+<details><summary>Solution</summary><p>Addition is associative, zero is an identity, and $a+b=a+c$ implies $b=c$ in ordinary integer arithmetic; right cancellation is the same because addition commutes. But $1+n=0$ has no solution in $\mathbb N_0$, since its left side is positive. The earlier argument shows how an already existing inverse permits cancellation. It does not construct an inverse from the fact that equal sums have equal remaining terms. Uniqueness of a possible solution and existence of a solution are separate conditions.</p></details>
+<h3 id="problem-3">Problem 3 · Inverting a product</h3>
+<p>Prove $(ab)^{-1}=b^{-1}a^{-1}$ in a group. Use the swaps $p=(12)$ and $q=(23)$ to show why $a^{-1}b^{-1}$ cannot generally replace that expression.</p>
+<details><summary>Solution</summary><p>Associativity gives $(ab)(b^{-1}a^{-1})=a(bb^{-1})a^{-1}=e$ and $(b^{-1}a^{-1})(ab)=b^{-1}(a^{-1}a)b=e$. By inverse uniqueness the candidate is the inverse. The two swaps are their own inverses, so the correct inverse of $p\circ q$ is $q\circ p$. The alternative would be $p\circ q$ itself. But $p\circ q=(123)$ and its square sends $1$ to $3$, so it is not the identity. Equivalently the two composites act differently on $1$, as computed in §5.3.</p></details>
+<h3 id="problem-4">Problem 4 · Count homomorphisms from a two-element group</h3>
+<p>How many homomorphisms are there from additive $C_2$ to additive $C_4$? How many from $C_2$ to $V_4$? Show that each counted possibility actually gives a homomorphism.</p>
+<details><summary>Solution</summary><p>The identity $0$ must map to the target identity. If $x$ is the image of $1$, the source equation $1+1=0$ forces $x+x=0$. In $C_4$, this holds for $x=0$ or $2$, giving two possibilities. In $V_4$, it holds for every one of its four elements, giving four possibilities. Conversely, for any such $x$, define the images of $0,1$ as $0,x$. The input pairs involving zero satisfy the homomorphism equation by identity, and the remaining pair $(1,1)$ satisfies it by $x+x=0$. Thus every counted assignment works.</p></details>
+<h3 id="problem-5">Problem 5 · Combining subgroups</h3>
+<p>Prove that the intersection of two subgroups of $G$ is a subgroup. Give two subgroups of $S_3$ whose union is not a subgroup.</p>
+<details><summary>Solution</summary><p>The intersection contains the common identity, so it is nonempty. If $a,b$ lie in both subgroups, then $ab^{-1}$ lies in both, so the subgroup test applies. For the union, take $H=\{\operatorname{id},(12)\}$ and $K=\{\operatorname{id},(23)\}$. Each is a subgroup because its nonidentity element squares to the identity. Their union contains the two swaps but omits their product $(12)\circ(23)=(123)$. It fails closure and is not a subgroup.</p></details>
+<h3 id="problem-6">Problem 6 · Kernel and fibers of a sum map</h3>
+<p>Give $\mathbb Z\times\mathbb Z$ coordinatewise addition and define $\sigma(m,n)=m+n$. Prove this is a homomorphism to additive $\mathbb Z$, find its kernel, and describe the fiber over any integer $h$ as a translate of that kernel.</p>
+<details><summary>Solution</summary><p>Coordinatewise addition is a group operation because each coordinate inherits associativity, zero, and integer negation. For two pairs, $\sigma((m,n)+(p,q))=m+p+n+q=(m+n)+(p+q)$, so the map is a homomorphism. The kernel equation $m+n=0$ gives $K=\{(t,-t):t\in\mathbb Z\}$. One preimage of $h$ is $(0,h)$, so Proposition 5.5 gives the fiber $(0,h)+K=\{(t,h-t):t\in\mathbb Z\}$. Substitution verifies every displayed pair sums to $h$, and any pair summing to $h$ has this form by taking $t=m$.</p></details>
+
+<h2 id="sources">Sources and boundaries</h2>
+<p><a href="https://www.youtube.com/watch?v=ltP728Kp6PY">Lesson 11</a> supplies operations, tables, associativity, identity and inverse uniqueness, and cancellation. <a href="https://www.youtube.com/watch?v=LNImE9lvbdQ">Lesson 12</a> supplies groups, small orders, symmetric groups, subgroups, isomorphisms, homomorphisms, kernels, and translated fibers. Judson's <a href="https://judsonbooks.org/abstract-algebra-theory-and-applications/">author-hosted <cite>Abstract Algebra: Theory and Applications</cite></a>, 2026 edition, §§3.2–3.3, 9.1, and 11.1, provides the inspected supporting material.</p>
+<p>The reader can now prove identity and inverse laws under their actual hypotheses, test a subgroup, and recover nonempty fibers of a homomorphism from its kernel. This is an introduction to group structure rather than a classification of finite groups. The next chapter adds a second operation and distributivity, producing rings and exposing why multiplication cannot always be cancelled.</p>

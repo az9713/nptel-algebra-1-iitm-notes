@@ -1,0 +1,68 @@
+{
+  "order": 5,
+  "title": "Binary operations and groups",
+  "lecture_numbers": [
+    11,
+    12
+  ],
+  "file": "chapter-05-binary-operations-and-groups.html",
+  "manuscript": "chapters/ch05.html",
+  "status": "complete; independently reviewed",
+  "chapter": 5,
+  "body_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+  "words_excluding_code": 3144,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 7,
+  "sections": [
+    {
+      "heading": "5.1 The operation is part of the structure Lesson 11 · 01:11",
+      "anchor": "operations",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=ltP728Kp6PY&t=71s"
+      ]
+    },
+    {
+      "heading": "5.2 Identities and inverses use different hypotheses Lesson 11 · 11:17",
+      "anchor": "identities",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=ltP728Kp6PY&t=677s"
+      ]
+    },
+    {
+      "heading": "5.3 Groups model reversible operations Lesson 12 · 01:20",
+      "anchor": "groups",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=LNImE9lvbdQ&t=80s"
+      ]
+    },
+    {
+      "heading": "5.4 Small groups and the meaning of “the same” Lesson 12 · 05:54",
+      "anchor": "small",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=LNImE9lvbdQ&t=354s"
+      ]
+    },
+    {
+      "heading": "5.5 Subgroups inherit the actual operation Lesson 12 · 18:36",
+      "anchor": "subgroups",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=LNImE9lvbdQ&t=1116s"
+      ]
+    },
+    {
+      "heading": "5.6 Homomorphisms preserve operations Lesson 12 · 21:00",
+      "anchor": "morphisms",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=LNImE9lvbdQ&t=1260s"
+      ]
+    },
+    {
+      "heading": "5.7 The kernel controls every nonempty fiber Lesson 12 · 37:06",
+      "anchor": "kernel",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=LNImE9lvbdQ&t=2226s"
+      ]
+    }
+  ]
+}

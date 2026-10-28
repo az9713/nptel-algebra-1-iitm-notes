@@ -1,0 +1,67 @@
+{
+  "order": 12,
+  "title": "Fields and the construction of rational numbers",
+  "lecture_numbers": [
+    23
+  ],
+  "file": "chapter-12-fields-and-the-construction-of-rational-numbers.html",
+  "manuscript": "chapters/ch12.html",
+  "status": "complete; independently reviewed",
+  "chapter": 12,
+  "body_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+  "words_excluding_code": 2411,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 7,
+  "sections": [
+    {
+      "heading": "12.1 Nonzero elements become a multiplicative group Lesson 23 · 18:39",
+      "anchor": "fields",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=1119s"
+      ]
+    },
+    {
+      "heading": "12.2 Residue rings become fields exactly at primes Lesson 23 · 12:52",
+      "anchor": "finite",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=772s"
+      ]
+    },
+    {
+      "heading": "12.3 Fractions are classes of pairs Lesson 23 · 29:23",
+      "anchor": "fractions",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=1763s"
+      ]
+    },
+    {
+      "heading": "12.5 A unique positive denominator in reduced form Lesson 23 · 34:43",
+      "anchor": "reduced",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=2083s"
+      ]
+    },
+    {
+      "heading": "12.6 Put an order on the constructed field Lesson 23 · 36:59",
+      "anchor": "order",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=2219s"
+      ]
+    },
+    {
+      "heading": "12.7 Inverses and finite fields cannot share this order Lesson 23 · 23:49",
+      "anchor": "ordered-fields",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=1429s"
+      ]
+    },
+    {
+      "heading": "12.8 Every ordered field contains a unique rational copy Lesson 23 · 38:47",
+      "anchor": "embedding",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=2327s"
+      ]
+    }
+  ]
+}

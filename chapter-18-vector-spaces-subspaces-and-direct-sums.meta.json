@@ -1,0 +1,54 @@
+{
+  "order": 18,
+  "title": "Vector spaces, subspaces, and direct sums",
+  "lecture_numbers": [
+    32,
+    33
+  ],
+  "file": "chapter-18-vector-spaces-subspaces-and-direct-sums.html",
+  "manuscript": "chapters/ch18.html",
+  "status": "complete; independently reviewed",
+  "chapter": 18,
+  "body_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+  "words_excluding_code": 2316,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 5,
+  "sections": [
+    {
+      "heading": "18.1 The scalar field is part of the structure Lesson 32 · 11:28",
+      "anchor": "axioms",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=yiwFEBZQ8c0&t=688s"
+      ]
+    },
+    {
+      "heading": "18.2 Coordinates, functions, and coefficients Lesson 32 · 14:29",
+      "anchor": "examples",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=yiwFEBZQ8c0&t=869s"
+      ]
+    },
+    {
+      "heading": "18.3 A short test for a subspace Lesson 32 · 33:06",
+      "anchor": "subspaces",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=yiwFEBZQ8c0&t=1986s"
+      ]
+    },
+    {
+      "heading": "18.6 The smallest subspace containing several pieces Lesson 33 · 01:54",
+      "anchor": "sums",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=cjCXI8hP01U&t=114s"
+      ]
+    },
+    {
+      "heading": "18.7 Direct means unique components Lesson 33 · 12:57",
+      "anchor": "direct",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=cjCXI8hP01U&t=777s"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "chapters": 25,
+  "recordings": 46,
+  "instructional_lessons": 45,
+  "introduction": 1,
+  "words_excluding_code": 63583,
+  "worked_problems": 150,
+  "python_listings": 25,
+  "teaching_order": "Official NPTEL course outline; introduction prepended; original playlist positions preserved",
+  "editorial_review": {
+    "accepted_chapters": 25,
+    "exact_manuscript_hashes": true,
+    "proofs": "Every proof checked by separate AI scientific editor",
+    "solutions": "All150 solutions checked",
+    "source_texts": "All extracted captions read sequentially by author and independent editor",
+    "support_files": "Overview,reference guide,laboratory and explorer independently checked",
+    "human_expert_certification": false,
+    "formal_verification": false
+  },
+  "mechanical_checks": {
+    "content_checker_invocations": 203,
+    "failed_invocations": 0,
+    "python_programs_passed": 25,
+    "printed_outputs_matched": 25,
+    "static_html_pages": 30,
+    "offline_browser_views": 60,
+    "widths": [
+      1440,
+      390
+    ],
+    "math_errors": 0,
+    "page_errors": 0,
+    "horizontal_overflows": 0,
+    "controls": [
+      "theme",
+      "text size",
+      "solutions",
+      "print expansion",
+      "chapter navigation",
+      "chapter search",
+      "Jordan explorer valid and invalid inputs"
+    ]
+  },
+  "clean_export": {
+    "status": "passed",
+    "html_files_byte_identical": 30,
+    "all_programs_executed": true,
+    "raw_source_inputs_required": false
+  },
+  "public_inventory": {
+    "raw_captions_included": false,
+    "downloaded_references_included": false,
+    "private_reviews_included": false
+  },
+  "advisories": "Reviewed separately in advisory-review.json; no blocking findings",
+  "evidence": [
+    "editorial-review.json",
+    "chapter-code-checks.json",
+    "content-checks.json",
+    "reader-checks.json",
+    "clean-export.json",
+    "public-inventory.json",
+    "advisory-review.json"
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No human expert certification",
+    "No proof-assistant verification",
+    "Finite code checks are not substitutes for universal proofs",
+    "Background real-field existence and fundamental theorem of algebra are explicitly assumed",
+    "Clean-export check uses existing installed Python dependencies"
+  ],
+  "publication": "Live deployment checked separately after GitHub push; this report is not a self-hashing publication manifest."
+}

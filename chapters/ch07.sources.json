@@ -1,0 +1,88 @@
+{
+  "chapter": 7,
+  "complete_source_text_reading": [
+    15,
+    16
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "axioms",
+      "lesson": 15,
+      "start": 307,
+      "end": 834
+    },
+    {
+      "section": "discrete",
+      "lesson": 15,
+      "start": 834,
+      "end": 1451
+    },
+    {
+      "section": "well-order",
+      "lesson": 15,
+      "start": 1451,
+      "end": 1915
+    },
+    {
+      "section": "axioms",
+      "lesson": 15,
+      "start": 1915,
+      "end": 2660
+    },
+    {
+      "section": "induction",
+      "lesson": 16,
+      "start": 50,
+      "end": 245
+    },
+    {
+      "section": "well-order",
+      "lesson": 16,
+      "start": 245,
+      "end": 351
+    },
+    {
+      "section": "examples",
+      "lesson": 16,
+      "start": 351,
+      "end": 574
+    },
+    {
+      "section": "recursion",
+      "lesson": 16,
+      "start": 574,
+      "end": 1936
+    }
+  ],
+  "teaching_constructions": [
+    "Compatible finite-history implementation",
+    "Six completely solved problems"
+  ],
+  "scope_decisions": [
+    "Full subset induction distinguished from first-order arithmetic schemas",
+    "Existence of integer structure assumed; uniqueness up to isomorphism assigned to chapter8",
+    "Recursion rules start at n=k and have domain E^n",
+    "Strong induction established before its use in well-ordering proof"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Hammack, Book of Proof",
+      "url": "https://richardhammack.github.io/BookOfProof/Main.pdf",
+      "sections": [
+        "10.1",
+        "10.2",
+        "10.3"
+      ],
+      "printed_pages": [
+        "182–183",
+        "187–188",
+        "191"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

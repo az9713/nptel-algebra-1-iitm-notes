@@ -1,0 +1,202 @@
+[
+  {
+    "chapter": 1,
+    "body_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+    "words_excluding_code": 3220,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  },
+  {
+    "chapter": 2,
+    "body_sha256": "9d622ac42050c99e4837d5c02e82aa02d963e14341269749c8de54e7efec6bee",
+    "words_excluding_code": 3108,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  },
+  {
+    "chapter": 3,
+    "body_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+    "words_excluding_code": 2905,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 6
+  },
+  {
+    "chapter": 4,
+    "body_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+    "words_excluding_code": 3652,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 8
+  },
+  {
+    "chapter": 5,
+    "body_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+    "words_excluding_code": 3144,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  },
+  {
+    "chapter": 6,
+    "body_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+    "words_excluding_code": 2950,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  },
+  {
+    "chapter": 7,
+    "body_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+    "words_excluding_code": 2256,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 6
+  },
+  {
+    "chapter": 8,
+    "body_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+    "words_excluding_code": 2519,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  },
+  {
+    "chapter": 9,
+    "body_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+    "words_excluding_code": 2556,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 6
+  },
+  {
+    "chapter": 10,
+    "body_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+    "words_excluding_code": 2276,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 8
+  },
+  {
+    "chapter": 11,
+    "body_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+    "words_excluding_code": 2425,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 8
+  },
+  {
+    "chapter": 12,
+    "body_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+    "words_excluding_code": 2411,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  },
+  {
+    "chapter": 13,
+    "body_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+    "words_excluding_code": 2684,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  },
+  {
+    "chapter": 14,
+    "body_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+    "words_excluding_code": 2946,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 9
+  },
+  {
+    "chapter": 15,
+    "body_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+    "words_excluding_code": 2515,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  },
+  {
+    "chapter": 16,
+    "body_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+    "words_excluding_code": 2270,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 6
+  },
+  {
+    "chapter": 17,
+    "body_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+    "words_excluding_code": 1974,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 6
+  },
+  {
+    "chapter": 18,
+    "body_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+    "words_excluding_code": 2316,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 5
+  },
+  {
+    "chapter": 19,
+    "body_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+    "words_excluding_code": 2518,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  },
+  {
+    "chapter": 20,
+    "body_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+    "words_excluding_code": 1954,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 8
+  },
+  {
+    "chapter": 21,
+    "body_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+    "words_excluding_code": 2111,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  },
+  {
+    "chapter": 22,
+    "body_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+    "words_excluding_code": 1877,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 6
+  },
+  {
+    "chapter": 23,
+    "body_sha256": "8d9501de86f6a1909bb3a091885b4c3e35e122553abe7201db1cc659798e126e",
+    "words_excluding_code": 2692,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  },
+  {
+    "chapter": 24,
+    "body_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+    "words_excluding_code": 1754,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 5
+  },
+  {
+    "chapter": 25,
+    "body_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+    "words_excluding_code": 2550,
+    "problems": 6,
+    "python_listings": 1,
+    "timestamp_anchors": 7
+  }
+]

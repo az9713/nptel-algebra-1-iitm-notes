@@ -1,0 +1,113 @@
+<h1>3. Functions and the information they preserve</h1>
+<p class="lead">Squaring an integer produces an unambiguous answer, yet reversing the calculation can lose the sign: both $2$ and $-2$ produce $4$. Restricting the inputs removes that ambiguity; restricting the declared outputs can remove a different obstruction. A function therefore needs more than a formula. Its domain, codomain, and graph jointly determine what it can preserve and whether it can be inverted.</p>
+<p class="source-note">Official lesson 7 supplies the sequence: relations, functions, examples, injectivity and surjectivity, composition, then inverses. Examples and proofs below are independently developed. The final one-sided-inverse example is an explicitly added extension.</p>
+
+<h2 id="relations">3.1 Ordered pairs and relations <a class="timestamp" href="https://www.youtube.com/watch?v=UzydRbUC-rM&amp;t=60s">Lesson 7 · 01:00</a></h2>
+<p>An <dfn>ordered pair</dfn> $(x,y)$ records a first and a second entry. Its defining equality rule is $(x,y)=(x',y')$ if and only if $x=x'$ and $y=y'$. A set $\{x,y\}$ does not carry this ordering: exchanging its entries changes nothing. We use ordered pairs now and return to a construction of them from sets in Chapter 6.</p>
+<p>For sets $X,Y$, the <dfn>Cartesian product</dfn> is $X\times Y:=\{(x,y):x\in X,\ y\in Y\}$. A <dfn>binary relation</dfn> from $X$ to $Y$ is any subset $R\subseteq X\times Y$. The notation $xRy$ abbreviates $(x,y)\in R$. A relation on $X$ means one from $X$ to itself.</p>
+<p>With $X=\{1,2\}$ and $Y=\{a,b\}$, the product has the four pairs $(1,a),(1,b),(2,a),(2,b)$. A relation may contain none, some, or all of them. The relation $R=\{(1,a),(1,b)\}$ gives the input $1$ two related outputs and gives input $2$ none. It is a valid relation, but neither defect is allowed for a function from $X$ to $Y$.</p>
+<p>Familiar comparisons are relations. On $\mathbb N$, the relation $x\lt y$ contains $(2,3)$ but not $(3,2)$ or $(2,2)$. Divisibility is different: $x\mid y$ means $y=kx$ for some integer $k$, and $x\mid x$ holds. These relations encode properties of ordered pairs without requiring a unique output for each first entry.</p>
+<p>For this example, a <dfn>simple undirected graph</dfn> consists of a set of vertices and a collection of two-element vertex subsets called edges. <dfn>Adjacency</dfn> means that two vertices form an edge. <dfn>Reachability</dfn> means that a finite sequence of vertices joins them with each consecutive pair forming an edge; a sequence consisting of one vertex and no edges allows that vertex to reach itself. In a graph with vertices $u,v,w$ and edges $\{u,v\},\{v,w\}$, the first and third vertices are reachable but not adjacent. Specify the relation rather than treating these two conditions as synonyms.</p>
+
+<h2 id="definition">3.2 Existence and uniqueness are separate requirements <a class="timestamp" href="https://www.youtube.com/watch?v=UzydRbUC-rM&amp;t=465s">Lesson 7 · 07:45</a></h2>
+<div class="definition"><p><strong>Definition 3.1.</strong> A <dfn>function</dfn> $f:X\to Y$ consists of a <dfn>domain</dfn> $X$, a <dfn>codomain</dfn> $Y$, and a <dfn>graph</dfn> $\Gamma_f\subseteq X\times Y$ such that for every $x\in X$ there is exactly one $y\in Y$ with $(x,y)\in\Gamma_f$. Write $f(x)=y$ for that unique value.</p></div>
+<p>“Exactly one” contains two claims. Existence requires at least one output for each domain element. Uniqueness requires that $(x,y),(x,y')\in\Gamma_f$ imply $y=y'$. Neither substitutes for the other. The empty graph on a nonempty domain has no ambiguity but fails existence. The relation $\{(1,a),(1,b),(2,a)\}$ has an output for every element of $\{1,2\}$ but fails uniqueness when $a\ne b$.</p>
+<p>Different inputs may share one output. The graph $\{(1,a),(2,a)\}$ defines a function from $\{1,2\}$ to $\{a,b\}$; uniqueness applies after fixing the input. The function definition does not require unique inputs for a given output. That stronger property is injectivity.</p>
+<p>The <dfn>image</dfn>, also called the range, is $f(X):=\{y\in Y:\exists x\in X,\ f(x)=y\}$. It consists of actual outputs and is a subset of the codomain. For the last graph, the image is $\{a\}$ while the codomain is $\{a,b\}$. An unused codomain element is allowed.</p>
+<p>We include domain and codomain in function equality. Thus functions are equal when their domains and codomains agree and their values agree at every domain element. The same graph interpreted with a different codomain defines a differently specified function. This convention will matter when determining surjectivity and writing an inverse.</p>
+<p>The definition is consistent with <a href="https://richardhammack.github.io/BookOfProof/Main.pdf#page=236">Hammack §12.1, printed p. 224</a>. Separating the graph from its type also clarifies software interfaces: a mathematical declaration $f:X\to Y$ promises a value in $Y$ for every permitted input, whereas a program that can fail to return is not automatically a total function with that declared domain.</p>
+
+<h2 id="descriptions">3.3 A function need not be a formula <a class="timestamp" href="https://www.youtube.com/watch?v=UzydRbUC-rM&amp;t=869s">Lesson 7 · 14:29</a></h2>
+<p>A formula, table, verbal rule, algorithm, or definition by cases can specify a function. The test is always the same: the stated data must determine exactly one permissible value for every input. A convenient closed expression is not part of the definition.</p>
+<p>The rule “send positive integer $n$ to the $n$th odd positive integer” is $n\mapsto2n-1$. The rule “send $n$ to its number of positive divisors” also determines a unique natural number; for $n=6$ the divisors $1,2,3,6$ give output $4$. The rule “send $n$ to the $n$th prime” requires the fact that infinitely many primes exist in order to define an output for every $n$. Chapter 11 proves that fact. A verbal description cannot bypass its own existence requirement.</p>
+<p>The input itself can be an ordered pair. Addition is the function $+:\mathbb N\times\mathbb N\to\mathbb N$ sending $(m,n)$ to $m+n$. Written as ordinary function evaluation, this is $+((m,n))=m+n$. The common shorthand $+(m,n)$ omits an inner pair of parentheses; the notation does not change the fact that there is one input element, belonging to a Cartesian-product domain. A function of several variables can likewise be treated as a function on a product set.</p>
+<p>For a definition by cases, the cases must cover the domain and agree wherever they overlap. Define $H:\mathbb R\to\mathbb R$ by $H(x)=0$ when $x\lt0$ and $H(x)=1$ when $x\ge0$. The two conditions cover all real numbers and do not overlap, so the definition is valid. Replacing the second condition by $x\gt0$ would leave zero uncovered. Taking both $x\le0$ and $x\ge0$ with conflicting outputs would give zero two values.</p>
+<p>For each set $X$, the <dfn>identity function</dfn> $\operatorname{id}_X:X\to X$ sends $x$ to itself. If an element $y_0\in Y$ is chosen, the <dfn>constant function</dfn> $c:X\to Y$ sends every $x$ to $y_0$. A chosen constant value requires a nonempty codomain. There is always one function from $\varnothing$ to $Y$, namely the empty graph, even if $Y=\varnothing$. There is no function from a nonempty $X$ to $\varnothing$, because no output could meet existence.</p>
+<p>A set-theoretic definition says which pairs belong to a function's graph. It does not by itself provide an algorithm for computing the output or a bound on its running time. Conversely, an attempted algorithm must be shown to terminate and produce the specified value on every input before it establishes a total function on an infinite domain. The distinction becomes consequential when exact algebraic objects are implemented computationally.</p>
+
+<h2 id="types">3.4 Injectivity, surjectivity, and the square map <a class="timestamp" href="https://www.youtube.com/watch?v=UzydRbUC-rM&amp;t=1470s">Lesson 7 · 24:30</a></h2>
+<div class="definition"><p><strong>Definition 3.2.</strong> A function $f:X\to Y$ is <dfn>injective</dfn> when $f(x)=f(x')$ implies $x=x'$ for all $x,x'\in X$. It is <dfn>surjective</dfn> when every $y\in Y$ equals $f(x)$ for some $x\in X$. It is <dfn>bijective</dfn> when it is both.</p></div>
+<p>By taking the contrapositive, injectivity is equivalent to distinct inputs having distinct outputs. Surjectivity is the equality $f(X)=Y$. Neither is part of the basic function definition. <a href="https://richardhammack.github.io/BookOfProof/Main.pdf#page=240">Hammack §12.2, printed p. 228</a>, gives the same three conditions.</p>
+<p>For $s:\mathbb Z\to\mathbb Z$ defined by $s(n)=n^2$, the values $s(2)=s(-2)$ disprove injectivity. The output $-1$ is unavailable because integer squares are nonnegative, so surjectivity also fails. Changing the codomain to the nonnegative integer squares repairs surjectivity but does nothing to the collision between $2$ and $-2$.</p>
+<p>Now restrict the domain to $\mathbb N$. If positive integers $a,b$ satisfy $a^2=b^2$, then $(a-b)(a+b)=0$. Ordinary integer arithmetic has no nonzero factors with zero product, and $a+b\gt0$, so $a=b$. The restricted map is injective. As a map $\mathbb N\to\mathbb N$ it is still not surjective, since $2$ is not a positive square. As a map $\mathbb N\to S$, where $S:=\{n^2:n\in\mathbb N\}$, it is bijective.</p>
+<p>These are different repairs. Restricting a domain can remove collisions; reducing a codomain to the image removes unused targets. Neither change should be silent. A software routine returning square roots of positive integer squares does not thereby define an inverse on every positive integer.</p>
+
+<h2 id="composition">3.5 Composition preserves the function contract <a class="timestamp" href="https://www.youtube.com/watch?v=UzydRbUC-rM&amp;t=1644s">Lesson 7 · 27:24</a></h2>
+<p>Let $f:X\to Y$ and $g:Y\to Z$ be functions. Their <dfn>composition</dfn> $g\circ f:X\to Z$ is defined by $(g\circ f)(x):=g(f(x))$. The rightmost function acts first. For each $x$, the function property of $f$ gives exactly one element of $Y$, and the function property of $g$ then gives exactly one element of $Z$. This proves existence and uniqueness for the composite.</p>
+<p>Equivalently, its graph contains $(x,z)$ precisely when there exists $y\in Y$ with $(x,y)\in\Gamma_f$ and $(y,z)\in\Gamma_g$. Uniqueness of $f(x)$ prevents two different intermediate values from creating ambiguity, and uniqueness of $g$ prevents two final values for the same intermediate one. Relations in general need not have these properties.</p>
+<div class="theorem"><p><strong>Proposition 3.3, proved here.</strong> For compatible functions, composition is associative and identity functions act as identities.</p></div>
+<div class="proof"><p>For $h:Z\to W$ and each $x\in X$, both $((h\circ g)\circ f)(x)$ and $(h\circ(g\circ f))(x)$ equal $h(g(f(x)))$. The composites have the same domain and codomain, so they are equal. Also $(\operatorname{id}_Y\circ f)(x)=f(x)$ and $(f\circ\operatorname{id}_X)(x)=f(x)$, proving both identity laws. <span class="qed">∎</span></p></div>
+<p>Composition is generally not commutative even when both orders make sense. On $\mathbb N$, let $s(n)=n^2$ and $t(n)=n+2$. Then $(t\circ s)(n)=n^2+2$, while $(s\circ t)(n)=(n+2)^2$. At $n=1$ the values are $3$ and $9$. Swapping the operations changes the calculation.</p>
+<p>Our typed convention uses matching intermediate sets. More generally, a composite can be evaluated when the image of the first function lies within the domain of the second; an explicit restriction or inclusion makes the types precise. <a href="https://richardhammack.github.io/BookOfProof/Main.pdf#page=247">Hammack §12.4, printed pp. 235–236</a>, describes both the composition rule and this image-domain condition.</p>
+
+<h2 id="inverse">3.6 An inverse must recover every input and reach every output <a class="timestamp" href="https://www.youtube.com/watch?v=UzydRbUC-rM&amp;t=1837s">Lesson 7 · 30:37</a></h2>
+<p>A <dfn>preimage</dfn> of an element $y$ means an input $x$ with $f(x)=y$. There may be none, one, or several. The operation taking an entire subset to all its preimages is developed in Chapter 4 with lesson 10; it does not require an inverse function.</p>
+<p>Reverse every pair in $\Gamma_f$ to obtain a relation from $Y$ to $X$. It may have missing values or multiple values. It is the graph of a function on all of $Y$ exactly when $f$ is bijective. Surjectivity provides an input for each reversed-domain element, and injectivity makes that input unique. This function is the <dfn>inverse</dfn> $f^{-1}:Y\to X$.</p>
+<div class="theorem"><p><strong>Proposition 3.4, proved here.</strong> A function $f:X\to Y$ is bijective if and only if there is a function $g:Y\to X$ satisfying $g\circ f=\operatorname{id}_X$ and $f\circ g=\operatorname{id}_Y$. Such $g$ is unique.</p></div>
+<div class="proof"><p>If $f$ is bijective, define $g(y)$ to be its unique input with output $y$. For every $x$, $g(f(x))=x$ by uniqueness; for every $y$, $f(g(y))=y$ by the defining equation. Conversely, assume the two identities. If $f(x)=f(x')$, apply $g$ and use the first identity to get $x=x'$, proving injectivity. For any $y\in Y$, the second identity exhibits $g(y)$ as a preimage, proving surjectivity.</p>
+<p>For uniqueness, suppose $g,h:Y\to X$ both satisfy the two identities. Associativity and the identity laws give $g=g\circ\operatorname{id}_Y=g\circ(f\circ h)=(g\circ f)\circ h=\operatorname{id}_X\circ h=h$. Thus the inverse is unique. <span class="qed">∎</span></p></div>
+<p>The bijective square map $\mathbb N\to S$ has inverse taking a positive square to its positive integer root. There is no corresponding inverse from all of $\mathbb N$ because many proposed inputs are not squares. The same issue occurs for $n\mapsto n+2$: as a map from $\mathbb N$ to $\{3,4,5,\ldots\}$ it has inverse $m\mapsto m-2$, but as a map $\mathbb N\to\mathbb N$ it misses $1$ and $2$. The inverse formula does not repair its domain.</p>
+<p><strong>Extension: one-sided inverses.</strong> Let $u:\mathbb N_0\to\mathbb N_0$ send $n$ to $n+1$, and let $v$ send $0$ to $0$ and positive $n$ to $n-1$. Then $(v\circ u)(n)=n$ for every $n$, but $(u\circ v)(0)=1\ne0$. A left inverse proves injectivity of $u$ by the first half of the preceding converse argument. It does not prove surjectivity: $0$ is missing. This failure over an infinite set will contrast with square linear maps in finite dimension.</p>
+
+<h2 id="experiment">3.7 Validate a finite function before storing it</h2>
+<p>A dictionary silently overwrites an earlier value for a repeated key, so converting relation pairs into a dictionary can hide a uniqueness failure. The program below checks both graph requirements first. It takes finite domain and codomain sets and an iterable of pairs, returning a value table only when the relation defines a total function. An out-of-domain pair, an out-of-codomain value, a conflicting value, or a missing input raises <code>ValueError</code>. It changes no files and makes no network requests.</p>
+<pre><code class="language-python">from itertools import product
+
+
+def function_table(domain, codomain, pairs):
+    values = {}
+    for x, y in pairs:
+        if x not in domain or y not in codomain:
+            raise ValueError("pair outside declared product")
+        if x in values and values[x] != y:
+            raise ValueError("more than one output")
+        values[x] = y
+    if set(values) != domain:
+        raise ValueError("missing output")
+    return values
+
+
+invalid = 0
+for graph in [[(0, 0)], [(0, 0), (0, 1), (1, 0)]]:
+    try:
+        function_table({0, 1}, {0, 1}, graph)
+    except ValueError:
+        invalid += 1
+assert invalid == 2
+maps = list(product(range(2), repeat=3))
+onto = sum(set(values) == {0, 1} for values in maps)
+one_to_one = sum(len(set(values)) == 3 for values in maps)
+print("functions 3 to 2:", len(maps))
+print("surjections:", onto)
+print("injections:", one_to_one)
+print("invalid graphs rejected:", invalid)
+</code></pre>
+<pre class="output">functions 3 to 2: 8
+surjections: 6
+injections: 0
+invalid graphs rejected: 2</pre>
+<p>A tuple of three output values encodes a function on a three-element domain in a fixed input order. Two of the eight tuples are constant; the other six hit both targets. No tuple has three distinct entries drawn from two available values, so no injection exists. The exhaustive check agrees with the counting argument in Problem 6; it does not certify the correctness of arbitrary programs presented as functions.</p>
+
+<h2 id="problems">3.8 Problems and worked solutions</h2>
+<h3 id="problem-1">Problem 1 · Two kinds of failure</h3>
+<p>Let $X=\{a,b,c\}$ and $Y=\{0,1\}$. Diagnose the relations $R=\{(a,0),(b,1)\}$ and $S=\{(a,0),(a,1),(b,1),(c,0)\}$ as proposed functions $X\to Y$. Repair each with the fewest pair insertions or deletions.</p>
+<details><summary>Solution</summary><p>The relation $R$ assigns unique outputs where defined, but $c$ has no output. Insert either $(c,0)$ or $(c,1)$; one insertion suffices, and no zero-edit repair is possible. The relation $S$ covers the whole domain but gives $a$ both outputs. Delete either $(a,0)$ or $(a,1)$; the remaining three pairs define a function. Inserting another pair cannot remove the ambiguity. The two failures concern existence and uniqueness separately.</p></details>
+<h3 id="problem-2">Problem 2 · Repair the square map</h3>
+<p>Starting with $f:\mathbb Z\to\mathbb Z$, $f(n)=n^2$, change only its codomain to make it surjective. Then change only its domain as well to make it bijective while retaining the zero output. State the resulting inverse's domain.</p>
+<details><summary>Solution</summary><p>Let $S_0:=\{n^2:n\in\mathbb Z\}$, the nonnegative integer squares. With codomain $S_0$, the original rule is surjective by definition of image, but still maps $n$ and $-n$ to the same output. Restrict the domain to $\mathbb N_0$. For nonnegative integers, equality of squares forces equality of the integers, and every element of $S_0$ has a nonnegative root. The resulting map $\mathbb N_0\to S_0$ is bijective. Its inverse is defined on $S_0$, including zero; it is not an inverse on every nonnegative integer because nonsquares are absent from that domain.</p></details>
+<h3 id="problem-3">Problem 3 · Composition order</h3>
+<p>For $f,g:\mathbb Z\to\mathbb Z$ given by $f(n)=n^2+1$ and $g(n)=3n$, calculate both composites and exhibit an input where they differ. Explain why both orders are well typed.</p>
+<details><summary>Solution</summary><p>The composite $g\circ f$ sends $n$ to $3(n^2+1)=3n^2+3$. The other composite sends $n$ to $(3n)^2+1=9n^2+1$. At zero their values are $3$ and $1$, so they are different functions. Each function has both domain and codomain $\mathbb Z$, making the output of either a permitted input for the other. Compatible types permit composition; they do not force its commutativity.</p></details>
+<h3 id="problem-4">Problem 4 · A formally plausible inverse</h3>
+<p>A proposed inverse for $f:\mathbb Z\to\mathbb Z$, $f(n)=3n+1$, is $g(m)=(m-1)/3$. Identify the defect and repair the function specification without changing the forward formula.</p>
+<details><summary>Solution</summary><p>The proposed $g$ does not return an integer for every integer $m$; for example $g(0)=-1/3$. The forward map is injective, since $3n+1=3n'+1$ implies $n=n'$, but its image is $T:=\{3n+1:n\in\mathbb Z\}$. Declare $f:\mathbb Z\to T$ instead. For each $m\in T$, $(m-1)/3$ is an integer and supplies the unique input. The repaired inverse is $g:T\to\mathbb Z$. Substitution gives $g(f(n))=n$ and $f(g(m))=m$ on these stated domains.</p></details>
+<h3 id="problem-5">Problem 5 · The empty function</h3>
+<p>For any set $Y$, prove that there is exactly one function $\varnothing\to Y$. Is it injective? When is it surjective? When does it have a two-sided inverse?</p>
+<details><summary>Solution</summary><p>The Cartesian product $\varnothing\times Y$ has no pairs, so its only subset is the empty graph. Every required existence-and-uniqueness condition is universally quantified over the empty domain and hence holds. Injectivity also holds vacuously because there are no pairs of inputs violating it. Its image is empty, so surjectivity holds exactly when $Y=\varnothing$. By Proposition 3.4, it has a two-sided inverse exactly in that case. The inverse is again the empty function.</p></details>
+<h3 id="problem-6">Problem 6 · Count functions and their special types</h3>
+<p>Count all functions from a fixed three-element set to a fixed two-element set, and count the surjections and injections among them. Repeat for functions between two two-element sets.</p>
+<details><summary>Solution</summary><p>Each of three inputs independently chooses one of two outputs, giving $2^3=8$ functions. Exactly two are constant and miss one target; the remaining $8-2=6$ are surjective. An injection would require three distinct target values, but only two exist, so there are none. For two inputs and two targets, there are $2^2=4$ functions. Two are constant; the other two assign different outputs to the inputs, so both are bijective. Thus there are two surjections and two injections, with the same two functions counted in both classes. These are function counts: arbitrary relations may assign zero or multiple outputs and form a larger class.</p></details>
+
+<h2 id="sources">Sources and boundaries</h2>
+<p><a href="https://www.youtube.com/watch?v=UzydRbUC-rM">Lesson 7</a> supplies the relation-based definition, domain/codomain/image distinctions, descriptive and piecewise rules, function types, composition, and inverse restrictions. <a href="https://richardhammack.github.io/BookOfProof/">Hammack, <cite>Book of Proof</cite></a>, §§12.1–12.2 and 12.4–12.5, provides the inspected supporting definitions. The adjacency/reachability distinction is made explicit here; illustrative real-world family relationships are replaced by finite mathematical examples with stated domains.</p>
+<p>The reader can now decide whether a relation is a function, state exactly what information it loses, and justify an inverse with its proper types. The definition alone does not establish computability or efficient implementation. The next chapter organizes inputs that share the same output into equivalence classes, separating information loss from a reversible relabeling.</p>

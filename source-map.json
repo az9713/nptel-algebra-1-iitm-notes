@@ -1,0 +1,1445 @@
+[
+  {
+    "chapter": 1,
+    "file": "chapter-01-mathematical-statements-sets-and-logic.html",
+    "lecture_numbers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "sections": [
+      {
+        "heading": "1.1 Objects, properties, and proofs Lesson 1 · 00:42",
+        "anchor": "objects",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=VM-EYUioh3k&t=42s"
+        ]
+      },
+      {
+        "heading": "1.2 Sets, membership, and equality Lesson 2 · 09:10",
+        "anchor": "sets",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=NSDBHOqzQKk&t=550s"
+        ]
+      },
+      {
+        "heading": "1.3 Properties specify subsets Lesson 2 · 14:55",
+        "anchor": "properties",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=NSDBHOqzQKk&t=895s"
+        ]
+      },
+      {
+        "heading": "1.4 Compound statements and their truth values Lesson 3 · 02:16",
+        "anchor": "connectives",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=OmZ9NoqBIbE&t=136s"
+        ]
+      },
+      {
+        "heading": "1.5 Implication and empty-domain reasoning Lesson 3 · 05:51",
+        "anchor": "implication",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=OmZ9NoqBIbE&t=351s"
+        ]
+      },
+      {
+        "heading": "1.6 Quantifiers and witness dependence Lesson 3 · 17:17",
+        "anchor": "quantifiers",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=OmZ9NoqBIbE&t=1037s"
+        ]
+      },
+      {
+        "heading": "1.7 Negating an exact specification Lesson 3 · 21:03",
+        "anchor": "negation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=OmZ9NoqBIbE&t=1263s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "file": "chapter-02-proofs-counterexamples-and-set-identities.html",
+    "lecture_numbers": [
+      4,
+      5,
+      6
+    ],
+    "sections": [
+      {
+        "heading": "2.1 Assumptions and valid inference Lesson 4 · 01:19",
+        "anchor": "inference",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=hYMIFvh2hY4&t=79s"
+        ]
+      },
+      {
+        "heading": "2.2 Equivalence requires the missing directions Lesson 4 · 13:07",
+        "anchor": "equivalence",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=hYMIFvh2hY4&t=787s"
+        ]
+      },
+      {
+        "heading": "2.3 Contradiction and a parity obstruction Lesson 5 · 00:44",
+        "anchor": "contradiction",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=9iikmsC07_s&t=44s"
+        ]
+      },
+      {
+        "heading": "2.4 Contrapositive, cases, and symmetry Lesson 5 · 09:30",
+        "anchor": "contrapositive",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=9iikmsC07_s&t=570s"
+        ]
+      },
+      {
+        "heading": "2.5 Set operations turn logical conditions into objects Lesson 6 · 00:21",
+        "anchor": "operations",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=nr7oYcTd-J8&t=21s"
+        ]
+      },
+      {
+        "heading": "2.6 A correct rule expansion Lesson 6 · 09:35",
+        "anchor": "distributivity",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=nr7oYcTd-J8&t=575s"
+        ]
+      },
+      {
+        "heading": "2.7 Negating a composite filter Lesson 6 · 11:43",
+        "anchor": "de-morgan",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=nr7oYcTd-J8&t=703s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 3,
+    "file": "chapter-03-functions-and-the-information-they-preserve.html",
+    "lecture_numbers": [
+      7
+    ],
+    "sections": [
+      {
+        "heading": "3.1 Ordered pairs and relations Lesson 7 · 01:00",
+        "anchor": "relations",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=UzydRbUC-rM&t=60s"
+        ]
+      },
+      {
+        "heading": "3.2 Existence and uniqueness are separate requirements Lesson 7 · 07:45",
+        "anchor": "definition",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=UzydRbUC-rM&t=465s"
+        ]
+      },
+      {
+        "heading": "3.3 A function need not be a formula Lesson 7 · 14:29",
+        "anchor": "descriptions",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=UzydRbUC-rM&t=869s"
+        ]
+      },
+      {
+        "heading": "3.4 Injectivity, surjectivity, and the square map Lesson 7 · 24:30",
+        "anchor": "types",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=UzydRbUC-rM&t=1470s"
+        ]
+      },
+      {
+        "heading": "3.5 Composition preserves the function contract Lesson 7 · 27:24",
+        "anchor": "composition",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=UzydRbUC-rM&t=1644s"
+        ]
+      },
+      {
+        "heading": "3.6 An inverse must recover every input and reach every output Lesson 7 · 30:37",
+        "anchor": "inverse",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=UzydRbUC-rM&t=1837s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "file": "chapter-04-equivalence-quotients-and-canonical-factorization.html",
+    "lecture_numbers": [
+      8,
+      9,
+      10
+    ],
+    "sections": [
+      {
+        "heading": "4.1 Equality-like and order-like relations Lesson 8 · 00:40",
+        "anchor": "relations",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=iM61eZVc4IQ&t=40s"
+        ]
+      },
+      {
+        "heading": "4.2 Classes partition the original set Lesson 8 · 22:29",
+        "anchor": "partitions",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=iM61eZVc4IQ&t=1349s"
+        ]
+      },
+      {
+        "heading": "4.3 The quotient and its projection Lesson 9 · 00:36",
+        "anchor": "quotient",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=305We8ZFecA&t=36s"
+        ]
+      },
+      {
+        "heading": "4.4 Which computations survive quotienting? Lesson 9 · 05:51",
+        "anchor": "descent",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=305We8ZFecA&t=351s"
+        ]
+      },
+      {
+        "heading": "4.5 Every function separates loss, relabeling, and inclusion Lesson 9 · 36:15",
+        "anchor": "factorization",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=305We8ZFecA&t=2175s"
+        ]
+      },
+      {
+        "heading": "4.6 Images, preimages, and saturation Lesson 10 · 02:56",
+        "anchor": "images",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=n--JD7jF6Z8&t=176s"
+        ]
+      },
+      {
+        "heading": "4.7 Which set operations are preserved? Lesson 10 · 06:56",
+        "anchor": "set-laws",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=n--JD7jF6Z8&t=416s"
+        ]
+      },
+      {
+        "heading": "4.8 One-sided inverses and the choices they require Lesson 10 · 13:15",
+        "anchor": "one-sided",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=n--JD7jF6Z8&t=795s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "file": "chapter-05-binary-operations-and-groups.html",
+    "lecture_numbers": [
+      11,
+      12
+    ],
+    "sections": [
+      {
+        "heading": "5.1 The operation is part of the structure Lesson 11 · 01:11",
+        "anchor": "operations",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=ltP728Kp6PY&t=71s"
+        ]
+      },
+      {
+        "heading": "5.2 Identities and inverses use different hypotheses Lesson 11 · 11:17",
+        "anchor": "identities",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=ltP728Kp6PY&t=677s"
+        ]
+      },
+      {
+        "heading": "5.3 Groups model reversible operations Lesson 12 · 01:20",
+        "anchor": "groups",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=LNImE9lvbdQ&t=80s"
+        ]
+      },
+      {
+        "heading": "5.4 Small groups and the meaning of “the same” Lesson 12 · 05:54",
+        "anchor": "small",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=LNImE9lvbdQ&t=354s"
+        ]
+      },
+      {
+        "heading": "5.5 Subgroups inherit the actual operation Lesson 12 · 18:36",
+        "anchor": "subgroups",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=LNImE9lvbdQ&t=1116s"
+        ]
+      },
+      {
+        "heading": "5.6 Homomorphisms preserve operations Lesson 12 · 21:00",
+        "anchor": "morphisms",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=LNImE9lvbdQ&t=1260s"
+        ]
+      },
+      {
+        "heading": "5.7 The kernel controls every nonempty fiber Lesson 12 · 37:06",
+        "anchor": "kernel",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=LNImE9lvbdQ&t=2226s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 6,
+    "file": "chapter-06-rings-integral-domains-and-foundational-assumptions.html",
+    "lecture_numbers": [
+      13,
+      14
+    ],
+    "sections": [
+      {
+        "heading": "6.1 Two operations linked by distributivity Lesson 13 · 01:20",
+        "anchor": "rings",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4WGGK6tWPsw&t=80s"
+        ]
+      },
+      {
+        "heading": "6.2 A ring of functions with zero divisors Lesson 13 · 12:38",
+        "anchor": "function-ring",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4WGGK6tWPsw&t=758s"
+        ]
+      },
+      {
+        "heading": "6.3 Identity conventions for subrings and maps Lesson 13 · 14:58",
+        "anchor": "subrings",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4WGGK6tWPsw&t=898s"
+        ]
+      },
+      {
+        "heading": "6.4 Integral domains recover nonzero cancellation Lesson 13 · 17:51",
+        "anchor": "domains",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4WGGK6tWPsw&t=1071s"
+        ]
+      },
+      {
+        "heading": "6.5 Order must be compatible with the operations Lesson 13 · 22:21",
+        "anchor": "order",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4WGGK6tWPsw&t=1341s"
+        ]
+      },
+      {
+        "heading": "6.6 Why arbitrary properties do not define sets Lesson 14 · 01:58",
+        "anchor": "separation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jfHnbxuxlDs&t=118s"
+        ]
+      },
+      {
+        "heading": "6.7 Foundation and a noncircular membership condition Lesson 14 · 11:25",
+        "anchor": "foundation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jfHnbxuxlDs&t=685s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 7,
+    "file": "chapter-07-integers-order-and-induction.html",
+    "lecture_numbers": [
+      15,
+      16
+    ],
+    "sections": [
+      {
+        "heading": "7.1 An algebraic structure with a global condition Lesson 15 · 05:07",
+        "anchor": "axioms",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=TUzAHnMLbJw&t=307s"
+        ]
+      },
+      {
+        "heading": "7.2 The least positive element and the next integer Lesson 15 · 13:54",
+        "anchor": "discrete",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=TUzAHnMLbJw&t=834s"
+        ]
+      },
+      {
+        "heading": "7.3 Ordinary, shifted, and strong induction Lesson 16 · 00:50",
+        "anchor": "induction",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Mnh5V0D8NLU&t=50s"
+        ]
+      },
+      {
+        "heading": "7.4 Well-ordering and the smallest counterexample Lesson 15 · 24:11",
+        "anchor": "well-order",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=TUzAHnMLbJw&t=1451s"
+        ]
+      },
+      {
+        "heading": "7.5 Rules that determine a sequence Lesson 16 · 09:34",
+        "anchor": "recursion",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Mnh5V0D8NLU&t=574s"
+        ]
+      },
+      {
+        "heading": "7.6 Factorials and Fibonacci states Lesson 16 · 07:01",
+        "anchor": "examples",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Mnh5V0D8NLU&t=421s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 8,
+    "file": "chapter-08-inductive-constructions-and-uniqueness-of-the-integers.html",
+    "lecture_numbers": [
+      17,
+      18
+    ],
+    "sections": [
+      {
+        "heading": "8.1 Why every parenthesization agrees Lesson 17 · 17:13",
+        "anchor": "products",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4R75Li1kV2A&t=1033s"
+        ]
+      },
+      {
+        "heading": "8.2 Powers and their exact hypotheses Lesson 17 · 00:38",
+        "anchor": "powers",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4R75Li1kV2A&t=38s"
+        ]
+      },
+      {
+        "heading": "8.3 Integer multiples inside a ring Lesson 17 · 12:02",
+        "anchor": "integer-action",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4R75Li1kV2A&t=722s"
+        ]
+      },
+      {
+        "heading": "8.4 Finite distribution and telescoping Lesson 17 · 30:18",
+        "anchor": "distribution",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4R75Li1kV2A&t=1818s"
+        ]
+      },
+      {
+        "heading": "8.5 Absolute value in an ordered domain Lesson 17 · 31:37",
+        "anchor": "absolute",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4R75Li1kV2A&t=1897s"
+        ]
+      },
+      {
+        "heading": "8.6 Determine the map before constructing it Lesson 18 · 07:30",
+        "anchor": "forced",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=8cJImBqqb5g&t=450s"
+        ]
+      },
+      {
+        "heading": "8.7 Construct the integer isomorphism Lesson 18 · 26:34",
+        "anchor": "construction",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=8cJImBqqb5g&t=1594s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 9,
+    "file": "chapter-09-cardinality-and-the-limits-of-enumeration.html",
+    "lecture_numbers": [
+      19
+    ],
+    "sections": [
+      {
+        "heading": "9.1 Counting means a bijection Lesson 19 · 01:30",
+        "anchor": "finite",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=90s"
+        ]
+      },
+      {
+        "heading": "9.2 Infinite sets and finite deletion Lesson 19 · 10:19",
+        "anchor": "infinite",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=619s"
+        ]
+      },
+      {
+        "heading": "9.3 A proper subset can have the same size Lesson 19 · 19:54",
+        "anchor": "shift",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=1194s"
+        ]
+      },
+      {
+        "heading": "9.4 Lists with repetitions can be repaired Lesson 19 · 41:16",
+        "anchor": "countable",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=2476s"
+        ]
+      },
+      {
+        "heading": "9.5 Count the grid, then count a union Lesson 19 · 53:51",
+        "anchor": "diagonals",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=3231s"
+        ]
+      },
+      {
+        "heading": "9.6 A subset missing from every proposed list Lesson 19 · 34:53",
+        "anchor": "cantor",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=wi2uvQjrVgY&t=2093s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 10,
+    "file": "chapter-10-division-greatest-common-divisors-and-euclid.html",
+    "lecture_numbers": [
+      20
+    ],
+    "sections": [
+      {
+        "heading": "10.1 Divisibility is an equation Lesson 20 · 01:14",
+        "anchor": "divisibility",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=74s"
+        ]
+      },
+      {
+        "heading": "10.2 Least divisors and an inexhaustible supply of primes Lesson 20 · 20:03",
+        "anchor": "primes",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=1203s"
+        ]
+      },
+      {
+        "heading": "10.3 Division with a unique nonnegative remainder Lesson 20 · 39:11",
+        "anchor": "division",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=2351s"
+        ]
+      },
+      {
+        "heading": "10.4 Define a greatest common divisor by what divides it Lesson 20 · 59:18",
+        "anchor": "gcd",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=3558s"
+        ]
+      },
+      {
+        "heading": "10.5 Euclid's algorithm: an invariant and a decreasing quantity Lesson 20 · 69:44",
+        "anchor": "euclid",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=4184s"
+        ]
+      },
+      {
+        "heading": "10.6 Bézout coefficients are a certificate Lesson 20 · 80:02",
+        "anchor": "bezout",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=4802s"
+        ]
+      },
+      {
+        "heading": "10.7 Coprimality permits a special cancellation Lesson 20 · 87:44",
+        "anchor": "euclid-lemma",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=5264s"
+        ]
+      },
+      {
+        "heading": "10.8 Existence and uniqueness of prime factorization Lesson 20 · 93:32",
+        "anchor": "factorization",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=5612s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 11,
+    "file": "chapter-11-congruences-and-prime-factorization.html",
+    "lecture_numbers": [
+      21,
+      22
+    ],
+    "sections": [
+      {
+        "heading": "11.1 Equality of a chosen kind Lesson 21 · 00:47",
+        "anchor": "congruence",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=yKJuo3DSESk&t=47s"
+        ]
+      },
+      {
+        "heading": "11.2 Exactly n classes, including the zero class Lesson 21 · 20:16",
+        "anchor": "classes",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=yKJuo3DSESk&t=1216s"
+        ]
+      },
+      {
+        "heading": "11.4 Affine transformations permute residues Lesson 22 · 10:14",
+        "anchor": "permutation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=614s"
+        ]
+      },
+      {
+        "heading": "11.5 Fermat's theorem by a product permutation Lesson 22 · 22:50",
+        "anchor": "fermat",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=1370s"
+        ]
+      },
+      {
+        "heading": "11.6 The same congruence from rotating necklaces Lesson 22 · 14:30",
+        "anchor": "necklaces",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=870s"
+        ]
+      },
+      {
+        "heading": "11.7 Euler's theorem and its converse Lesson 22 · 29:29",
+        "anchor": "euler",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=1769s"
+        ]
+      },
+      {
+        "heading": "11.8 Solve every linear congruence Lesson 22 · 35:28",
+        "anchor": "linear",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=2128s"
+        ]
+      },
+      {
+        "heading": "11.9 Wilson's exact primality criterion Lesson 22 · 45:21",
+        "anchor": "wilson",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=2721s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 12,
+    "file": "chapter-12-fields-and-the-construction-of-rational-numbers.html",
+    "lecture_numbers": [
+      23
+    ],
+    "sections": [
+      {
+        "heading": "12.1 Nonzero elements become a multiplicative group Lesson 23 · 18:39",
+        "anchor": "fields",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=1119s"
+        ]
+      },
+      {
+        "heading": "12.2 Residue rings become fields exactly at primes Lesson 23 · 12:52",
+        "anchor": "finite",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=772s"
+        ]
+      },
+      {
+        "heading": "12.3 Fractions are classes of pairs Lesson 23 · 29:23",
+        "anchor": "fractions",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=1763s"
+        ]
+      },
+      {
+        "heading": "12.5 A unique positive denominator in reduced form Lesson 23 · 34:43",
+        "anchor": "reduced",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=2083s"
+        ]
+      },
+      {
+        "heading": "12.6 Put an order on the constructed field Lesson 23 · 36:59",
+        "anchor": "order",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=2219s"
+        ]
+      },
+      {
+        "heading": "12.7 Inverses and finite fields cannot share this order Lesson 23 · 23:49",
+        "anchor": "ordered-fields",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=1429s"
+        ]
+      },
+      {
+        "heading": "12.8 Every ordered field contains a unique rational copy Lesson 23 · 38:47",
+        "anchor": "embedding",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mEBKTbPYzBE&t=2327s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 13,
+    "file": "chapter-13-real-numbers-and-completeness.html",
+    "lecture_numbers": [
+      24
+    ],
+    "sections": [
+      {
+        "heading": "13.1 A bound need not belong to the set Lesson 24 · 09:40",
+        "anchor": "supremum",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=580s"
+        ]
+      },
+      {
+        "heading": "13.2 The useful local test for a supremum Lesson 24 · 21:04",
+        "anchor": "epsilon",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=1264s"
+        ]
+      },
+      {
+        "heading": "13.3 Nested closed intervals have a common point Lesson 24 · 30:06",
+        "anchor": "nested",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=1806s"
+        ]
+      },
+      {
+        "heading": "13.4 No positive scale escapes integer multiples Lesson 24 · 38:26",
+        "anchor": "archimedean",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=2306s"
+        ]
+      },
+      {
+        "heading": "13.5 Shrinking makes the common point unique Lesson 24 · 48:18",
+        "anchor": "shrinking",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=2898s"
+        ]
+      },
+      {
+        "heading": "13.6 A square root constructed by rational bisection Lesson 24 · 55:35",
+        "anchor": "root",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=3335s"
+        ]
+      },
+      {
+        "heading": "13.8 Recover completeness from interval intersection Lesson 24 · 65:22",
+        "anchor": "converse",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WNNc4HMWv5w&t=3922s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 14,
+    "file": "chapter-14-complex-numbers-and-polynomial-arithmetic.html",
+    "lecture_numbers": [
+      25,
+      26
+    ],
+    "sections": [
+      {
+        "heading": "14.1 Build the field on real pairs Lesson 25 · 21:25",
+        "anchor": "complex-field",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=TPBugn_HcBk&t=1285s"
+        ]
+      },
+      {
+        "heading": "14.2 Magnitude, a real scalar product, and triangle inequality Lesson 25 · 28:23",
+        "anchor": "norm",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=TPBugn_HcBk&t=1703s"
+        ]
+      },
+      {
+        "heading": "14.3 Rotation, scaling, and choices of argument Lesson 25 · 37:23",
+        "anchor": "polar",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=TPBugn_HcBk&t=2243s"
+        ]
+      },
+      {
+        "heading": "14.4 A real answer through nonreal intermediate values Lesson 25 · 07:26",
+        "anchor": "cubic",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=TPBugn_HcBk&t=446s"
+        ]
+      },
+      {
+        "heading": "14.5 Two precise obstructions Lesson 25 · 41:57",
+        "anchor": "order-obstructions",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=TPBugn_HcBk&t=2517s"
+        ]
+      },
+      {
+        "heading": "14.6 A polynomial is a finite coefficient sequence Lesson 26 · 00:54",
+        "anchor": "formal",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=SZjALtTehjw&t=54s"
+        ]
+      },
+      {
+        "heading": "14.7 Degree and evaluation measure different information Lesson 26 · 20:53",
+        "anchor": "degree",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=SZjALtTehjw&t=1253s"
+        ]
+      },
+      {
+        "heading": "14.8 Long division is a terminating proof Lesson 26 · 36:29",
+        "anchor": "division",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=SZjALtTehjw&t=2189s"
+        ]
+      },
+      {
+        "heading": "14.10 Roots, linear factors, and the fundamental theorem Lesson 26 · 50:33",
+        "anchor": "roots",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=SZjALtTehjw&t=3033s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 15,
+    "file": "chapter-15-linear-systems-and-gaussian-elimination.html",
+    "lecture_numbers": [
+      27,
+      28
+    ],
+    "sections": [
+      {
+        "heading": "15.1 Fix the field before solving Lesson 27 · 23:17",
+        "anchor": "systems",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4Bmx287z49E&t=1397s"
+        ]
+      },
+      {
+        "heading": "15.2 Separate coefficients from the right-hand side Lesson 28 · 00:57",
+        "anchor": "matrices",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=57s"
+        ]
+      },
+      {
+        "heading": "15.3 Three reversible operations Lesson 28 · 13:09",
+        "anchor": "row-operations",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=789s"
+        ]
+      },
+      {
+        "heading": "15.4 Echelon and reduced echelon forms Lesson 28 · 32:02",
+        "anchor": "echelon",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=1922s"
+        ]
+      },
+      {
+        "heading": "15.5 Every matrix can be reduced Lesson 28 · 34:45",
+        "anchor": "existence",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=2085s"
+        ]
+      },
+      {
+        "heading": "15.7 Read every solution, including finite-field counts Lesson 28 · 43:24",
+        "anchor": "solutions",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=2604s"
+        ]
+      },
+      {
+        "heading": "15.8 Inconsistency comes with a row-combination certificate Lesson 28 · 61:37",
+        "anchor": "certificates",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=3697s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 16,
+    "file": "chapter-16-matrix-algebra-and-square-systems.html",
+    "lecture_numbers": [
+      29,
+      30
+    ],
+    "sections": [
+      {
+        "heading": "16.1 The dimensions specify what can be multiplied Lesson 29 · 00:48",
+        "anchor": "product",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=JGp1ej82CJI&t=48s"
+        ]
+      },
+      {
+        "heading": "16.2 Products encode successive coordinate functions Lesson 29 · 11:23",
+        "anchor": "composition",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=JGp1ej82CJI&t=683s"
+        ]
+      },
+      {
+        "heading": "16.4 Row operations are left multiplication Lesson 29 · 42:57",
+        "anchor": "elementary",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=JGp1ej82CJI&t=2577s"
+        ]
+      },
+      {
+        "heading": "16.5 The general linear group Lesson 29 · 56:16",
+        "anchor": "inverses",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=JGp1ej82CJI&t=3376s"
+        ]
+      },
+      {
+        "heading": "16.6 Six tests for a square matrix Lesson 30 · 13:50",
+        "anchor": "equivalences",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=qhhtmOt76Pk&t=830s"
+        ]
+      },
+      {
+        "heading": "16.7 A one-sided inverse suffices only with the right setting Lesson 30 · 22:59",
+        "anchor": "one-sided",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=qhhtmOt76Pk&t=1379s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 17,
+    "file": "chapter-17-the-geometry-and-parameters-of-a-solution-set.html",
+    "lecture_numbers": [
+      31
+    ],
+    "sections": [
+      {
+        "heading": "17.1 Homogeneous solutions survive addition and scaling Lesson 31 · 00:24",
+        "anchor": "null",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=24s"
+        ]
+      },
+      {
+        "heading": "17.2 Replace a set by its finite generating list Lesson 31 · 05:18",
+        "anchor": "span",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=318s"
+        ]
+      },
+      {
+        "heading": "17.3 Construct special solutions without moving columns Lesson 31 · 12:11",
+        "anchor": "special",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=731s"
+        ]
+      },
+      {
+        "heading": "17.4 Rank counts pivots, not written equations Lesson 31 · 27:08",
+        "anchor": "rank",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=1628s"
+        ]
+      },
+      {
+        "heading": "17.5 What rows and columns each tell us Lesson 31 · 29:37",
+        "anchor": "row-column",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=1777s"
+        ]
+      },
+      {
+        "heading": "17.6 Row annihilation and geometric language Lesson 31 · 31:36",
+        "anchor": "annihilation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=jhv4Oo8xVFY&t=1896s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 18,
+    "file": "chapter-18-vector-spaces-subspaces-and-direct-sums.html",
+    "lecture_numbers": [
+      32,
+      33
+    ],
+    "sections": [
+      {
+        "heading": "18.1 The scalar field is part of the structure Lesson 32 · 11:28",
+        "anchor": "axioms",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=yiwFEBZQ8c0&t=688s"
+        ]
+      },
+      {
+        "heading": "18.2 Coordinates, functions, and coefficients Lesson 32 · 14:29",
+        "anchor": "examples",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=yiwFEBZQ8c0&t=869s"
+        ]
+      },
+      {
+        "heading": "18.3 A short test for a subspace Lesson 32 · 33:06",
+        "anchor": "subspaces",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=yiwFEBZQ8c0&t=1986s"
+        ]
+      },
+      {
+        "heading": "18.6 The smallest subspace containing several pieces Lesson 33 · 01:54",
+        "anchor": "sums",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=cjCXI8hP01U&t=114s"
+        ]
+      },
+      {
+        "heading": "18.7 Direct means unique components Lesson 33 · 12:57",
+        "anchor": "direct",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=cjCXI8hP01U&t=777s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 19,
+    "file": "chapter-19-spanning-independence-bases-and-dimension.html",
+    "lecture_numbers": [
+      34,
+      35
+    ],
+    "sections": [
+      {
+        "heading": "19.1 Enough vectors and no redundant vectors Lesson 34 · 05:00",
+        "anchor": "span",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=uuU3XeTGzjk&t=300s"
+        ]
+      },
+      {
+        "heading": "19.2 The deletion lemma Lesson 34 · 23:41",
+        "anchor": "deletion",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=uuU3XeTGzjk&t=1421s"
+        ]
+      },
+      {
+        "heading": "19.3 Exchange: why coordinate counts are bounded Lesson 35 · 00:57",
+        "anchor": "exchange",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Nm9N9cLeaKU&t=57s"
+        ]
+      },
+      {
+        "heading": "19.4 Extracting and extending bases Lesson 35 · 23:48",
+        "anchor": "bases",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Nm9N9cLeaKU&t=1428s"
+        ]
+      },
+      {
+        "heading": "19.5 Dimension is well defined Lesson 35 · 41:41",
+        "anchor": "dimension",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Nm9N9cLeaKU&t=2501s"
+        ]
+      },
+      {
+        "heading": "19.6 Subspace dimensions and complements Lesson 35 · 44:36",
+        "anchor": "complements",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Nm9N9cLeaKU&t=2676s"
+        ]
+      },
+      {
+        "heading": "19.7 Count shared directions once Lesson 35 · 55:18",
+        "anchor": "sum",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Nm9N9cLeaKU&t=3318s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 20,
+    "file": "chapter-20-linear-maps-and-rank-nullity.html",
+    "lecture_numbers": [
+      36,
+      37
+    ],
+    "sections": [
+      {
+        "heading": "20.1 Preserve combinations, not just straight lines Lesson 36 · 01:25",
+        "anchor": "linear",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=3TJPmpaDluQ&t=85s"
+        ]
+      },
+      {
+        "heading": "20.2 Functions and sequences as inputs Lesson 36 · 07:13",
+        "anchor": "examples",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=3TJPmpaDluQ&t=433s"
+        ]
+      },
+      {
+        "heading": "20.3 A basis lets us prescribe a map Lesson 36 · 13:49",
+        "anchor": "prescription",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=3TJPmpaDluQ&t=829s"
+        ]
+      },
+      {
+        "heading": "20.4 Linear maps form a vector space and compose Lesson 36 · 21:33",
+        "anchor": "algebra",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=3TJPmpaDluQ&t=1293s"
+        ]
+      },
+      {
+        "heading": "20.5 The kernel controls every nonempty fiber Lesson 37 · 00:55",
+        "anchor": "kernel",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=I2KtVbQ1Pxk&t=55s"
+        ]
+      },
+      {
+        "heading": "20.6 A basis adapted to what is erased Lesson 37 · 10:45",
+        "anchor": "rank-nullity",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=I2KtVbQ1Pxk&t=645s"
+        ]
+      },
+      {
+        "heading": "20.7 Dimension obstructions and invertibility Lesson 37 · 18:46",
+        "anchor": "consequences",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=I2KtVbQ1Pxk&t=1126s"
+        ]
+      },
+      {
+        "heading": "20.8 Reconnect rank with elimination Lesson 37 · 25:08",
+        "anchor": "matrices",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=I2KtVbQ1Pxk&t=1508s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 21,
+    "file": "chapter-21-matrix-representations-and-change-of-basis.html",
+    "lecture_numbers": [
+      38,
+      39
+    ],
+    "sections": [
+      {
+        "heading": "21.1 Coordinates are a chosen isomorphism Lesson 38 · 01:11",
+        "anchor": "coordinates",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=ZPbv320dTbs&t=71s"
+        ]
+      },
+      {
+        "heading": "21.2 Columns are images of basis vectors Lesson 38 · 27:08",
+        "anchor": "representation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=ZPbv320dTbs&t=1628s"
+        ]
+      },
+      {
+        "heading": "21.3 Composition forces the multiplication order Lesson 38 · 36:53",
+        "anchor": "composition",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=ZPbv320dTbs&t=2213s"
+        ]
+      },
+      {
+        "heading": "21.4 The identity map changes coordinates Lesson 39 · 02:40",
+        "anchor": "change",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=DYwgO80HY0A&t=160s"
+        ]
+      },
+      {
+        "heading": "21.5 Change the input and output languages separately Lesson 39 · 09:04",
+        "anchor": "two-sided",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=DYwgO80HY0A&t=544s"
+        ]
+      },
+      {
+        "heading": "21.6 Similarity is one operator in two bases Lesson 39 · 22:59",
+        "anchor": "similarity",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=DYwgO80HY0A&t=1379s"
+        ]
+      },
+      {
+        "heading": "21.7 Two proofs that row rank equals column rank Lesson 39 · 37:52",
+        "anchor": "rank",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=DYwgO80HY0A&t=2272s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 22,
+    "file": "chapter-22-eigenvalues-and-invariant-subspaces.html",
+    "lecture_numbers": [
+      40
+    ],
+    "sections": [
+      {
+        "heading": "22.1 Scaling directions Lesson 40 · 10:26",
+        "anchor": "eigen",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=626s"
+        ]
+      },
+      {
+        "heading": "22.2 Diagonal matrices mean eigenvector bases Lesson 40 · 06:02",
+        "anchor": "diagonal",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=362s"
+        ]
+      },
+      {
+        "heading": "22.3 The field can create or remove eigenvalues Lesson 40 · 23:29",
+        "anchor": "rotation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=1409s"
+        ]
+      },
+      {
+        "heading": "22.4 Distinct eigenspaces do not interfere Lesson 40 · 31:11",
+        "anchor": "direct",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=1871s"
+        ]
+      },
+      {
+        "heading": "22.5 Restrict only to a subspace that stays inside itself Lesson 40 · 42:09",
+        "anchor": "invariant",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=2529s"
+        ]
+      },
+      {
+        "heading": "22.6 Substitute an operator into a formal polynomial Lesson 40 · 49:07",
+        "anchor": "polynomials",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=2947s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 23,
+    "file": "chapter-23-minimal-polynomials-and-operator-decomposition.html",
+    "lecture_numbers": [
+      41,
+      42
+    ],
+    "sections": [
+      {
+        "heading": "23.1 First find a nonzero annihilator Lesson 41 · 10:36",
+        "anchor": "existence",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Bt0_QVRosXk&t=636s"
+        ]
+      },
+      {
+        "heading": "23.2 Minimal means least degree and universal divisibility Lesson 41 · 34:07",
+        "anchor": "minimal",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Bt0_QVRosXk&t=2047s"
+        ]
+      },
+      {
+        "heading": "23.3 Roots, restrictions, and inverses Lesson 41 · 38:40",
+        "anchor": "roots",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Bt0_QVRosXk&t=2320s"
+        ]
+      },
+      {
+        "heading": "23.4 A cyclic vector makes one-vector computation conclusive Lesson 41 · 45:00",
+        "anchor": "cyclic",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Bt0_QVRosXk&t=2700s"
+        ]
+      },
+      {
+        "heading": "23.5 Quotient spaces remove a subspace without choosing a complement Lesson 42 · 10:24",
+        "anchor": "quotients",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=N-QvM6uq8NI&t=624s"
+        ]
+      },
+      {
+        "heading": "23.6 Real odd-dimensional spaces have an eigenvalue Lesson 42 · 01:49",
+        "anchor": "odd",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=N-QvM6uq8NI&t=109s"
+        ]
+      },
+      {
+        "heading": "23.8 A precise polynomial criterion Lesson 42 · 29:10",
+        "anchor": "diagonalization",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=N-QvM6uq8NI&t=1750s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 24,
+    "file": "chapter-24-triangular-forms-and-invariant-flags.html",
+    "lecture_numbers": [
+      43
+    ],
+    "sections": [
+      {
+        "heading": "24.1 Triangularity is a statement about a nested family Lesson 43 · 02:32",
+        "anchor": "flags",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=6hsgh3IRFAA&t=152s"
+        ]
+      },
+      {
+        "heading": "24.2 Each factor lowers one stage of the flag Lesson 43 · 11:47",
+        "anchor": "annihilator",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=6hsgh3IRFAA&t=707s"
+        ]
+      },
+      {
+        "heading": "24.3 Every diagonal entry really is an eigenvalue Lesson 43 · 20:15",
+        "anchor": "spectrum",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=6hsgh3IRFAA&t=1215s"
+        ]
+      },
+      {
+        "heading": "24.4 Triangularization means the minimal polynomial splits Lesson 43 · 25:55",
+        "anchor": "criterion",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=6hsgh3IRFAA&t=1555s"
+        ]
+      },
+      {
+        "heading": "24.5 A permutation becomes diagonal, with a field boundary Lesson 43 · 48:29",
+        "anchor": "example",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=6hsgh3IRFAA&t=2909s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 25,
+    "file": "chapter-25-jordan-chains-and-canonical-forms.html",
+    "lecture_numbers": [
+      44,
+      45
+    ],
+    "sections": [
+      {
+        "heading": "25.1 Fix the orientation before building chains Lesson 44 · 00:32",
+        "anchor": "blocks",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=32s"
+        ]
+      },
+      {
+        "heading": "25.2 A valid kernel–range splitting after stabilization Lesson 44 · 30:24",
+        "anchor": "stabilization",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=1824s"
+        ]
+      },
+      {
+        "heading": "25.3 Separate eigenvalues, then subtract the scalar Lesson 44 · 28:04",
+        "anchor": "primary",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=1684s"
+        ]
+      },
+      {
+        "heading": "25.4 An orbit stays independent until it dies Lesson 44 · 44:03",
+        "anchor": "orbits",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=2643s"
+        ]
+      },
+      {
+        "heading": "25.5 Shorten dependent orbits until they form a basis Lesson 44 · 48:19",
+        "anchor": "exchange",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=2899s"
+        ]
+      },
+      {
+        "heading": "25.6 Existence and the minimal polynomial of a Jordan matrix Lesson 44 · 17:32",
+        "anchor": "jordan",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=1052s"
+        ]
+      },
+      {
+        "heading": "25.8 Finish the course examples with explicit bases Lesson 45 · 12:44",
+        "anchor": "examples",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=RjhmSLkjnNM&t=764s"
+        ]
+      }
+    ]
+  }
+]

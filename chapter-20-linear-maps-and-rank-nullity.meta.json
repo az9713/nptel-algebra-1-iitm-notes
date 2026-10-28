@@ -1,0 +1,75 @@
+{
+  "order": 20,
+  "title": "Linear maps and rank–nullity",
+  "lecture_numbers": [
+    36,
+    37
+  ],
+  "file": "chapter-20-linear-maps-and-rank-nullity.html",
+  "manuscript": "chapters/ch20.html",
+  "status": "complete; independently reviewed",
+  "chapter": 20,
+  "body_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+  "words_excluding_code": 1954,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 8,
+  "sections": [
+    {
+      "heading": "20.1 Preserve combinations, not just straight lines Lesson 36 · 01:25",
+      "anchor": "linear",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=3TJPmpaDluQ&t=85s"
+      ]
+    },
+    {
+      "heading": "20.2 Functions and sequences as inputs Lesson 36 · 07:13",
+      "anchor": "examples",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=3TJPmpaDluQ&t=433s"
+      ]
+    },
+    {
+      "heading": "20.3 A basis lets us prescribe a map Lesson 36 · 13:49",
+      "anchor": "prescription",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=3TJPmpaDluQ&t=829s"
+      ]
+    },
+    {
+      "heading": "20.4 Linear maps form a vector space and compose Lesson 36 · 21:33",
+      "anchor": "algebra",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=3TJPmpaDluQ&t=1293s"
+      ]
+    },
+    {
+      "heading": "20.5 The kernel controls every nonempty fiber Lesson 37 · 00:55",
+      "anchor": "kernel",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=I2KtVbQ1Pxk&t=55s"
+      ]
+    },
+    {
+      "heading": "20.6 A basis adapted to what is erased Lesson 37 · 10:45",
+      "anchor": "rank-nullity",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=I2KtVbQ1Pxk&t=645s"
+      ]
+    },
+    {
+      "heading": "20.7 Dimension obstructions and invertibility Lesson 37 · 18:46",
+      "anchor": "consequences",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=I2KtVbQ1Pxk&t=1126s"
+      ]
+    },
+    {
+      "heading": "20.8 Reconnect rank with elimination Lesson 37 · 25:08",
+      "anchor": "matrices",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=I2KtVbQ1Pxk&t=1508s"
+      ]
+    }
+  ]
+}

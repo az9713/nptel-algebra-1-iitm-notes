@@ -1,0 +1,202 @@
+[
+  {
+    "chapter": "ch01",
+    "listings": 1,
+    "manuscript_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+    "output": "implication: [True, False, True, True]\nper-input tables: 9\ncommon-output tables: 7\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch02",
+    "listings": 1,
+    "manuscript_sha256": "9d622ac42050c99e4837d5c02e82aa02d963e14341269749c8de54e7efec6bee",
+    "output": "subset triples checked: 512\nbuggy rewrite: [1]\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch03",
+    "listings": 1,
+    "manuscript_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+    "output": "functions 3 to 2: 8\nsurjections: 6\ninjections: 0\ninvalid graphs rejected: 2\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch04",
+    "listings": 1,
+    "manuscript_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+    "output": "fibers: [['a', 'b'], ['c', 'd'], ['e']]\nsubsets checked: 32\nbad descent rejected: True\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch05",
+    "listings": 1,
+    "manuscript_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+    "output": "S3 elements: 6\nassociativity triples: 216\nnoncommuting swaps: True\ntwo-element group tables: 2\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch06",
+    "listings": 1,
+    "manuscript_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+    "output": "4 64 2\n16\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch07",
+    "listings": 1,
+    "manuscript_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+    "output": "[1, 2, 6, 24, 120, 720, 5040, 40320]\n[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch08",
+    "listings": 1,
+    "manuscript_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+    "output": "1\n(1, 2, 0) (2, 0, 1)\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch09",
+    "listings": 1,
+    "manuscript_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+    "output": "512\n[(1, 1), (2, 1), (1, 2), (3, 1), (2, 2), (1, 3), (4, 1), (3, 2), (2, 3), (1, 4)]\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch10",
+    "listings": 1,
+    "manuscript_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+    "output": "(21, -2, 5)\n1680\n(-3, 2)\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch11",
+    "listings": 1,
+    "manuscript_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+    "output": "[4, 9, 14]\n[1, 7, 11, 13, 17, 19, 23, 29]\n3 48\n1 341\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch12",
+    "listings": 1,
+    "manuscript_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+    "output": "42 156\n3/4\nTrue\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch13",
+    "listings": 1,
+    "manuscript_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+    "output": "6074000999/4294967296 759250125/536870912\n1/4294967296\n1.4142135622678325\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch14",
+    "listings": 1,
+    "manuscript_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+    "output": "X**2 - 1 2\nX - 1\n2 + 11*I\n(X - 4)*(X**2 + 4*X + 1)\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch15",
+    "listings": 1,
+    "manuscript_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+    "output": "[0, 1, 3]\n['1', '0', '-1', '0', '3']\n['0', '1', '3', '0', '1']\n['0', '0', '0', '1', '1']\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch16",
+    "listings": 1,
+    "manuscript_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+    "output": "Matrix([[1, -1], [-1, 2]])\nMatrix([[1], [-1]])\nMatrix([[8], [0]])\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch17",
+    "listings": 1,
+    "manuscript_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+    "output": "(1, 3)\nMatrix([[1, 0, 0], [0, -2, 1], [0, 1, 0], [0, 0, -3], [0, 0, 1]])\nMatrix([[3], [4], [7]])\n8\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch18",
+    "listings": 1,
+    "manuscript_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+    "output": "16\n[(1, 1), (2, 7), (4, 7), (8, 1)]\n256\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch19",
+    "listings": 1,
+    "manuscript_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+    "output": "[1, 7, 42, 168]\n168\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch20",
+    "listings": 1,
+    "manuscript_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+    "output": "Q: 5 1\n2 3 3 8\n3 4 2 9\n5 4 2 25\n7 5 1 7\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch21",
+    "listings": 1,
+    "manuscript_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+    "output": "[[3/2, -3/2], [1/2, 3/2]]\n[3, 1]\n[3/2, 5/2]\n2 2\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch22",
+    "listings": 1,
+    "manuscript_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+    "output": "[[3, 0], [0, 2]]\n1 True\nTrue\nTrue\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch23",
+    "listings": 1,
+    "manuscript_sha256": "8d9501de86f6a1909bb3a091885b4c3e35e122553abe7201db1cc659798e126e",
+    "output": "x**5 - 6*x + 3\nx**3 - 6*x**2 + 12*x - 8\nx - 1\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch24",
+    "listings": 1,
+    "manuscript_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+    "output": "[[1, 0, 0], [0, 1, 0], [0, 0, -1]]\n[[0, 0, 0], [0, 0, 0], [0, 0, 0]]\n[1, 1]\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  },
+  {
+    "chapter": "ch25",
+    "listings": 1,
+    "manuscript_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+    "output": "[0, 3, 5, 6, 6]\n[3, 2, 1, 0]\n[1, 1, 1]\nchain basis identities passed\n",
+    "displayed_output_matched": true,
+    "exit_code": 0
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "order": 1,
+  "title": "Mathematical statements, sets, and logic",
+  "lecture_numbers": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "file": "chapter-01-mathematical-statements-sets-and-logic.html",
+  "manuscript": "chapters/ch01.html",
+  "status": "complete; independently reviewed",
+  "chapter": 1,
+  "body_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+  "words_excluding_code": 3220,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 7,
+  "sections": [
+    {
+      "heading": "1.1 Objects, properties, and proofs Lesson 1 · 00:42",
+      "anchor": "objects",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=VM-EYUioh3k&t=42s"
+      ]
+    },
+    {
+      "heading": "1.2 Sets, membership, and equality Lesson 2 · 09:10",
+      "anchor": "sets",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=NSDBHOqzQKk&t=550s"
+      ]
+    },
+    {
+      "heading": "1.3 Properties specify subsets Lesson 2 · 14:55",
+      "anchor": "properties",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=NSDBHOqzQKk&t=895s"
+      ]
+    },
+    {
+      "heading": "1.4 Compound statements and their truth values Lesson 3 · 02:16",
+      "anchor": "connectives",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=OmZ9NoqBIbE&t=136s"
+      ]
+    },
+    {
+      "heading": "1.5 Implication and empty-domain reasoning Lesson 3 · 05:51",
+      "anchor": "implication",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=OmZ9NoqBIbE&t=351s"
+      ]
+    },
+    {
+      "heading": "1.6 Quantifiers and witness dependence Lesson 3 · 17:17",
+      "anchor": "quantifiers",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=OmZ9NoqBIbE&t=1037s"
+      ]
+    },
+    {
+      "heading": "1.7 Negating an exact specification Lesson 3 · 21:03",
+      "anchor": "negation",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=OmZ9NoqBIbE&t=1263s"
+      ]
+    }
+  ]
+}

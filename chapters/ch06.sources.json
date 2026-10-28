@@ -1,0 +1,90 @@
+{
+  "chapter": 6,
+  "complete_source_text_reading": [
+    13,
+    14
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "rings",
+      "lesson": 13,
+      "start": 80,
+      "end": 758
+    },
+    {
+      "section": "function-ring",
+      "lesson": 13,
+      "start": 758,
+      "end": 898
+    },
+    {
+      "section": "subrings",
+      "lesson": 13,
+      "start": 898,
+      "end": 1071
+    },
+    {
+      "section": "domains",
+      "lesson": 13,
+      "start": 1071,
+      "end": 1341
+    },
+    {
+      "section": "order",
+      "lesson": 13,
+      "start": 1341,
+      "end": 2175
+    },
+    {
+      "section": "separation",
+      "lesson": 14,
+      "start": 118,
+      "end": 685
+    },
+    {
+      "section": "foundation",
+      "lesson": 14,
+      "start": 685,
+      "end": 1217
+    }
+  ],
+  "teaching_constructions": [
+    "Kuratowski pair construction with degenerate case",
+    "Finite function ring exhaustive check",
+    "Six complete worked problems"
+  ],
+  "scope_decisions": [
+    "Unital rings, common-identity subrings and unital homomorphisms explicitly chosen; operation preservation alone does not force preservation of 1",
+    "Nontriviality explicit for integral domains",
+    "Selected set axioms are not a complete ZF list",
+    "Russell contradiction distinguished from the foundation axiom"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Judson, Abstract Algebra: Theory and Applications,2026",
+      "url": "https://judsonbooks.org/aata-files/aata-20260811.pdf",
+      "sections": [
+        "16.1",
+        "16.2"
+      ],
+      "printed_pages": [
+        "198–203"
+      ]
+    },
+    {
+      "source": "Hammack, Book of Proof",
+      "url": "https://richardhammack.github.io/BookOfProof/Main.pdf",
+      "sections": [
+        "1.10"
+      ],
+      "printed_pages": [
+        "32"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "chapter": 22,
+  "complete_source_text_reading": [
+    40
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "diagonal",
+      "lesson": 40,
+      "start": 16,
+      "end": 626
+    },
+    {
+      "section": "eigen",
+      "lesson": 40,
+      "start": 626,
+      "end": 1241
+    },
+    {
+      "section": "diagonal",
+      "lesson": 40,
+      "start": 1241,
+      "end": 1409
+    },
+    {
+      "section": "rotation",
+      "lesson": 40,
+      "start": 1409,
+      "end": 1681
+    },
+    {
+      "section": "direct",
+      "lesson": 40,
+      "start": 1681,
+      "end": 2529
+    },
+    {
+      "section": "invariant",
+      "lesson": 40,
+      "start": 2529,
+      "end": 2947
+    },
+    {
+      "section": "polynomials",
+      "lesson": 40,
+      "start": 2947,
+      "end": 3498
+    },
+    {
+      "section": "computation",
+      "lesson": 40,
+      "start": 945,
+      "end": 1187
+    }
+  ],
+  "teaching_constructions": [
+    "Complete eigenspace directness proof",
+    "Real and complex rotation calculation and periodic qualification",
+    "Invariant complements counterexample",
+    "Six solutions and exact eigenvector/polynomial lab"
+  ],
+  "scope_decisions": [
+    "No zero eigenvectors but zero retained in eigenspaces",
+    "Finite-dimensional noninvertible eigenvalue criterion",
+    "Radical formulas distinguished from numerical computability",
+    "Determinants and characteristic polynomials remain outside proof dependencies"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Axler, Linear Algebra Done Right, fourth edition",
+      "url": "https://linear.axler.net/LADR4e.pdf",
+      "sections": [
+        "5A"
+      ],
+      "printed_pages": [
+        "133–139"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

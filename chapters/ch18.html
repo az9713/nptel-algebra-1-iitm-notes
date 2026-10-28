@@ -1,0 +1,94 @@
+<h1>18. Vector spaces, subspaces, and direct sums</h1>
+<p class="lead">A vector need not be an arrow: it can be a polynomial, a matrix, a function, or an infinite sequence. What matters is a common set of addition and scaling laws. Direct sums add a second organizing principle: a complicated vector can be assembled from simpler pieces in exactly one way. That uniqueness will later let us analyze an operator separately on invariant pieces.</p>
+<p class="source-note">Lessons 32–33 supply vector-space axioms, examples, the subspace test, sums, and direct-sum criteria. We complete the examples and proof details, distinguish pairwise intersections from a genuinely direct sum, and add concrete projection and function decompositions.</p>
+
+<h2 id="axioms">18.1 The scalar field is part of the structure <a class="timestamp" href="https://www.youtube.com/watch?v=yiwFEBZQ8c0&amp;t=688s">Lesson 32 · 11:28</a></h2>
+<div class="definition"><p>A <dfn>vector space over a field $F$</dfn> is a set $V$ with addition making it an abelian group and a scalar multiplication $F\times V\to V$, written $(a,v)\mapsto av$, satisfying, for all $a,b\in F$ and $u,v\in V$,</p>
+$$a(u+v)=au+av,\quad(a+b)v=av+bv,\quad(ab)v=a(bv),\quad1v=v.$$
+<p>Members of $V$ are vectors; members of $F$ are scalars. Vector addition and field addition are different operations even though both use the symbol $+$.</p></div>
+<p>The zero vector and additive inverses are unique by the group results. In particular a vector space is nonempty; the smallest is the one-element space $\{0\}$. No multiplication of two arbitrary vectors is required by the definition.</p>
+<div class="theorem"><p><strong>Proposition 18.1, proved here.</strong> We have $0_Fv=0_V$, $a0_V=0_V$, and $(-1)v=-v$. Moreover $av=0_V$ implies $a=0_F$ or $v=0_V$.</p></div>
+<div class="proof"><p>The first distributive law in the scalar sum gives $0_Fv=(0_F+0_F)v=0_Fv+0_Fv$; additive cancellation gives $0_Fv=0_V$. Similarly $a0_V=a(0_V+0_V)=a0_V+a0_V$, proving $a0_V=0_V$. Finally $v+(-1)v=(1+(-1))v=0_Fv=0_V$, so inverse uniqueness gives $(-1)v=-v$. If $av=0$ with $a\ne0$, multiply scalarly by $a^{-1}$: $v=1v=a^{-1}(av)=a^{-1}0=0$. <span class="qed">∎</span></p></div>
+<p>The same underlying set can be a vector space over different fields. The complex numbers are a vector space over $\mathbb C$ and also over $\mathbb R$ by restricting the allowed scalars. The real numbers with their usual operations are not a vector space over $\mathbb C$, because $i\cdot1$ is not real. A later dimension count depends on which field was selected.</p>
+
+<h2 id="examples">18.2 Coordinates, functions, and coefficients <a class="timestamp" href="https://www.youtube.com/watch?v=yiwFEBZQ8c0&amp;t=869s">Lesson 32 · 14:29</a></h2>
+<p>The prototype is $F^n$ with coordinatewise addition and scaling. Every axiom follows by checking the corresponding field identity in each coordinate; the zero tuple and coordinate negatives supply the additive group. Matrices $F^{m\times n}$ work the same way, with a coordinate for each index pair.</p>
+<p>For any set $S$ and vector space $W$ over $F$, all functions $S\to W$ form a vector space with pointwise operations: $(f+g)(s)=f(s)+g(s)$ and $(af)(s)=af(s)$. The zero function and pointwise negatives give identity and inverses. For example $[a(f+g)](s)=a(f(s)+g(s))=af(s)+ag(s)$, proving one distributive law. Associativity, commutativity, the other distributive law, scalar associativity, and the unit law each follow from its counterpart in $W$ at every $s$; function equality then gives the required identity. If $S=\varnothing$, there is exactly one empty function, so this example is the zero vector space.</p>
+<p>Taking $W=F$ gives the notation $F^S$. For $S=[n]$, evaluation at the $n$ indices identifies this space with $F^n$. For $S=\mathbb N$, it gives all infinite sequences, with no convergence requirement. Thus coordinate lists, infinite sequences, and functions belong to one common construction.</p>
+<p>The polynomial space $F[X]$ is the subcollection of $F^{\mathbb N_0}$ with finite support, where support means the indices with nonzero coefficients. A sum has support inside the union of the two supports, and scaling cannot add new support indices. Hence these operations preserve finite support. The polynomials of degree at most $d$, including zero, form another closed subcollection because neither operation increases degree beyond $d$. Polynomial multiplication is not needed for their vector-space structure and does not preserve a fixed positive degree bound in general.</p>
+
+<h2 id="subspaces">18.3 A short test for a subspace <a class="timestamp" href="https://www.youtube.com/watch?v=yiwFEBZQ8c0&amp;t=1986s">Lesson 32 · 33:06</a></h2>
+<p>A <dfn>subspace</dfn> $U$ of $V$ is a subset that is itself a vector space with the inherited operations and the same scalar field. Its additive identity must be $0_V$: if $e$ were its identity, then $e+e=e=e+0_V$ inside $V$, and cancellation gives $e=0_V$. Its additive inverses consequently agree with those in $V$ by uniqueness.</p>
+<div class="theorem"><p><strong>Proposition 18.2, proved here.</strong> A subset $U\subseteq V$ is a subspace exactly when $0\in U$, it is closed under addition, and it is closed under scalar multiplication by every scalar of $F$.</p></div>
+<div class="proof"><p>Necessity follows from the inherited identity and the existence of its two operations. Conversely the two closure conditions make the restricted operations functions into $U$. The assumed zero is an additive identity there, and $-u=(-1)u\in U$ supplies inverses. All associative, commutative, distributive, scalar-associative, and unit identities are restrictions of identities already true in $V$. Thus every vector-space axiom holds in $U$. <span class="qed">∎</span></p></div>
+<p>One may replace $0\in U$ by nonemptiness, since any $u\in U$ then gives $0u=0\in U$. It cannot be discarded altogether: the empty set is vacuously closed under both operations but has no additive identity.</p>
+<p>This test verifies the function and polynomial subcollections above and the null spaces of Chapter 17. It also verifies diagonal matrices: adding or scaling does not create off-diagonal entries. An affine constraint with nonzero right-hand side usually fails already at the zero-vector check.</p>
+
+<h2 id="analysis">18.4 Two analysis examples with the same closure mechanism</h2>
+<p>A real sequence $x_n$ converges to zero when for every $\epsilon&gt;0$, all sufficiently large $n$ satisfy $|x_n|&lt;\epsilon$. Suppose $x_n,y_n\to0$ and $a,b\in\mathbb R$. Set $\eta=\epsilon/(2(1+|a|+|b|))$. Beyond a common index both magnitudes are below $\eta$, so $|ax_n+by_n|\le|a||x_n|+|b||y_n|\le(|a|+|b|)\eta&lt;\epsilon$. The zero sequence belongs, proving by the test that null-convergent sequences form a subspace of all real sequences.</p>
+<p>A real function is continuous at $t$ when every $\epsilon&gt;0$ admits $\delta&gt;0$ such that $|x-t|&lt;\delta$ implies $|f(x)-f(t)|&lt;\epsilon$. If $f,g$ are continuous, choose their two tolerances $\eta$ as above and take the smaller of the corresponding positive radii. Triangle inequality gives $|af(x)+bg(x)-af(t)-bg(t)|&lt;\epsilon$ within that radius. The zero function is continuous. Thus continuous real-valued functions on $\mathbb R$ form a subspace of all real-valued functions.</p>
+<p>These examples package familiar limit laws into a closure statement. They do not assert that every subspace of a function space is closed under limits; closure under vector operations and topological closure are different properties.</p>
+
+<h2 id="intersection">18.5 Intersections work; unions need care</h2>
+<p>An arbitrary intersection of subspaces is a subspace: it contains zero, and adding or scaling two members preserves membership in every intersected subspace. The intersection of an empty family is taken to be $V$, also a subspace.</p>
+<p>For two subspaces, $U\cup W$ is a subspace exactly when one contains the other. The forward direction follows by contradiction: if $u\in U\setminus W$ and $w\in W\setminus U$, then $u+w$ belongs to neither. Membership in $U$ would imply $w=(u+w)-u\in U$, and membership in $W$ would imply $u=(u+w)-w\in W$. Thus their union fails addition closure. Conversely if one contains the other the union is the larger subspace.</p>
+
+<h2 id="sums">18.6 The smallest subspace containing several pieces <a class="timestamp" href="https://www.youtube.com/watch?v=cjCXI8hP01U&amp;t=114s">Lesson 33 · 01:54</a></h2>
+<p>For subspaces $U_1,\ldots,U_k$ define their <dfn>sum</dfn> to be</p>
+$$U_1+\cdots+U_k=\{u_1+\cdots+u_k:u_j\in U_j\}.$$
+<div class="theorem"><p><strong>Proposition 18.3, proved here.</strong> This sum is the smallest subspace containing every $U_j$.</p></div>
+<div class="proof"><p>Choosing all zero vectors gives zero. The sum of two such expressions can be regrouped as $\sum_j(u_j+v_j)$, with each term in $U_j$. Scaling gives $a\sum_j u_j=\sum_j au_j$, again with terms in the respective subspaces. Thus the set is a subspace. Each $U_j$ is contained in it by using zeros in all other slots. Finally any subspace containing every $U_j$ contains each finite sum of their members by addition closure; it therefore contains the entire sum. This is precisely the smallest-containing-subspace claim. <span class="qed">∎</span></p></div>
+<p>For instance the two coordinate axes in $F^2$ have sum $F^2$, whereas their set union omits $(1,1)$. The sum of an empty list of subspaces is $\{0\}$, the smallest subspace containing no required members.</p>
+
+<h2 id="direct">18.7 Direct means unique components <a class="timestamp" href="https://www.youtube.com/watch?v=cjCXI8hP01U&amp;t=777s">Lesson 33 · 12:57</a></h2>
+<p>The sum is <dfn>direct</dfn>, written $U_1\oplus\cdots\oplus U_k$, when every vector in it has exactly one tuple of components $u_j\in U_j$ summing to it. If the sum equals all of $V$, write $V=U_1\oplus\cdots\oplus U_k$. Equality with $V$ and uniqueness of components are separate requirements.</p>
+<div class="theorem"><p><strong>Proposition 18.4, proved here.</strong> A finite sum is direct exactly when $u_1+\cdots+u_k=0$, with $u_j\in U_j$, forces every $u_j=0$.</p></div>
+<div class="proof"><p>If the sum is direct, zero's all-zero tuple is its only component representation. Conversely suppose zero has only that representation. If $v=\sum_j u_j=\sum_j w_j$, subtract to obtain $0=\sum_j(u_j-w_j)$ with every difference in its corresponding subspace. The hypothesis forces $u_j=w_j$ for every $j$, proving uniqueness. Existence already follows from membership in the sum. <span class="qed">∎</span></p></div>
+<p>For two subspaces this is equivalent to $U\cap W=\{0\}$. If $x\in U\cap W$, then $0=x+(-x)$ is a component representation, so directness forces $x=0$. Conversely if $u+w=0$, then $u=-w\in U\cap W$, so both components are zero and the criterion proves directness.</p>
+<p>For three or more subspaces, pairwise trivial intersections are insufficient. In $F^2$ the lines $Fe_1$, $Fe_2$, and $F(e_1+e_2)$ have pairwise intersection $\{0\}$, but $0=(-e_1)+(-e_2)+(e_1+e_2)$ is a nonzero component tuple. This works even over $\mathbb F_2$, where the minus signs equal plus signs.</p>
+<p>A valid general criterion is $U_i\cap\sum_{j\ne i}U_j=\{0\}$ for every $i$. Directness forces it by writing a member in the intersection in both ways. Conversely, a zero component sum makes each $u_i=-\sum_{j\ne i}u_j$ a member of that intersection, so every component is zero. The condition tests intersection with the whole remaining sum, not only with each remaining subspace separately.</p>
+
+<h2 id="decompose">18.8 Decompositions and their projections</h2>
+<p>The coordinate axes give $F^n=Fe_1\oplus\cdots\oplus Fe_n$: each tuple is $\sum_jx_je_j$, and equality of tuples forces each coefficient to be its corresponding coordinate. The coordinate decomposition is an example, not a uniqueness theorem for all possible choices of summands.</p>
+<p>If $V=U\oplus W$, define the <dfn>projection onto $U$ along $W$</dfn> by $P_U(u+w)=u$. Unique components make this a well-defined function. Adding decompositions or scaling them gives $P_U(v+v')=P_U(v)+P_U(v')$ and $P_U(av)=aP_U(v)$. Also $P_U^2=P_U$, its image is $U$, and it vanishes exactly on $W$. The complementary projection $P_W$ satisfies $P_U+P_W=I$, $P_UP_W=P_WP_U=0$. None of these statements requires perpendicular summands.</p>
+<p>A useful function example over $\mathbb R$ is the decomposition into even and odd functions. For every $f:\mathbb R\to\mathbb R$, set $f_e(x)=(f(x)+f(-x))/2$ and $f_o(x)=(f(x)-f(-x))/2$. Then $f_e(-x)=f_e(x)$, $f_o(-x)=-f_o(x)$, and $f=f_e+f_o$. Both classes are subspaces by pointwise operations. A function both even and odd satisfies $2f(x)=0$, so it is zero. Their sum is therefore direct. Division by $2$ is a real-field assumption; the same argument cannot be transplanted to a field where $2=0$.</p>
+
+<h2 id="laboratory">18.9 Enumerate a small universe of subspaces</h2>
+<pre><code class="language-python">from itertools import product
+from collections import Counter
+
+points = list(product(range(2), repeat=3))
+zero = (0, 0, 0)
+
+
+def add(u, v):
+    return tuple((a + b) % 2 for a, b in zip(u, v))
+
+
+subspaces = []
+for mask in range(1 &lt;&lt; len(points)):
+    U = {points[i] for i in range(len(points)) if mask &amp; (1 &lt;&lt; i)}
+    if zero in U and all(add(u, v) in U for u in U for v in U):
+        subspaces.append(U)
+print(len(subspaces))
+print(sorted(Counter(len(U) for U in subspaces).items()))
+for U, W in product(subspaces, repeat=2):
+    representations = Counter(add(u, w) for u in U for w in W)
+    direct = all(count == 1 for count in representations.values())
+    assert direct == (U &amp; W == {zero})
+print(len(subspaces) ** 2)</code></pre>
+<pre class="output">16
+[(1, 1), (2, 7), (4, 7), (8, 1)]
+256</pre>
+<p>Over $\mathbb F_2$, multiplication by a scalar is either the identity or the zero map, so any set containing zero is already closed under scaling. The code still checks all sums explicitly. It then tests the direct-sum intersection criterion for every ordered pair of the resulting subspaces.</p>
+
+<h2 id="problems">18.10 Problems with complete solutions</h2>
+<details class="exercise"><summary>Problem 1. Vacuous closure</summary><p>A proposed subspace test checks only that every sum and scalar multiple stays in the subset. Give a counterexample and repair the test.</p><div class="solution"><p>The empty subset satisfies both universally quantified closure conditions because it has no members, yet it is not a vector space: it has no zero vector. Add nonemptiness or explicitly require zero membership. With nonemptiness, choose $u$ in the subset and use scalar closure to obtain $0u=0$, reducing to Proposition 18.2.</p></div></details>
+<details class="exercise"><summary>Problem 2. A nonperpendicular complement</summary><p>In $\mathbb R^3$, let $U=\{(x,y,0)\}$ and $W=\{t(1,1,1):t\in\mathbb R\}$. Prove $\mathbb R^3=U\oplus W$ and find the projection onto $U$ along $W$.</p><div class="solution"><p>Every $(a,b,c)$ equals $(a-c,b-c,0)+c(1,1,1)$, proving the sum is all of $\mathbb R^3$. A vector in both summands has third coordinate $0=t$, forcing the entire $W$ vector to be zero. Thus the intersection is $\{0\}$ and the sum is direct. The projection is $P_U(a,b,c)=(a-c,b-c,0)$. It is not the usual perpendicular projection $(a,b,0)$; the selected complement determines which component is subtracted.</p></div></details>
+<details class="exercise"><summary>Problem 3. Pairwise trivial intersections do not suffice</summary><p>Verify pairwise trivial intersections for the three lines $Fe_1$, $Fe_2$, and $F(e_1+e_2)$, and give the failed uniqueness.</p><div class="solution"><p>A common vector of the first two has both coordinates zero. If $ae_1=b(e_1+e_2)$, comparing second coordinates gives $b=0$, then $a=0$; the analogous argument handles the second and third lines. Yet zero has both the all-zero representation and $(-e_1)+(-e_2)+(e_1+e_2)$. The latter has three nonzero components because $1\ne0$ in the field. Therefore their sum is not direct despite pairwise intersections being trivial.</p></div></details>
+<details class="exercise"><summary>Problem 4. Separate polynomial powers</summary><p>Show that $F[X]$ is the direct sum of polynomials with only even exponents and polynomials with only odd exponents, over any field.</p><div class="solution"><p>Both coefficient-support conditions survive addition and scaling, so define subspaces $E,O$. Every polynomial splits by assigning its even-index coefficients to one polynomial and odd-index coefficients to the other. A polynomial in both must have every coefficient zero, so $E\cap O=\{0\}$. The sum is direct over every field, including characteristic two, because the proof distinguishes coefficient indices rather than using $f(X)\pm f(-X)$ divided by $2$.</p></div></details>
+<details class="exercise"><summary>Problem 5. Finite support is a stricter condition than convergence to zero</summary><p>Prove finite-support real sequences form a subspace of null-convergent sequences, and show it is proper.</p><div class="solution"><p>A finite-support sequence is eventually zero and thus converges to zero for every positive tolerance. The support of a sum is contained in the union of two finite supports, and scaling cannot introduce support, so these sequences form a subspace. The sequence $x_n=1/n$ converges to zero by Chapter 13 but has a nonzero value at every index. It is therefore absent from the finite-support subspace, proving proper inclusion.</p></div></details>
+<details class="exercise"><summary>Problem 6. Two tests of a projection</summary><p>For $V=U\oplus W$, prove that $P_U(v)=v$ exactly when $v\in U$ and that $P_U(v)=0$ exactly when $v\in W$.</p><div class="solution"><p>Write the unique decomposition $v=u+w$. Then $P_U(v)=u$. If it equals $v$, subtraction gives $w=0$, so $v\in U$; conversely a member of $U$ has decomposition $v+0$ and is fixed. If $P_U(v)=0$, then $u=0$ and $v=w\in W$; conversely a member of $W$ has decomposition $0+v$ and is annihilated. These conclusions identify the two summands from the projection's action.</p></div></details>
+
+<h2 id="references">18.11 References and boundaries</h2>
+<p>Lessons 32–33 are the primary sources. Axler's <a href="https://linear.axler.net/LADR4e.pdf">Linear Algebra Done Right, fourth edition</a>, §§1B–1C, printed pp.12–14,18–23, independently supports vector axioms, function examples, subspaces, sums, and directness. Our proofs retain an arbitrary base field unless real analysis or division by $2$ is explicitly invoked. General complements and abstract dimension will be developed after bases are available.</p>

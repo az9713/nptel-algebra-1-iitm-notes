@@ -1,0 +1,68 @@
+{
+  "order": 8,
+  "title": "Inductive constructions and uniqueness of the integers",
+  "lecture_numbers": [
+    17,
+    18
+  ],
+  "file": "chapter-08-inductive-constructions-and-uniqueness-of-the-integers.html",
+  "manuscript": "chapters/ch08.html",
+  "status": "complete; independently reviewed",
+  "chapter": 8,
+  "body_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+  "words_excluding_code": 2519,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 7,
+  "sections": [
+    {
+      "heading": "8.1 Why every parenthesization agrees Lesson 17 · 17:13",
+      "anchor": "products",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=4R75Li1kV2A&t=1033s"
+      ]
+    },
+    {
+      "heading": "8.2 Powers and their exact hypotheses Lesson 17 · 00:38",
+      "anchor": "powers",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=4R75Li1kV2A&t=38s"
+      ]
+    },
+    {
+      "heading": "8.3 Integer multiples inside a ring Lesson 17 · 12:02",
+      "anchor": "integer-action",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=4R75Li1kV2A&t=722s"
+      ]
+    },
+    {
+      "heading": "8.4 Finite distribution and telescoping Lesson 17 · 30:18",
+      "anchor": "distribution",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=4R75Li1kV2A&t=1818s"
+      ]
+    },
+    {
+      "heading": "8.5 Absolute value in an ordered domain Lesson 17 · 31:37",
+      "anchor": "absolute",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=4R75Li1kV2A&t=1897s"
+      ]
+    },
+    {
+      "heading": "8.6 Determine the map before constructing it Lesson 18 · 07:30",
+      "anchor": "forced",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=8cJImBqqb5g&t=450s"
+      ]
+    },
+    {
+      "heading": "8.7 Construct the integer isomorphism Lesson 18 · 26:34",
+      "anchor": "construction",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=8cJImBqqb5g&t=1594s"
+      ]
+    }
+  ]
+}

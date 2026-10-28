@@ -1,0 +1,78 @@
+{
+  "chapter": 13,
+  "complete_source_text_reading": [
+    24
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "supremum",
+      "lesson": 24,
+      "start": 16,
+      "end": 1264
+    },
+    {
+      "section": "epsilon",
+      "lesson": 24,
+      "start": 1264,
+      "end": 1695
+    },
+    {
+      "section": "nested",
+      "lesson": 24,
+      "start": 1695,
+      "end": 2246
+    },
+    {
+      "section": "archimedean",
+      "lesson": 24,
+      "start": 2246,
+      "end": 2898
+    },
+    {
+      "section": "shrinking",
+      "lesson": 24,
+      "start": 2898,
+      "end": 3335
+    },
+    {
+      "section": "root",
+      "lesson": 24,
+      "start": 3335,
+      "end": 3922
+    },
+    {
+      "section": "converse",
+      "lesson": 24,
+      "start": 3922,
+      "end": 4483
+    },
+    {
+      "section": "references",
+      "lesson": 24,
+      "start": 4483,
+      "end": 4792
+    }
+  ],
+  "teaching_constructions": [
+    "Complete bisection root equation via algebraicerror estimate",
+    "Explicit rationalmissing-supremum proof",
+    "Rationaldensity andrealuncountability via interval avoidance",
+    "Pascalrecursion binomialproof closes earlierpromise",
+    "Exact32step rationalbracket program",
+    "Six solvedproblems"
+  ],
+  "scope_decisions": [
+    "Ordercompleteness only; metriccompleteness andalgebraicclosure notconflated",
+    "Realfieldexistence anduniquenessuptoorderedisomorphism explicitlybackground, notproved",
+    "Nestedintervals boundedclosednonempty; uniquenessseparate fromexistence",
+    "No unverified nonArchimedean nestedintervalexample",
+    "Selectedsourcegeometry/historicaldigressions omitted"
+  ],
+  "reference_sections_inspected": [],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification",
+    "Realnumber construction anduniqueness theorem assumed asbackground"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "order": 25,
+  "title": "Jordan chains and canonical forms",
+  "lecture_numbers": [
+    44,
+    45
+  ],
+  "file": "chapter-25-jordan-chains-and-canonical-forms.html",
+  "manuscript": "chapters/ch25.html",
+  "status": "complete; independently reviewed",
+  "chapter": 25,
+  "body_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+  "words_excluding_code": 2550,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 7,
+  "sections": [
+    {
+      "heading": "25.1 Fix the orientation before building chains Lesson 44 · 00:32",
+      "anchor": "blocks",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=32s"
+      ]
+    },
+    {
+      "heading": "25.2 A valid kernel–range splitting after stabilization Lesson 44 · 30:24",
+      "anchor": "stabilization",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=1824s"
+      ]
+    },
+    {
+      "heading": "25.3 Separate eigenvalues, then subtract the scalar Lesson 44 · 28:04",
+      "anchor": "primary",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=1684s"
+      ]
+    },
+    {
+      "heading": "25.4 An orbit stays independent until it dies Lesson 44 · 44:03",
+      "anchor": "orbits",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=2643s"
+      ]
+    },
+    {
+      "heading": "25.5 Shorten dependent orbits until they form a basis Lesson 44 · 48:19",
+      "anchor": "exchange",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=2899s"
+      ]
+    },
+    {
+      "heading": "25.6 Existence and the minimal polynomial of a Jordan matrix Lesson 44 · 17:32",
+      "anchor": "jordan",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=_0kG3mC7oF4&t=1052s"
+      ]
+    },
+    {
+      "heading": "25.8 Finish the course examples with explicit bases Lesson 45 · 12:44",
+      "anchor": "examples",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=RjhmSLkjnNM&t=764s"
+      ]
+    }
+  ]
+}

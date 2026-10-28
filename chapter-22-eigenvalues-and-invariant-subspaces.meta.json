@@ -1,0 +1,60 @@
+{
+  "order": 22,
+  "title": "Eigenvalues and invariant subspaces",
+  "lecture_numbers": [
+    40
+  ],
+  "file": "chapter-22-eigenvalues-and-invariant-subspaces.html",
+  "manuscript": "chapters/ch22.html",
+  "status": "complete; independently reviewed",
+  "chapter": 22,
+  "body_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+  "words_excluding_code": 1877,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 6,
+  "sections": [
+    {
+      "heading": "22.1 Scaling directions Lesson 40 · 10:26",
+      "anchor": "eigen",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=626s"
+      ]
+    },
+    {
+      "heading": "22.2 Diagonal matrices mean eigenvector bases Lesson 40 · 06:02",
+      "anchor": "diagonal",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=362s"
+      ]
+    },
+    {
+      "heading": "22.3 The field can create or remove eigenvalues Lesson 40 · 23:29",
+      "anchor": "rotation",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=1409s"
+      ]
+    },
+    {
+      "heading": "22.4 Distinct eigenspaces do not interfere Lesson 40 · 31:11",
+      "anchor": "direct",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=1871s"
+      ]
+    },
+    {
+      "heading": "22.5 Restrict only to a subspace that stays inside itself Lesson 40 · 42:09",
+      "anchor": "invariant",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=2529s"
+      ]
+    },
+    {
+      "heading": "22.6 Substitute an operator into a formal polynomial Lesson 40 · 49:07",
+      "anchor": "polynomials",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=Mcg7q471nJ4&t=2947s"
+      ]
+    }
+  ]
+}

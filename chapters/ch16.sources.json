@@ -1,0 +1,78 @@
+{
+  "chapter": 16,
+  "complete_source_text_reading": [
+    29,
+    30
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "product",
+      "lesson": 29,
+      "start": 48,
+      "end": 683
+    },
+    {
+      "section": "composition",
+      "lesson": 29,
+      "start": 683,
+      "end": 1029
+    },
+    {
+      "section": "product",
+      "lesson": 29,
+      "start": 1029,
+      "end": 1816
+    },
+    {
+      "section": "composition",
+      "lesson": 29,
+      "start": 1816,
+      "end": 2577
+    },
+    {
+      "section": "elementary",
+      "lesson": 29,
+      "start": 2577,
+      "end": 3376
+    },
+    {
+      "section": "inverses",
+      "lesson": 29,
+      "start": 3376,
+      "end": 3579
+    },
+    {
+      "section": "equivalences",
+      "lesson": 30,
+      "start": 16,
+      "end": 1379
+    },
+    {
+      "section": "one-sided",
+      "lesson": 30,
+      "start": 1379,
+      "end": 1799
+    }
+  ],
+  "teaching_constructions": [
+    "Coordinatefunctioncomposition proof ofmatrixassociation",
+    "Transposeidentities",
+    "Complete sixequivalencecycle andsquareone-sidedinverse proof",
+    "Rectangularandfunctionone-sidedcounterexamples",
+    "Exactsymbolicinverse/compatibleproducts",
+    "Six solvedproblems"
+  ],
+  "scope_decisions": [
+    "Matrixdotproduct has no conjugation overC",
+    "Elementarymultiplierdimension m×m for mrows",
+    "Allsquareequivalences requiren≥1, exactlyone includesexistence",
+    "No determinant orformalrankusedbeforedefinition",
+    "GPUandoptimalalgorithmclaims omitted asoutsidealgebraic scope"
+  ],
+  "reference_sections_inspected": [],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

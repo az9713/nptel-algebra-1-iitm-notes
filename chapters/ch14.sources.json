@@ -1,0 +1,104 @@
+{
+  "chapter": 14,
+  "complete_source_text_reading": [
+    25,
+    26
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "cubic",
+      "lesson": 25,
+      "start": 16,
+      "end": 1285
+    },
+    {
+      "section": "complex-field",
+      "lesson": 25,
+      "start": 1285,
+      "end": 1703
+    },
+    {
+      "section": "norm",
+      "lesson": 25,
+      "start": 1703,
+      "end": 2243
+    },
+    {
+      "section": "polar",
+      "lesson": 25,
+      "start": 2243,
+      "end": 2517
+    },
+    {
+      "section": "order-obstructions",
+      "lesson": 25,
+      "start": 2517,
+      "end": 2995
+    },
+    {
+      "section": "formal",
+      "lesson": 26,
+      "start": 54,
+      "end": 1253
+    },
+    {
+      "section": "degree",
+      "lesson": 26,
+      "start": 1253,
+      "end": 1964
+    },
+    {
+      "section": "division",
+      "lesson": 26,
+      "start": 1964,
+      "end": 2868
+    },
+    {
+      "section": "gcd",
+      "lesson": 26,
+      "start": 2868,
+      "end": 3033
+    },
+    {
+      "section": "roots",
+      "lesson": 26,
+      "start": 3033,
+      "end": 3290
+    }
+  ],
+  "teaching_constructions": [
+    "Allcomplexfieldaxioms explicitlychecked",
+    "Full complextriangle/Cauchyrealpair proof",
+    "Branchcoherent cubicderivation",
+    "Formalpolynomialgcd/Bezout/irreduciblefactorization details",
+    "Exact symbolicpolynomialdivision andcubicchecks",
+    "Six solvedproblems"
+  ],
+  "scope_decisions": [
+    "Trigonometry andpositive realnthroots declaredbackground; Eulerexpression usedasnotation",
+    "Real3obstruction requiresusualrealcoordinates andrealbilinear associative unitalmultiplication",
+    "No general impossibilityofallrealcubicformulas asserted",
+    "Formalpolynomials distinctfromevaluationfunctions overfinitefields",
+    "Fundamentaltheoremofalgebra statedwithoutproof, factorizationconsequencesproved"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Axler, Linear Algebra Done Right, fourth edition",
+      "url": "https://linear.axler.net/LADR4e.pdf",
+      "sections": [
+        "1A",
+        "4"
+      ],
+      "printed_pages": [
+        "2–4",
+        "119–127"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification",
+    "Fundamentaltheoremofalgebra assumed asstatedbackground"
+  ]
+}

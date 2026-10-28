@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; object-src 'none'">
+<meta name="description" content="Independent transcript-grounded Algebra 1 textbook: proofs, worked examples, exercises, and offline mathematics.">
+<title>Eigenvalues and invariant subspaces · Algebra 1: Foundations</title><link rel="stylesheet" href="assets/book.css">
+<script src="assets/math-config.js"></script><script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script><script defer src="assets/lab.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Algebra 1: Foundations · NPTEL</a><nav class="course-nav" aria-label="Book"><a href="index.html">Chapters</a><a href="book-overview.html">Study guide</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Algebra laboratory</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>22. Eigenvalues and invariant subspaces</h1>
+<p class="lead">Diagonalization asks for coordinates in which an operator acts separately on each axis. Eigenvectors identify candidate axes, but the existence of even one axis depends on the scalar field. Invariant subspaces generalize the idea: when one-dimensional pieces are insufficient, larger pieces may still let us understand the operator by restriction.</p>
+<p class="source-note">Lesson 40 introduces diagonalization, eigenspaces, independence for distinct eigenvalues, invariant subspaces, and polynomial evaluation at an operator. We complete the eigenspace directness argument, work the rotation example over both fields, and distinguish exact algebraic formulas from numerical computation.</p>
+
+<h2 id="eigen">22.1 Scaling directions <a class="timestamp" href="https://www.youtube.com/watch?v=Mcg7q471nJ4&amp;t=626s">Lesson 40 · 10:26</a></h2>
+<p>Throughout, $T\in\mathcal L(V)$ is a linear operator on a finite-dimensional space over a field $F$, unless a different domain is explicitly stated.</p>
+<div class="definition"><p>A scalar $\lambda\in F$ is an <dfn>eigenvalue</dfn> if $Tv=\lambda v$ for some nonzero vector $v$. Such a $v$ is an <dfn>eigenvector</dfn>. The <dfn>eigenspace</dfn> for any $\lambda\in F$ is $E_\lambda=\ker(T-\lambda I)$.</p></div>
+<p>The eigenspace contains zero and is a subspace by the kernel theorem. Its nonzero members are the eigenvectors for that scalar. Zero itself is never called an eigenvector, because $T0=\lambda0$ holds for every scalar and carries no information. By Chapter 20,</p>
+$$\lambda\text{ is an eigenvalue}\ \Longleftrightarrow\
+\ker(T-\lambda I)\ne\{0\}\ \Longleftrightarrow\
+T-\lambda I\text{ is not invertible}.$$
+<p>Finite-dimensionality supplies the last equivalence between noninjectivity and noninvertibility. The first equivalence holds without it. The zero-dimensional space has no eigenvalues, since it contains no nonzero vectors.</p>
+
+<h2 id="diagonal">22.2 Diagonal matrices mean eigenvector bases <a class="timestamp" href="https://www.youtube.com/watch?v=Mcg7q471nJ4&amp;t=362s">Lesson 40 · 06:02</a></h2>
+<div class="definition"><p>An operator is <dfn>diagonalizable over $F$</dfn> if some basis gives a diagonal matrix. A matrix is diagonalizable over $F$ if it is similar over $F$ to a diagonal matrix.</p></div>
+<div class="theorem"><p><strong>Proposition 22.1, proved here.</strong> An operator is diagonalizable if and only if it has a basis of eigenvectors.</p></div>
+<div class="proof"><p>The $j$th column of its matrix in a basis $(v_1,\ldots,v_n)$ is $[Tv_j]$. That column has only diagonal entry $\lambda_j$ exactly when $Tv_j=\lambda_jv_j$. Every basis vector is nonzero, so these are precisely eigenvector conditions. Applying the argument to every column proves both implications. The empty basis handles the zero space. ∎</p></div>
+<p>For the real matrix $A=\begin{pmatrix}3&amp;1\\0&amp;2\end{pmatrix}$, solving $(A-3I)(x,y)^{\mathsf T}=0$ gives $y=0$, so $E_3=\mathbb R(1,0)$. Solving $(A-2I)(x,y)^{\mathsf T}=0$ gives $x+y=0$, so $E_2=\mathbb R(1,-1)$. These two vectors are independent by their second, then first coordinates. With $Q=\begin{pmatrix}1&amp;1\\0&amp;-1\end{pmatrix}$, the column equations give $AQ=Q\operatorname{diag}(3,2)$, hence $Q^{-1}AQ=\operatorname{diag}(3,2)$.</p>
+<p>If $A=QDQ^{-1}$, cancellation of adjacent $Q^{-1}Q$ factors proves by induction that $A^k=QD^kQ^{-1}$ for $k\ge0$. Diagonal powers simply raise each diagonal scalar to its $k$th power. This is why finding an eigenbasis can simplify discrete evolution $x_{k+1}=Ax_k$.</p>
+
+<h2 id="rotation">22.3 The field can create or remove eigenvalues <a class="timestamp" href="https://www.youtube.com/watch?v=Mcg7q471nJ4&amp;t=1409s">Lesson 40 · 23:29</a></h2>
+<p>The real rotation matrix is</p>
+$$R_\theta=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\\sin\theta&amp;\cos\theta\end{pmatrix}.$$
+<p>Writing a nonzero vector as $r(\cos\phi,\sin\phi)$, the angle-addition identities give $R_\theta v=r(\cos(\phi+\theta),\sin(\phi+\theta))$. This verifies counterclockwise rotation. To test a real eigenvalue algebraically, put $c=\cos\theta$, $s=\sin\theta$. The equations $(c-\lambda)x-sy=0$, $sx+(c-\lambda)y=0$ imply $((c-\lambda)^2+s^2)x=0$ and the same equation for $y$, by multiplying and eliminating the other coordinate. If $s\ne0$ and $\lambda$ is real, that coefficient is positive, forcing $x=y=0$. There is no real eigenvalue.</p>
+<p>If $s=0$, then $\theta$ is an integer multiple of $\pi$, and $R_\theta=I$ or $-I$, with every nonzero vector an eigenvector. This is the periodic qualification of the lecture's shorthand “zero or $\pi$.” Over $\mathbb C$ and $s\ne0$, the two eigenvalues are $c+is,c-is$: direct multiplication shows that $(1,-i)$ and $(1,i)$ are respective eigenvectors. They form a basis since a relation gives $a+b=0$ and $-ia+ib=0$, hence $2ia=0$ and both coefficients vanish. The same real array is diagonalizable over $\mathbb C$ but not over $\mathbb R$.</p>
+
+<h2 id="direct">22.4 Distinct eigenspaces do not interfere <a class="timestamp" href="https://www.youtube.com/watch?v=Mcg7q471nJ4&amp;t=1871s">Lesson 40 · 31:11</a></h2>
+<div class="theorem"><p><strong>Theorem 22.2, proved here.</strong> For distinct scalars $\lambda_1,\ldots,\lambda_r$, the sum $E_{\lambda_1}+\cdots+E_{\lambda_r}$ is direct. In particular eigenvectors for distinct eigenvalues are independent.</p></div>
+<div class="proof"><p>Induct on $r$. For $r=0$ the statement is empty; for $r=1$, a zero sum with its single component says that component is zero. Suppose $u_1+\cdots+u_r=0$ with $u_j\in E_{\lambda_j}$. Apply $T-\lambda_rI$ to obtain</p>
+$$\sum_{j=1}^{r-1}(\lambda_j-\lambda_r)u_j=0.$$
+<p>Each scaled component lies in its original eigenspace. The induction hypothesis makes every scaled component zero. Distinctness allows division by $\lambda_j-\lambda_r$, so every $u_j=0$ for $j&lt;r$. The original sum then gives $u_r=0$. This is exactly the direct-sum zero criterion. For eigenvectors $v_j$, apply this result to the components $a_jv_j$ in any zero relation; nonzero $v_j$ then forces $a_j=0$. ∎</p></div>
+<p>There are at most $\dim V$ distinct eigenvalues: choosing one eigenvector for each of any larger finite list would contradict the independence bound. Concatenating bases of the distinct eigenspaces produces an independent list, because any relation groups into one component per eigenspace; directness kills each group, then independence within each group kills its coefficients. This extra grouping step matters when more than one vector is taken from the same eigenspace.</p>
+<div class="theorem"><p><strong>Corollary 22.3, proved here.</strong> If $\lambda_1,\ldots,\lambda_r$ are all distinct eigenvalues in $F$, then $T$ is diagonalizable over $F$ exactly when $\sum_j\dim E_{\lambda_j}=\dim V$.</p></div>
+<div class="proof"><p>The concatenated independent list is a basis exactly when its length equals the dimension, by Chapter 19. If $T$ has an eigenbasis, each member belongs to one of these eigenspaces, so their sum is all of $V$. Its directness gives the same dimension equality. The zero-space case uses an empty sum. ∎</p></div>
+<p>An operator is called <dfn>nilpotent</dfn> if some positive power of it is the zero operator. Having eigenvalues does not guarantee diagonalizability. For $N=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}$, $N^2=0$. If $Nv=\lambda v$ for nonzero $v$, applying $N$ again gives $0=\lambda^2v$, so $\lambda=0$. But $\ker N=Fe_1$ has dimension one, less than two. One eigenvalue exists, yet there are too few independent eigenvectors.</p>
+
+<h2 id="invariant">22.5 Restrict only to a subspace that stays inside itself <a class="timestamp" href="https://www.youtube.com/watch?v=Mcg7q471nJ4&amp;t=2529s">Lesson 40 · 42:09</a></h2>
+<div class="definition"><p>A subspace $U\subseteq V$ is <dfn>invariant under $T$</dfn> if $T(U)\subseteq U$. Then $T|_U:U\to U$ is a linear operator.</p></div>
+<p>The spaces $\{0\},V,\ker T,\operatorname{im}T$ are invariant, though they need not be distinct. For the kernel, $Tu=0\in\ker T$; for the image, $T(Tv)$ is another image vector. Every eigenspace is invariant because $Tu=\lambda u$ remains in that subspace. A one-dimensional invariant subspace $Fv$ with $v\ne0$ gives $Tv=\lambda v$ for a scalar, and conversely any eigenvector spans such an invariant line.</p>
+<p>More generally, for $k\ge0$, both $\ker T^k$ and $\operatorname{im}T^k$ are invariant. If $T^ku=0$, then $T^k(Tu)=T(T^ku)=0$. If $u=T^kv$, then $Tu=T^k(Tv)$. The case $k=0$ gives zero kernel and whole image. Intersections of invariant subspaces are invariant because the image of a common member stays in every one; sums are invariant because $T(\sum u_j)=\sum Tu_j$ stays in the sum.</p>
+<p>If $V=U\oplus W$ with both pieces invariant, a basis made from bases of the two pieces gives a block diagonal matrix: images of $U$ basis vectors have no $W$ coordinates and conversely. One invariant piece alone gives only a block upper triangular matrix after extending its basis. The distinction will be important when trying to split an operator into independent parts.</p>
+
+<h2 id="polynomials">22.6 Substitute an operator into a formal polynomial <a class="timestamp" href="https://www.youtube.com/watch?v=Mcg7q471nJ4&amp;t=2947s">Lesson 40 · 49:07</a></h2>
+<p>Set $T^0=I$ and define positive powers by composition. Finite associativity proves $T^iT^j=T^{i+j}$ for nonnegative integers, including zero. For $p(X)=\sum_{j=0}^d a_jX^j$, define $p(T)=\sum_{j=0}^d a_jT^j$. The constant coefficient becomes $a_0I$, not a scalar pretending to be a map.</p>
+<div class="theorem"><p><strong>Proposition 22.4, proved here.</strong> Evaluation at one fixed operator preserves sums, scalar multiples, and products:</p>
+$$ (p+q)(T)=p(T)+q(T),\quad(ap)(T)=ap(T),\quad(pq)(T)=p(T)q(T).$$
+<p>Consequently polynomials in that operator commute with each other.</p></div>
+<div class="proof"><p>The first two identities follow by combining coefficients of each power. For the product, distributivity of composition gives</p>
+$$p(T)q(T)=\sum_{i,j}a_ib_jT^iT^j
+=\sum_k\left(\sum_{i+j=k}a_ib_j\right)T^k=(pq)(T).$$
+<p>All sums are finite, so regrouping is legitimate by Chapter 8. Scalar maps commute with every linear operator by homogeneity. Since formal polynomial multiplication commutes, $p(T)q(T)=(pq)(T)=(qp)(T)=q(T)p(T)$. This does not assert that arbitrary operators commute. ∎</p></div>
+<p>In particular $Tp(T)=p(T)T$. If $p(T)u=0$, then $p(T)Tu=Tp(T)u=0$, proving $\ker p(T)$ invariant. If $u=p(T)v$, then $Tu=p(T)Tv$, proving its image invariant. These polynomial kernels will supply the decompositions of the next chapter.</p>
+<p>If $Tv=\lambda v$, induction gives $T^jv=\lambda^jv$ and hence $p(T)v=p(\lambda)v$. Thus an annihilating polynomial $p(T)=0$ must vanish at every eigenvalue. The zero polynomial gives no restriction; the next chapter constructs a least-degree nonzero annihilator.</p>
+
+<h2 id="computation">22.7 What this theory does and does not compute</h2>
+<p>The course avoids determinants and studies operator structure through polynomials. That is a theoretical choice, not a claim that eigenvalues cannot be computed. The absence of a general formula by radicals for arbitrary polynomial equations of degree five and higher does not rule out exact symbolic representations or numerical approximation. Here, once a candidate scalar is known, its eigenspace is computed by solving $(A-\lambda I)x=0$. The examples use exact arithmetic so their claims can be checked directly.</p>
+<pre><code class="language-python">from sympy import Matrix, I, eye
+
+A = Matrix([[3, 1], [0, 2]])
+Q = Matrix([[1, 1], [0, -1]])
+print((Q.inv() * A * Q).tolist())
+N = Matrix([[0, 1], [0, 0]])
+print(len(N.nullspace()), N ** 2 == Matrix.zeros(2))
+R = Matrix([[0, -1], [1, 0]])
+for scalar, vector in ((I, Matrix([1, -I])),
+                       (-I, Matrix([1, I]))):
+    assert R * vector == scalar * vector
+print(R ** 2 == -eye(2))
+pA = A ** 2 - 5 * A + 6 * eye(2)
+print(pA == Matrix.zeros(2))</code></pre>
+<pre class="output">[[3, 0], [0, 2]]
+1 True
+True
+True</pre>
+
+<h2 id="problems">22.8 Problems with complete solutions</h2>
+<details class="exercise"><summary>Problem 1. Zero as an eigenvalue</summary><p>For nonzero finite-dimensional $V$, prove $0$ is an eigenvalue of $T$ exactly when $T$ is not invertible.</p><div class="solution"><p>The condition is the existence of nonzero $v$ with $Tv=0$, equivalently a nontrivial kernel. By the finite equal-dimension theorem that is equivalent to noninvertibility. For the zero space, the unique map is invertible and has no eigenvalues, so both sides are false there as well.</p></div></details>
+<details class="exercise"><summary>Problem 2. Projection eigenvalues</summary><p>If $V=U\oplus W$ and $P(u+w)=u$, identify its eigenspaces and diagonalizability.</p><div class="solution"><p>Chapter 18 shows $P$ is linear. Its fixed vectors are exactly $U$, so $E_1=U$; its kernel is $W$, so $E_0=W$. Also $P^2=P$. An eigenvalue satisfies $\lambda^2v=\lambda v$ for nonzero $v$, hence $\lambda(\lambda-1)=0$ and is either zero or one. A scalar is actually an eigenvalue only if its listed eigenspace is nonzero. Concatenating bases of $U,W$ gives an eigenbasis, so $P$ is diagonalizable over every field.</p></div></details>
+<details class="exercise"><summary>Problem 3. Eigenvalues under an inverse</summary><p>If $T$ is invertible, show its eigenvalues are nonzero and that $Tv=\lambda v$ implies $T^{-1}v=\lambda^{-1}v$.</p><div class="solution"><p>A zero eigenvalue would give nontrivial kernel, impossible for an invertible map. Apply $T^{-1}$ to the equation: $v=\lambda T^{-1}v$. Divide by the nonzero scalar to obtain the asserted relation. Applying the same argument to $T^{-1}$ proves the converse correspondence.</p></div></details>
+<details class="exercise"><summary>Problem 4. A sum of eigenvectors</summary><p>If $u,v$ are eigenvectors for distinct eigenvalues $a,b$, show $u+v$ is nonzero and is not an eigenvector.</p><div class="solution"><p>The two vectors are independent, so $u+v\ne0$. If $T(u+v)=c(u+v)$, subtract to get $(a-c)u+(b-c)v=0$. Independence forces $a=c=b$, contradicting distinctness. Thus the union of eigenspaces need not be a subspace, even though each individual eigenspace is one.</p></div></details>
+<details class="exercise"><summary>Problem 5. An invariant complement can fail to exist</summary><p>For $Ne_1=0$, $Ne_2=e_1$ on $F^2$, show $Fe_1$ is invariant but has no invariant one-dimensional complement.</p><div class="solution"><p>Invariance follows because $Ne_1=0$. Any complementary line has generator $ae_1+be_2$ with $b\ne0$, since otherwise it is the first line. Its image is $be_1$. If that image lay in the complementary line, write $be_1=c(ae_1+be_2)$. Comparing second coordinates gives $cb=0$, so $c=0$, and the first coordinate then gives $b=0$, contradiction. Complements exist as vector spaces by Chapter 19, but imposing invariance is an additional constraint.</p></div></details>
+<details class="exercise"><summary>Problem 6. Polynomial covariance under similarity</summary><p>For $B=Q^{-1}AQ$, prove $p(B)=Q^{-1}p(A)Q$ and deduce that similar matrices satisfy the same polynomial identities.</p><div class="solution"><p>Induction gives $B^j=Q^{-1}A^jQ$ for $j\ge0$, with $j=0$ using $Q^{-1}IQ=I$. Multiply by each coefficient and add to obtain the formula by distributivity. Thus $p(A)=0$ implies $p(B)=0$; using $A=QBQ^{-1}$ gives the reverse implication. This is an invariant stronger than the matrix's appearance in a particular basis.</p></div></details>
+
+<h2 id="references">22.9 References and boundaries</h2>
+<p>Lesson 40 is primary. Axler's <a href="https://linear.axler.net/LADR4e.pdf">Linear Algebra Done Right, fourth edition</a>, §5A, printed pp.133–139, supports eigenvalue criteria, invariant subspaces, independence, and polynomial operator evaluation. The eigenspace grouping proof, fully checked rotation example, finite-space boundary cases, and six solutions complete and extend the lecture. We have not yet proved eigenvalue existence over $\mathbb C$, or introduced determinants, characteristic polynomials, or the spectral theorem.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-21-matrix-representations-and-change-of-basis.html">Previous chapter</a><a href="index.html">Chapter index</a><a rel="next" href="chapter-23-minimal-polynomials-and-operator-decomposition.html">Next chapter</a></nav></main></div>
+<footer class="site-footer">Independent educational edition of Jaikrishnan J's NPTEL course, IIT Palakkad; coordinating institution IIT Madras. Recordings determine topic order. Added proofs, examples, code, and exercises are original teaching material. Attribution does not imply endorsement. <a href="WORKFLOW.md">Workflow</a> · <a href="source-manifest.json">Source inventory</a> · <a href="validation/summary.json">Validation</a>.</footer></body></html>

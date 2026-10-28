@@ -1,0 +1,76 @@
+{
+  "chapter": 17,
+  "complete_source_text_reading": [
+    31
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "null",
+      "lesson": 31,
+      "start": 24,
+      "end": 318
+    },
+    {
+      "section": "span",
+      "lesson": 31,
+      "start": 318,
+      "end": 731
+    },
+    {
+      "section": "special",
+      "lesson": 31,
+      "start": 731,
+      "end": 1628
+    },
+    {
+      "section": "rank",
+      "lesson": 31,
+      "start": 1628,
+      "end": 1777
+    },
+    {
+      "section": "row-column",
+      "lesson": 31,
+      "start": 1777,
+      "end": 1896
+    },
+    {
+      "section": "annihilation",
+      "lesson": 31,
+      "start": 1896,
+      "end": 2337
+    }
+  ],
+  "teaching_constructions": [
+    "Generalinterspersedpivot specialvectors withuniqueparameters",
+    "Minimumgeneratornumberproof withoutdimensiontheorem",
+    "Originalpivotcolumn generation andnonredundancyproof",
+    "Columnspace versusrowspace rowreductionwarning",
+    "All32F2input enumeration8solutions",
+    "Six solvedproblems"
+  ],
+  "scope_decisions": [
+    "Rankwelldefined usingearlierRREFuniquenessproof",
+    "Noformalabstractdimension beforechapter19",
+    "Realorthogonality distinctfrombilinearpairing overC",
+    "Spanofzero ordependentvectors maydegenerate",
+    "Squareinconsistent systems stillhavemeaningfulcolumnspace; no blanketautomaticconsistency"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Axler, Linear Algebra Done Right, fourth edition",
+      "url": "https://linear.axler.net/LADR4e.pdf",
+      "sections": [
+        "3B"
+      ],
+      "printed_pages": [
+        "59–64"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

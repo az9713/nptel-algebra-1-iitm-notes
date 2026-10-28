@@ -1,0 +1,734 @@
+{
+  "static": [
+    {
+      "file": "book-overview.html",
+      "sha256": "82135a0d3d3fad5e38f123999ad33a18dec4c3e6159f4a6817691bbff5c573d5",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-01-mathematical-statements-sets-and-logic.html",
+      "sha256": "5b4888c75187b3d1ad789c35d904b4b86fdb8f9546464cf31bc19a619df3f34e",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-02-proofs-counterexamples-and-set-identities.html",
+      "sha256": "bd15d5b404ef5c9e27a510634de196944da3f5b66fd5407ee6871e0feeed578f",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-03-functions-and-the-information-they-preserve.html",
+      "sha256": "442707f892b9fefe48cde2e142fa98266c863823725c136b8e0b0d8ee135a76e",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-04-equivalence-quotients-and-canonical-factorization.html",
+      "sha256": "e22d4e677b7d13bde9f52897d492c1ed14747f8730d18879e305fd13098a3869",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-05-binary-operations-and-groups.html",
+      "sha256": "6d3ed47cdba8776ef0fbd4d669dfcf12ea64ad3a85794485204f7c28787c0480",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-06-rings-integral-domains-and-foundational-assumptions.html",
+      "sha256": "105224e3d4a5b6c53dac65943655ea928c1a3b1d065e8b00e917846c90585f16",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-07-integers-order-and-induction.html",
+      "sha256": "ac840040a4fef7920937504d245acd60ed2b094016ecb059341988d50dee8677",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-08-inductive-constructions-and-uniqueness-of-the-integers.html",
+      "sha256": "b70856941e2ec13a020ba4b08248d4ef67606d8ea7fe993145f5977fd70604d3",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-09-cardinality-and-the-limits-of-enumeration.html",
+      "sha256": "f62ff0d5bc218ddfcd95df977a5058e97e3ef174d217158c7098df23620581e7",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-10-division-greatest-common-divisors-and-euclid.html",
+      "sha256": "ab8e92ca6e88863913e1d7f914ec5eb90cd36043616b1c530de91ebb80262f1e",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-11-congruences-and-prime-factorization.html",
+      "sha256": "584fd9a8b1004ca5ca1b4ca1ac958e5d0e28c6e117ade660efdd664b3c160af5",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-12-fields-and-the-construction-of-rational-numbers.html",
+      "sha256": "9926370006cc63ea3d4244417d41869f656ad9a6266ceedb4a815b7f8e35d770",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-13-real-numbers-and-completeness.html",
+      "sha256": "d26409e6bbbc23e4579b76d59b73bb66bac67b1769dfca8f64054a4f8f1503ca",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-14-complex-numbers-and-polynomial-arithmetic.html",
+      "sha256": "f8d3bf76cf56e11d3507f8f3a72ae7074f332742d0e7be01470442023530a4b4",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-15-linear-systems-and-gaussian-elimination.html",
+      "sha256": "e4811ea3b57123aa6a2f92bf16a3ce15cf4b51877cad0d1449e28609d389a1b8",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-16-matrix-algebra-and-square-systems.html",
+      "sha256": "c225dc48dcaf20efafcab5837bf2cf4b85cc354cf814da6d5c64d0b35790cdbf",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-17-the-geometry-and-parameters-of-a-solution-set.html",
+      "sha256": "6085ecd1c1f4ff71b972be8ce801d655a6a0b97e140890ae77db93b232cacd56",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-18-vector-spaces-subspaces-and-direct-sums.html",
+      "sha256": "357a39f4edac172af73ac9777fcbc9a4894d3bc58356917836df8daf5420e7a0",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-19-spanning-independence-bases-and-dimension.html",
+      "sha256": "79f6588724e790cc143c8a0b6fa162f404f4d370f528f07e62bf38b8f7e3460a",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-20-linear-maps-and-rank-nullity.html",
+      "sha256": "2adfe2ca4295a5d555a91c45693f87758b9c556f5d91ec10384d97ff4797e762",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-21-matrix-representations-and-change-of-basis.html",
+      "sha256": "09996431415ea9773d2531b9c669eeba3aab4fc11d9cd8777b1c12fbf016682e",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-22-eigenvalues-and-invariant-subspaces.html",
+      "sha256": "f2a04397150c09643ab4a47fccd4baf791cc03fd44af3643027fac876a94aff4",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-23-minimal-polynomials-and-operator-decomposition.html",
+      "sha256": "0d8b4abfb43b15defefed92ff6fbce2a3a82681dac80491c7868f927f233fb7c",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-24-triangular-forms-and-invariant-flags.html",
+      "sha256": "beac65c8639f55d8f8be83c41c9b7db8cfdb6fda954e4a95cfeed9773ac98d15",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "chapter-25-jordan-chains-and-canonical-forms.html",
+      "sha256": "5496aab71d438b5ce0b30a0d2d674efc34b068bac42f88bcbb8df40e805716a0",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "index.html",
+      "sha256": "8828ffbbd867bef63129496174a9624aa0c28cfe23e6cd6a41c8bd70cc384301",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "numerical-lab.html",
+      "sha256": "b50be463325a6d8966d01cd396f8ad8901ac4f9cab70efecd4bff7f820dc1e91",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "references.html",
+      "sha256": "02c5d1f4a673dba452c08539e81d619e79df49a02e6d587914fd569dd5da9e85",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    },
+    {
+      "file": "source-map.html",
+      "sha256": "b48c87015fccc8e60bc1a2923d001abf68ec62d5b3781bb69747ff23e1ef7ad6",
+      "links_and_anchors": "passed",
+      "body_digest": "passed"
+    }
+  ],
+  "browser": [
+    {
+      "file": "book-overview.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "82135a0d3d3fad5e38f123999ad33a18dec4c3e6159f4a6817691bbff5c573d5"
+    },
+    {
+      "file": "book-overview.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "82135a0d3d3fad5e38f123999ad33a18dec4c3e6159f4a6817691bbff5c573d5"
+    },
+    {
+      "file": "chapter-01-mathematical-statements-sets-and-logic.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "5b4888c75187b3d1ad789c35d904b4b86fdb8f9546464cf31bc19a619df3f34e"
+    },
+    {
+      "file": "chapter-01-mathematical-statements-sets-and-logic.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "5b4888c75187b3d1ad789c35d904b4b86fdb8f9546464cf31bc19a619df3f34e"
+    },
+    {
+      "file": "chapter-02-proofs-counterexamples-and-set-identities.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "bd15d5b404ef5c9e27a510634de196944da3f5b66fd5407ee6871e0feeed578f"
+    },
+    {
+      "file": "chapter-02-proofs-counterexamples-and-set-identities.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "bd15d5b404ef5c9e27a510634de196944da3f5b66fd5407ee6871e0feeed578f"
+    },
+    {
+      "file": "chapter-03-functions-and-the-information-they-preserve.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "442707f892b9fefe48cde2e142fa98266c863823725c136b8e0b0d8ee135a76e"
+    },
+    {
+      "file": "chapter-03-functions-and-the-information-they-preserve.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "442707f892b9fefe48cde2e142fa98266c863823725c136b8e0b0d8ee135a76e"
+    },
+    {
+      "file": "chapter-04-equivalence-quotients-and-canonical-factorization.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "e22d4e677b7d13bde9f52897d492c1ed14747f8730d18879e305fd13098a3869"
+    },
+    {
+      "file": "chapter-04-equivalence-quotients-and-canonical-factorization.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "e22d4e677b7d13bde9f52897d492c1ed14747f8730d18879e305fd13098a3869"
+    },
+    {
+      "file": "chapter-05-binary-operations-and-groups.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "6d3ed47cdba8776ef0fbd4d669dfcf12ea64ad3a85794485204f7c28787c0480"
+    },
+    {
+      "file": "chapter-05-binary-operations-and-groups.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "6d3ed47cdba8776ef0fbd4d669dfcf12ea64ad3a85794485204f7c28787c0480"
+    },
+    {
+      "file": "chapter-06-rings-integral-domains-and-foundational-assumptions.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "105224e3d4a5b6c53dac65943655ea928c1a3b1d065e8b00e917846c90585f16"
+    },
+    {
+      "file": "chapter-06-rings-integral-domains-and-foundational-assumptions.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "105224e3d4a5b6c53dac65943655ea928c1a3b1d065e8b00e917846c90585f16"
+    },
+    {
+      "file": "chapter-07-integers-order-and-induction.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "ac840040a4fef7920937504d245acd60ed2b094016ecb059341988d50dee8677"
+    },
+    {
+      "file": "chapter-07-integers-order-and-induction.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "ac840040a4fef7920937504d245acd60ed2b094016ecb059341988d50dee8677"
+    },
+    {
+      "file": "chapter-08-inductive-constructions-and-uniqueness-of-the-integers.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "b70856941e2ec13a020ba4b08248d4ef67606d8ea7fe993145f5977fd70604d3"
+    },
+    {
+      "file": "chapter-08-inductive-constructions-and-uniqueness-of-the-integers.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "b70856941e2ec13a020ba4b08248d4ef67606d8ea7fe993145f5977fd70604d3"
+    },
+    {
+      "file": "chapter-09-cardinality-and-the-limits-of-enumeration.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "f62ff0d5bc218ddfcd95df977a5058e97e3ef174d217158c7098df23620581e7"
+    },
+    {
+      "file": "chapter-09-cardinality-and-the-limits-of-enumeration.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "f62ff0d5bc218ddfcd95df977a5058e97e3ef174d217158c7098df23620581e7"
+    },
+    {
+      "file": "chapter-10-division-greatest-common-divisors-and-euclid.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "ab8e92ca6e88863913e1d7f914ec5eb90cd36043616b1c530de91ebb80262f1e"
+    },
+    {
+      "file": "chapter-10-division-greatest-common-divisors-and-euclid.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "ab8e92ca6e88863913e1d7f914ec5eb90cd36043616b1c530de91ebb80262f1e"
+    },
+    {
+      "file": "chapter-11-congruences-and-prime-factorization.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "584fd9a8b1004ca5ca1b4ca1ac958e5d0e28c6e117ade660efdd664b3c160af5"
+    },
+    {
+      "file": "chapter-11-congruences-and-prime-factorization.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "584fd9a8b1004ca5ca1b4ca1ac958e5d0e28c6e117ade660efdd664b3c160af5"
+    },
+    {
+      "file": "chapter-12-fields-and-the-construction-of-rational-numbers.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "9926370006cc63ea3d4244417d41869f656ad9a6266ceedb4a815b7f8e35d770"
+    },
+    {
+      "file": "chapter-12-fields-and-the-construction-of-rational-numbers.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "9926370006cc63ea3d4244417d41869f656ad9a6266ceedb4a815b7f8e35d770"
+    },
+    {
+      "file": "chapter-13-real-numbers-and-completeness.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "d26409e6bbbc23e4579b76d59b73bb66bac67b1769dfca8f64054a4f8f1503ca"
+    },
+    {
+      "file": "chapter-13-real-numbers-and-completeness.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "d26409e6bbbc23e4579b76d59b73bb66bac67b1769dfca8f64054a4f8f1503ca"
+    },
+    {
+      "file": "chapter-14-complex-numbers-and-polynomial-arithmetic.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "f8d3bf76cf56e11d3507f8f3a72ae7074f332742d0e7be01470442023530a4b4"
+    },
+    {
+      "file": "chapter-14-complex-numbers-and-polynomial-arithmetic.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "f8d3bf76cf56e11d3507f8f3a72ae7074f332742d0e7be01470442023530a4b4"
+    },
+    {
+      "file": "chapter-15-linear-systems-and-gaussian-elimination.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "e4811ea3b57123aa6a2f92bf16a3ce15cf4b51877cad0d1449e28609d389a1b8"
+    },
+    {
+      "file": "chapter-15-linear-systems-and-gaussian-elimination.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "e4811ea3b57123aa6a2f92bf16a3ce15cf4b51877cad0d1449e28609d389a1b8"
+    },
+    {
+      "file": "chapter-16-matrix-algebra-and-square-systems.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "c225dc48dcaf20efafcab5837bf2cf4b85cc354cf814da6d5c64d0b35790cdbf"
+    },
+    {
+      "file": "chapter-16-matrix-algebra-and-square-systems.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "c225dc48dcaf20efafcab5837bf2cf4b85cc354cf814da6d5c64d0b35790cdbf"
+    },
+    {
+      "file": "chapter-17-the-geometry-and-parameters-of-a-solution-set.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "6085ecd1c1f4ff71b972be8ce801d655a6a0b97e140890ae77db93b232cacd56"
+    },
+    {
+      "file": "chapter-17-the-geometry-and-parameters-of-a-solution-set.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "6085ecd1c1f4ff71b972be8ce801d655a6a0b97e140890ae77db93b232cacd56"
+    },
+    {
+      "file": "chapter-18-vector-spaces-subspaces-and-direct-sums.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "357a39f4edac172af73ac9777fcbc9a4894d3bc58356917836df8daf5420e7a0"
+    },
+    {
+      "file": "chapter-18-vector-spaces-subspaces-and-direct-sums.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "357a39f4edac172af73ac9777fcbc9a4894d3bc58356917836df8daf5420e7a0"
+    },
+    {
+      "file": "chapter-19-spanning-independence-bases-and-dimension.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "79f6588724e790cc143c8a0b6fa162f404f4d370f528f07e62bf38b8f7e3460a"
+    },
+    {
+      "file": "chapter-19-spanning-independence-bases-and-dimension.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "79f6588724e790cc143c8a0b6fa162f404f4d370f528f07e62bf38b8f7e3460a"
+    },
+    {
+      "file": "chapter-20-linear-maps-and-rank-nullity.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "2adfe2ca4295a5d555a91c45693f87758b9c556f5d91ec10384d97ff4797e762"
+    },
+    {
+      "file": "chapter-20-linear-maps-and-rank-nullity.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "2adfe2ca4295a5d555a91c45693f87758b9c556f5d91ec10384d97ff4797e762"
+    },
+    {
+      "file": "chapter-21-matrix-representations-and-change-of-basis.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "09996431415ea9773d2531b9c669eeba3aab4fc11d9cd8777b1c12fbf016682e"
+    },
+    {
+      "file": "chapter-21-matrix-representations-and-change-of-basis.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "09996431415ea9773d2531b9c669eeba3aab4fc11d9cd8777b1c12fbf016682e"
+    },
+    {
+      "file": "chapter-22-eigenvalues-and-invariant-subspaces.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "f2a04397150c09643ab4a47fccd4baf791cc03fd44af3643027fac876a94aff4"
+    },
+    {
+      "file": "chapter-22-eigenvalues-and-invariant-subspaces.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "f2a04397150c09643ab4a47fccd4baf791cc03fd44af3643027fac876a94aff4"
+    },
+    {
+      "file": "chapter-23-minimal-polynomials-and-operator-decomposition.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "0d8b4abfb43b15defefed92ff6fbce2a3a82681dac80491c7868f927f233fb7c"
+    },
+    {
+      "file": "chapter-23-minimal-polynomials-and-operator-decomposition.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "0d8b4abfb43b15defefed92ff6fbce2a3a82681dac80491c7868f927f233fb7c"
+    },
+    {
+      "file": "chapter-24-triangular-forms-and-invariant-flags.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "beac65c8639f55d8f8be83c41c9b7db8cfdb6fda954e4a95cfeed9773ac98d15"
+    },
+    {
+      "file": "chapter-24-triangular-forms-and-invariant-flags.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "beac65c8639f55d8f8be83c41c9b7db8cfdb6fda954e4a95cfeed9773ac98d15"
+    },
+    {
+      "file": "chapter-25-jordan-chains-and-canonical-forms.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "5496aab71d438b5ce0b30a0d2d674efc34b068bac42f88bcbb8df40e805716a0"
+    },
+    {
+      "file": "chapter-25-jordan-chains-and-canonical-forms.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "5496aab71d438b5ce0b30a0d2d674efc34b068bac42f88bcbb8df40e805716a0"
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "8828ffbbd867bef63129496174a9624aa0c28cfe23e6cd6a41c8bd70cc384301"
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "8828ffbbd867bef63129496174a9624aa0c28cfe23e6cd6a41c8bd70cc384301"
+    },
+    {
+      "file": "numerical-lab.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "b50be463325a6d8966d01cd396f8ad8901ac4f9cab70efecd4bff7f820dc1e91"
+    },
+    {
+      "file": "numerical-lab.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "b50be463325a6d8966d01cd396f8ad8901ac4f9cab70efecd4bff7f820dc1e91"
+    },
+    {
+      "file": "references.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "02c5d1f4a673dba452c08539e81d619e79df49a02e6d587914fd569dd5da9e85"
+    },
+    {
+      "file": "references.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "02c5d1f4a673dba452c08539e81d619e79df49a02e6d587914fd569dd5da9e85"
+    },
+    {
+      "file": "source-map.html",
+      "width": 1440,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "b48c87015fccc8e60bc1a2923d001abf68ec62d5b3781bb69747ff23e1ef7ad6"
+    },
+    {
+      "file": "source-map.html",
+      "width": 390,
+      "math_errors": 0,
+      "page_errors": 0,
+      "horizontal_overflow": false,
+      "controls": "passed",
+      "sha256": "b48c87015fccc8e60bc1a2923d001abf68ec62d5b3781bb69747ff23e1ef7ad6"
+    }
+  ],
+  "scope": "offline source order, links, digests, rendering, and reading controls; not formal verification",
+  "render_assets": {
+    "assets/book.css": "c1d4fe1279a49bdeecbf216c182adafa902efc45db5efee272f03366778106a7",
+    "assets/book.js": "e31d522b88712b15eddb3323de2c325a4e1ff1bf77bf0cde74f021809d2bae4f",
+    "assets/lab.js": "ca0d956ffd99db33104abd736c56c4fb6d6d6f0f17bd689ee428468d9e1eb115",
+    "assets/math-config.js": "154b721c0142e3d997d204ace864f2747f2c8fad4557363238035b2f0d64e3ca",
+    "assets/mathjax-tex-svg.js": "d4295dc33744836935c1399feece5159577b34c5c8ffb9f1c6324cd82e03a882"
+  }
+}

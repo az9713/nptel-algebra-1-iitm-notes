@@ -1,0 +1,15 @@
+{
+  "files": 154,
+  "raw_sources_included": false,
+  "private_reviews_included": false,
+  "excluded": [
+    "work/",
+    "README.txt",
+    "raw captions",
+    "downloaded references",
+    "private credentials and publication helpers"
+  ],
+  "status": "passed",
+  "secret_pattern_scan": "passed",
+  "personal_absolute_path_scan": "passed"
+}

@@ -1,0 +1,85 @@
+{
+  "chapter": 10,
+  "complete_source_text_reading": [
+    20
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "divisibility",
+      "lesson": 20,
+      "start": 74,
+      "end": 1203
+    },
+    {
+      "section": "primes",
+      "lesson": 20,
+      "start": 1203,
+      "end": 2351
+    },
+    {
+      "section": "division",
+      "lesson": 20,
+      "start": 2351,
+      "end": 3558
+    },
+    {
+      "section": "gcd",
+      "lesson": 20,
+      "start": 3558,
+      "end": 4184
+    },
+    {
+      "section": "euclid",
+      "lesson": 20,
+      "start": 4184,
+      "end": 4802
+    },
+    {
+      "section": "bezout",
+      "lesson": 20,
+      "start": 4802,
+      "end": 5264
+    },
+    {
+      "section": "euclid-lemma",
+      "lesson": 20,
+      "start": 5264,
+      "end": 5612
+    },
+    {
+      "section": "factorization",
+      "lesson": 20,
+      "start": 5612,
+      "end": 6316
+    }
+  ],
+  "teaching_constructions": [
+    "Least nonnegative remainder proof handles all signed dividends at once",
+    "Extended Euclid coefficient invariant with1680 signed input pairs",
+    "Six completely solved problems"
+  ],
+  "scope_decisions": [
+    "Divisors nonzero; gcd inputs not bothzero",
+    "Primefactorization proved here because source20 contains it, appliedfurtherinch11",
+    "Signeddivision anduniquenessbounds corrected explicitly",
+    "General prime product lemma precedes factorizationuniqueness",
+    "No assertion about nthprime formulas or algorithm complexity"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Judson, Abstract Algebra: Theory and Applications,2026",
+      "url": "https://judsonbooks.org/aata-files/aata-20260811.pdf",
+      "sections": [
+        "2.2"
+      ],
+      "printed_pages": [
+        "21–24"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

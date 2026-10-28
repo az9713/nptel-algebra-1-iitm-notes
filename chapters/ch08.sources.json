@@ -1,0 +1,70 @@
+{
+  "chapter": 8,
+  "complete_source_text_reading": [
+    17,
+    18
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "powers",
+      "lesson": 17,
+      "start": 38,
+      "end": 722
+    },
+    {
+      "section": "integer-action",
+      "lesson": 17,
+      "start": 722,
+      "end": 1033
+    },
+    {
+      "section": "products",
+      "lesson": 17,
+      "start": 1033,
+      "end": 1818
+    },
+    {
+      "section": "distribution",
+      "lesson": 17,
+      "start": 1818,
+      "end": 1897
+    },
+    {
+      "section": "absolute",
+      "lesson": 17,
+      "start": 1897,
+      "end": 2520
+    },
+    {
+      "section": "forced",
+      "lesson": 18,
+      "start": 16,
+      "end": 1594
+    },
+    {
+      "section": "construction",
+      "lesson": 18,
+      "start": 1594,
+      "end": 3351
+    }
+  ],
+  "teaching_constructions": [
+    "Full proof of arbitrary finite reordering using labeled positions",
+    "Exact permutation parenthesization program",
+    "Six solved problems"
+  ],
+  "scope_decisions": [
+    "All integer-exponent sign cases proved",
+    "Canonical means unique isomorphism for this particular theorem, not a universal definition",
+    "Surjective operation-preserving ring maps automatically preserve unit; general maps need not",
+    "All multiplication/order/injection/target-induction details supplied in integer uniqueness",
+    "Binomial theorem deferred to chapter13 per source",
+    "Integer structure existence assumed, not constructed"
+  ],
+  "reference_sections_inspected": [],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

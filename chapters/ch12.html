@@ -1,0 +1,107 @@
+<h1>12. Fields and the construction of rational numbers</h1>
+<p class="lead">The pairs $(1,2)$ and $(2,4)$ should describe the same rational number. Treating fractions as equivalence classes makes that intention precise, but adds an obligation: arithmetic and order must give the same answers whichever pair represents the input. The construction below proves those obligations and explains why every ordered field contains a uniquely determined copy of the rational numbers.</p>
+<p class="source-note">Lesson 23 motivates fields through residue rings, sketches the rational construction, and embeds the rationals in every ordered field. We complete the omitted checks. The order on fractions is defined using positive denominators, and injectivity of the integer embedding uses the order hypothesis explicitly.</p>
+
+<h2 id="fields">12.1 Nonzero elements become a multiplicative group <a class="timestamp" href="https://www.youtube.com/watch?v=mEBKTbPYzBE&amp;t=1119s">Lesson 23 · 18:39</a></h2>
+<div class="definition"><p>A <dfn>field</dfn> $F$ is a commutative unital ring with $0\ne1$ in which every nonzero element has a multiplicative inverse. Equivalently its additive structure is an abelian group, its nonzero elements form an abelian group under multiplication, and multiplication distributes over addition.</p></div>
+<p>To see why a field is an integral domain, suppose $ab=0$ and $a\ne0$. Multiplying by $a^{-1}$ gives $b=0$. Thus a product of nonzero elements is nonzero, so multiplication is indeed closed on $F\setminus\{0\}$. Conversely the two-group description provides exactly the ring laws and inverses, with nonzero identity because the multiplicative group is nonempty and excludes zero.</p>
+<p>All nonzero elements can be divided by: write $a/b:=ab^{-1}$ when $b\ne0$. The inverse is unique by group theory. Zero has no inverse, since $0x=0\ne1$. The field with two elements, $\mathbb F_2=\mathbb Z/2\mathbb Z$, has $1+1=0$ and $1\cdot1=1$; it is the smallest possible field because distinct zero and one are necessary.</p>
+
+<h2 id="finite">12.2 Residue rings become fields exactly at primes <a class="timestamp" href="https://www.youtube.com/watch?v=mEBKTbPYzBE&amp;t=772s">Lesson 23 · 12:52</a></h2>
+<div class="theorem"><p><strong>Proposition 12.1, proved here.</strong> For $n&gt;0$, the residue ring $\mathbb Z/n\mathbb Z$ is an integral domain if and only if $n$ is prime, and it is a field if and only if $n$ is prime.</p></div>
+<div class="proof"><p>If $n=p$ is prime, $[0]_p\ne[1]_p$. Euclid's lemma gives $[a]_p[b]_p=[0]_p\Rightarrow[a]_p=[0]_p$ or $[b]_p=[0]_p$, so it is a domain. Every nonzero class has a representative coprime to $p$ and is a unit by Chapter 11, hence the ring is a field. If $n&gt;1$ is composite, write $n=uv$ with $1&lt;u,v&lt;n$. Both classes are nonzero but their product is zero, excluding a domain and therefore a field. If $n=1$, the ring has one element, so nontriviality fails. <span class="qed">∎</span></p></div>
+<p>For example $[2]_6[3]_6=[0]_6$ shows why composite moduli obstruct division. Identities involving sums and products pass from integer representatives to classes; the assertion “a product is zero only if a factor is zero” need not pass. It is a conditional property, not merely a ring identity.</p>
+<div class="theorem"><p><strong>Proposition 12.2, proved here.</strong> Every finite integral domain is a field.</p></div>
+<div class="proof"><p>Fix $a\ne0$ in a finite domain $D$. Multiplication $x\mapsto ax$ is injective by domain cancellation. On a finite set it is therefore onto, so some $x$ satisfies $ax=1$. Commutativity gives $xa=1$ too. Every nonzero $a$ is thus invertible. <span class="qed">∎</span></p></div>
+<p>Finiteness matters: the integers are an integral domain but $2$ has no integer inverse. The proposition is about commutative domains; it does not assert a theorem about arbitrary noncommutative division rings.</p>
+
+<h2 id="fractions">12.3 Fractions are classes of pairs <a class="timestamp" href="https://www.youtube.com/watch?v=mEBKTbPYzBE&amp;t=1763s">Lesson 23 · 29:23</a></h2>
+<p>Let $S=\mathbb Z\times(\mathbb Z\setminus\{0\})$ and define $(a,b)\sim(c,d)$ when $ad=bc$. Reflexivity is $ab=ba$, and symmetry is symmetry of equality after commuting factors. For transitivity, if $ad=bc$ and $cf=de$, then $adf=bcf=bde$. Cancelling the nonzero integer $d$ gives $af=be$. Thus this is an equivalence relation. The cancellation explains why the underlying domain has to lack zero divisors.</p>
+<p>Define $\mathbb Q:=S/{\sim}$. Write $[a,b]$ for a class, also denoted $a/b$ once its arithmetic has been established. A denominator is required to be nonzero; no class $[a,0]$ belongs to this construction. Distinct pairs such as $(1,2)$ and $(2,4)$ can represent the same class.</p>
+<div class="definition"><p>Define</p>
+$$[a,b]+[c,d]:=[ad+bc,bd],\qquad
+[a,b][c,d]:=[ac,bd].$$
+<p>Products of nonzero integer denominators are nonzero, so the displayed output pairs belong to $S$.</p></div>
+<div class="theorem"><p><strong>Proposition 12.3, proved here.</strong> These operations are independent of representative choices.</p></div>
+<div class="proof"><p>Suppose $ab'=a'b$ and $cd'=c'd$. For products, $(ac)(b'd')=(ab')(cd')=(a'b)(c'd)=(a'c')(bd)$, proving equivalent output pairs. For sums,</p>
+$$ (ad+bc)b'd'=ab'dd'+bb'cd'
+=a'bdd'+bb'c'd=(a'd'+b'c')bd.$$
+<p>This is precisely the required cross-product equality for $[ad+bc,bd]=[a'd'+b'c',b'd']$. Both representative changes were allowed simultaneously. <span class="qed">∎</span></p></div>
+<p>A formula on representatives becomes a function on classes only after this proof. It is not enough that the usual fraction rules look familiar: they were the motivation for the definitions, not yet their justification.</p>
+
+<h2 id="axioms">12.4 Verify the field laws</h2>
+<p>For $x=[a,b],y=[c,d],z=[e,f]$, addition is commutative because $ad+bc=cb+da$ and $bd=db$. Both parenthesizations of $x+y+z$ have the identical pair representation</p>
+$$[adf+bcf+bde,bdf].$$
+<p>Thus addition is associative. Its identity is $[0,1]$ because $[a,b]+[0,1]=[a,b]$, and the additive inverse is $[-a,b]$: their sum is $[0,b^2]=[0,1]$ by the equivalence relation. This verifies the additive abelian group laws.</p>
+<p>Multiplication is commutative and associative because both the numerators and denominators are multiplied in the commutative associative integers. Its identity is $[1,1]$. For distribution, the left side $x(y+z)$ is $[a(cf+de),bdf]$, while the sum $xy+xz$ is</p>
+$$[acbf+abde,b^2df]=[ab(cf+de),b^2df].$$
+<p>This last pair is equivalent to $[a(cf+de),bdf]$ by multiplying both entries by the nonzero $b$, proving distribution. Commutativity gives the other distributive law.</p>
+<p>The class $[a,b]$ is zero exactly when $a=0$, because equivalence to $[0,1]$ means $a\cdot1=b\cdot0$. Hence $[1,1]\ne[0,1]$. If $[a,b]\ne0$, the integer $a$ is nonzero, so $[b,a]$ is permitted and $[a,b][b,a]=[ab,ab]=[1,1]$. Every nonzero class has an inverse. We have now verified every requirement for $\mathbb Q$ to be a field.</p>
+<p>The map $i:\mathbb Z\to\mathbb Q$ given by $i(a)=[a,1]$ preserves addition, multiplication, and one by the definitions. If $[a,1]=[c,1]$, cross multiplication gives $a=c$, so it is injective. The constructed classes need not literally be the original integers; this map embeds an isomorphic copy, which we conventionally identify with them.</p>
+
+<h2 id="reduced">12.5 A unique positive denominator in reduced form <a class="timestamp" href="https://www.youtube.com/watch?v=mEBKTbPYzBE&amp;t=2083s">Lesson 23 · 34:43</a></h2>
+<div class="theorem"><p><strong>Proposition 12.4, proved here.</strong> Every rational class has exactly one representation $m/n$ with $n&gt;0$ and $\gcd(m,n)=1$. Zero's representation is $0/1$.</p></div>
+<div class="proof"><p>Starting from $(a,b)$, if $b&lt;0$ replace it by $(-a,-b)$, which is equivalent and has positive denominator. Let $d=\gcd(a,b)&gt;0$ after this normalization. Dividing both entries by $d$ gives integers $m,n$ with $n&gt;0$ representing the same class. Bézout coefficients for $a,b$ divided through by $d$ give an integer combination of $m,n$ equal to $1$, so they are coprime.</p>
+<p>For uniqueness suppose $m/n=u/v$ with $n,v&gt;0$ and both pairs coprime. Then $mv=nu$, so $n\mid mv$. Coprime cancellation with $\gcd(n,m)=1$ gives $n\mid v$. Similarly $v\mid n$. Positivity forces $n=v$, and cancellation in $mv=nu$ then gives $m=u$. If the class is zero, its numerator is zero, so coprimality gives $1=\gcd(0,n)=n$. Thus its unique reduced pair is $(0,1)$. <span class="qed">∎</span></p></div>
+<p>The positive-denominator requirement removes a sign ambiguity: $m/n=(-m)/(-n)$, and reducing common factors alone would not distinguish them. Unique factorization is one way to reason about reduction; Bézout and coprime cancellation already suffice for this proof.</p>
+
+<h2 id="order">12.6 Put an order on the constructed field <a class="timestamp" href="https://www.youtube.com/watch?v=mEBKTbPYzBE&amp;t=2219s">Lesson 23 · 36:59</a></h2>
+<p>Normalize denominators to be positive, and define $[a,b]&lt;[c,d]$ if $ad&lt;bc$ for $b,d&gt;0$. This formula cannot be used unmodified with arbitrary signed denominators: $1/(-2)&lt;0/1$ is true but $1\cdot1&lt;(-2)\cdot0$ is false.</p>
+<p>The order is independent of positive-denominator representatives. If $ab'=a'b$ and $cd'=c'd$, with all four denominators positive, then</p>
+$$ (a'd'-b'c')bd=(ad-bc)b'd'.$$
+<p>Since the multipliers on both sides are positive, the two differences have the same sign. Thus the comparison agrees. Trichotomy follows from integer trichotomy of $ad-bc$, with its zero case exactly the fraction equality relation.</p>
+<p>For transitivity, let $a/b&lt;c/d$ and $c/d&lt;e/f$, with all denominators positive. Then $ad&lt;bc$ and $cf&lt;de$. Multiplying the first by $f$ and the second by $b$ gives $adf&lt;bcf&lt;bde$; cancellation of positive $d$ gives $af&lt;be$, as required. Adding $e/f$ to two fractions multiplies their comparison difference $ad-bc$ by the positive $f^2$ in the displayed sum representatives, so strict order is preserved by translation.</p>
+<p>A positive fraction has a positive numerator when its denominator is positive. The product of two such fractions has positive numerator and denominator, hence is positive. We have verified total order, transitivity, translation compatibility, and positivity of products, making $\mathbb Q$ an ordered field. The integer embedding preserves order because comparing $[a,1]$ and $[c,1]$ is exactly comparing $a,c$.</p>
+
+<h2 id="ordered-fields">12.7 Inverses and finite fields cannot share this order <a class="timestamp" href="https://www.youtube.com/watch?v=mEBKTbPYzBE&amp;t=1429s">Lesson 23 · 23:49</a></h2>
+<p>An <dfn>ordered field</dfn> is a field with a strict order satisfying the ordered-domain laws of Chapter 6. In such a field a positive element has a positive inverse: the inverse is nonzero, and if it were negative its product with the positive element would be negative, contradicting $aa^{-1}=1&gt;0$. For a negative element use $a^{-1}=-(-a)^{-1}$, justified by multiplying by $a$, to obtain a negative inverse.</p>
+<p>If $a&lt;b$ and $a,b$ have the same nonzero sign, then $ab&gt;0$, and</p>
+$$a^{-1}-b^{-1}=(b-a)(ab)^{-1}&gt;0.$$
+<p>Thus reciprocal reverses order on each of the positive and negative intervals. It does not reverse order across zero: a negative number has a negative reciprocal, which remains smaller than a positive reciprocal.</p>
+<div class="theorem"><p><strong>Proposition 12.5, proved here.</strong> No finite field admits a compatible ordered-field structure.</p></div>
+<div class="proof"><p>In an ordered field, $1&gt;0$. Repeatedly adding $1$ yields the strictly increasing list $0,1,1+1,1+1+1,\ldots$. Induction proves strict increase at each step using translation compatibility. In a field with $N$ elements, its first $N+1$ terms would be distinct elements of an $N$-element set, contradicting pigeonhole. <span class="qed">∎</span></p></div>
+<p>A finite set can of course be put in some arbitrary total order. The proposition excludes an order compatible with its field operations. The distinction is structural, not a prohibition on arranging the elements in a list.</p>
+
+<h2 id="embedding">12.8 Every ordered field contains a unique rational copy <a class="timestamp" href="https://www.youtube.com/watch?v=mEBKTbPYzBE&amp;t=2327s">Lesson 23 · 38:47</a></h2>
+<div class="theorem"><p><strong>Theorem 12.6, proved here.</strong> For every ordered field $F$, there is a unique unital field homomorphism $J:\mathbb Q\to F$. It is injective and preserves and reflects strict order.</p></div>
+<div class="proof"><p>Define $j(n)=n1_F$ for integers $n$ using Chapter 8's integer action. Its additive law gives $j(m+n)=j(m)+j(n)$, and the ring action product law with $x=y=1_F$ gives $j(mn)=j(m)j(n)$. We also have $j(1)=1_F$. If $n&gt;0$, repeated sums of the positive $1_F$ give $j(n)&gt;0$. For negative $n$, $j(n)=-j(-n)&lt;0$. Thus $j(n)=0$ only when $n=0$, so additive preservation makes $j$ injective. Also $a&lt;b$ implies $j(b)-j(a)=j(b-a)&gt;0$.</p>
+<p>Set $J([a,b])=j(a)j(b)^{-1}$, which is defined because $b\ne0$ and $j$ is injective. If $ad=bc$, apply $j$ to obtain $j(a)j(d)=j(b)j(c)$ and multiply by the inverse denominators to show equal images. Thus $J$ is well defined. The fraction definitions give</p>
+$$J([a,b]+[c,d])=\frac{j(a)j(d)+j(b)j(c)}{j(b)j(d)}
+=J([a,b])+J([c,d]),$$
+<p>where division here is permitted inside $F$. Likewise $J([ac,bd])=J([a,b])J([c,d])$, and $J([1,1])=1_F$. If its value on $[a,b]$ is zero, multiplying by $j(b)$ gives $j(a)=0$, hence $a=0$. Additive preservation then proves injectivity: equal images have a difference in this zero kernel.</p>
+<p>For positive-denominator representatives, the sign of $J([c,d])-J([a,b])$ is the sign of $j(bc-ad)$, because the denominator $j(b)j(d)$ is positive. The sign of this integer image is exactly the sign of $bc-ad$. Thus $J$ preserves and reflects strict order.</p>
+<p>Any unital field homomorphism must send $1$ to $1_F$, hence each integer to its integer multiple $j(n)$ by additive preservation. It also sends the inverse of a nonzero element to the inverse of its image, by applying it to the equation $xx^{-1}=1$. Since $[a,b]=[a,1][b,1]^{-1}$, every rational value is forced to be $j(a)j(b)^{-1}$. This proves uniqueness. <span class="qed">∎</span></p></div>
+<p>Surjectivity onto all of $F$ is not asserted. The image is a <dfn>subfield</dfn>: a subset containing $0,1$ and closed under addition, negatives, multiplication, and inverses of nonzero members. The proved homomorphism laws give these closures. The order is essential for the injectivity of the integer map; in $\mathbb F_2$, the integer $2$ instead maps to $1+1=0$.</p>
+
+<h2 id="laboratory">12.9 Check representatives with exact arithmetic</h2>
+<pre><code class="language-python">from fractions import Fraction
+from itertools import product
+
+pairs = [(a, b) for a in range(-3, 4)
+         for b in range(-3, 4) if b]
+equivalences = 0
+for (a, b), (c, d) in product(pairs, repeat=2):
+    same = a * d == b * c
+    assert same == (Fraction(a, b) == Fraction(c, d))
+    assert Fraction(a * d + b * c, b * d) == (
+        Fraction(a, b) + Fraction(c, d))
+    assert Fraction(a * c, b * d) == Fraction(a, b) * Fraction(c, d)
+    equivalences += same
+print(len(pairs), equivalences)
+print(Fraction(-18, -24))
+print(Fraction(1, -2) &lt; Fraction(0, 1))</code></pre>
+<pre class="output">42 156
+3/4
+True</pre>
+<p>The program uses exact reduced fractions rather than floating-point approximations. It tests the cross-product relation and operation formulas for every pair in the specified finite grid. The proof, rather than this finite sample, establishes independence for all representatives.</p>
+
+<h2 id="problems">12.10 Problems with complete solutions</h2>
+<details class="exercise"><summary>Problem 1. Divide in a finite field</summary><p>Solve $3x+4=2$ in $\mathbb F_7$.</p><div class="solution"><p>Subtract $4$ to get $3x=-2=5$ modulo $7$. The inverse of $3$ is $5$, since $3\cdot5=15\equiv1$. Thus $x=5\cdot5=25\equiv4$. Substitution gives $3\cdot4+4=16\equiv2$, verifying the result. Multiplication by the invertible coefficient is injective, so the solution is unique.</p></div></details>
+<details class="exercise"><summary>Problem 2. Why the cross-product relation needs a domain</summary><p>Try the same pair relation over $\mathbb Z/6\mathbb Z$, allowing every nonzero denominator. Show transitivity fails using $(3,1),(0,2),(0,1)$.</p><div class="solution"><p>The first two pairs are related because $3\cdot2=0=1\cdot0$ modulo $6$. The last two are related because $0\cdot1=2\cdot0=0$. But the first and last are not related: $3\cdot1=3\ne0=1\cdot0$. All denominators are nonzero classes. The usual transitivity proof would cancel the middle denominator $2$, which is a zero divisor here. Nonzero denominators alone therefore do not suffice over an arbitrary ring.</p></div></details>
+<details class="exercise"><summary>Problem 3. Reduced form and order</summary><p>Reduce $(-42)/(-56)$ and compare it with $5/6$ using only positive-denominator cross products.</p><div class="solution"><p>Normalize signs to get $42/56$. The gcd is $14$, giving $3/4$, whose numerator and denominator are coprime. To compare, $3\cdot6=18&lt;20=4\cdot5$, so $3/4&lt;5/6$. Both denominators are positive, justifying the direction. The reduced-form theorem guarantees that another coprime positive-denominator representation cannot give different entries.</p></div></details>
+<details class="exercise"><summary>Problem 4. Reciprocal order on the negative interval</summary><p>Compare $(-3)^{-1}$ and $(-2)^{-1}$ and explain the general law.</p><div class="solution"><p>They are $-1/3$ and $-1/2$. Their difference is $-1/3+1/2=1/6&gt;0$, so $(-3)^{-1}&gt;(-2)^{-1}$ although $-3&lt;-2$. More generally for $a&lt;b&lt;0$, the difference $a^{-1}-b^{-1}=(b-a)/(ab)$ is positive because both numerator and denominator are positive. Reversing an inequality by reciprocals requires that the compared numbers remain on the same side of zero.</p></div></details>
+<details class="exercise"><summary>Problem 5. The order hypothesis cannot be discarded</summary><p>Show there is no unital field homomorphism $\mathbb Q\to\mathbb F_2$.</p><div class="solution"><p>Such a map would send $2=1+1$ to $1+1=0$. But $2\cdot(1/2)=1$ in $\mathbb Q$. Applying the supposed multiplicative map would give $0\cdot h(1/2)=1$ in $\mathbb F_2$, contradicting $0x=0\ne1$. Theorem 12.6 requires an ordered target, and $\mathbb F_2$ cannot be ordered compatibly by Proposition 12.5.</p></div></details>
+<details class="exercise"><summary>Problem 6. A unique extension is forced by fractions</summary><p>Let $K$ be a field and $j:\mathbb Z\to K$ an injective unital ring homomorphism. Show that any field homomorphism extending $j$ to $\mathbb Q$ must send $[a,b]$ to $j(a)j(b)^{-1}$. Does this argument require an order?</p><div class="solution"><p>The rational identity $[a,b]=[a,1][b,1]^{-1}$ forces the displayed value under multiplicativity and inverse preservation. The inverse exists because injectivity ensures $j(b)\ne0$ when $b\ne0$. Hence at most one extension is possible. The well-definedness and homomorphism checks in Theorem 12.6 construct this extension for any such $j$, independently of order. Order was used there to obtain an injective integer map and to prove preservation of order afterward; once injectivity of $j$ is supplied, the extension itself is algebraic.</p></div></details>
+
+<h2 id="references">12.11 References and boundaries</h2>
+<p>Lesson 23 is the primary source. Judson's <a href="https://judsonbooks.org/aata-files/aata-20260811.pdf">Abstract Algebra: Theory and Applications</a>, §18.1, printed pp.234–237, independently develops the pair-equivalence construction for an arbitrary integral domain. Here every algebraic and order check needed for the integer case has been supplied. No classification of finite fields or general construction of ordered completions is claimed; real completeness is the next chapter's subject.</p>

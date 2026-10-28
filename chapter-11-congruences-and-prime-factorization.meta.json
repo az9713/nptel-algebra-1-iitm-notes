@@ -1,0 +1,75 @@
+{
+  "order": 11,
+  "title": "Congruences and prime factorization",
+  "lecture_numbers": [
+    21,
+    22
+  ],
+  "file": "chapter-11-congruences-and-prime-factorization.html",
+  "manuscript": "chapters/ch11.html",
+  "status": "complete; independently reviewed",
+  "chapter": 11,
+  "body_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+  "words_excluding_code": 2425,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 8,
+  "sections": [
+    {
+      "heading": "11.1 Equality of a chosen kind Lesson 21 · 00:47",
+      "anchor": "congruence",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=yKJuo3DSESk&t=47s"
+      ]
+    },
+    {
+      "heading": "11.2 Exactly n classes, including the zero class Lesson 21 · 20:16",
+      "anchor": "classes",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=yKJuo3DSESk&t=1216s"
+      ]
+    },
+    {
+      "heading": "11.4 Affine transformations permute residues Lesson 22 · 10:14",
+      "anchor": "permutation",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=614s"
+      ]
+    },
+    {
+      "heading": "11.5 Fermat's theorem by a product permutation Lesson 22 · 22:50",
+      "anchor": "fermat",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=1370s"
+      ]
+    },
+    {
+      "heading": "11.6 The same congruence from rotating necklaces Lesson 22 · 14:30",
+      "anchor": "necklaces",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=870s"
+      ]
+    },
+    {
+      "heading": "11.7 Euler's theorem and its converse Lesson 22 · 29:29",
+      "anchor": "euler",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=1769s"
+      ]
+    },
+    {
+      "heading": "11.8 Solve every linear congruence Lesson 22 · 35:28",
+      "anchor": "linear",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=2128s"
+      ]
+    },
+    {
+      "heading": "11.9 Wilson's exact primality criterion Lesson 22 · 45:21",
+      "anchor": "wilson",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=tj0D5Mg1p70&t=2721s"
+      ]
+    }
+  ]
+}

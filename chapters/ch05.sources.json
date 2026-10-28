@@ -1,0 +1,19 @@
+{
+  "chapter":5,
+  "complete_source_text_reading":[11,12],
+  "reading_method":"sequential reading of all extracted caption segments",
+  "section_source_map":[
+    {"section":"operations","lesson":11,"start":71,"end":677},
+    {"section":"identities","lesson":11,"start":677,"end":1808},
+    {"section":"groups","lesson":12,"start":80,"end":354},
+    {"section":"small","lesson":12,"start":354,"end":834},
+    {"section":"groups","lesson":12,"start":834,"end":1116},
+    {"section":"subgroups","lesson":12,"start":1116,"end":1260},
+    {"section":"morphisms","lesson":12,"start":1260,"end":2226},
+    {"section":"kernel","lesson":12,"start":2226,"end":2795}
+  ],
+  "teaching_constructions":["Reversible three-object rearrangements", "Nonassociative inverse counterexample", "S3 exhaustive checks and all binary operations on two labels", "Six worked problems"],
+  "scope_decisions":["Triangle rotations use120-degree increments; no unconfirmed caption discrepancy attributed to instructor", "Identity uniqueness requires no associativity; inverse uniqueness does", "Subgroup nonemptiness explicit", "General finite associativity proof assigned to induction chapter8", "Matrix group theorem presented as consequence of the proved monoid-units result, with matrix algebra developed in chapter16"],
+  "reference_sections_inspected":[{"source":"Judson, Abstract Algebra: Theory and Applications,2026","url":"https://judsonbooks.org/aata-files/aata-20260811.pdf","sections":["3.2","3.3","9.1","11.1"],"printed_pages":["33–35","38–39","119","139–141"]}],
+  "limits":["No comprehensive audiovisual review", "No formal proof-assistant verification"]
+}

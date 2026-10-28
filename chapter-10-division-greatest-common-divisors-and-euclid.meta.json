@@ -1,0 +1,74 @@
+{
+  "order": 10,
+  "title": "Division, greatest common divisors, and Euclid",
+  "lecture_numbers": [
+    20
+  ],
+  "file": "chapter-10-division-greatest-common-divisors-and-euclid.html",
+  "manuscript": "chapters/ch10.html",
+  "status": "complete; independently reviewed",
+  "chapter": 10,
+  "body_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+  "words_excluding_code": 2276,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 8,
+  "sections": [
+    {
+      "heading": "10.1 Divisibility is an equation Lesson 20 · 01:14",
+      "anchor": "divisibility",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=74s"
+      ]
+    },
+    {
+      "heading": "10.2 Least divisors and an inexhaustible supply of primes Lesson 20 · 20:03",
+      "anchor": "primes",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=1203s"
+      ]
+    },
+    {
+      "heading": "10.3 Division with a unique nonnegative remainder Lesson 20 · 39:11",
+      "anchor": "division",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=2351s"
+      ]
+    },
+    {
+      "heading": "10.4 Define a greatest common divisor by what divides it Lesson 20 · 59:18",
+      "anchor": "gcd",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=3558s"
+      ]
+    },
+    {
+      "heading": "10.5 Euclid's algorithm: an invariant and a decreasing quantity Lesson 20 · 69:44",
+      "anchor": "euclid",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=4184s"
+      ]
+    },
+    {
+      "heading": "10.6 Bézout coefficients are a certificate Lesson 20 · 80:02",
+      "anchor": "bezout",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=4802s"
+      ]
+    },
+    {
+      "heading": "10.7 Coprimality permits a special cancellation Lesson 20 · 87:44",
+      "anchor": "euclid-lemma",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=5264s"
+      ]
+    },
+    {
+      "heading": "10.8 Existence and uniqueness of prime factorization Lesson 20 · 93:32",
+      "anchor": "factorization",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jqHwnnFXZ1k&t=5612s"
+      ]
+    }
+  ]
+}

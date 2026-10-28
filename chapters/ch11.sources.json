@@ -1,0 +1,96 @@
+{
+  "chapter": 11,
+  "complete_source_text_reading": [
+    21,
+    22
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "congruence",
+      "lesson": 21,
+      "start": 47,
+      "end": 1097
+    },
+    {
+      "section": "classes",
+      "lesson": 21,
+      "start": 1097,
+      "end": 2408
+    },
+    {
+      "section": "problems",
+      "lesson": 21,
+      "start": 2408,
+      "end": 2715
+    },
+    {
+      "section": "permutation",
+      "lesson": 22,
+      "start": 614,
+      "end": 870
+    },
+    {
+      "section": "necklaces",
+      "lesson": 22,
+      "start": 870,
+      "end": 1370
+    },
+    {
+      "section": "fermat",
+      "lesson": 22,
+      "start": 1370,
+      "end": 1769
+    },
+    {
+      "section": "euler",
+      "lesson": 22,
+      "start": 1769,
+      "end": 2128
+    },
+    {
+      "section": "linear",
+      "lesson": 22,
+      "start": 2128,
+      "end": 2721
+    },
+    {
+      "section": "wilson",
+      "lesson": 22,
+      "start": 2721,
+      "end": 2873
+    }
+  ],
+  "teaching_constructions": [
+    "Explicit quotient ring and unit characterization",
+    "Full Wilson proof, source states theorem only",
+    "Necklace orbit proof completed using modular cancellation",
+    "243word rotation experiment",
+    "Six solved problems"
+  ],
+  "scope_decisions": [
+    "Exactly n residueclasses includes zero",
+    "Phi(1)=1 explicitly defined",
+    "Alllinearcongruences includingzero coefficients andmodulus1",
+    "Fixedbase Fermatpass doesnotcertifyprime,341example verified",
+    "No unverified historical naming claims or practical cryptographic security assertions"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Judson, Abstract Algebra: Theory and Applications,2026",
+      "url": "https://judsonbooks.org/aata-files/aata-20260811.pdf",
+      "sections": [
+        "3.1",
+        "6.3"
+      ],
+      "printed_pages": [
+        "29–31",
+        "80–81"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

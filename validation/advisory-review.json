@@ -1,0 +1,16 @@
+{
+  "status": "reviewed",
+  "items": [
+    {
+      "checker": "check_links",
+      "disposition": "No broken anchors. Plain section identifiers include references to linked external books and local textual section mentions. Chapter navigation and section table of contents are available; advisory flags do not indicate missing targets."
+    },
+    {
+      "checker": "check_prose",
+      "file": "chapters/ch12.html",
+      "disposition": "The sentence identifies symmetry of a constructed relation with symmetry of equality after commuting factors. Mathematical content checked in independent editorial review; regex flags repeated word symmetry."
+    }
+  ],
+  "proof_pattern_check": "Updated to recognize this edition theorem and definition classes; no adjacent-proof warnings.",
+  "svg_scope": "No authored static SVG figures; MathJax-generated SVG rendering covered by browser checks."
+}

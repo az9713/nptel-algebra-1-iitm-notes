@@ -1,0 +1,127 @@
+<h1>6. Rings, integral domains, and foundational assumptions</h1>
+<p class="lead">Two functions can both be nonzero and still have product zero everywhere. One is supported at the first point of a two-point set, the other at the second. This simple example shows why familiar integer cancellation needs a hypothesis. It also illustrates the book's foundational method: specify the operations and their laws, then check which conclusions actually follow.</p>
+<p class="source-note">Official lesson 13 develops rings, domains, and compatible order. Lesson 14 examines the set constructions used so far. The two-point function model and the full ordered-pair construction below are original teaching developments. Ring identity conventions are stated explicitly because mathematical sources use more than one convention.</p>
+
+<h2 id="rings">6.1 Two operations linked by distributivity <a class="timestamp" href="https://www.youtube.com/watch?v=4WGGK6tWPsw&amp;t=80s">Lesson 13 · 01:20</a></h2>
+<div class="definition"><p><strong>Definition 6.1.</strong> In this edition, a <dfn>ring</dfn> $R$ has two binary operations, addition and multiplication. Addition makes $R$ an abelian group with identity $0$ and inverse $-a$. Multiplication is associative with identity $1$. Both distributive laws hold:</p>
+$$a(b+c)=ab+ac,\qquad(a+b)c=ac+bc.$$
+<p>The ring is <dfn>commutative</dfn> when multiplication is commutative. We allow the one-element ring with $1=0$; a <dfn>nontrivial</dfn> ring has $1\ne0$.</p></div>
+<p>The additive and multiplicative identities play different roles. Multiplication need not form a group: nonzero elements may lack multiplicative inverses, and zero will be an obstruction in every nontrivial ring. Addition remains a group, so additive cancellation is always available.</p>
+<div class="theorem"><p><strong>Proposition 6.2, proved here.</strong> In any ring, $a0=0a=0$, $a(-b)=(-a)b=-(ab)$, $(-a)(-b)=ab$, and $-(-a)=a$.</p></div>
+<div class="proof"><p>Distributivity gives $a0=a(0+0)=a0+a0$. Add the additive inverse of $a0$ to both sides to obtain $a0=0$. Applying the other distributive law gives $0a=0$. Next, $ab+a(-b)=a(b-b)=a0=0$, so uniqueness of additive inverses gives $a(-b)=-(ab)$. Similarly, $(a+(-a))b=0$ gives $(-a)b=-(ab)$. Since $a+(-a)=0$, the element $a$ is the additive inverse of $-a$, proving $-(-a)=a$. Therefore $(-a)(-b)=-((-a)b)=-(-(ab))=ab$. <span class="qed">∎</span></p></div>
+<p>Subtraction means $a-b:=a+(-b)$. The proved sign rules and distributivity give $a(b-c)=ab-ac$ and $(a-b)c=ac-bc$. These deductions use no commutativity of multiplication. In contrast, swapping the order in $ab$ or cancelling a nonzero factor requires further information.</p>
+<p>If $1=0$, every $a$ equals $a1=a0=0$, so the ring has exactly one element. This proves the claimed description of the zero ring. <a href="https://judsonbooks.org/aata-files/aata-20260811.pdf#page=210">Judson §16.1, printed pp. 198–201</a>, derives the same sign rules, but permits rings without a multiplicative identity. Our identity requirement follows the course convention; it is additional data, not a theorem about every distributive multiplication.</p>
+
+<h2 id="function-ring">6.2 A ring of functions with zero divisors <a class="timestamp" href="https://www.youtube.com/watch?v=4WGGK6tWPsw&amp;t=758s">Lesson 13 · 12:38</a></h2>
+<p>Let $S$ be a set and let $\mathbb R^S$ denote all functions $S\to\mathbb R$. Define operations <dfn>pointwise</dfn>: $(f+g)(s):=f(s)+g(s)$ and $(fg)(s):=f(s)g(s)$. The identity functions for these operations are the constant zero and constant one functions, not the identity map on $S$.</p>
+<p>Each ring axiom reduces to the corresponding real-number axiom at every $s$. For instance $[f(g+h)](s)=f(s)(g(s)+h(s))=f(s)g(s)+f(s)h(s)=[fg+fh](s)$, proving one distributive law by function equality. Commutativity and associativity of both operations follow pointwise in the same way, and the function $s\mapsto-f(s)$ gives additive inverses. Thus $\mathbb R^S$ is a commutative ring. If $S$ is empty, it is the one-element ring because there is only one empty function.</p>
+<p>For $S=\{u,v\}$, a function is specified by its pair of values $(f(u),f(v))$. The ring is therefore represented by $\mathbb R\times\mathbb R$ with coordinatewise operations. The functions $p=(1,0)$ and $q=(0,1)$ are nonzero, while $pq=(0,0)$. A <dfn>zero divisor</dfn> in a commutative ring is a nonzero element whose product with some nonzero element is zero. Both $p$ and $q$ are zero divisors.</p>
+<p>A <dfn>unit</dfn> is a multiplicatively invertible element. A real-valued function is a unit in this function ring exactly when it never vanishes. If $fg=1$, each equation $f(s)g(s)=1$ forces $f(s)\ne0$. Conversely, when all values are nonzero, $g(s):=1/f(s)$ defines a function with $fg=gf=1$. The function $(2,3)$ is a unit with inverse $(1/2,1/3)$, while $(1,0)$ has no inverse because its second coordinate always multiplies to zero.</p>
+
+<h2 id="subrings">6.3 Identity conventions for subrings and maps <a class="timestamp" href="https://www.youtube.com/watch?v=4WGGK6tWPsw&amp;t=898s">Lesson 13 · 14:58</a></h2>
+<p>We use <dfn>unital subring</dfn> to mean a subset containing $1_R$, closed under subtraction and multiplication, with the inherited operations. Closure under subtraction gives zero, additive inverses, and addition: $0=1-1$, $-a=0-a$, and $a+b=a-(-b)$. All remaining laws are inherited. Constant functions form such a subring of $\mathbb R^S$.</p>
+<p>Requiring the same multiplicative identity is a convention with consequences. The subset $T=\mathbb R\times\{0\}$ of $\mathbb R\times\mathbb R$ is closed under both operations and is itself a ring with identity $(1,0)$. The ambient identity is $(1,1)$, which is not in $T$. Therefore having an identity within an inherited subset does not force it to equal the ambient multiplicative identity. The group argument for additive identities does not apply to multiplication when most elements lack inverses.</p>
+<p>A <dfn>unital ring homomorphism</dfn> $\phi:R\to T$ preserves addition, multiplication, and identity: $\phi(a+b)=\phi(a)+\phi(b)$, $\phi(ab)=\phi(a)\phi(b)$, and $\phi(1_R)=1_T$. Preserving the two operations alone does not force the third condition. The map $r\mapsto(r,0)$ from $\mathbb R$ to $\mathbb R\times\mathbb R$ preserves addition and multiplication but sends $1$ to $(1,0)$, not $(1,1)$.</p>
+<p>For a fixed $s_0\in S$, evaluation $\operatorname{ev}_{s_0}:\mathbb R^S\to\mathbb R$ sends $f$ to $f(s_0)$. The definitions of pointwise operations prove that it preserves both, and the constant-one function evaluates to one, so it is unital. In the two-point model it is a coordinate projection. <a href="https://judsonbooks.org/aata-files/aata-20260811.pdf#page=213">Judson §§16.1 and 16.3, printed pp. 201 and 203</a>, uses the broader nonunital conventions for subrings and homomorphisms. Stating the convention lets either vocabulary be translated precisely.</p>
+
+<h2 id="domains">6.4 Integral domains recover nonzero cancellation <a class="timestamp" href="https://www.youtube.com/watch?v=4WGGK6tWPsw&amp;t=1071s">Lesson 13 · 17:51</a></h2>
+<div class="definition"><p><strong>Definition 6.3.</strong> An <dfn>integral domain</dfn> is a nontrivial commutative ring in which $ab=0$ implies $a=0$ or $b=0$. Thus it has no zero divisors and has $1\ne0$.</p></div>
+<div class="theorem"><p><strong>Proposition 6.4, proved here.</strong> A nontrivial commutative ring is an integral domain exactly when every nonzero factor can be cancelled: $ab=ac$ and $a\ne0$ imply $b=c$.</p></div>
+<div class="proof"><p>In a domain, $ab=ac$ gives $a(b-c)=0$ by the sign and distributive laws. Since $a\ne0$, the domain property forces $b-c=0$, hence $b=c$. Conversely, suppose nonzero cancellation holds. If $ab=0$ and $a\ne0$, then $ab=a0$ by Proposition 6.2, so cancelling $a$ gives $b=0$. This is exactly the no-zero-divisor property. <span class="qed">∎</span></p></div>
+<p>The function-ring example fails this test with a nonzero factor: $p\cdot q=p\cdot0=0$ but $q\ne0$. It is therefore insufficient to check only that the proposed cancelling factor is nonzero in an arbitrary ring. In a domain, cancellation still does not produce a multiplicative inverse: $\mathbb Z$ is a domain, while $2$ has no integer inverse. <a href="https://judsonbooks.org/aata-files/aata-20260811.pdf#page=214">Judson §16.2, printed p. 202</a>, proves the same characterization with its nontrivial identity convention.</p>
+
+<h2 id="order">6.5 Order must be compatible with the operations <a class="timestamp" href="https://www.youtube.com/watch?v=4WGGK6tWPsw&amp;t=1341s">Lesson 13 · 22:21</a></h2>
+<p>An <dfn>ordered integral domain</dfn> is a domain with a strict relation $\lt$ satisfying four conditions. Exactly one of $a\lt b$, $a=b$, $b\lt a$ holds for every pair (<dfn>trichotomy</dfn>). The relation is transitive. Adding the same element preserves an inequality. Finally, $0\lt a$ and $0\lt b$ imply $0\lt ab$. Write $a\gt b$ for $b\lt a$, and call $a$ positive when $0\lt a$.</p>
+<p>Translation is reversible: from $a+c\lt b+c$, add $-c$ to recover $a\lt b$. Consequently $a\lt b$ if and only if $0\lt b-a$, and $0\lt a$ if and only if $-a\lt0$. These statements use translation, not multiplicative inverses.</p>
+<p>If $a\lt b$ and $c\gt0$, then $b-a\gt0$, so $c(b-a)\gt0$. Distributivity gives $cb-ca\gt0$, equivalent to $ca\lt cb$. If $c\lt0$, then $-c\gt0$, giving $(-c)a\lt(-c)b$; multiplying out the signs and adding appropriate terms gives $cb\lt ca$. A negative multiplier reverses the inequality.</p>
+<p>If $a,b\lt0$, then $-a,-b\gt0$ and the positive-product rule gives $(-a)(-b)=ab\gt0$. Hence every nonzero square is positive: trichotomy makes its base either positive or negative, and either case gives a positive product. Applying this to $1\ne0$ yields $1=1^2\gt0$, and thus $-1\lt0$.</p>
+<p>It follows that no ordered domain can contain an element $j$ with $j^2=-1$: its nonzero square would be positive while $-1$ is negative. This is an obstruction to a compatible order, not a prohibition on algebraic structures having such an element. The complex numbers will supply an example in Chapter 14. Order alone also does not isolate the integers; the rational and real numbers have compatible orders. Discreteness and induction require additional structure.</p>
+
+<h2 id="separation">6.6 Why arbitrary properties do not define sets <a class="timestamp" href="https://www.youtube.com/watch?v=jfHnbxuxlDs&amp;t=118s">Lesson 14 · 01:58</a></h2>
+<p>The informal phrase “the set of all objects with property $P$” cannot be an unrestricted construction rule. Suppose it permitted a set $R$ consisting of every set that is not a member of itself. Asking whether $R\in R$ would give $R\in R\Leftrightarrow R\notin R$, a contradiction. This is <dfn>Russell's paradox</dfn>: unrestricted comprehension is incompatible with ordinary logic.</p>
+<p>The safe construction used here is <dfn>separation</dfn>, also called specification. Given an already existing set $U$ and an admissible formula $P(x)$, form the subset $\{x\in U:P(x)\}$. In a formal set theory this is an axiom schema, with an instance for each suitable formula; parameters are allowed. It is not a license for every informal phrase to create a set.</p>
+<p>For example, $A\cap B=\{x\in A:x\in B\}$ uses separation on $A$, so no independent intersection axiom is needed. To form $A\cup B$ without already having an ambient set, pairing first forms $\{A,B\}$, and the union axiom then collects the elements of its members. Writing a familiar union formula did not itself establish the existence of its ambient set.</p>
+<p>The selected axioms used in these constructions are extensionality, existence of an empty set, pairing, union, power set, and separation. Extensionality says that sets with the same members are equal; it makes the empty set unique. Pairing forms $\{A,B\}$, including singletons by taking $A=B$. Union forms $\bigcup\mathcal A$ from a set $\mathcal A$ of sets. Power set forms the collection of all subsets of a set. These are part of a set-theoretic foundation, not a complete axiom list.</p>
+<p>Separation also proves that no set $U$ can contain every set. Form $R_U:=\{x\in U:x\notin x\}$. If $R_U\in U$, substituting it into its own membership condition gives the same contradiction. Hence $R_U\notin U$, although $R_U$ is itself a set. The conclusion does not require deciding in advance whether any set can be a member of itself.</p>
+
+<h2 id="foundation">6.7 Foundation and a noncircular membership condition <a class="timestamp" href="https://www.youtube.com/watch?v=jfHnbxuxlDs&amp;t=685s">Lesson 14 · 11:25</a></h2>
+<p>The <dfn>axiom of foundation</dfn>, or regularity, states that every nonempty set $T$ has a member $x$ disjoint from $T$: $x\cap T=\varnothing$. It rules out self-membership, as the following argument shows.</p>
+<div class="theorem"><p><strong>Proposition 6.5, proved here assuming foundation.</strong> No set $A$ satisfies $A\in A$.</p></div>
+<div class="proof"><p>Suppose $A\in A$ and form the nonempty singleton $T=\{A\}$ by pairing. Its only member is $A$. But $A$ belongs both to $A$ and to $T$, so $A\cap T$ is nonempty. Therefore $T$ has no member disjoint from it, contradicting foundation. <span class="qed">∎</span></p></div>
+<p>The argument applies foundation to $\{A\}$, not to an unspecified collection of all sets. It does not attempt to repair unrestricted comprehension; Russell's contradiction already shows that such a rule must be rejected. Foundation is a separate condition on the membership structure of permitted sets.</p>
+<p><dfn>ZF</dfn> denotes Zermelo–Fraenkel set theory. Adding the axiom of choice gives <dfn>ZFC</dfn>. A full formulation also includes further principles such as infinity and replacement, which are not reconstructed here. The distinction between ZF and ZFC matters for the right-inverse selection principle in Chapter 4. No relative-consistency or completeness theorem for these foundations is claimed.</p>
+
+<h2 id="pairs">6.8 Build ordered pairs from sets</h2>
+<p>The earlier use of ordered pairs can be justified by a concrete encoding. Define the <dfn>Kuratowski pair</dfn> by $(a,b):=\{\{a\},\{a,b\}\}$. The two entries may coincide, so the encoded pair may itself be a singleton. A valid encoding must recover the ordered entries in that case too.</p>
+<div class="theorem"><p><strong>Proposition 6.6, proved here.</strong> This encoding satisfies $(a,b)=(c,d)$ if and only if $a=c$ and $b=d$.</p></div>
+<div class="proof"><p>The intersection of all members of $\{\{a\},\{a,b\}\}$ is $\{a\}$, including when $a=b$. Equality of two encoded pairs therefore gives $\{a\}=\{c\}$ and hence $a=c$. Their unions give $\{a,b\}=\{a,d\}$. If $b=a$, the first set is $\{a\}$ and forces $d=a$. If $b\ne a$, membership of $b$ in the second set forces $b=d$. Thus the second entries also agree. Conversely, equal corresponding entries plainly give equal encoded sets by their definition. <span class="qed">∎</span></p></div>
+<p>Pairing creates the component sets and their enclosing pair. To build the whole Cartesian product $A\times B$, first form $U=A\cup B$. Every encoded $(a,b)$ lies in $\mathcal P(\mathcal P(U))$, because $\{a\}$ and $\{a,b\}$ are subsets of $U$. Separation on that already existing double power set selects precisely the pairs with $a\in A,b\in B$. Thus a separate Cartesian-product axiom is unnecessary for this construction.</p>
+<p>The encoding supplies the ordered-pair equality rule used throughout the function theory. Once that rule is established, ordinary algebra can reason about pairs without continually expanding them into nested sets. Choosing a representation is useful only after proving that its observable equality matches the intended object.</p>
+
+<h2 id="laboratory">6.9 A finite ring and actual encoded pairs</h2>
+<p>The following program examines functions on two points with values in $\{0,1\}$. Addition is modulo two, so $1+1=0$, and multiplication is the usual binary product. It checks the ring laws for every triple and finds the nonzero zero-divisor pairs. This is a finite model, not a proof about all rings.</p>
+<pre><code class="language-python">from itertools import product
+
+ring = list(product(range(2), repeat=2))
+zero, one = (0, 0), (1, 1)
+
+
+def add(a, b):
+    return tuple((x + y) % 2 for x, y in zip(a, b))
+
+
+def mul(a, b):
+    return tuple(x * y for x, y in zip(a, b))
+
+
+for a in ring:
+    assert add(a, zero) == a and add(a, a) == zero
+    assert mul(a, one) == a and mul(one, a) == a
+    for b in ring:
+        assert add(a, b) == add(b, a)
+        for c in ring:
+            assert add(add(a, b), c) == add(a, add(b, c))
+            assert mul(mul(a, b), c) == mul(a, mul(b, c))
+            assert mul(a, add(b, c)) == add(mul(a, b), mul(a, c))
+            assert mul(add(a, b), c) == add(mul(a, c), mul(b, c))
+bad_pairs = [(a, b) for a in ring for b in ring
+             if a != zero and b != zero and mul(a, b) == zero]
+print(len(ring), len(ring) ** 3, len(bad_pairs))
+
+
+def pair(a, b):
+    return frozenset((frozenset((a,)), frozenset((a, b))))
+
+
+numbers = [frozenset()]
+for _ in range(3):
+    numbers.append(frozenset(numbers))
+pairs = {pair(a, b) for a in numbers for b in numbers}
+assert len(pairs) == len(numbers) ** 2
+print(len(pairs))</code></pre>
+<pre class="output">4 64 2
+16</pre>
+<p>The two zero-divisor pairs are the two possible orders of $(1,0)$ and $(0,1)$. The second experiment uses actual immutable nested sets for four finite ordinals; it does not replace the pair by Python's built-in ordered tuple. It therefore checks the proposed encoding on its diagonal cases as well as its distinct-entry cases.</p>
+
+<h2 id="problems">6.10 Problems with complete solutions</h2>
+<details class="exercise"><summary>Problem 1. A cancellation argument that destroys every ring</summary>
+<p>A proposed proof says $a0=0$, hence cancelling the right factor $0$ from $a0=00$ gives $a=0$. Identify the unjustified step and prove $a0=0$ without it.</p>
+<div class="solution"><p>Multiplicative cancellation is unavailable for a zero factor, even in an integral domain. Distribution gives $a0=a(0+0)=a0+a0$. Add the additive inverse of $a0$ to both sides; the additive group laws give $0=a0$. No multiplicative cancellation occurred. In the integers, $2\cdot0=3\cdot0$ while $2\ne3$, directly refuting the proposed cancellation.</p></div></details>
+<details class="exercise"><summary>Problem 2. Which functions are units or zero divisors?</summary>
+<p>For real-valued functions on $S=\{u,v\}$, determine whether $f=(2,-3)$ and $g=(2,0)$ are units or zero divisors. More generally, characterize both properties for a nonzero function on an arbitrary nonempty set.</p>
+<div class="solution"><p>The function $f$ is a unit with inverse $(1/2,-1/3)$. A unit cannot annihilate a nonzero function: multiply $fh=0$ by $f^{-1}$ to obtain $h=0$. The function $g$ is not a unit because its second coordinate times any number remains zero; it annihilates $(0,1)$, so it is a zero divisor. In general a function is a unit exactly when it has no zero values, by the pointwise inverse construction. A nonzero function with a zero at $s_0$ annihilates the nonzero function equal to $1$ at $s_0$ and $0$ elsewhere. Conversely, if $fh=0$ with $h\ne0$, choose a point where $h(s)\ne0$; the real-number product law forces $f(s)=0$. Thus a nonzero real-valued function is a zero divisor exactly when it vanishes somewhere.</p></div></details>
+<details class="exercise"><summary>Problem 3. A subset with the wrong identity</summary>
+<p>Let $T=\mathbb R\times\{0\}\subset\mathbb R^2$ with coordinate operations. Prove that $T$ is a ring in its own right, but is not a unital subring under this edition's convention. Diagnose the inclusion map.</p>
+<div class="solution"><p>The map $r\mapsto(r,0)$ is bijective from $\mathbb R$ to $T$ and preserves both coordinate operations. Transporting the real ring laws gives the ring laws on $T$, with zero $(0,0)$ and identity $(1,0)$. The ambient identity is $(1,1)$, which is absent from $T$. Therefore $T$ fails the common-identity requirement. The inclusion preserves addition and multiplication, but sends $1_T=(1,0)$ to $(1,0)\ne1_{\mathbb R^2}$. It is not a unital ring homomorphism. This example shows exactly why preservation of two operations alone does not force preservation of the multiplicative identity.</p></div></details>
+<details class="exercise"><summary>Problem 4. Negative multiplication and imaginary units</summary>
+<p>In an ordered integral domain, prove that $a&lt;b$ and $c&lt;0$ imply $bc&lt;ac$. Explain why a ring containing $j$ with $j^2=-1$ cannot carry such an order.</p>
+<div class="solution"><p>From $c&lt;0$, adding $-c$ gives $-c&gt;0$. Positive multiplication yields $a(-c)&lt;b(-c)$, that is $-ac&lt;-bc$. Adding $ac+bc$ gives $bc&lt;ac$. For the second claim, $j$ cannot be zero because $0^2=0\ne-1$ in a nontrivial ordered domain. Every nonzero square is positive, so $j^2&gt;0$. But $1&gt;0$ implies $-1&lt;0$, contradicting $j^2=-1$. An order on the underlying set alone would be possible; compatibility with the ring laws is the obstruction.</p></div></details>
+<details class="exercise"><summary>Problem 5. Bounded separation and a two-cycle</summary>
+<p>For a set $U$, prove directly that $R_U=\{x\in U:x\notin x\}$ is not a member of $U$. Separately, use foundation to rule out sets $A,B$ satisfying $A\in B$ and $B\in A$.</p>
+<div class="solution"><p>Suppose $R_U\in U$. If $R_U\in R_U$, its defining condition gives $R_U\notin R_U$. If $R_U\notin R_U$, the assumption $R_U\in U$ makes it satisfy the defining condition, giving $R_U\in R_U$. Both cases contradict themselves, so $R_U\notin U$. For the second claim form $T=\{A,B\}$. Its member $A$ meets $T$ because $B\in A\cap T$, and its member $B$ meets $T$ because $A\in B\cap T$. Thus no member of the nonempty set $T$ is disjoint from $T$, contrary to foundation. The argument also covers $A=B$.</p></div></details>
+<details class="exercise"><summary>Problem 6. The diagonal ordered pair</summary>
+<p>Suppose the Kuratowski encoding $(a,b)$ has exactly one member. Prove $a=b$. Then justify the double power-set bound used to construct $A\times B$.</p>
+<div class="solution"><p>The two displayed candidate members $\{a\}$ and $\{a,b\}$ must coincide if the encoding is a singleton. Since $b\in\{a,b\}=\{a\}$, we have $b=a$. Conversely, when $a=b$, the encoding is $\{\{a\}\}$, indeed a singleton. If $a\in A,b\in B$ and $U=A\cup B$, both $\{a\}$ and $\{a,b\}$ belong to $\mathcal P(U)$. Their set is consequently a subset of $\mathcal P(U)$, hence an element of $\mathcal P(\mathcal P(U))$. Separation on this double power set selects exactly the encoded ordered pairs with the required coordinates, including the diagonal ones.</p></div></details>
+
+<h2 id="references">6.11 References and boundaries</h2>
+<p>Lessons 13–14 supply the ring, function-ring, order, and foundational questions. Judson's <a href="https://judsonbooks.org/aata-files/aata-20260811.pdf">Abstract Algebra: Theory and Applications</a>, §§16.1–16.2, printed pp.198–203, provides an independent algebra reference; its convention does not require every ring or ring homomorphism to preserve a multiplicative identity. This chapter states its stronger unital convention explicitly. Hammack's <a href="https://richardhammack.github.io/BookOfProof/Main.pdf">Book of Proof</a>, §1.10, printed p.32, explains Russell's contradiction and foundation. The Kuratowski encoding and the finite programs are additional teaching constructions. The axiom discussion is selective; it is neither a full reconstruction of ZFC nor a consistency proof.</p>

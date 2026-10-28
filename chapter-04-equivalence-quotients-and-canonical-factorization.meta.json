@@ -1,0 +1,76 @@
+{
+  "order": 4,
+  "title": "Equivalence, quotients, and canonical factorization",
+  "lecture_numbers": [
+    8,
+    9,
+    10
+  ],
+  "file": "chapter-04-equivalence-quotients-and-canonical-factorization.html",
+  "manuscript": "chapters/ch04.html",
+  "status": "complete; independently reviewed",
+  "chapter": 4,
+  "body_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+  "words_excluding_code": 3652,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 8,
+  "sections": [
+    {
+      "heading": "4.1 Equality-like and order-like relations Lesson 8 · 00:40",
+      "anchor": "relations",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=iM61eZVc4IQ&t=40s"
+      ]
+    },
+    {
+      "heading": "4.2 Classes partition the original set Lesson 8 · 22:29",
+      "anchor": "partitions",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=iM61eZVc4IQ&t=1349s"
+      ]
+    },
+    {
+      "heading": "4.3 The quotient and its projection Lesson 9 · 00:36",
+      "anchor": "quotient",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=305We8ZFecA&t=36s"
+      ]
+    },
+    {
+      "heading": "4.4 Which computations survive quotienting? Lesson 9 · 05:51",
+      "anchor": "descent",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=305We8ZFecA&t=351s"
+      ]
+    },
+    {
+      "heading": "4.5 Every function separates loss, relabeling, and inclusion Lesson 9 · 36:15",
+      "anchor": "factorization",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=305We8ZFecA&t=2175s"
+      ]
+    },
+    {
+      "heading": "4.6 Images, preimages, and saturation Lesson 10 · 02:56",
+      "anchor": "images",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=n--JD7jF6Z8&t=176s"
+      ]
+    },
+    {
+      "heading": "4.7 Which set operations are preserved? Lesson 10 · 06:56",
+      "anchor": "set-laws",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=n--JD7jF6Z8&t=416s"
+      ]
+    },
+    {
+      "heading": "4.8 One-sided inverses and the choices they require Lesson 10 · 13:15",
+      "anchor": "one-sided",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=n--JD7jF6Z8&t=795s"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "chapter": 3,
+  "complete_source_text_reading": [
+    7
+  ],
+  "reading_method": "sequential reading of all extracted caption segments",
+  "section_source_map": [
+    {
+      "section": "relations",
+      "lesson": 7,
+      "start": 60,
+      "end": 465
+    },
+    {
+      "section": "definition",
+      "lesson": 7,
+      "start": 465,
+      "end": 869
+    },
+    {
+      "section": "descriptions",
+      "lesson": 7,
+      "start": 869,
+      "end": 1470
+    },
+    {
+      "section": "types",
+      "lesson": 7,
+      "start": 1470,
+      "end": 1644
+    },
+    {
+      "section": "composition",
+      "lesson": 7,
+      "start": 1644,
+      "end": 1837
+    },
+    {
+      "section": "inverse",
+      "lesson": 7,
+      "start": 1837,
+      "end": 2050
+    }
+  ],
+  "teaching_constructions": [
+    "Square-map repairs",
+    "Finite relation validator",
+    "One-sided inverse on nonnegative integers",
+    "Six worked problems"
+  ],
+  "scope_decisions": [
+    "Adjacency is distinguished from reachability",
+    "No unsupported claim about a simple formula for nth prime",
+    "Constant maps require a chosen codomain element",
+    "Empty functions handled explicitly",
+    "Subset image and preimage operations deferred to chapter4 in accordance with lesson10; singleton-preimage terminology defined locally in chapter3"
+  ],
+  "reference_sections_inspected": [
+    {
+      "source": "Hammack, Book of Proof",
+      "sections": [
+        "12.1",
+        "12.2",
+        "12.4",
+        "12.5"
+      ],
+      "printed_pages": [
+        "223–224",
+        "228",
+        "235–236",
+        "238–239"
+      ]
+    }
+  ],
+  "limits": [
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification"
+  ]
+}

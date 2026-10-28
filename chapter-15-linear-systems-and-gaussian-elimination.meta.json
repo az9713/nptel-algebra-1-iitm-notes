@@ -1,0 +1,68 @@
+{
+  "order": 15,
+  "title": "Linear systems and Gaussian elimination",
+  "lecture_numbers": [
+    27,
+    28
+  ],
+  "file": "chapter-15-linear-systems-and-gaussian-elimination.html",
+  "manuscript": "chapters/ch15.html",
+  "status": "complete; independently reviewed",
+  "chapter": 15,
+  "body_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+  "words_excluding_code": 2515,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 7,
+  "sections": [
+    {
+      "heading": "15.1 Fix the field before solving Lesson 27 · 23:17",
+      "anchor": "systems",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=4Bmx287z49E&t=1397s"
+      ]
+    },
+    {
+      "heading": "15.2 Separate coefficients from the right-hand side Lesson 28 · 00:57",
+      "anchor": "matrices",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=57s"
+      ]
+    },
+    {
+      "heading": "15.3 Three reversible operations Lesson 28 · 13:09",
+      "anchor": "row-operations",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=789s"
+      ]
+    },
+    {
+      "heading": "15.4 Echelon and reduced echelon forms Lesson 28 · 32:02",
+      "anchor": "echelon",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=1922s"
+      ]
+    },
+    {
+      "heading": "15.5 Every matrix can be reduced Lesson 28 · 34:45",
+      "anchor": "existence",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=2085s"
+      ]
+    },
+    {
+      "heading": "15.7 Read every solution, including finite-field counts Lesson 28 · 43:24",
+      "anchor": "solutions",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=2604s"
+      ]
+    },
+    {
+      "heading": "15.8 Inconsistency comes with a row-combination certificate Lesson 28 · 61:37",
+      "anchor": "certificates",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=iArOEPpp7mQ&t=3697s"
+      ]
+    }
+  ]
+}

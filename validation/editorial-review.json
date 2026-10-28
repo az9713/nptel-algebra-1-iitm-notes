@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "reviewer": "Separate AI scientific editor",
+  "hash_scope": "Exact UTF-8 authored chapter fragment, including final newline",
+  "chapters": [
+    {
+      "chapter": 1,
+      "accepted": true,
+      "body_sha256": "a807658d97c1ea98d6196fbaaabb9b26a8904d56e758acb609fa6c19ca5e84f2",
+      "reviewed_utc": "2026-10-28T17:06:43.723Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 2,
+      "accepted": true,
+      "body_sha256": "9d622ac42050c99e4837d5c02e82aa02d963e14341269749c8de54e7efec6bee",
+      "reviewed_utc": "2026-10-28T17:13:06.161Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 3,
+      "accepted": true,
+      "body_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+      "reviewed_utc": "2026-10-28T17:18:52.803Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 4,
+      "accepted": true,
+      "body_sha256": "9c121007ca81ab35602fa8b04a42bcc016ee23e937aa4dc47f5d37ce56c31bf6",
+      "reviewed_utc": "2026-10-28T17:22:18.201Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 5,
+      "accepted": true,
+      "body_sha256": "5f3ffbe6e5555c7eb4887948323e7e306500ca47c245255e5d27abbb52b708d0",
+      "reviewed_utc": "2026-10-28T17:30:02.821Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 6,
+      "accepted": true,
+      "body_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+      "reviewed_utc": "2026-10-28T17:33:50.783Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 7,
+      "accepted": true,
+      "body_sha256": "21a6eb66106a315908725b444ff036fb680c6e6e70483fbaf65beb0bdd3f0587",
+      "reviewed_utc": "2026-10-28T17:37:03.326Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 8,
+      "accepted": true,
+      "body_sha256": "bcf2898801cec140210f9c9dd425d1a9c21c87c5c27f63050185400a36da3c49",
+      "reviewed_utc": "2026-10-28T17:40:07.531Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 9,
+      "accepted": true,
+      "body_sha256": "dbc6f642d1754b6107a308d7ccb56c8106486eb0187b63bf8e9a860e6d05c2cc",
+      "reviewed_utc": "2026-10-28T17:43:50.857Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 10,
+      "accepted": true,
+      "body_sha256": "3e8d681ea0f1bab9a778f06a9254b71ad15b324b6a201d1ccecca135ded6336c",
+      "reviewed_utc": "2026-10-28T17:44:38.786Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 11,
+      "accepted": true,
+      "body_sha256": "2653765d8c000a827e7148c2a329d050d084777b85bc21c6e9949374969e64cc",
+      "reviewed_utc": "2026-10-28T17:45:38.980Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 12,
+      "accepted": true,
+      "body_sha256": "8f7e8e2ae001e7125c5e622b5dbbe7683d4c0140237765e42f03413724094b90",
+      "reviewed_utc": "2026-10-28T17:47:04.317Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 13,
+      "accepted": true,
+      "body_sha256": "56d9e4a84e0dd9edb179a000cb14f7ff69df91a073417f0099f34d91a7a40698",
+      "reviewed_utc": "2026-10-28T17:49:05.648Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 14,
+      "accepted": true,
+      "body_sha256": "77afa6b01ec9aa779a34ff9345a24f995d47da43ada776d498052eef2d00058e",
+      "reviewed_utc": "2026-10-28T17:53:00.765Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 15,
+      "accepted": true,
+      "body_sha256": "c1ba3a6bec2294f08f8070e9bed7011b7801d6271203efc762700bc0bd0b7482",
+      "reviewed_utc": "2026-10-28T17:55:26.303Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 16,
+      "accepted": true,
+      "body_sha256": "470132d8597d846d15354400c6535f76dcf25fc29960ec5ed908adabdac805ac",
+      "reviewed_utc": "2026-10-28T17:59:00.869Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 17,
+      "accepted": true,
+      "body_sha256": "c7fec3564ec33196578e3a7ecab0cd706e258e2640da372bf12760e0f7d40195",
+      "reviewed_utc": "2026-10-28T18:00:47.524Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 18,
+      "accepted": true,
+      "body_sha256": "43cd6aa1d1b77f07fa4cde9abc6d9cfab84e4bac563f44e565afdeea9195688a",
+      "reviewed_utc": "2026-10-28T18:03:44.638Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 19,
+      "accepted": true,
+      "body_sha256": "bc46392983de5a5f6bfc1fc767c4b360d3523412daaf76d97dea654e777cd6eb",
+      "reviewed_utc": "2026-10-28T18:09:06.871Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 20,
+      "accepted": true,
+      "body_sha256": "36efc9bd05f3d0c6b878cb4b786306ae1da422d8966ec2b38340368ac1befc3f",
+      "reviewed_utc": "2026-10-28T18:10:32.255Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 21,
+      "accepted": true,
+      "body_sha256": "36caefabe32280630f07b74abea1fd998b71cfb95468de8aeb3d6d91e5374886",
+      "reviewed_utc": "2026-10-28T18:14:08.648Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 22,
+      "accepted": true,
+      "body_sha256": "79c1d2a78d9eff4eff68307088ec101ca6215f49ee65273ab8c4f2482a4ad267",
+      "reviewed_utc": "2026-10-28T18:22:48.691Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 23,
+      "accepted": true,
+      "body_sha256": "8d9501de86f6a1909bb3a091885b4c3e35e122553abe7201db1cc659798e126e",
+      "reviewed_utc": "2026-10-28T18:17:57.018Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 24,
+      "accepted": true,
+      "body_sha256": "649ed11a88835d2c52187fffbfa5ac324aded756869a7546ff8fb0a90a63f681",
+      "reviewed_utc": "2026-10-28T18:18:35.716Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    },
+    {
+      "chapter": 25,
+      "accepted": true,
+      "body_sha256": "5d2f0f3f2292923dba9222fa8559bfa4f57c35d051acbb1221b61ba916ae856b",
+      "reviewed_utc": "2026-10-28T18:22:48.693Z",
+      "scope": [
+        "complete source text and cited reference sections",
+        "every mathematical proof and six worked solutions",
+        "source fidelity and declared boundaries",
+        "exact Python program and printed output"
+      ],
+      "remaining_blocking_findings": 0
+    }
+  ],
+  "limits": [
+    "No human expert certification",
+    "No comprehensive audiovisual review",
+    "No formal proof-assistant verification",
+    "Finite code checks do not prove universal theorems"
+  ],
+  "support_review": {
+    "accepted": true,
+    "reviewed_utc": "2026-10-28T18:25:20.135Z",
+    "scope": "Book-wide editorial closure limited to overview, reference guide, laboratory fragment and explorer code; relies on completed separate chapter reviews and does not reread all chapters.",
+    "support_files": [
+      {
+        "path": "chapters/_overview.html",
+        "sha256": "cd01346732be948efc08df8c59ea08e60f0a5b7e8dbd8b168eb2b1754b1f61bb",
+        "bytes": 5750,
+        "hash_scope": "Exact complete UTF-8 file"
+      },
+      {
+        "path": "chapters/_references.html",
+        "sha256": "3987f2c6d0039ef22ed537cb1e6d807ab234f7074ec04be686c0017b5853970d",
+        "bytes": 4902,
+        "hash_scope": "Exact complete UTF-8 file"
+      },
+      {
+        "path": "chapters/_lab.html",
+        "sha256": "0028fd7832b7a69cc0a4ae4dc5b9033c88ea64f9d7c1cd40c118d4118e0a0e50",
+        "bytes": 3647,
+        "hash_scope": "Exact complete UTF-8 file"
+      },
+      {
+        "path": "assets/lab.js",
+        "sha256": "ca0d956ffd99db33104abd736c56c4fb6d6d6f0f17bd689ee428468d9e1eb115",
+        "bytes": 2584,
+        "hash_scope": "Exact complete UTF-8 file"
+      }
+    ],
+    "remaining_blocking_findings": 0,
+    "explorer_valid_cases": [
+      "3,2,1",
+      "2,2",
+      "2,1,1",
+      "1",
+      "8,8,8,8"
+    ],
+    "explorer_invalid_cases": [
+      "0",
+      "9",
+      "8,8,8,8,1",
+      "",
+      "2.5",
+      "-1"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "order": 6,
+  "title": "Rings, integral domains, and foundational assumptions",
+  "lecture_numbers": [
+    13,
+    14
+  ],
+  "file": "chapter-06-rings-integral-domains-and-foundational-assumptions.html",
+  "manuscript": "chapters/ch06.html",
+  "status": "complete; independently reviewed",
+  "chapter": 6,
+  "body_sha256": "88b0192f29075383712b0a0359965ae5f3ae5a6fabbae53e6893cdbd10007c28",
+  "words_excluding_code": 2950,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 7,
+  "sections": [
+    {
+      "heading": "6.1 Two operations linked by distributivity Lesson 13 · 01:20",
+      "anchor": "rings",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=4WGGK6tWPsw&t=80s"
+      ]
+    },
+    {
+      "heading": "6.2 A ring of functions with zero divisors Lesson 13 · 12:38",
+      "anchor": "function-ring",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=4WGGK6tWPsw&t=758s"
+      ]
+    },
+    {
+      "heading": "6.3 Identity conventions for subrings and maps Lesson 13 · 14:58",
+      "anchor": "subrings",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=4WGGK6tWPsw&t=898s"
+      ]
+    },
+    {
+      "heading": "6.4 Integral domains recover nonzero cancellation Lesson 13 · 17:51",
+      "anchor": "domains",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=4WGGK6tWPsw&t=1071s"
+      ]
+    },
+    {
+      "heading": "6.5 Order must be compatible with the operations Lesson 13 · 22:21",
+      "anchor": "order",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=4WGGK6tWPsw&t=1341s"
+      ]
+    },
+    {
+      "heading": "6.6 Why arbitrary properties do not define sets Lesson 14 · 01:58",
+      "anchor": "separation",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jfHnbxuxlDs&t=118s"
+      ]
+    },
+    {
+      "heading": "6.7 Foundation and a noncircular membership condition Lesson 14 · 11:25",
+      "anchor": "foundation",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=jfHnbxuxlDs&t=685s"
+      ]
+    }
+  ]
+}

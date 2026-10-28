@@ -1,0 +1,19 @@
+{
+  "chapter":4,
+  "complete_source_text_reading":[8,9,10],
+  "reading_method":"sequential reading of all extracted caption segments",
+  "section_source_map":[
+    {"section":"relations","lesson":8,"start":40,"end":1349},
+    {"section":"partitions","lesson":8,"start":1349,"end":2989},
+    {"section":"quotient","lesson":9,"start":36,"end":351},
+    {"section":"descent","lesson":9,"start":351,"end":1505},
+    {"section":"factorization","lesson":9,"start":1505,"end":2572},
+    {"section":"images","lesson":10,"start":58,"end":416},
+    {"section":"set-laws","lesson":10,"start":416,"end":795},
+    {"section":"one-sided","lesson":10,"start":795,"end":1404}
+  ],
+  "teaching_constructions":["Five-record classification", "Detailed canonical factorization proof", "Finite fiber/descent checks", "Six worked problems"],
+  "scope_decisions":["Indexed families retain naming information rather than being identified with their images", "Empty partition allowed for empty set", "Left-inverse empty-domain exception explicit", "Right-inverse general construction states and proves dependence on axiom of choice", "Nonempty-index boundary for direct-image intersection equality explicit", "Fractions constructed from formal integer pairs rather than presupposed quotient equality"],
+  "reference_sections_inspected":[{"source":"Hammack, Book of Proof","sections":["11.3","11.4","12.6"],"printed_pages":["210","215–217","242–243"]}],
+  "limits":["No comprehensive audiovisual review", "No formal proof-assistant verification"]
+}

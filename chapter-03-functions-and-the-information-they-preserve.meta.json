@@ -1,0 +1,60 @@
+{
+  "order": 3,
+  "title": "Functions and the information they preserve",
+  "lecture_numbers": [
+    7
+  ],
+  "file": "chapter-03-functions-and-the-information-they-preserve.html",
+  "manuscript": "chapters/ch03.html",
+  "status": "complete; independently reviewed",
+  "chapter": 3,
+  "body_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+  "words_excluding_code": 2905,
+  "problems": 6,
+  "python_listings": 1,
+  "timestamp_anchors": 6,
+  "sections": [
+    {
+      "heading": "3.1 Ordered pairs and relations Lesson 7 · 01:00",
+      "anchor": "relations",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=UzydRbUC-rM&t=60s"
+      ]
+    },
+    {
+      "heading": "3.2 Existence and uniqueness are separate requirements Lesson 7 · 07:45",
+      "anchor": "definition",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=UzydRbUC-rM&t=465s"
+      ]
+    },
+    {
+      "heading": "3.3 A function need not be a formula Lesson 7 · 14:29",
+      "anchor": "descriptions",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=UzydRbUC-rM&t=869s"
+      ]
+    },
+    {
+      "heading": "3.4 Injectivity, surjectivity, and the square map Lesson 7 · 24:30",
+      "anchor": "types",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=UzydRbUC-rM&t=1470s"
+      ]
+    },
+    {
+      "heading": "3.5 Composition preserves the function contract Lesson 7 · 27:24",
+      "anchor": "composition",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=UzydRbUC-rM&t=1644s"
+      ]
+    },
+    {
+      "heading": "3.6 An inverse must recover every input and reach every output Lesson 7 · 30:37",
+      "anchor": "inverse",
+      "recording_urls": [
+        "https://www.youtube.com/watch?v=UzydRbUC-rM&t=1837s"
+      ]
+    }
+  ]
+}
