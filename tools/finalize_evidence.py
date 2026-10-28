@@ -55,7 +55,17 @@ def main():
     write(ROOT/'analysis-ir.json', {'schema_version': 1,
           'scope': 'Full extracted-caption reading, section provenance and independent teaching developments; raw sources excluded.',
           'chapters': analysis})
+    support = json.loads((ROOT/'work/reviews/book-editor.json').read_text(encoding='utf-8'))
+    assert support['accepted'] and support['blocking_findings'] == 0
+    for entry in support['support_files']:
+        assert sha(ROOT/entry['path']) == entry['sha256']
+    support_public = {key: support[key] for key in
+                      ['accepted', 'reviewed_utc', 'scope', 'support_files']}
+    support_public['remaining_blocking_findings'] = 0
+    support_public['explorer_valid_cases'] = support['explorer_execution']['valid_cases']
+    support_public['explorer_invalid_cases'] = support['explorer_execution']['invalid_cases']
     write(ROOT/'validation/editorial-review.json', {'schema_version': 1,
+          'support_review': support_public,
           'reviewer': 'Separate AI scientific editor',
           'hash_scope': 'Exact UTF-8 authored chapter fragment, including final newline',
           'chapters': reviews,

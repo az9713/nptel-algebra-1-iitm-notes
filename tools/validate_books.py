@@ -155,7 +155,10 @@ def main():
     args = parser.parse_args()
     result = {'static': [] if args.pilot else static_checks(),
               'browser': browser_checks(args.pilot) if args.browser else [],
-              'scope':'offline source order, links, digests, rendering, and reading controls; not formal verification'}
+              'scope':'offline source order, links, digests, rendering, and reading controls; not formal verification',
+              'render_assets': {name: sha(ROOT/name) for name in [
+                  'assets/book.css', 'assets/book.js', 'assets/lab.js',
+                  'assets/math-config.js', 'assets/mathjax-tex-svg.js']}} 
     dest = 'pilot-reader.json' if args.pilot else 'reader-checks.json'
     (ROOT/'validation'/dest).write_text(json.dumps(result, indent=2)+'\n',encoding='utf-8')
     print('Validation passed.')
